@@ -3,13 +3,25 @@ using System.Collections;
 
 public class GameManager : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+    public static GameManager instance;
+
+    public LoadManager loadManager;
+
+    public Player player = new Player();
+
+    void Awake()
+    {
+        if (instance == null)
+            instance = this;
+        else if (instance != this)
+            Destroy(gameObject);
+
+        loadManager = GetComponent<LoadManager>();
+    }
+
+    void OnLevelWasLoaded(int index)
+    {
+        
+    }
+
 }

@@ -221,7 +221,11 @@ MonoBehaviour:
   pressedSprite2D: {fileID: 0}
   disabledSprite2D: {fileID: 0}
   pixelSnap: 0
-  onClick: []
+  onClick:
+  - mTarget: {fileID: 400690226}
+    mMethodName: OnMoreButtonClick
+    mParameters: []
+    oneShot: 0
 --- !u!114 &152644300
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -375,6 +379,7 @@ GameObject:
   - 4: {fileID: 400690223}
   - 114: {fileID: 400690225}
   - 54: {fileID: 400690224}
+  - 114: {fileID: 400690226}
   m_Layer: 8
   m_Name: UI Root
   m_TagString: Untagged
@@ -430,6 +435,17 @@ MonoBehaviour:
   fitHeight: 1
   adjustByDPI: 0
   shrinkPortraitUI: 0
+--- !u!114 &400690226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 400690222}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11209b62bb3a9844e84d51251822b6fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &447889287
 GameObject:
   m_ObjectHideFlags: 0
@@ -520,33 +536,48 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!1 &1410485920
-GameObject:
+--- !u!1001 &683661411
+Prefab:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1410485921}
-  m_Layer: 0
-  m_Name: GameManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1410485921
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1410485920}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 486968, guid: b21e5aece60c7db4983dded99fcf594a, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 486968, guid: b21e5aece60c7db4983dded99fcf594a, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 486968, guid: b21e5aece60c7db4983dded99fcf594a, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 486968, guid: b21e5aece60c7db4983dded99fcf594a, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 486968, guid: b21e5aece60c7db4983dded99fcf594a, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 486968, guid: b21e5aece60c7db4983dded99fcf594a, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 486968, guid: b21e5aece60c7db4983dded99fcf594a, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 486968, guid: b21e5aece60c7db4983dded99fcf594a, type: 2}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: b21e5aece60c7db4983dded99fcf594a, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1470870518
 GameObject:
   m_ObjectHideFlags: 0
@@ -629,7 +660,11 @@ MonoBehaviour:
   pressedSprite2D: {fileID: 0}
   disabledSprite2D: {fileID: 0}
   pixelSnap: 0
-  onClick: []
+  onClick:
+  - mTarget: {fileID: 400690226}
+    mMethodName: OnStartButtonClick
+    mParameters: []
+    oneShot: 0
 --- !u!114 &1470870523
 MonoBehaviour:
   m_ObjectHideFlags: 0
