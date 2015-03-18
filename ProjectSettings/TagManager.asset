@@ -15,8 +15,8 @@ TagManager:
   - 
   - NGUI 2D
   - 
-  - 
-  - 
+  - BlockingLayer
+  - PuzzleLayer
   - 
   - 
   - 
@@ -40,4 +40,13 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 3242905485
+    locked: 0
+  - name: Item
+    uniqueID: 1432671119
+    locked: 0
+  - name: Player
+    uniqueID: 563712801
     locked: 0
