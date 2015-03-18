@@ -61,8 +61,8 @@ public class PlayerControl : MonoBehaviour
         Vector3 start = transform.position;
         Vector3 end = start + new Vector3(xDir * scaleX, yDir * scaleY);
 
-        //Vector3 startRay = start + new Vector3(boxCollider.offset.x, boxCollider.offset.y);
-        //Vector3 endRay = startRay + new Vector3(xDir * scaleX, yDir * scaleY);
+        Vector3 startRay = start + new Vector3(boxCollider.offset.x, boxCollider.offset.y);
+        Vector3 endRay = startRay + new Vector3(xDir * scaleX, yDir * scaleY);
         
         // check bound
         if (end.x > maxX)
@@ -81,7 +81,7 @@ public class PlayerControl : MonoBehaviour
             //boxCollider.enabled = false;
 
             //Cast a line from start point to end point checking collision on blockingLayer.
-            RaycastHit2D hit = Physics2D.Linecast(start, end, blockingLayer);
+            RaycastHit2D hit = Physics2D.Linecast(startRay, endRay, blockingLayer);
 
             //Re-enable boxCollider after linecast
             //boxCollider.enabled = true;
