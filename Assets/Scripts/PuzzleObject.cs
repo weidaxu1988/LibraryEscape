@@ -14,7 +14,6 @@ public class PuzzleObject : MonoBehaviour
 
     public string noteTitle;
     public string noteContent;
-    public string question;
 
     private TweenScale tweenScale;
     private CircleCollider2D circleCollider;

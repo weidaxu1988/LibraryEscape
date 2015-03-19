@@ -123,9 +123,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startType: 0
-  noteTitle: test title
-  noteContent: test content
-  question: get some question
+  noteTitle: The Importance of Information Literacy
+  noteContent: IL is important to us because it allows us to navigate vast amounts
+    of information, to differentiate the important from the unnecessary, to effectively
+    use relevant content, to constructing new knowledge and understanding new situations.
 --- !u!212 &21270300
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -41,7 +41,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 135892}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .515999973, y: .407000005, z: 0}
+  m_LocalPosition: {x: 1.06799996, y: .569000006, z: 0}
   m_LocalScale: {x: .0850000009, y: .0850000009, z: 1}
   m_Children:
   - {fileID: 458344}
@@ -71,7 +71,7 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 3.68000007
+  m_Radius: .689999998
 --- !u!114 &11405062
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -123,9 +123,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startType: 0
-  noteTitle: test title
-  noteContent: test content
-  question: get some question
+  noteTitle: ACRL Information Literacy Standards
+  noteContent: The most widely-known standard for information literacy is the one
+    developed by the American Association of College and Research Libraries (ACRL).
+    The ACRL standards identify six things that an information literate person is
+    able to do.
 --- !u!212 &21276024
 SpriteRenderer:
   m_ObjectHideFlags: 1
