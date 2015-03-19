@@ -129,6 +129,16 @@ public class LevelControl : MonoBehaviour
     public void StartQuestion()
     {
         questionIndex = 0;
+
+        if (totalPuzzle.Length == purplePuzzleList.Count + greenPuzzleList.Count + orangePuzzleList.Count)
+        {
+            if (!questionPanel.activeSelf)
+            {
+                questionPanel.SetActive(true);
+            }
+
+            ShowPuzzleQuestion(questionIndex);
+        }
     }
 
     public void OnQuestionSubmit(UILabel label)
@@ -162,12 +172,12 @@ public class LevelControl : MonoBehaviour
             }
             else
             {
-                OnQuestionCloseButtonClick();
+                OnQuestionFinish();
             }
         }
     }
 
-    public void OnQuestionCloseButtonClick()
+    public void OnQuestionFinish()
     {
         if (questionPanel.activeSelf)
         {

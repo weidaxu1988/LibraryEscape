@@ -11,7 +11,7 @@ public class PuzzleObject : MonoBehaviour
     }
 
     public StartType startType;
-    
+
     public string noteTitle;
     public string noteContent;
     public string question;
@@ -29,18 +29,24 @@ public class PuzzleObject : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (activited) return;
+        if (other.tag == "Player")
+        {
+            if (activited) return;
 
-        activited = true;
-        tweenScale.PlayForward();
+            activited = true;
+            tweenScale.PlayForward();
+        }
     }
 
     void OnTriggerExit2D(Collider2D other)
     {
-        if (!activited) return;
+        if (other.tag == "Player")
+        {
+            if (!activited) return;
 
-        activited = false;
-        tweenScale.PlayReverse();
+            activited = false;
+            tweenScale.PlayReverse();
+        }
     }
 
     void OnMouseUpAsButton()
@@ -52,7 +58,7 @@ public class PuzzleObject : MonoBehaviour
     public bool checkAnswer(string answer)
     {
         bool result = false;
-        
+
         return result;
     }
 }
