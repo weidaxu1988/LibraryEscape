@@ -3,6 +3,18 @@ using System.Collections;
 
 public class PuzzleObject : MonoBehaviour
 {
+    public enum StartType
+    {
+        Purple,
+        Green,
+        Orange
+    }
+
+    public StartType startType;
+    
+    public string noteTitle;
+    public string noteContent;
+    public string question;
 
     private TweenScale tweenScale;
     private CircleCollider2D circleCollider;
@@ -34,6 +46,13 @@ public class PuzzleObject : MonoBehaviour
     void OnMouseUpAsButton()
     {
         if (activited)
-            Debug.Log("down");
+            LevelControl.instance.OnPuzzleObjectClick(this);
+    }
+
+    public bool checkAnswer(string answer)
+    {
+        bool result = false;
+        
+        return result;
     }
 }
