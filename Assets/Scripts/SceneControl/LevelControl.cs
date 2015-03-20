@@ -14,13 +14,14 @@ public class LevelControl : MonoBehaviour
     public UILabel greenLabel;
     public UILabel orangeLabel;
 
-    public GameObject notePanel;
-    public UILabel noteTtitle;
-    public UILabel noteContent;
-
+    public NoteControl noteControl;
+    
     public GameObject questionPanel;
+    public GameObject exitPanel;
 
     public Quiz[] totalQuiz;
+
+    public ExitObject exitObject;
 
     private PuzzleObject[] totalPuzzle;
 
@@ -30,6 +31,8 @@ public class LevelControl : MonoBehaviour
 
     private int quizIndex = 0;
     private int incorrectQuestionCount = 0;
+
+    private bool puzzleCleared = false;
 
     void Awake()
     {
@@ -101,44 +104,37 @@ public class LevelControl : MonoBehaviour
             }
         }
 
-        if (!notePanel.activeSelf)
+        if (!noteControl.gameObject.activeSelf)
         {
-            noteTtitle.text = obj.noteTitle;
-            noteContent.text = obj.noteContent;
-
-            notePanel.SetActive(true);
+            noteControl.Puzzle = obj;
+            noteControl.gameObject.SetActive(true);
         }
     }
 
     public void OnNoteCloseButtonClick()
     {
-        if (notePanel.activeSelf)
+        if (noteControl.gameObject.activeSelf)
         {
-            notePanel.SetActive(false);
-        }
-    }
-
-    public void OnUserNoteSubmit(UILabel label)
-    {
-        string note = label.text;
-        if (!string.IsNullOrEmpty(note) && !note.Equals(GameConfig.TXT_INPUT_DEFAULT))
-        {
-            Debug.Log(note);
+            noteControl.gameObject.SetActive(false);
         }
     }
 
     public void StartQuestion()
     {
-        quizIndex = 0;
-
-        if (totalPuzzle.Length == purplePuzzleList.Count + greenPuzzleList.Count + orangePuzzleList.Count)
+        if (!puzzleCleared)
         {
-            if (!questionPanel.activeSelf)
-            {
-                questionPanel.SetActive(true);
-            }
+            quizIndex = 0;
+            incorrectQuestionCount = 0;
 
-            ShowQuiz(quizIndex);
+            if (totalPuzzle.Length == purplePuzzleList.Count + greenPuzzleList.Count + orangePuzzleList.Count)
+            {
+                if (!questionPanel.activeSelf)
+                {
+                    questionPanel.SetActive(true);
+                }
+
+                ShowQuiz(quizIndex);
+            }
         }
     }
 
@@ -159,7 +155,9 @@ public class LevelControl : MonoBehaviour
             quizIndex++;
             if (quizIndex >= totalQuiz.Length)
             {
-                LevelComplete();
+                OnQuestionFinish();
+                exitObject.ActivateSelf();
+                puzzleCleared = true;
             }
             else
             {
@@ -174,10 +172,32 @@ public class LevelControl : MonoBehaviour
 
     public void OnQuestionFinish()
     {
+        //Debug.Log("index " + quizIndex);
+        //Debug.Log("length " + totalPuzzle.Length);
+
+        if (quizIndex < totalQuiz.Length)
+        {
+            Quiz quiz = totalQuiz[quizIndex];
+            if (quiz.gameObject.activeSelf)
+                quiz.gameObject.SetActive(false);
+        }
+
         if (questionPanel.activeSelf)
         {
             questionPanel.SetActive(false);
         }
+    }
+
+    public void OnExitObjectClick()
+    {
+        if (!exitPanel.activeSelf)
+            exitPanel.SetActive(true);
+    }
+
+
+    public void LevelComplete()
+    {
+        GameManager.instance.loadManager.LoadSelectScene();
     }
 
     protected void setupTotalPuzzles()
@@ -217,10 +237,5 @@ public class LevelControl : MonoBehaviour
             if (!quiz.gameObject.activeSelf)
                 quiz.gameObject.SetActive(true);
         }
-    }
-
-    protected void LevelComplete()
-    {
-        OnQuestionFinish();
     }
 }

@@ -124,9 +124,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startType: 0
   noteTitle: The Importance of Information Literacy
-  noteContent: IL is important to us because it allows us to navigate vast amounts
-    of information, to differentiate the important from the unnecessary, to effectively
-    use relevant content, to constructing new knowledge and understanding new situations.
+  noteContentArray:
+  - IL is important to us because it allows us to navigate vast amounts of information,
+    to differentiate the important from the unnecessary, to effectively use relevant
+    content, to constructing new knowledge and understanding new situations.
+  - "Students write term papers, work on assignments, and complete projects. To do
+    these knowledge-intensive tasks, they need to search for detailed, comprehensive
+    information, and synthesize the information from multiple sources. It is this
+    not surprising to find that students\u2019 with better skills do better academically."
+  - At the societal level, IL is central to the practice of democracy and citizenship,
+    which requires us to have the ability to access vital information, and to recognize
+    when that information is misused or abused, such as in situations of distortion
+    and propaganda. IL enables us to be active, enlightened and effective participants
+    in society, to contribute to discussions, and to make individual choices.
+  - 'Lastly, a strong foundation in IL is required for the acquisition of other literacies,
+    e.g., media literacy, health literacy and Internet literacy. '
 --- !u!212 &21270300
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -42,8 +42,8 @@ MonoBehaviour:
   material: {fileID: 2100000, guid: 34e6e32e9cecad54a817c8ee71382016, type: 2}
   mSprites:
   - name: btn_function
-    x: 636
-    y: 457
+    x: 459
+    y: 224
     width: 159
     height: 150
     borderLeft: 0
@@ -54,9 +54,22 @@ MonoBehaviour:
     paddingRight: 3
     paddingTop: 2
     paddingBottom: 3
+  - name: btn_hand_point
+    x: 0
+    y: 188
+    width: 256
+    height: 240
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 16
+    paddingBottom: 0
   - name: btn_hint
-    x: 796
-    y: 457
+    x: 459
+    y: 73
     width: 159
     height: 150
     borderLeft: 0
@@ -94,8 +107,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: btn_pause
-    x: 459
-    y: 283
+    x: 619
+    y: 224
     width: 159
     height: 150
     borderLeft: 0
@@ -120,8 +133,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: btn_sound_on
-    x: 619
-    y: 371
+    x: 779
+    y: 312
     width: 202
     height: 62
     borderLeft: 0
@@ -133,8 +146,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: btn_start
-    x: 0
-    y: 196
+    x: 459
+    y: 375
     width: 227
     height: 232
     borderLeft: 0
@@ -172,8 +185,8 @@ MonoBehaviour:
     paddingTop: 7
     paddingBottom: 1
   - name: ele_extra_btn_background
-    x: 228
-    y: 233
+    x: 687
+    y: 412
     width: 212
     height: 195
     borderLeft: 0
@@ -186,7 +199,7 @@ MonoBehaviour:
     paddingBottom: 2
   - name: ele_start_green
     x: 0
-    y: 22
+    y: 14
     width: 180
     height: 173
     borderLeft: 0
@@ -198,8 +211,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: ele_start_orange
-    x: 228
-    y: 59
+    x: 257
+    y: 255
     width: 180
     height: 173
     borderLeft: 0
@@ -211,8 +224,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: ele_start_purple
-    x: 459
-    y: 434
+    x: 257
+    y: 81
     width: 176
     height: 173
     borderLeft: 0

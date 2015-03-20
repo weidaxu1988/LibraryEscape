@@ -41,7 +41,24 @@ public class PlayerControl : MonoBehaviour
 
         float absH = Mathf.Abs(horizontal);
         float absV = Mathf.Abs(vertical);
-        anim.SetFloat("Speed", absH >= absV ? absH : absV);
+        if (absH > absV)
+        {
+            anim.SetFloat("Speed", absH);
+            anim.SetFloat("SpeedV", 0);
+            vertical = 0;
+        }
+        else if (absH < absV)
+        {
+            if (vertical > 0)
+                anim.SetBool("Front", false);
+            else
+                anim.SetBool("Front", true);
+            anim.SetFloat("Speed", 0);
+            anim.SetFloat("SpeedV", absV);
+
+            horizontal = 0;
+        }
+        
 
         if (horizontal > 0 && !facingRight)
             Flip();

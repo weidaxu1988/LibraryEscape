@@ -13,16 +13,16 @@ public class PuzzleObject : MonoBehaviour
     public StartType startType;
 
     public string noteTitle;
-    public string noteContent;
+    public string[] noteContentArray;
 
     private TweenScale tweenScale;
-    private CircleCollider2D circleCollider;
+    //private CircleCollider2D circleCollider;
 
     private bool activited = false;
 
     void Awake()
     {
-        circleCollider = GetComponent<CircleCollider2D>();
+        //circleCollider = GetComponent<CircleCollider2D>();
         tweenScale = GetComponentInChildren<TweenScale>();
     }
 

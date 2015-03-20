@@ -124,10 +124,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startType: 0
   noteTitle: ACRL Information Literacy Standards
-  noteContent: The most widely-known standard for information literacy is the one
-    developed by the American Association of College and Research Libraries (ACRL).
-    The ACRL standards identify six things that an information literate person is
-    able to do.
+  noteContentArray:
+  - The most widely-known standard for information literacy is the one developed by
+    the American Association of College and Research Libraries (ACRL). The ACRL standards
+    identify six things that an information literate person is able to do.
+  - 'An information literate person is able: to determine the amount of information
+    needed. This ability is important because with the abundance of inforamtion on
+    the Internet, a person can search unendingly. An information literate person knows
+    when he has enough for the task he is trying to complete. '
 --- !u!212 &21276024
 SpriteRenderer:
   m_ObjectHideFlags: 1

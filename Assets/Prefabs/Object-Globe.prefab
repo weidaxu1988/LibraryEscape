@@ -84,10 +84,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startType: 1
-  noteTitle: Definition of Information Literacy
-  noteContent: "In 1974, Paul Zurkowski coined the term \u201Cinformation literacy\u201D.
-    At that time, information sources consisted predominantly of materials in print
-    \u2013 books, reports, and research papers."
+  noteTitle: The Information Search Process Model
+  noteContentArray:
+  - "The information search process (ISP) Model is a six-stage process of information
+    seeking behavior in library and information science, suggested by Carol Kuhlthau.
+    \ The ISP Model emphasized the \u201Cinterplay of thoughts, feelings and actions\u201D
+    in the information seeking process, and regarded anxiety and uncertainty as an
+    integral part of the process. In the early stages of searching, negative feelings
+    are common, especially when the users have little knowledge of what is available
+    or when the search problem is not clear. However, as the search progresses, and
+    the awareness of the process increases, there is a corresponding improvement in
+    the level of satisfaction and confidence. At the end of the search process, the
+    seeker will feel a sense of relief or satisfaction when the required information
+    is found, or disappointment and anxiety when it was not. "
 --- !u!114 &11490522
 MonoBehaviour:
   m_ObjectHideFlags: 1
