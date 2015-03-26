@@ -30,7 +30,15 @@ public class StoryControl : MonoBehaviour
 
     public void OnWriterFinished(GameObject button)
     {
-        
+
+    }
+
+    public void OnSkipButtonClick()
+    {
+        if (mCurStageIndex < 4)
+        {
+            SetupStage(4 - mCurStageIndex);
+        }
     }
 
     public void SubmitQuestionOne(UILabel label)
@@ -56,6 +64,12 @@ public class StoryControl : MonoBehaviour
         SetupStage(-1);
     }
 
+    public void OnFinalButtonActive(GameObject obj)
+    {
+        BoxCollider collider = obj.GetComponent<BoxCollider>();
+        collider.enabled = true;
+    }
+
     private void SetupStage(int amount)
     {
         GameObject stage = stages[mCurStageIndex];
@@ -69,7 +83,7 @@ public class StoryControl : MonoBehaviour
     private void SubmitQuestion(UILabel label, int index)
     {
         string content = label.text;
-        if (string.IsNullOrEmpty(content) || content.Equals(GameConfig.TXT_INPUT_DEFAULT) || content.Contains(GameConfig.TXT_WARNING_EMPTY))
+        if (string.IsNullOrEmpty(content) || content.Equals(GameConfig.TXT_INPUT_DEFAULT) || content.Contains(GameConfig.TXT_WARNING_EMPTY) || content.Contains(GameConfig.TXT_INPUT_ANSWER_DEFAULT))
             label.text = "answer " + GameConfig.TXT_WARNING_EMPTY;
         else
         {

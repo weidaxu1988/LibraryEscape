@@ -32,7 +32,7 @@ public class NoteControl : MonoBehaviour
     void OnDisable()
     {
         string note = input.value;
-        if (!string.IsNullOrEmpty(note) && !note.Equals(GameConfig.TXT_INPUT_DEFAULT))
+        if (!string.IsNullOrEmpty(note) && !note.Equals(GameConfig.TXT_INPUT_NOTE_DEFAULT))
         {
             Debug.Log(note);
         }

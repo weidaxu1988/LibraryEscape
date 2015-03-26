@@ -41,9 +41,48 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 2100000, guid: 34e6e32e9cecad54a817c8ee71382016, type: 2}
   mSprites:
+  - name: btn_arrow_left
+    x: 534
+    y: 362
+    width: 158
+    height: 245
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: btn_arrow_right
+    x: 534
+    y: 116
+    width: 158
+    height: 245
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: btn_close
+    x: 1174
+    y: 437
+    width: 140
+    height: 140
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
   - name: btn_function
-    x: 459
-    y: 224
+    x: 1014
+    y: 427
     width: 159
     height: 150
     borderLeft: 0
@@ -55,8 +94,8 @@ MonoBehaviour:
     paddingTop: 2
     paddingBottom: 3
   - name: btn_hand_point
-    x: 0
-    y: 188
+    x: 713
+    y: 483
     width: 256
     height: 240
     borderLeft: 0
@@ -68,8 +107,8 @@ MonoBehaviour:
     paddingTop: 16
     paddingBottom: 0
   - name: btn_hint
-    x: 459
-    y: 73
+    x: 1014
+    y: 276
     width: 159
     height: 150
     borderLeft: 0
@@ -80,9 +119,22 @@ MonoBehaviour:
     paddingRight: 3
     paddingTop: 2
     paddingBottom: 3
+  - name: btn_info
+    x: 713
+    y: 724
+    width: 300
+    height: 300
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
   - name: btn_learn_more
-    x: 0
-    y: 429
+    x: 1014
+    y: 846
     width: 458
     height: 178
     borderLeft: 0
@@ -94,8 +146,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: btn_menu
-    x: 713
-    y: 693
+    x: 0
+    y: 7
     width: 202
     height: 63
     borderLeft: 0
@@ -107,8 +159,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: btn_pause
-    x: 619
-    y: 224
+    x: 1014
+    y: 125
     width: 159
     height: 150
     borderLeft: 0
@@ -119,9 +171,22 @@ MonoBehaviour:
     paddingRight: 3
     paddingTop: 2
     paddingBottom: 3
+  - name: btn_quit
+    x: 0
+    y: 71
+    width: 533
+    height: 536
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 17
+    paddingRight: 16
+    paddingTop: 118
+    paddingBottom: 146
   - name: btn_replay
-    x: 713
-    y: 630
+    x: 203
+    y: 8
     width: 202
     height: 62
     borderLeft: 0
@@ -133,8 +198,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: btn_sound_on
-    x: 779
-    y: 312
+    x: 1317
+    y: 783
     width: 202
     height: 62
     borderLeft: 0
@@ -146,8 +211,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: btn_start
-    x: 459
-    y: 375
+    x: 713
+    y: 250
     width: 227
     height: 232
     borderLeft: 0
@@ -172,8 +237,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: ele_chat_box_black
-    x: 713
-    y: 757
+    x: 1014
+    y: 578
     width: 302
     height: 267
     borderLeft: 0
@@ -185,8 +250,8 @@ MonoBehaviour:
     paddingTop: 7
     paddingBottom: 1
   - name: ele_extra_btn_background
-    x: 687
-    y: 412
+    x: 713
+    y: 54
     width: 212
     height: 195
     borderLeft: 0
@@ -198,8 +263,8 @@ MonoBehaviour:
     paddingTop: 2
     paddingBottom: 2
   - name: ele_start_green
-    x: 0
-    y: 14
+    x: 1473
+    y: 851
     width: 180
     height: 173
     borderLeft: 0
@@ -211,8 +276,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: ele_start_orange
-    x: 257
-    y: 255
+    x: 1654
+    y: 851
     width: 180
     height: 173
     borderLeft: 0
@@ -224,8 +289,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: ele_start_purple
-    x: 257
-    y: 81
+    x: 1835
+    y: 851
     width: 176
     height: 173
     borderLeft: 0

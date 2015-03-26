@@ -27,6 +27,8 @@ public class PlayerControl : MonoBehaviour
 
     void Update()
     {
+        if (LevelControl.instance != null && LevelControl.instance.isGamePaused) return;
+
         float horizontal = 0;
         float vertical = 0;
 

@@ -1,7 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class MenuControl : MonoBehaviour {
+public class MenuControl : MonoBehaviour
+{
+    public GameObject morePanel;
 
     public void OnStartButtonClick()
     {
@@ -10,6 +12,13 @@ public class MenuControl : MonoBehaviour {
 
     public void OnMoreButtonClick()
     {
-        Debug.Log("Learn More Button Clicked");
+        if (morePanel.activeSelf)
+        {
+            morePanel.SetActive(false);
+        }
+        else
+        {
+            morePanel.SetActive(true);
+        }
     }
 }

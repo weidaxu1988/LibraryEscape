@@ -5,8 +5,10 @@ using System.Collections.Generic;
 public class LevelControl : MonoBehaviour
 {
     public static LevelControl instance = null;
-
+    
     public int incorrectCapacity = 1;
+
+    public bool isGamePaused = false;
 
     public GameObject extraButtons;
 
@@ -15,9 +17,11 @@ public class LevelControl : MonoBehaviour
     public UILabel orangeLabel;
 
     public NoteControl noteControl;
+    public HelpNoteControl helpControl;
     
     public GameObject questionPanel;
     public GameObject exitPanel;
+    public GameObject player;
 
     public Quiz[] totalQuiz;
 
@@ -42,6 +46,7 @@ public class LevelControl : MonoBehaviour
     void Start()
     {
         setupTotalPuzzles();
+        //InitHelp();
     }
 
     public void OnPauseButtonClick()
@@ -55,6 +60,11 @@ public class LevelControl : MonoBehaviour
             extraButtons.SetActive(false);
         else
             extraButtons.SetActive(true);
+    }
+
+    public void OnQuitButtonClick()
+    {
+        Application.Quit();
     }
 
     public void OnHintButtonClick()
@@ -83,6 +93,12 @@ public class LevelControl : MonoBehaviour
         {
             if (!purplePuzzleList.Contains(obj))
             {
+                //TweenScale scale = purpleLabel.GetComponent<TweenScale>();
+                //scale.PlayForward();
+
+                Animation anime = purpleLabel.GetComponent<Animation>();
+                if (!anime.isPlaying) anime.Play();
+
                 purplePuzzleList.Add(obj);
                 purpleLabel.text = purplePuzzleList.Count + "/" + purplePuzzleList.Capacity;
             }
@@ -91,6 +107,9 @@ public class LevelControl : MonoBehaviour
         {
             if (!greenPuzzleList.Contains(obj))
             {
+                Animation anime = greenLabel.GetComponent<Animation>();
+                if (!anime.isPlaying) anime.Play();
+
                 greenPuzzleList.Add(obj);
                 greenLabel.text = greenPuzzleList.Count + "/" + greenPuzzleList.Capacity;
             }
@@ -99,6 +118,9 @@ public class LevelControl : MonoBehaviour
         {
             if (!orangePuzzleList.Contains(obj))
             {
+                Animation anime = orangeLabel.GetComponent<Animation>();
+                if (!anime.isPlaying) anime.Play();
+
                 orangePuzzleList.Add(obj);
                 orangeLabel.text = orangePuzzleList.Count + "/" + orangePuzzleList.Capacity;
             }
@@ -109,6 +131,15 @@ public class LevelControl : MonoBehaviour
             noteControl.Puzzle = obj;
             noteControl.gameObject.SetActive(true);
         }
+    }
+
+    public void OnHelpFinish()
+    {
+        if (helpControl.gameObject.activeSelf)
+            helpControl.gameObject.SetActive(false);
+        
+        if (!player.activeSelf)
+            player.SetActive(true);
     }
 
     public void OnNoteCloseButtonClick()
@@ -198,6 +229,15 @@ public class LevelControl : MonoBehaviour
     public void LevelComplete()
     {
         GameManager.instance.loadManager.LoadSelectScene();
+    }
+
+    protected void InitHelp()
+    {
+        if (player.activeSelf)
+            player.SetActive(false);
+
+        if (!helpControl.gameObject.activeSelf)
+            helpControl.gameObject.SetActive(true);
     }
 
     protected void setupTotalPuzzles()
