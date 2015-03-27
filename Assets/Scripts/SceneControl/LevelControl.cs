@@ -46,7 +46,7 @@ public class LevelControl : MonoBehaviour
     void Start()
     {
         setupTotalPuzzles();
-        //InitHelp();
+        InitHelp();
     }
 
     public void OnPauseButtonClick()
@@ -89,6 +89,11 @@ public class LevelControl : MonoBehaviour
 
     public void OnPuzzleObjectClick(PuzzleObject obj)
     {
+        if (player != null)
+        {
+            player.GetComponent<PlayerControl>().ResetTimeCount();
+        }
+
         if (obj.startType == PuzzleObject.StartType.Purple)
         {
             if (!purplePuzzleList.Contains(obj))
@@ -215,6 +220,10 @@ public class LevelControl : MonoBehaviour
 
         if (questionPanel.activeSelf)
         {
+            foreach (Quiz q in totalQuiz)
+            {
+                q.ClearResult();
+            }
             questionPanel.SetActive(false);
         }
     }

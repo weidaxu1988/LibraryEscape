@@ -28,6 +28,11 @@ public class OrderQuizItem : MonoBehaviour
         }
     }
 
+    public void ClearOrder()
+    {
+        input.value = "";
+    }
+
     public bool getResult()
     {
         bool result = false;
@@ -42,4 +47,6 @@ public class OrderQuizItem : MonoBehaviour
         }
         return result;
     }
+
+    
 }

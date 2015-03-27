@@ -5,7 +5,7 @@ AnimationClip:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: player_walk_front_idle
+  m_Name: player_idle
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -18,9 +18,9 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: 21300000, guid: 6fa6bccf5e8384440943ea44ad85f168, type: 3}
+      value: {fileID: 21300000, guid: 2aa233055b6f69a4fb6ad3263304a35f, type: 3}
     - time: .0833333358
-      value: {fileID: 21300000, guid: 7840c7886bd36264b9418f2f44d4b28b, type: 3}
+      value: {fileID: 21300000, guid: 12c42eff6df6ea94e8305b57eece41a3, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -39,8 +39,8 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: 21300000, guid: 6fa6bccf5e8384440943ea44ad85f168, type: 3}
-    - {fileID: 21300000, guid: 7840c7886bd36264b9418f2f44d4b28b, type: 3}
+    - {fileID: 21300000, guid: 2aa233055b6f69a4fb6ad3263304a35f, type: 3}
+    - {fileID: 21300000, guid: 12c42eff6df6ea94e8305b57eece41a3, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_StartTime: 0

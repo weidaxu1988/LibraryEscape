@@ -99,6 +99,7 @@ GameObject:
   - 114: {fileID: 13467287}
   - 65: {fileID: 13467286}
   - 114: {fileID: 13467285}
+  - 114: {fileID: 13467289}
   m_Layer: 8
   m_Name: Control - Close Button
   m_TagString: Untagged
@@ -228,6 +229,21 @@ MonoBehaviour:
   mAtlas: {fileID: 11485656, guid: c70c616e8529fea4595e88ee3c857514, type: 2}
   mSpriteName: btn_close
   mFillCenter: 1
+--- !u!114 &13467289
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 13467283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d44bc69c2ca5f943b845318866dc1bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioClip: {fileID: 8300000, guid: b5083cfe83bb875479bd797c61594131, type: 3}
+  trigger: 0
+  volume: 1
+  pitch: 1
 --- !u!1 &16002951
 GameObject:
   m_ObjectHideFlags: 0
@@ -743,6 +759,25 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7c3a28b051e872b448d4808cfcf9199c, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &123181639
+GameObject:
+  m_PrefabParentObject: {fileID: 100002, guid: 7c3a28b051e872b448d4808cfcf9199c, type: 2}
+  m_PrefabInternal: {fileID: 123181638}
+--- !u!114 &123181640
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 123181639}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d44bc69c2ca5f943b845318866dc1bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioClip: {fileID: 8300000, guid: b5083cfe83bb875479bd797c61594131, type: 3}
+  trigger: 0
+  volume: 1
+  pitch: 1
 --- !u!1 &132884623
 GameObject:
   m_ObjectHideFlags: 0
@@ -1046,6 +1081,7 @@ GameObject:
   - 114: {fileID: 204630194}
   - 114: {fileID: 204630193}
   - 65: {fileID: 204630192}
+  - 114: {fileID: 204630195}
   m_Layer: 8
   m_Name: Control - Next Button
   m_TagString: Untagged
@@ -1147,6 +1183,21 @@ MonoBehaviour:
   mAtlas: {fileID: 11485656, guid: c70c616e8529fea4595e88ee3c857514, type: 2}
   mSpriteName: btn_arrow_right
   mFillCenter: 1
+--- !u!114 &204630195
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 204630191}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d44bc69c2ca5f943b845318866dc1bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioClip: {fileID: 8300000, guid: b5083cfe83bb875479bd797c61594131, type: 3}
+  trigger: 0
+  volume: 1
+  pitch: 1
 --- !u!4 &208053422
 Transform:
   m_PrefabParentObject: {fileID: 466812, guid: f4b225d84b2db644eaaf4ada1fa1cbfc, type: 2}
@@ -2156,6 +2207,14 @@ Prefab:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 400952, guid: 29ec8840290eb14498458fd3e5bf9ee9, type: 2}
+      propertyPath: m_LocalScale.x
+      value: .150000006
+      objectReference: {fileID: 0}
+    - target: {fileID: 400952, guid: 29ec8840290eb14498458fd3e5bf9ee9, type: 2}
+      propertyPath: m_LocalScale.y
+      value: .150000006
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 29ec8840290eb14498458fd3e5bf9ee9, type: 2}
   m_IsPrefabParent: 0
@@ -2319,11 +2378,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 489160, guid: 4c78c8da3449ba84c972ba463a678b31, type: 2}
       propertyPath: m_LocalPosition.x
-      value: .493999988
+      value: .5
       objectReference: {fileID: 0}
     - target: {fileID: 489160, guid: 4c78c8da3449ba84c972ba463a678b31, type: 2}
       propertyPath: m_LocalPosition.y
-      value: .584999979
+      value: .595000029
       objectReference: {fileID: 0}
     - target: {fileID: 489160, guid: 4c78c8da3449ba84c972ba463a678b31, type: 2}
       propertyPath: m_LocalPosition.z
@@ -2348,6 +2407,14 @@ Prefab:
     - target: {fileID: 489160, guid: 4c78c8da3449ba84c972ba463a678b31, type: 2}
       propertyPath: m_RootOrder
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 489160, guid: 4c78c8da3449ba84c972ba463a678b31, type: 2}
+      propertyPath: m_LocalScale.x
+      value: .100000001
+      objectReference: {fileID: 0}
+    - target: {fileID: 489160, guid: 4c78c8da3449ba84c972ba463a678b31, type: 2}
+      propertyPath: m_LocalScale.y
+      value: .100000001
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4c78c8da3449ba84c972ba463a678b31, type: 2}
@@ -2433,6 +2500,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 9580834, guid: 65abe23b94a57844c81948f178d0dde4, type: 2}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: b259f0a881e709d4d9e7b41998b2ec3e, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 65abe23b94a57844c81948f178d0dde4, type: 2}
   m_IsPrefabParent: 0
@@ -2998,7 +3069,7 @@ MonoBehaviour:
   anchorOffset: 0
   softBorderPadding: 1
   renderQueue: 0
-  startingRenderQueue: 3006
+  startingRenderQueue: 3005
   mClipTexture: {fileID: 0}
   mAlpha: 1
   mClipping: 3
@@ -3612,6 +3683,14 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 410518, guid: 1ecbbd5feb84db649b5051793af63d9a, type: 2}
+      propertyPath: m_LocalScale.x
+      value: .100000001
+      objectReference: {fileID: 0}
+    - target: {fileID: 410518, guid: 1ecbbd5feb84db649b5051793af63d9a, type: 2}
+      propertyPath: m_LocalScale.y
+      value: .100000001
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1ecbbd5feb84db649b5051793af63d9a, type: 2}
   m_IsPrefabParent: 0
@@ -3687,11 +3766,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 403842, guid: 99d7471a808859b4ea81eb2621e48bba, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 1.06799996
+      value: 1.05499995
       objectReference: {fileID: 0}
     - target: {fileID: 403842, guid: 99d7471a808859b4ea81eb2621e48bba, type: 2}
       propertyPath: m_LocalPosition.y
-      value: .569000006
+      value: .572000027
       objectReference: {fileID: 0}
     - target: {fileID: 403842, guid: 99d7471a808859b4ea81eb2621e48bba, type: 2}
       propertyPath: m_LocalPosition.z
@@ -3716,6 +3795,14 @@ Prefab:
     - target: {fileID: 403842, guid: 99d7471a808859b4ea81eb2621e48bba, type: 2}
       propertyPath: m_RootOrder
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 403842, guid: 99d7471a808859b4ea81eb2621e48bba, type: 2}
+      propertyPath: m_LocalScale.x
+      value: .100000001
+      objectReference: {fileID: 0}
+    - target: {fileID: 403842, guid: 99d7471a808859b4ea81eb2621e48bba, type: 2}
+      propertyPath: m_LocalScale.y
+      value: .100000001
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 99d7471a808859b4ea81eb2621e48bba, type: 2}
@@ -3905,21 +3992,21 @@ MonoBehaviour:
   mColor: {r: 0, g: 0, b: 0, a: 1}
   mPivot: 1
   mWidth: 520
-  mHeight: 276
+  mHeight: 264
   mDepth: 0
   autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 1.884058
+  aspectRatio: 65
   keepCrispWhenShrunk: 1
-  mTrueTypeFont: {fileID: 0}
-  mFont: {fileID: 11400000, guid: 29056518aafb01b49a5b08faf8e30cff, type: 2}
+  mTrueTypeFont: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  mFont: {fileID: 0}
   mText: "An information literate person is able:\r\nto understand the economic, legal,
     and social issues surrounding the use of information, and access and use information
     ethically and legally.\r\nHe has to the ethical issues that arise in the use of
     specific types of information, e.g., research data. He also has to understand
     issues like plagiarism, and the importance of citing articles properly.\r\n"
-  mFontSize: 25
+  mFontSize: 24
   mFontStyle: 0
   mAlignment: 1
   mEncoding: 1
@@ -3966,8 +4053,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 520, y: 276, z: 0}
-  m_Center: {x: 0, y: -138, z: 0}
+  m_Size: {x: 520, y: 264, z: 0}
+  m_Center: {x: 0, y: -132, z: 0}
 --- !u!4 &1043117705
 Transform:
   m_PrefabParentObject: {fileID: 400002, guid: 7c3a28b051e872b448d4808cfcf9199c, type: 2}
@@ -4902,6 +4989,7 @@ GameObject:
   - 114: {fileID: 1409837408}
   - 114: {fileID: 1409837407}
   - 65: {fileID: 1409837406}
+  - 114: {fileID: 1409837409}
   m_Layer: 8
   m_Name: Control - Previous Button
   m_TagString: Untagged
@@ -5015,6 +5103,21 @@ MonoBehaviour:
   mAtlas: {fileID: 11485656, guid: c70c616e8529fea4595e88ee3c857514, type: 2}
   mSpriteName: btn_arrow_left
   mFillCenter: 1
+--- !u!114 &1409837409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1409837404}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d44bc69c2ca5f943b845318866dc1bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioClip: {fileID: 8300000, guid: b5083cfe83bb875479bd797c61594131, type: 3}
+  trigger: 0
+  volume: 1
+  pitch: 1
 --- !u!1 &1457334301
 GameObject:
   m_ObjectHideFlags: 0
@@ -5390,8 +5493,7 @@ Transform:
 --- !u!114 &1494262613
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400006, guid: fee46b827274e694aa251e2d36700135,
-    type: 2}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1494262611}
   m_Enabled: 1

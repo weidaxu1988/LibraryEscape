@@ -9,6 +9,8 @@ public class PlayerControl : MonoBehaviour
     public LayerMask blockingLayer;
     //public LayerMask triggerLayer;
 
+    public int delay = 60;
+
     public float scaleX = 0.3f;
     public float scaleY = 0.1f;
 
@@ -23,6 +25,11 @@ public class PlayerControl : MonoBehaviour
     {
         boxCollider = GetComponent<BoxCollider2D>();
         anim = GetComponentInChildren<Animator>();
+    }
+
+    void Start()
+    {
+        ResetTimeCount();
     }
 
     void Update()
@@ -129,5 +136,17 @@ public class PlayerControl : MonoBehaviour
         Vector3 theScale = transform.localScale;
         theScale.x *= -1;
         transform.localScale = theScale;
+    }
+
+    public void ResetTimeCount()
+    {
+        anim.SetBool("Worrit", false);
+        CancelInvoke("StartWorrit");
+        Invoke("StartWorrit", delay);
+    }
+
+    void StartWorrit()
+    {
+        anim.SetBool("Worrit", true);
     }
 }

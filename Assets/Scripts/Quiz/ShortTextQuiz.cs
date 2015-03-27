@@ -12,6 +12,11 @@ public class ShortTextQuiz : Quiz
         input = GetComponentInChildren<UIInput>();
     }
 
+    public override void ClearResult()
+    {
+        input.value = "";
+    }
+
     public override int getScore()
     {
         int result = 0;

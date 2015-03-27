@@ -7,10 +7,10 @@ public class StoryControl : MonoBehaviour
 
     private int mCurStageIndex = 0;
 
-    //void Start()
-    //{
-    //    SetupStage(0);
-    //}
+    void Start()
+    {
+        SetupStage(0);
+    }
 
     public void SaveName(UILabel label)
     {

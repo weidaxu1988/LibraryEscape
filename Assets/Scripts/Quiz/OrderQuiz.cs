@@ -11,7 +11,13 @@ public class OrderQuiz : Quiz
         questionList.AddRange(GetComponentsInChildren<OrderQuizItem>());
     }
 
-
+    public override void ClearResult()
+    {
+        foreach (OrderQuizItem c in questionList)
+        {
+            c.ClearOrder();
+        }
+    }
 
     public override int getScore()
     {

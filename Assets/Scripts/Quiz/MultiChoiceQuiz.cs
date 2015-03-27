@@ -12,6 +12,14 @@ public class MultiChoiceQuiz : Quiz
         optionArray = GetComponentsInChildren<UIToggle>();
     }
 
+    public override void ClearResult()
+    {
+        foreach (UIToggle opt in optionArray)
+        {
+            opt.value = false;
+        }
+    }
+
     public override int getScore()
     {
         int result = 0;
