@@ -954,7 +954,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 173715279}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1, y: -23, z: 0}
+  m_LocalPosition: {x: -9, y: 2, z: 0}
   m_LocalScale: {x: .603386462, y: .526262045, z: 1.2097975}
   m_Children: []
   m_Father: {fileID: 61702900}
@@ -989,14 +989,14 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
-  mWidth: 1573
-  mHeight: 980
+  mWidth: 1321
+  mHeight: 823
   mDepth: -3
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
-  keepAspectRatio: 0
+  keepAspectRatio: 1
   aspectRatio: 1.60510206
-  mType: 1
+  mType: 0
   mFillDirection: 4
   mFillAmount: 1
   mInvert: 0
@@ -2076,7 +2076,6 @@ MonoBehaviour:
   totalQuiz:
   - {fileID: 95190728}
   - {fileID: 645555683}
-  - {fileID: 0}
   exitObject: {fileID: 460465442}
 --- !u!1001 &425756192
 Prefab:
@@ -3685,11 +3684,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 410518, guid: 1ecbbd5feb84db649b5051793af63d9a, type: 2}
       propertyPath: m_LocalScale.x
-      value: .100000001
+      value: .150000006
       objectReference: {fileID: 0}
     - target: {fileID: 410518, guid: 1ecbbd5feb84db649b5051793af63d9a, type: 2}
       propertyPath: m_LocalScale.y
-      value: .100000001
+      value: .150000006
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1ecbbd5feb84db649b5051793af63d9a, type: 2}
@@ -3766,11 +3765,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 403842, guid: 99d7471a808859b4ea81eb2621e48bba, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 1.05499995
+      value: 1.04799998
       objectReference: {fileID: 0}
     - target: {fileID: 403842, guid: 99d7471a808859b4ea81eb2621e48bba, type: 2}
       propertyPath: m_LocalPosition.y
-      value: .572000027
+      value: .593999982
       objectReference: {fileID: 0}
     - target: {fileID: 403842, guid: 99d7471a808859b4ea81eb2621e48bba, type: 2}
       propertyPath: m_LocalPosition.z
@@ -3798,11 +3797,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 403842, guid: 99d7471a808859b4ea81eb2621e48bba, type: 2}
       propertyPath: m_LocalScale.x
-      value: .100000001
+      value: .150000006
       objectReference: {fileID: 0}
     - target: {fileID: 403842, guid: 99d7471a808859b4ea81eb2621e48bba, type: 2}
       propertyPath: m_LocalScale.y
-      value: .100000001
+      value: .150000006
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 99d7471a808859b4ea81eb2621e48bba, type: 2}
@@ -4732,7 +4731,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1289491256
 Transform:
   m_ObjectHideFlags: 0
@@ -5671,7 +5670,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1530409714}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 400, y: -0, z: 0}
+  m_LocalPosition: {x: 235, y: -0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1125174980}
