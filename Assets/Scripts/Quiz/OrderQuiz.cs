@@ -28,6 +28,7 @@ public class OrderQuiz : Quiz
             if (c.getResult())
                 score++;
         }
+        Debug.Log("score"+score);
         return score / total;
     }
 }

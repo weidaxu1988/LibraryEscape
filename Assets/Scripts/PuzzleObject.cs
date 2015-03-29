@@ -18,12 +18,15 @@ public class PuzzleObject : MonoBehaviour
     private TweenScale tweenScale;
     //private CircleCollider2D circleCollider;
 
+    private AudioSource audioSource;
+
     private bool activited = false;
 
     void Awake()
     {
         //circleCollider = GetComponent<CircleCollider2D>();
         tweenScale = GetComponentInChildren<TweenScale>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -32,6 +35,7 @@ public class PuzzleObject : MonoBehaviour
         {
             if (activited) return;
 
+            audioSource.Play();
             activited = true;
             tweenScale.PlayForward();
         }

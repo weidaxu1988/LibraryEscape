@@ -53,8 +53,8 @@ public class LoadManager : MonoBehaviour
 
     public void LoadSelectScene()
     {
-        StartCoroutine(LoadScene(GameConfig.NAME_MENU_SCENE));
-        //StartCoroutine(LoadScene(GameConfig.NAME_SELECT_SCENE));
+        //StartCoroutine(LoadScene(GameConfig.NAME_MENU_SCENE));
+        StartCoroutine(LoadScene(GameConfig.NAME_SELECT_SCENE));
     }
 
     private IEnumerator LoadScene(string scene)

@@ -15,6 +15,8 @@ public class OrderQuizItem : MonoBehaviour
     public void OnOrderInput()
     {
         string str = input.value;
+        if (str.Length == 0) return;
+
         char c = str[0];
 
         if (str.Length > 1)
@@ -37,7 +39,8 @@ public class OrderQuizItem : MonoBehaviour
     {
         bool result = false;
         string content = input.value;
-        if (string.IsNullOrEmpty(content))
+        
+        if (!string.IsNullOrEmpty(content))
         {
             int ord = int.Parse(content);
             if (ord == order)
@@ -48,5 +51,5 @@ public class OrderQuizItem : MonoBehaviour
         return result;
     }
 
-    
+
 }
