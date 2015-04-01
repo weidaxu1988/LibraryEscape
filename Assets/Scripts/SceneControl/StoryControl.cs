@@ -43,12 +43,17 @@ public class StoryControl : MonoBehaviour
 
     public void SubmitQuestionOne(UILabel label)
     {
-        SubmitQuestion(label, 1);
+        SubmitQuestion(1, label);
     }
 
     public void SubmitQuestionTwo(UILabel label)
     {
-        SubmitQuestion(label, 2);
+        SubmitQuestion(2, label);
+    }
+
+    public void SubmitQuestionThree(UILabel l1, UILabel l2, UILabel l3)
+    {
+        SubmitQuestion(3, l1, l2, l3);
     }
 
     public void NextStage()
@@ -80,14 +85,25 @@ public class StoryControl : MonoBehaviour
         stage.SetActive(true);
     }
 
-    private void SubmitQuestion(UILabel label, int index)
+    private void SubmitQuestion(int index, params UILabel[] label)
     {
-        string content = label.text;
-        if (string.IsNullOrEmpty(content) || content.Equals(GameConfig.TXT_INPUT_DEFAULT) || content.Contains(GameConfig.TXT_WARNING_EMPTY) || content.Contains(GameConfig.TXT_INPUT_ANSWER_DEFAULT))
-            label.text = "answer " + GameConfig.TXT_WARNING_EMPTY;
-        else
+        bool result = false;
+
+        string[] contents = new string[label.Length];
+        for (int i = 0; i < label.Length; i++)
         {
-            GameManager.instance.player.SetAnswer(content, index);
+            UILabel l = label[i];
+            string content = l.text;
+            if (string.IsNullOrEmpty(content) || content.Equals(GameConfig.TXT_INPUT_DEFAULT) || content.Contains(GameConfig.TXT_WARNING_EMPTY) || content.Contains(GameConfig.TXT_INPUT_ANSWER_DEFAULT))
+                l.text = "answer " + GameConfig.TXT_WARNING_EMPTY;
+            else
+                contents[i] = content;
+        }
+
+
+        if (result)
+        {
+            GameManager.instance.player.SetAnswer(contents, index);
             NextStage();
         }
     }

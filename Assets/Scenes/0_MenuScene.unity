@@ -595,19 +595,19 @@ MonoBehaviour:
   leftAnchor:
     target: {fileID: 945036031}
     relative: 0
-    absolute: 30
+    absolute: 16
   rightAnchor:
     target: {fileID: 945036031}
     relative: 1
-    absolute: -30
+    absolute: -16
   bottomAnchor:
     target: {fileID: 945036031}
     relative: 0
-    absolute: 40
+    absolute: 16
   topAnchor:
     target: {fileID: 945036031}
     relative: 1
-    absolute: -40
+    absolute: -16
   updateAnchors: 1
   showInPanelTool: 1
   generateNormals: 0
@@ -621,7 +621,7 @@ MonoBehaviour:
   mClipTexture: {fileID: 0}
   mAlpha: 1
   mClipping: 3
-  mClipRange: {x: 0, y: -34, z: 569.200073, w: 251.214996}
+  mClipRange: {x: 0, y: -7, z: 567, w: 157}
   mClipSoftness: {x: 4, y: 4}
   mDepth: 4
   mSortingOrder: 0
@@ -704,8 +704,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 945036030}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -34, z: 0}
-  m_LocalScale: {x: .400000036, y: .354999989, z: 1}
+  m_LocalPosition: {x: 0, y: -7, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1138183782}
   m_RootOrder: 0
@@ -739,13 +739,13 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
-  mWidth: 1573
-  mHeight: 933
+  mWidth: 599
+  mHeight: 189
   mDepth: 0
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 1.68595922
+  aspectRatio: 3.16931224
   mType: 1
   mFillDirection: 4
   mFillAmount: 1
@@ -803,7 +803,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1138183782
 Transform:
   m_ObjectHideFlags: 0
@@ -811,7 +811,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1138183781}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 61, z: -30.3899994}
+  m_LocalPosition: {x: 0, y: 3, z: -30}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 945036031}
@@ -1143,7 +1143,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1766343232}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 311, y: 135, z: 0}
+  m_LocalPosition: {x: 292, y: 82, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1138183782}
@@ -1319,22 +1319,19 @@ MonoBehaviour:
   mColor: {r: 0, g: 0, b: 0, a: 1}
   mPivot: 3
   mWidth: 551
-  mHeight: 144
+  mHeight: 140
   mDepth: 0
   autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 3.82638884
+  aspectRatio: 68.875
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
   mFont: {fileID: 0}
-  mText: 'Library Escape is designed and developed by Guo Yanru from Nanyang Technological
-    University.
-
-
-    All rights reserved. Please kindly email [FF0000]W120030@e.ntu.edu.sg[-] if you
-    have any questions or suggestions.'
-  mFontSize: 24
+  mText: "Library Escape is designed and developed by Guo Yan Ru, as part of her doctoral\r\nresearch
+    at the Nanyang Technological University (Singapore).\r\nPlease email W1200300@e.ntu.edu.sg
+    if you have any questions or suggestions.\r\n\xA9 2015 Guo Yan Ru "
+  mFontSize: 20
   mFontStyle: 0
   mAlignment: 0
   mEncoding: 1
@@ -1381,5 +1378,5 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 551, y: 144, z: 0}
+  m_Size: {x: 551, y: 140, z: 0}
   m_Center: {x: 275.5, y: 0, z: 0}

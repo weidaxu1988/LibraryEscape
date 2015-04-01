@@ -50,6 +50,9 @@ public class PlayerControl : MonoBehaviour
 
         float absH = Mathf.Abs(horizontal);
         float absV = Mathf.Abs(vertical);
+
+
+
         if (absH > absV)
         {
             anim.SetFloat("Speed", absH);
@@ -60,14 +63,20 @@ public class PlayerControl : MonoBehaviour
         {
             if (vertical > 0)
                 anim.SetBool("Front", false);
-            else
+            else if (vertical < 0)
                 anim.SetBool("Front", true);
+
             anim.SetFloat("Speed", 0);
             anim.SetFloat("SpeedV", absV);
 
             horizontal = 0;
         }
-        
+        else
+        {
+            horizontal = 0;
+            vertical = 0;
+        }
+
 
         if (horizontal > 0 && !facingRight)
             Flip();
@@ -89,7 +98,7 @@ public class PlayerControl : MonoBehaviour
 
         Vector3 startRay = start + new Vector3(boxCollider.offset.x, boxCollider.offset.y);
         Vector3 endRay = startRay + new Vector3(xDir * scaleX, yDir * scaleY);
-        
+
         // check bound
         if (end.x > maxX)
             end = new Vector3(maxX, end.y, end.z);

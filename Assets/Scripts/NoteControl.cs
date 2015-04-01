@@ -89,6 +89,7 @@ public class NoteControl : MonoBehaviour
         if (index >= 0 && index < puzzle.noteContentArray.Length)
         {
             noteContent.text = puzzle.noteContentArray[index];
+            noteContent.ResizeCollider();
         }
     }
 }
