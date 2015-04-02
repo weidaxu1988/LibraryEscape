@@ -160,13 +160,15 @@ MonoBehaviour:
     seeking behavior in library and information science, suggested by Carol Kuhlthau.
     \ The ISP Model emphasized the \u201Cinterplay of thoughts, feelings and actions\u201D
     in the information seeking process, and regarded anxiety and uncertainty as an
-    integral part of the process. In the early stages of searching, negative feelings
-    are common, especially when the users have little knowledge of what is available
-    or when the search problem is not clear. However, as the search progresses, and
-    the awareness of the process increases, there is a corresponding improvement in
-    the level of satisfaction and confidence. At the end of the search process, the
-    seeker will feel a sense of relief or satisfaction when the required information
-    is found, or disappointment and anxiety when it was not. "
+    integral part of the process "
+  - In the early stages of searching, negative feelings are common. This is because
+    you have little knowledge of what is available, and also because at this stage,
+    the search problem is not well-defined.
+  - 'However, as the search progresses, and the awareness of the process increases,
+    there is a corresponding improvement in the level of satisfaction and confidence.   At
+    the end of the search process, you will feel a sense of relief or satisfaction
+    when the required information is found, or disappointment and anxiety when it
+    was not. '
 --- !u!114 &11490522
 MonoBehaviour:
   m_ObjectHideFlags: 1

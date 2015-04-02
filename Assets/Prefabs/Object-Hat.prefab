@@ -193,7 +193,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startType: 2
-  noteTitle: test title
+  noteTitle: 
   noteContentArray: []
 --- !u!212 &21228590
 SpriteRenderer:
