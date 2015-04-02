@@ -6,9 +6,27 @@ public class OrderQuiz : Quiz
 {
     List<OrderQuizItem> questionList = new List<OrderQuizItem>();
 
-    void Awake()
+    void Start()
     {
         questionList.AddRange(GetComponentsInChildren<OrderQuizItem>());
+    }
+
+    public override void InitFeedback()
+    {
+        ShowFeedBack(true);
+
+        finalScore = getScore();
+
+        if (finalScore >= 1)
+        {
+            if (questionControl != null)
+                questionControl.QuestionCorrect();
+        }
+        else
+        {
+            if (questionControl != null)
+                questionControl.QuestionIncorrect();
+        }
     }
 
     public override void ClearResult()

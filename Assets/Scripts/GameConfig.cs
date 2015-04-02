@@ -13,4 +13,5 @@ public class GameConfig {
     public const string TXT_INPUT_ANSWER_DEFAULT = "Provide your answer here";
     public const string TXT_INPUT_NOTE_DEFAULT = "You can take notes here. They will be sent to you later.";
     public const string TXT_WARNING_EMPTY = "cannot be empty";
+    public const string TXT_QUIZ_FAILED = "Maybe you should revisit the knowledge from just now. Don’t worry, you can do it";
 }

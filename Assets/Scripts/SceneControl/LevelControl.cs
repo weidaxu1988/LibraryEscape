@@ -5,10 +5,10 @@ using System.Collections.Generic;
 public class LevelControl : MonoBehaviour
 {
     public static LevelControl instance = null;
-    
-    public int incorrectCapacity = 1;
 
     public bool isGamePaused = false;
+
+    public bool puzzleCleared = false;
 
     public GameObject extraButtons;
 
@@ -18,12 +18,10 @@ public class LevelControl : MonoBehaviour
 
     public NoteControl noteControl;
     public HelpNoteControl helpControl;
-    
-    public GameObject questionPanel;
+    public QuestionControl questionControl;
+
     public GameObject exitPanel;
     public GameObject player;
-
-    public Quiz[] totalQuiz;
 
     public ExitObject exitObject;
 
@@ -33,11 +31,6 @@ public class LevelControl : MonoBehaviour
     private List<PuzzleObject> greenPuzzleList = new List<PuzzleObject>();
     private List<PuzzleObject> orangePuzzleList = new List<PuzzleObject>();
 
-    private int quizIndex = 0;
-    private int incorrectQuestionCount = 0;
-
-    private bool puzzleCleared = false;
-
     void Awake()
     {
         instance = this;
@@ -45,7 +38,7 @@ public class LevelControl : MonoBehaviour
 
     void Start()
     {
-        setupTotalPuzzles();
+        SetupTotalPuzzles();
         InitHelp();
     }
 
@@ -157,75 +150,22 @@ public class LevelControl : MonoBehaviour
 
     public void StartQuestion()
     {
-        if (!puzzleCleared)
+        if (puzzleCleared) return;
+
+        if (totalPuzzle.Length == purplePuzzleList.Count + greenPuzzleList.Count + orangePuzzleList.Count)
         {
-            quizIndex = 0;
-            incorrectQuestionCount = 0;
-
-            if (totalPuzzle.Length == purplePuzzleList.Count + greenPuzzleList.Count + orangePuzzleList.Count)
-            {
-                if (!questionPanel.activeSelf)
-                {
-                    questionPanel.SetActive(true);
-                }
-
-                ShowQuiz(quizIndex);
-            }
+            if (!questionControl.gameObject.activeSelf)
+                questionControl.gameObject.SetActive(true);
         }
     }
 
-    public void OnQuestionSubmit()
+    public void QuestionFinished()
     {
-        Quiz quiz = totalQuiz[quizIndex];
-        if (quiz.getScore() >= 1)
-        {
-            //save answer
-        }
-        else
-        {
-            incorrectQuestionCount++;
-        }
+        puzzleCleared = true;
+        exitObject.ActivateSelf();
 
-        if (incorrectQuestionCount <= incorrectCapacity)
-        {
-            quizIndex++;
-            if (quizIndex >= totalQuiz.Length)
-            {
-                OnQuestionFinish();
-                exitObject.ActivateSelf();
-                puzzleCleared = true;
-            }
-            else
-            {
-                ShowQuiz(quizIndex);
-            }
-        }
-        else
-        {
-            OnQuestionFinish();
-        }
-    }
-
-    public void OnQuestionFinish()
-    {
-        //Debug.Log("index " + quizIndex);
-        //Debug.Log("length " + totalPuzzle.Length);
-
-        if (quizIndex < totalQuiz.Length)
-        {
-            Quiz quiz = totalQuiz[quizIndex];
-            if (quiz.gameObject.activeSelf)
-                quiz.gameObject.SetActive(false);
-        }
-
-        if (questionPanel.activeSelf)
-        {
-            foreach (Quiz q in totalQuiz)
-            {
-                q.ClearResult();
-            }
-            questionPanel.SetActive(false);
-        }
+        if (questionControl.gameObject.activeSelf)
+            questionControl.gameObject.SetActive(false);
     }
 
     public void OnExitObjectClick()
@@ -233,7 +173,6 @@ public class LevelControl : MonoBehaviour
         if (!exitPanel.activeSelf)
             exitPanel.SetActive(true);
     }
-
 
     public void LevelComplete()
     {
@@ -249,7 +188,7 @@ public class LevelControl : MonoBehaviour
             helpControl.gameObject.SetActive(true);
     }
 
-    protected void setupTotalPuzzles()
+    protected void SetupTotalPuzzles()
     {
         totalPuzzle = FindObjectsOfType<PuzzleObject>();
         int purple = 0, green = 0, orange = 0;
@@ -269,22 +208,5 @@ public class LevelControl : MonoBehaviour
         purpleLabel.text = purplePuzzleList.Count + "/" + purplePuzzleList.Capacity;
         greenLabel.text = greenPuzzleList.Count + "/" + greenPuzzleList.Capacity;
         orangeLabel.text = orangePuzzleList.Count + "/" + orangePuzzleList.Capacity;
-    }
-
-    protected void ShowQuiz(int index)
-    {
-        if (index < totalQuiz.Length)
-        {
-            Quiz quiz = null;
-            if (index > 0)
-            {
-                quiz = totalQuiz[index - 1];
-                if (quiz.gameObject.activeSelf)
-                    quiz.gameObject.SetActive(false);
-            }
-            quiz = totalQuiz[index];
-            if (!quiz.gameObject.activeSelf)
-                quiz.gameObject.SetActive(true);
-        }
     }
 }
