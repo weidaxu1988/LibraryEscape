@@ -87,7 +87,7 @@ public class StoryControl : MonoBehaviour
 
     private void SubmitQuestion(int index, params UILabel[] label)
     {
-        bool result = false;
+        bool result = true;
 
         string[] contents = new string[label.Length];
         for (int i = 0; i < label.Length; i++)
@@ -95,7 +95,10 @@ public class StoryControl : MonoBehaviour
             UILabel l = label[i];
             string content = l.text;
             if (string.IsNullOrEmpty(content) || content.Equals(GameConfig.TXT_INPUT_DEFAULT) || content.Contains(GameConfig.TXT_WARNING_EMPTY) || content.Contains(GameConfig.TXT_INPUT_ANSWER_DEFAULT))
+            {
                 l.text = "answer " + GameConfig.TXT_WARNING_EMPTY;
+                result = false;
+            }
             else
                 contents[i] = content;
         }

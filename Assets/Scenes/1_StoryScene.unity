@@ -372,7 +372,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 150866, guid: 1165a007a0286d44da87dd456dc98c19, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1165a007a0286d44da87dd456dc98c19, type: 2}
@@ -1407,7 +1407,7 @@ MonoBehaviour:
   renderQueue: 0
   startingRenderQueue: 3000
   mClipTexture: {fileID: 0}
-  mAlpha: 1
+  mAlpha: 0
   mClipping: 0
   mClipRange: {x: 0, y: 0, z: 300, w: 200}
   mClipSoftness: {x: 4, y: 4}
@@ -1817,12 +1817,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stages:
   - {fileID: 16002951}
+  - {fileID: 95611960}
   - {fileID: 1490499483}
   - {fileID: 292013499}
   - {fileID: 1297721530}
   - {fileID: 1969215614}
+  - {fileID: 1659032888}
   - {fileID: 47380872}
   - {fileID: 1452201592}
+  - {fileID: 95075688}
   - {fileID: 1989038536}
 --- !u!1 &475182627
 GameObject:
