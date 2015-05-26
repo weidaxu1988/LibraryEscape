@@ -1328,9 +1328,10 @@ MonoBehaviour:
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
   mFont: {fileID: 0}
-  mText: "Library Escape is designed and developed by Guo Yan Ru, as part of her doctoral\r\nresearch
-    at the Nanyang Technological University (Singapore).\r\nPlease email W1200300@e.ntu.edu.sg
-    if you have any questions or suggestions.\r\n\xA9 2015 Guo Yan Ru "
+  mText: "Library Escape is designed and developed by Guo Yan Ru, as part of her doctoral\r
+    research at the Nanyang Technological University (Singapore).\r\nPlease email
+    W1200300@e.ntu.edu.sg if you have any questions or suggestions.\r\n\xA9 2015 Guo
+    Yan Ru "
   mFontSize: 20
   mFontStyle: 0
   mAlignment: 0
