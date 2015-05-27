@@ -15,6 +15,7 @@ public class QuestionControl : MonoBehaviour
 
     private Animator libraianAnimator;
 
+    private int lastQuizIndex = 0;
     private int quizIndex = 0;
     private int incorrectQuestionCount = 0;
 
@@ -30,7 +31,7 @@ public class QuestionControl : MonoBehaviour
             failedContent.SetActive(false);
         }
 
-        quizIndex = 0;
+        quizIndex = lastQuizIndex;
         incorrectQuestionCount = 0;
 
         ShowQuiz(quizIndex);
@@ -41,13 +42,25 @@ public class QuestionControl : MonoBehaviour
     {
         Quiz quiz = totalQuiz[quizIndex];
 
+        if (quiz.getScore() < 1)
+        {
+            incorrectQuestionCount++;
+
+            if (incorrectQuestionCount >= incorrectCapacity)
+            {
+                ShowFailedContent();
+                ShowNextButton(true);
+                return;
+            }
+        }
+
         quiz.InitFeedback();
         ShowNextButton(true);
     }
 
     public void NextQuestion()
     {
-        if (incorrectQuestionCount > incorrectCapacity)
+        if (incorrectQuestionCount >= incorrectCapacity)
         {
             OnQuestionFinish();
             return;
@@ -62,32 +75,23 @@ public class QuestionControl : MonoBehaviour
             if (quiz.getScore() >= 1)
             {
                 //save answer
+
+                quizIndex++;
+                if (quizIndex >= totalQuiz.Length)
+                {
+                    LevelControl.instance.QuestionFinished();
+                    OnQuestionFinish();
+                }
+                else
+                {
+                    incorrectQuestionCount = 0;
+                    ShowQuiz(quizIndex);
+                }
             }
             else
             {
-                incorrectQuestionCount++;
                 ResetQuiz(quizIndex);
-
-                return;
             }
-
-            quizIndex++;
-            if (quizIndex >= totalQuiz.Length)
-            {
-                LevelControl.instance.QuestionFinished();
-                OnQuestionFinish();
-            }
-            else
-            {
-                incorrectQuestionCount = 0;
-                ShowQuiz(quizIndex);
-            }
-        }
-        else
-        {
-// ++ here for exit whole question when next button clicked
-            incorrectQuestionCount++;
-            ShowFailedContent();
         }
     }
 
@@ -95,6 +99,11 @@ public class QuestionControl : MonoBehaviour
     {
         //Debug.Log("index " + quizIndex);
         //Debug.Log("length " + totalPuzzle.Length);
+
+        if (quizIndex > 0)
+        {
+            lastQuizIndex = quizIndex - 1;
+        }
 
         if (gameObject.activeSelf)
         {

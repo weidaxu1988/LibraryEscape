@@ -36,6 +36,37 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &108474
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 403974}
+  - 114: {fileID: 11440974}
+  m_Layer: 8
+  m_Name: Label 2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &116078
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 486886}
+  m_Layer: 8
+  m_Name: Container-feedback
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &116416
 GameObject:
   m_ObjectHideFlags: 1
@@ -86,6 +117,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &127532
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 499772}
+  m_Layer: 8
+  m_Name: Container-questions
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &132444
 GameObject:
   m_ObjectHideFlags: 1
@@ -122,7 +168,7 @@ GameObject:
   m_IsActive: 1
 --- !u!1 &135700
 GameObject:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 4
@@ -258,7 +304,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &184928
 GameObject:
   m_ObjectHideFlags: 1
@@ -311,7 +357,7 @@ GameObject:
   m_IsActive: 1
 --- !u!1 &192686
 GameObject:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 4
@@ -358,6 +404,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!4 &403974
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 108474}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -29, y: -94.1999969, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 486886}
+  m_RootOrder: 0
 --- !u!4 &407772
 Transform:
   m_ObjectHideFlags: 1
@@ -463,7 +521,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 135700}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 1.52587891e-05, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 435946}
@@ -472,7 +530,7 @@ Transform:
   - {fileID: 486430}
   - {fileID: 494150}
   - {fileID: 426202}
-  m_Father: {fileID: 495024}
+  m_Father: {fileID: 499772}
   m_RootOrder: 0
 --- !u!4 &450858
 Transform:
@@ -554,7 +612,7 @@ Transform:
   - {fileID: 407772}
   - {fileID: 454112}
   - {fileID: 471526}
-  m_Father: {fileID: 495024}
+  m_Father: {fileID: 499772}
   m_RootOrder: 1
 --- !u!4 &486430
 Transform:
@@ -568,6 +626,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 449138}
   m_RootOrder: 3
+--- !u!4 &486886
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 116078}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.52587891e-05, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 403974}
+  m_Father: {fileID: 495024}
+  m_RootOrder: 1
 --- !u!4 &491048
 Transform:
   m_ObjectHideFlags: 1
@@ -602,8 +673,8 @@ Transform:
   m_LocalPosition: {x: 29, y: 132, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 449138}
-  - {fileID: 478044}
+  - {fileID: 499772}
+  - {fileID: 486886}
   m_Father: {fileID: 0}
   m_RootOrder: 0
 --- !u!4 &497960
@@ -629,6 +700,20 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 471526}
+  m_RootOrder: 0
+--- !u!4 &499772
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 127532}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 449138}
+  - {fileID: 478044}
+  m_Father: {fileID: 495024}
   m_RootOrder: 0
 --- !u!65 &6502984
 BoxCollider:
@@ -814,7 +899,7 @@ MonoBehaviour:
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 0}
   mFont: {fileID: 11400000, guid: 29056518aafb01b49a5b08faf8e30cff, type: 2}
-  mText: Access the needed information effectiv
+  mText: Incorporate selected information
   mFontSize: 20
   mFontStyle: 0
   mAlignment: 0
@@ -851,7 +936,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reparentTarget: {fileID: 0}
-  correctItem: {fileID: 11450300}
+  correctItem: {fileID: 11445930}
 --- !u!114 &11411114
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -864,7 +949,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reparentTarget: {fileID: 0}
-  correctItem: {fileID: 11496118}
+  correctItem: {fileID: 11430924}
 --- !u!114 &11416376
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -905,7 +990,7 @@ MonoBehaviour:
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 0}
   mFont: {fileID: 11400000, guid: 29056518aafb01b49a5b08faf8e30cff, type: 2}
-  mText: Use information effectively
+  mText: Evaluate information
   mFontSize: 20
   mFontStyle: 0
   mAlignment: 0
@@ -1020,7 +1105,7 @@ MonoBehaviour:
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 0}
   mFont: {fileID: 11400000, guid: 29056518aafb01b49a5b08faf8e30cff, type: 2}
-  mText: 'Understand the economic, legal, and social '
+  mText: Access information effectively and efficiently
   mFontSize: 20
   mFontStyle: 0
   mAlignment: 0
@@ -1085,7 +1170,7 @@ MonoBehaviour:
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 0}
   mFont: {fileID: 11400000, guid: 29056518aafb01b49a5b08faf8e30cff, type: 2}
-  mText: Determine the nature and extent of the
+  mText: Determine the nature and extent of the information needed
   mFontSize: 20
   mFontStyle: 0
   mAlignment: 0
@@ -1172,7 +1257,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reparentTarget: {fileID: 0}
-  correctItem: {fileID: 11430924}
+  correctItem: {fileID: 11433006}
 --- !u!114 &11430924
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1253,6 +1338,71 @@ MonoBehaviour:
   mAtlas: {fileID: 11400000, guid: 62adb30369acbf943a67cee0f69267a3, type: 2}
   mSpriteName: Flat
   mFillCenter: 1
+--- !u!114 &11440974
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 108474}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9d0b5f3bbe925a408bd595c79d0bf63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  leftAnchor:
+    target: {fileID: 0}
+    relative: 0
+    absolute: 0
+  rightAnchor:
+    target: {fileID: 0}
+    relative: 1
+    absolute: 0
+  bottomAnchor:
+    target: {fileID: 0}
+    relative: 0
+    absolute: 0
+  topAnchor:
+    target: {fileID: 0}
+    relative: 1
+    absolute: 0
+  updateAnchors: 1
+  mColor: {r: 0, g: 0, b: 0, a: 1}
+  mPivot: 4
+  mWidth: 700
+  mHeight: 200
+  mDepth: 2
+  autoResizeBoxCollider: 0
+  hideIfOffScreen: 0
+  keepAspectRatio: 0
+  aspectRatio: 3.5
+  keepCrispWhenShrunk: 1
+  mTrueTypeFont: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  mFont: {fileID: 0}
+  mText: New Label
+  mFontSize: 26
+  mFontStyle: 0
+  mAlignment: 0
+  mEncoding: 1
+  mMaxLineCount: 0
+  mEffectStyle: 0
+  mEffectColor: {r: 0, g: 0, b: 0, a: 1}
+  mSymbols: 1
+  mEffectDistance: {x: 1, y: 1}
+  mOverflow: 0
+  mMaterial: {fileID: 0}
+  mApplyGradient: 0
+  mGradientTop: {r: 1, g: 1, b: 1, a: 1}
+  mGradientBottom: {r: .699999988, g: .699999988, b: .699999988, a: 1}
+  mSpacingX: 0
+  mSpacingY: 0
+  mUseFloatSpacing: 0
+  mFloatSpacingX: 0
+  mFloatSpacingY: 0
+  mShrinkToFit: 0
+  mMaxLineWidth: 0
+  mMaxLineHeight: 0
+  mLineWidth: 0
+  mMultiline: 1
 --- !u!114 &11444036
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1444,6 +1594,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ac83bb4df7b75140916cb8fc1ad9c1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  questionContainer: {fileID: 127532}
+  feedbackContainer: {fileID: 116078}
+  correctFeedBack: "You\u2019ve nailed it!\_ This is the correct order."
+  incorrectFeedBack: Please try again!  You can do this.
+  feedbackLabel: {fileID: 11440974}
 --- !u!114 &11451312
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1584,7 +1739,7 @@ MonoBehaviour:
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 0}
   mFont: {fileID: 11400000, guid: 29056518aafb01b49a5b08faf8e30cff, type: 2}
-  mText: Evaluate information
+  mText: "Understand the economic, legal, and social issues\r\n"
   mFontSize: 20
   mFontStyle: 0
   mAlignment: 0
@@ -1671,7 +1826,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reparentTarget: {fileID: 0}
-  correctItem: {fileID: 11433006}
+  correctItem: {fileID: 11468232}
 --- !u!114 &11468232
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1749,7 +1904,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reparentTarget: {fileID: 0}
-  correctItem: {fileID: 11445930}
+  correctItem: {fileID: 11496118}
 --- !u!114 &11478672
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1905,7 +2060,7 @@ MonoBehaviour:
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 0}
   mFont: {fileID: 11400000, guid: 29056518aafb01b49a5b08faf8e30cff, type: 2}
-  mText: Incorporate selected information
+  mText: "Use information effectively\r"
   mFontSize: 20
   mFontStyle: 0
   mAlignment: 0
@@ -1942,7 +2097,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reparentTarget: {fileID: 0}
-  correctItem: {fileID: 11468232}
+  correctItem: {fileID: 11450300}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

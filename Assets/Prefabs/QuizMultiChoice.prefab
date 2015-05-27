@@ -893,7 +893,7 @@ MonoBehaviour:
   rightAnchor:
     target: {fileID: 406692}
     relative: 1
-    absolute: 1
+    absolute: 75
   bottomAnchor:
     target: {fileID: 406692}
     relative: 0
@@ -905,13 +905,13 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: .227941155, g: .227941155, b: .227941155, a: 1}
   mPivot: 3
-  mWidth: 721
+  mWidth: 795
   mHeight: 56
   mDepth: 9
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 12.875
+  aspectRatio: 14.1964283
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
   mFont: {fileID: 0}
@@ -1063,8 +1063,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d57df2d6fef60a438796b85622efa39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  feedback: IL can help you remain relevant and employable when you start working.  Remember
-    that you've been asked to identify the incorrect statement.
+  feedback: Good IL skills can help you remain relevant and employable when you start
+    working. Please try again! You can do this. Remember that you've been asked to
+    identify the incorrect statement.
 --- !u!114 &11426096
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1120,8 +1121,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d57df2d6fef60a438796b85622efa39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  feedback: IL can help you be a more informed citizen.  Remember that you've been
-    asked to identify the incorrect statement.
+  feedback: "Good IL skills can help you be a more informed citizen.\_Please try again!
+    You can do this. Remember that you've been asked to identify the incorrect statement."
 --- !u!114 &11433618
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1133,8 +1134,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d57df2d6fef60a438796b85622efa39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  feedback: IL can definitely help you get better grades.  Remember that you've been
-    asked to identify the incorrect statement.
+  feedback: "Good IL skills can definitely help you get better academic grades.\_
+    Please try again! You can do this. Remember that you've been asked to identify
+    the incorrect statement."
 --- !u!114 &11439552
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1616,7 +1618,7 @@ MonoBehaviour:
   mColor: {r: 0, g: 0, b: 0, a: 1}
   mPivot: 1
   mWidth: 766
-  mHeight: 108
+  mHeight: 72
   mDepth: 0
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
@@ -1625,9 +1627,7 @@ MonoBehaviour:
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
   mFont: {fileID: 0}
-  mText: 'The following statements explain why IL is important except:
-
-'
+  mText: "Identify the incorrect statement below:\nIL is important because:\r"
   mFontSize: 36
   mFontStyle: 0
   mAlignment: 1
@@ -1954,6 +1954,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questionContainer: {fileID: 192198}
   feedbackContainer: {fileID: 190554}
+  feedbackLabel: {fileID: 11448378}
   correctOption: {fileID: 11445944}
 --- !u!114 &11493788
 MonoBehaviour:

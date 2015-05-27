@@ -18,6 +18,7 @@ public class LevelControl : MonoBehaviour
     public UILabel greenLabel;
     public UILabel orangeLabel;
 
+    public GameObject beginObject;
     public NoteControl noteControl;
     public HelpNoteControl helpControl;
     public QuestionControl questionControl;
@@ -42,7 +43,11 @@ public class LevelControl : MonoBehaviour
     {
         isGamePaused = true;
         SetupTotalPuzzles();
-        InitHelp();
+        
+        if (beginObject == null)
+        {
+            InitHelp();
+        }
     }
 
     public void OnPauseButtonClick()
@@ -81,6 +86,15 @@ public class LevelControl : MonoBehaviour
     public void OnMenuButtonClick()
     {
         Debug.Log("menu");
+    }
+
+    public void StartGame()
+    {
+        if (beginObject != null)
+        {
+            beginObject.SetActive(false);
+            InitHelp();
+        }
     }
 
     public void OnPuzzleObjectClick(PuzzleObject obj)

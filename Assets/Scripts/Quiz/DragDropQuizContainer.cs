@@ -27,8 +27,11 @@ public class DragDropQuizContainer : UIDragDropContainer
 
     public void ReleaseItem()
     {
-        selectedItem.Reset();
-        selectedItem = null;
+        if (selectedItem != null)
+        {
+            selectedItem.Reset();
+            selectedItem = null;
+        }
     }
 
     public bool getResult()

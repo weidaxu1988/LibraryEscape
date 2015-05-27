@@ -42,8 +42,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 166396}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .83099997, y: .444999993, z: 0}
-  m_LocalScale: {x: .150000006, y: .150000006, z: 1}
+  m_LocalPosition: {x: 1.153, y: -.833999991, z: -0}
+  m_LocalScale: {x: .329615116, y: .329615414, z: 2.19743609}
   m_Children:
   - {fileID: 431436}
   m_Father: {fileID: 0}
@@ -193,8 +193,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startType: 2
-  noteTitle: 
-  noteContentArray: []
+  noteTitle: IL & Society
+  noteContentArray:
+  - IL is central to the practice of democracy and citizenship. It requires us to
+    have the ability to access vital information, and to recognize when that information
+    is misused or abused, such as in situations of distortion and propaganda. IL enables
+    us to be active, enlightened and effective participants in society.
+  - The ultimate goal for citizens is to be active participants in political processes
+    and governance, in large part by making effective use of the resources provided
+    by media, libraries, archives and other information providers.
 --- !u!212 &21228590
 SpriteRenderer:
   m_ObjectHideFlags: 1

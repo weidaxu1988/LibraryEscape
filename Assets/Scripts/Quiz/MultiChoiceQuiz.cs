@@ -3,6 +3,8 @@ using System.Collections;
 
 public class MultiChoiceQuiz : Quiz
 {
+    public UILabel feedbackLabel;
+
     public UIToggle correctOption;
 
     private UIToggle[] optionArray;
@@ -41,8 +43,6 @@ public class MultiChoiceQuiz : Quiz
 
     public override int getScore()
     {
-        UILabel feedbackLabel = feedbackContainer.GetComponentInChildren<UILabel>();
-
         int result = 0;
 
         foreach (UIToggle opt in optionArray)

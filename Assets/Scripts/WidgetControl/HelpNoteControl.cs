@@ -73,6 +73,13 @@ public class HelpNoteControl : MonoBehaviour
                 if (stage.activeSelf)
                     stage.SetActive(false);
             }
+            if (index < stages.Length - 1)
+            {
+                stage = stages[index + 1];
+                if (stage.activeSelf)
+                    stage.SetActive(false);
+
+            }
             stage = stages[index];
             if (!stage.activeSelf)
                 stage.SetActive(true);
