@@ -81,8 +81,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: btn_close
-    x: 1816
-    y: 1255
+    x: 805
+    y: 830
     width: 140
     height: 140
     borderLeft: 0
@@ -120,7 +120,7 @@ MonoBehaviour:
     paddingTop: 16
     paddingBottom: 0
   - name: btn_hint
-    x: 1496
+    x: 1677
     y: 1245
     width: 159
     height: 150
@@ -250,7 +250,7 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: btn_pause
-    x: 1656
+    x: 1837
     y: 1245
     width: 159
     height: 150
@@ -355,7 +355,7 @@ MonoBehaviour:
     paddingBottom: 0
   - name: ele_extra_btn_background
     x: 301
-    y: 230
+    y: 26
     width: 212
     height: 195
     borderLeft: 0
@@ -393,8 +393,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: ele_start_orange
-    x: 301
-    y: 56
+    x: 1319
+    y: 1222
     width: 180
     height: 173
     borderLeft: 0
@@ -406,7 +406,7 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: ele_start_purple
-    x: 1319
+    x: 1500
     y: 1222
     width: 176
     height: 173
@@ -431,6 +431,19 @@ MonoBehaviour:
     paddingRight: 0
     paddingTop: 0
     paddingBottom: 0
+  - name: ghost
+    x: 301
+    y: 222
+    width: 217
+    height: 203
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 1
+    paddingRight: 5
+    paddingTop: 0
+    paddingBottom: 4
   - name: player_idle01
     x: 1771
     y: 1659

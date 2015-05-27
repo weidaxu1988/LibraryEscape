@@ -10,6 +10,8 @@ public class LevelControl : MonoBehaviour
 
     public bool puzzleCleared = false;
 
+    public Timer timer;
+
     public GameObject extraButtons;
 
     public UILabel purpleLabel;
@@ -38,6 +40,7 @@ public class LevelControl : MonoBehaviour
 
     void Start()
     {
+        isGamePaused = true;
         SetupTotalPuzzles();
         InitHelp();
     }
@@ -82,6 +85,8 @@ public class LevelControl : MonoBehaviour
 
     public void OnPuzzleObjectClick(PuzzleObject obj)
     {
+        isGamePaused = true;
+
         if (player != null)
         {
             player.GetComponent<PlayerControl>().ResetTimeCount();
@@ -133,6 +138,8 @@ public class LevelControl : MonoBehaviour
 
     public void OnHelpFinish()
     {
+        isGamePaused = false;
+
         if (helpControl.gameObject.activeSelf)
             helpControl.gameObject.SetActive(false);
         
@@ -142,10 +149,13 @@ public class LevelControl : MonoBehaviour
 
     public void OnNoteCloseButtonClick()
     {
+        isGamePaused = false;
         if (noteControl.gameObject.activeSelf)
         {
             noteControl.gameObject.SetActive(false);
         }
+
+        StartQuestion();
     }
 
     public void StartQuestion()
@@ -154,9 +164,15 @@ public class LevelControl : MonoBehaviour
 
         if (totalPuzzle.Length == purplePuzzleList.Count + greenPuzzleList.Count + orangePuzzleList.Count)
         {
+            isGamePaused = true;
             if (!questionControl.gameObject.activeSelf)
                 questionControl.gameObject.SetActive(true);
         }
+    }
+
+    public void QuestionStoped()
+    {
+        isGamePaused = false; ;
     }
 
     public void QuestionFinished()
@@ -209,4 +225,10 @@ public class LevelControl : MonoBehaviour
         greenLabel.text = greenPuzzleList.Count + "/" + greenPuzzleList.Capacity;
         orangeLabel.text = orangePuzzleList.Count + "/" + orangePuzzleList.Capacity;
     }
+
+    public void CountDownFinished()
+    {
+        Debug.Log("time's up");
+    }
+
 }

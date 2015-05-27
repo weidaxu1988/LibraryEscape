@@ -72,7 +72,7 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 3.68000007
+  m_Radius: 3
 --- !u!82 &8209666
 AudioSource:
   m_ObjectHideFlags: 1
@@ -193,23 +193,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startType: 0
-  noteTitle: Importance of Information Literacy
+  noteTitle: Importance of IL
   noteContentArray:
-  - IL is important to us because it allows us to navigate vast amounts of information,
+  - IL is important because it allows us to navigate vast amounts of information,
     to differentiate the important from the unnecessary, to effectively use relevant
-    content, to constructing new knowledge and understanding new situations.
+    content, to construct new knowledge and understand new situations.
   - "Students write term papers, work on assignments, and complete projects. To do
-    these knowledge-intensive tasks, you need to search for detailed, comprehensive
+    these knowledge-intensive tasks, they need to search for detailed, comprehensive
     information, and synthesize the information from multiple sources. It is this
-    not surprising to find that students\u2019 with better IL skills do better academically."
-  - At the societal level, IL is central to the practice of democracy and citizenship,
-    which requires us to have the ability to access vital information, and to recognize
-    when that information is misused or abused, such as in situations of distortion
-    and propaganda. IL enables us to be active, enlightened and effective participants
-    in society, to contribute to discussions, and to make individual choices.
-  - Lastly, a strong foundation in IL is required for the acquisition of other literacies,
-    e.g., media literacy, health literacy, Internet literacy and so on, to form a
-    holistic view of IL.
+    not surprising that students\u2019 with better IL skills tend to do better academically.
+    \ "
 --- !u!212 &21270300
 SpriteRenderer:
   m_ObjectHideFlags: 1

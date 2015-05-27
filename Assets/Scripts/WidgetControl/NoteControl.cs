@@ -5,6 +5,7 @@ public class NoteControl : MonoBehaviour
 {
     public UILabel noteTtitle;
     public UILabel noteContent;
+    public UILabel notePager;
 
     public GameObject nextButton;
     public GameObject previousButton;
@@ -31,7 +32,9 @@ public class NoteControl : MonoBehaviour
 
     void OnDisable()
     {
-        string note = input.value;
+        string note = "";
+        if (input)
+            note = input.value;
         if (!string.IsNullOrEmpty(note) && !note.Equals(GameConfig.TXT_INPUT_NOTE_DEFAULT))
         {
             Debug.Log(note);
@@ -90,6 +93,7 @@ public class NoteControl : MonoBehaviour
         {
             noteContent.text = puzzle.noteContentArray[index];
             noteContent.ResizeCollider();
+            notePager.text = (index + 1) + "/" + puzzle.noteContentArray.Length;
         }
     }
 }

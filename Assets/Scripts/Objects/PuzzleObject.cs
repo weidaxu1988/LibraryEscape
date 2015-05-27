@@ -36,8 +36,15 @@ public class PuzzleObject : MonoBehaviour
             if (activited) return;
 
             audioSource.Play();
-            activited = true;
+            
+//disable click open automatically
+            //activited = true;
+            LevelControl.instance.OnPuzzleObjectClick(this);
+
+
             tweenScale.PlayForward();
+
+            
         }
     }
 

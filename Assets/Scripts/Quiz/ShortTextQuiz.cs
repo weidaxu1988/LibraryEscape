@@ -5,20 +5,15 @@ public class ShortTextQuiz : Quiz
 {
     public string keyWord;
     public string correctFeedBack;
-    public string incorrectFeedBack;
-    private UIInput input;
+    public string[] incorrectFeedBack;
+    public UILabel feedbackLabel;
+    public UIInput input;
 
-    void Start()
-    {
-        input = GetComponentInChildren<UIInput>();
-    }
 
     public override void InitFeedback()
     {
         ShowFeedBack(true);
 
-        UILabel feedbackLabel = feedbackContainer.GetComponentInChildren<UILabel>();
-        
         finalScore = getScore();
 
         if (finalScore >= 1)
@@ -29,27 +24,26 @@ public class ShortTextQuiz : Quiz
         }
         else
         {
-            feedbackLabel.text = incorrectFeedBack;
-            if (questionControl != null)
-                questionControl.QuestionIncorrect();
+            HandleIncorrectFeedback();
         }
     }
 
     public override void ClearResult()
     {
-        input.value = "";
+        if (input)
+            input.value = "";
     }
 
     public override int getScore()
     {
         int result = 0;
-        
+
         string answer = input.value;
         if (answer != null && answer.Contains(keyWord))
         {
             result = 1;
         }
-        
+
         return result;
     }
 }

@@ -193,36 +193,34 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startType: 0
-  noteTitle: ACRL Information Literacy Standards
+  noteTitle: Standards of Information Literacy
   noteContentArray:
-  - The most widely-known IL standard is the one developed by the American Association
-    of College and Research Libraries (ACRL). The ACRL standards identify six things
+  - The most widely-known IL standard is developed by the American Association of
+    College and Research Libraries (ACRL). The ACRL standards identify six things
     that an information literate person is able to do.
-  - 'To determine the amount of information needed.  This ability is important because
-    with the abundance of inforamtion on the Internet, a person can search unendingly.
-    An information literate person knows when he has enough for the task he is trying
-    to complete. '
-  - "To access the needed information effectively and efficiently  You have to decide
-    what to use \u2013 a monograph, an article published in a journal or presented
-    at a conference, or an entry in an encyclopedia. "
-  - "To evaluate information and its sources critically  This applies especially to
-    information obtained from the Intenet because anyone can publish on the Internet,
-    and much there is also much information published \u201Canonymously\u201D. You
-    are able to look out for clues that enable you to tell good information from bad,
-    up-to-date information from obsolete. Even journals vary in their quality and
-    authority. "
-  - "To incorporate selected information into one\u2019s knowledge base  From the
-    information you have located and evaluated, you have to decide which is most relevant
-    to the task you are trying to complete. Having done that, you have to link the
-    information to what you already know, and to fill up existing knowledge gaps. "
-  - 'To use information effectively to accomplish a specific purpose  You need to
-    be able to taylor the information found differently according to whether he is
-    preparing for a report or term paper, a presentation, or a lesson plan. '
-  - 'To understand the economic, legal, and social issues surrounding the use of information,
-    and access and use information ethically and legally  You need to understand the
-    ethical issues that arise in the use of specific types of information, e.g., research
-    data. You also have to understand issues like plagiarism, and the importance of
-    citing articles properly. '
+  - First, to determine the amount of information needed. This ability is important
+    because with the abundance of information on the Internet, you can search unendingly.
+    You need to know when you have enough for the task at hand.
+  - "Second, to access the needed information effectively and efficiently. You have
+    to decide what to use \u2013 a monograph, an article published in a journal or
+    presented at a conference, or an entry in an encyclopedia."
+  - "Third, to evaluate information and its sources critically. This applies especially
+    to information obtained from the Internet because anyone can publish on the Internet,
+    and much there is also published \u201Canonymously\u201D. You are able to look
+    out for clues that enable you to tell good information from bad, up-to-date information
+    from obsolete.  "
+  - "Fourth, to incorporate selected information into one\u2019s knowledge base. From
+    the information you have located and evaluated, you have to decide which is most
+    relevant to the task you are trying to complete. Having done that, you have to
+    link the information to what you already know, and to fill up existing knowledge
+    gaps."
+  - "Fifth, to use information effectively to accomplish a specific purpose.\_ You
+    need to be able to tailor the information found differently according to whether
+    he is preparing for a report or term paper, a presentation, or a lesson plan."
+  - Last, to understand the economic, legal, and social issues surrounding the use
+    of information, and access and use information ethically and legally. You also
+    have to understand issues like plagiarism, and the importance of citing articles
+    properly.
 --- !u!212 &21276024
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -7,7 +7,7 @@ public class MultiChoiceQuiz : Quiz
 
     private UIToggle[] optionArray;
 
-    void Start()
+    void Awake()
     {
         optionArray = GetComponentsInChildren<UIToggle>();
     }
@@ -32,10 +32,11 @@ public class MultiChoiceQuiz : Quiz
 
     public override void ClearResult()
     {
-        foreach (UIToggle opt in optionArray)
-        {
-            opt.value = false;
-        }
+        if (optionArray != null && optionArray.Length > 0)
+            foreach (UIToggle opt in optionArray)
+            {
+                opt.value = false;
+            }
     }
 
     public override int getScore()

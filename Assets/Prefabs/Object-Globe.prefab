@@ -54,8 +54,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 176696}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .5, y: .595000029, z: 0}
-  m_LocalScale: {x: .100000001, y: .100000001, z: 1}
+  m_LocalPosition: {x: -.967999995, y: -.111000001, z: -0}
+  m_LocalScale: {x: .182589084, y: .182589158, z: 1.82589149}
   m_Children:
   - {fileID: 418660}
   m_Father: {fileID: 0}
@@ -154,21 +154,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startType: 1
-  noteTitle: The Information Search Process Model
+  noteTitle: Information Search Process (ISP) Model
   noteContentArray:
-  - "The information search process (ISP) Model is a six-stage process of information
-    seeking behavior in library and information science, suggested by Carol Kuhlthau.
-    \ The ISP Model emphasized the \u201Cinterplay of thoughts, feelings and actions\u201D
-    in the information seeking process, and regarded anxiety and uncertainty as an
-    integral part of the process "
+  - "The ISP Model is a widely accepted information search model in library and information
+    science, developed by Carol Kuhlthau since 1983.  The ISP Model emphasized the
+    \u201Cinterplay of thoughts, feelings and actions\u201D in the information seeking
+    process, and regarded anxiety and uncertainty as an integral part of the process."
   - In the early stages of searching, negative feelings are common. This is because
-    you have little knowledge of what is available, and also because at this stage,
-    the search problem is not well-defined.
-  - 'However, as the search progresses, and the awareness of the process increases,
-    there is a corresponding improvement in the level of satisfaction and confidence.   At
-    the end of the search process, you will feel a sense of relief or satisfaction
+    students have little knowledge of what is available, and also because at this
+    stage, the search problem is not well-defined.
+  - However, as the search progresses, and the awareness of the process increases,
+    there is a corresponding improvement in the level of satisfaction and confidence.
+  - At the end of the search process, students will feel a sense of relief or satisfaction
     when the required information is found, or disappointment and anxiety when it
-    was not. '
+    was not.
 --- !u!114 &11490522
 MonoBehaviour:
   m_ObjectHideFlags: 1

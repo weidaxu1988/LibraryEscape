@@ -34,7 +34,12 @@ public class PlayerControl : MonoBehaviour
 
     void Update()
     {
-        if (LevelControl.instance != null && LevelControl.instance.isGamePaused) return;
+        if (LevelControl.instance != null && LevelControl.instance.isGamePaused)
+        {
+            anim.SetFloat("Speed", 0);
+            anim.SetFloat("SpeedV", 0);
+            return;
+        }
 
         float horizontal = 0;
         float vertical = 0;
@@ -47,6 +52,7 @@ public class PlayerControl : MonoBehaviour
 #elif UNITY_IOS || UNITY_ANDROID || UNITY_WP8 || UNITY_IPHONE
         
 #endif
+
 
         float absH = Mathf.Abs(horizontal);
         float absV = Mathf.Abs(vertical);

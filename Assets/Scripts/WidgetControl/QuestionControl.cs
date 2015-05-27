@@ -57,17 +57,20 @@ public class QuestionControl : MonoBehaviour
 
         ShowNextButton(false);
 
-        if (quiz.getScore() >= 1)
+        if (incorrectQuestionCount < incorrectCapacity)
         {
-            //save answer
-        }
-        else
-        {
-            incorrectQuestionCount++;
-        }
+            if (quiz.getScore() >= 1)
+            {
+                //save answer
+            }
+            else
+            {
+                incorrectQuestionCount++;
+                ResetQuiz(quizIndex);
 
-        if (incorrectQuestionCount <= incorrectCapacity)
-        {
+                return;
+            }
+
             quizIndex++;
             if (quizIndex >= totalQuiz.Length)
             {
@@ -76,11 +79,14 @@ public class QuestionControl : MonoBehaviour
             }
             else
             {
+                incorrectQuestionCount = 0;
                 ShowQuiz(quizIndex);
             }
         }
         else
         {
+// ++ here for exit whole question when next button clicked
+            incorrectQuestionCount++;
             ShowFailedContent();
         }
     }
@@ -98,6 +104,8 @@ public class QuestionControl : MonoBehaviour
             }
             gameObject.SetActive(false);
         }
+
+        LevelControl.instance.QuestionStoped();
     }
 
     public void QuestionCorrect()
@@ -152,5 +160,11 @@ public class QuestionControl : MonoBehaviour
             if (!quiz.gameObject.activeSelf)
                 quiz.gameObject.SetActive(true);
         }
+    }
+
+    protected void ResetQuiz(int index)
+    {
+        Quiz quiz = totalQuiz[index];
+        quiz.Reset();
     }
 }

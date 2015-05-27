@@ -50,6 +50,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &134050
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 432408}
+  - 114: {fileID: 11460838}
+  m_Layer: 8
+  m_Name: Sprite
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &139052
 GameObject:
   m_ObjectHideFlags: 0
@@ -73,7 +89,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 439220}
-  - 114: {fileID: 11466462}
+  - 114: {fileID: 11428604}
   m_Layer: 8
   m_Name: QuizShortText
   m_TagString: Untagged
@@ -134,7 +150,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 102762}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -25, y: -57.2000008, z: 0}
+  m_LocalPosition: {x: -78, y: -32, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 431410}
@@ -146,7 +162,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 111990}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -25, y: 35, z: 0}
+  m_LocalPosition: {x: -413, y: 35, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 463640}
@@ -158,12 +174,24 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 191470}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 9, y: 37, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 411812}
   m_Father: {fileID: 439220}
   m_RootOrder: 1
+--- !u!4 &432408
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 134050}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -46, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 449138}
+  m_RootOrder: 2
 --- !u!4 &439220
 Transform:
   m_ObjectHideFlags: 1
@@ -171,7 +199,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 150352}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 25, y: 95.0000153, z: 0}
+  m_LocalPosition: {x: 65, y: 24, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 463640}
@@ -185,11 +213,12 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 105726}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -25, y: -72, z: 0}
+  m_LocalPosition: {x: -81, y: 6, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 495938}
   - {fileID: 479018}
+  - {fileID: 432408}
   m_Father: {fileID: 463640}
   m_RootOrder: 1
 --- !u!4 &463640
@@ -213,7 +242,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 169316}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -25.5, z: 0}
+  m_LocalPosition: {x: 0, y: -22.9999886, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 449138}
@@ -240,8 +269,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 657, y: 51, z: 0}
-  m_Center: {x: 0, y: -25.5, z: 0}
+  m_Size: {x: 363, y: 46, z: 0}
+  m_Center: {x: 0, y: -23, z: 0}
 --- !u!114 &11401092
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -272,13 +301,13 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: 0, g: 0, b: 0, a: 1}
   mPivot: 4
-  mWidth: 1514
-  mHeight: 471
+  mWidth: 700
+  mHeight: 200
   mDepth: 2
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 3.21443748
+  aspectRatio: 3.5
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
   mFont: {fileID: 0}
@@ -307,6 +336,29 @@ MonoBehaviour:
   mMaxLineHeight: 0
   mLineWidth: 0
   mMultiline: 1
+--- !u!114 &11428604
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 150352}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c60be8323c9976f4e8a846ecc7f83248, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questionContainer: {fileID: 139052}
+  feedbackContainer: {fileID: 191470}
+  keyWord: 1974
+  correctFeedBack: "Yes, Zurkowsky coined the term \u201Cinformation literacy\u201D
+    in 1974!  You are on the right track. Let\u2019s go on to the next question."
+  incorrectFeedBack:
+  - "Zurkowsky did not coin the term \u201Cinformation literacy\u201D in 1977, but
+    yes in the 1970s.  Please try again."
+  - "Zurkowsky coined the term \u201Cinformation literacy\u201D in the 1970s.  Please
+    try again."
+  feedbackLabel: {fileID: 11401092}
+  input: {fileID: 11443402}
 --- !u!114 &11430772
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -337,13 +389,13 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: .147058845, g: .147058845, b: .147058845, a: .403921574}
   mPivot: 4
-  mWidth: 625
-  mHeight: 35
+  mWidth: 331
+  mHeight: 30
   mDepth: 1
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 17.8571434
+  aspectRatio: 11.0333338
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
   mFont: {fileID: 0}
@@ -401,7 +453,7 @@ MonoBehaviour:
     absolute: 0
   updateAnchors: 1
   mColor: {r: 0, g: 0, b: 0, a: 1}
-  mPivot: 1
+  mPivot: 0
   mWidth: 776
   mHeight: 72
   mDepth: 0
@@ -412,7 +464,7 @@ MonoBehaviour:
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
   mFont: {fileID: 0}
-  mText: Which year is the term information literacy coined?
+  mText: What year was the term information literacy coined?
   mFontSize: 36
   mFontStyle: 0
   mAlignment: 0
@@ -467,24 +519,56 @@ MonoBehaviour:
     oneShot: 0
   onChange: []
   mValue: 
---- !u!114 &11466462
+--- !u!114 &11460838
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 150352}
+  m_GameObject: {fileID: 134050}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3669be1bd3cf42045bfcf643abe1ba37, type: 3}
+  m_Script: {fileID: 11500000, guid: 1b3dc54f924693f41b5cbecb267e647a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  questionContainer: {fileID: 139052}
-  feedbackContainer: {fileID: 191470}
-  keyWord: 1974
-  correctFeedBack: "Yes, Zurkowsky coined the term \u201Cinformation literacy\u201D
-    in 1974!  You are on the right track.  Let\u2019s go on to the next question."
-  incorrectFeedBack: "Zurkowsky did not coin the term \u201Cinformation literacy\u201D
-    in that year.  Please try again!  You can do this."
+  leftAnchor:
+    target: {fileID: 449138}
+    relative: 0
+    absolute: 0
+  rightAnchor:
+    target: {fileID: 449138}
+    relative: 1
+    absolute: 0
+  bottomAnchor:
+    target: {fileID: 449138}
+    relative: 0
+    absolute: 0
+  topAnchor:
+    target: {fileID: 449138}
+    relative: 0
+    absolute: 0
+  updateAnchors: 0
+  mColor: {r: 0, g: 0, b: 0, a: 1}
+  mPivot: 7
+  mWidth: 363
+  mHeight: 2
+  mDepth: 2
+  autoResizeBoxCollider: 0
+  hideIfOffScreen: 0
+  keepAspectRatio: 0
+  aspectRatio: 7.72340441
+  mType: 1
+  mFillDirection: 4
+  mFillAmount: 1
+  mInvert: 0
+  mFlip: 0
+  centerType: 1
+  leftType: 1
+  rightType: 1
+  bottomType: 1
+  topType: 1
+  mAtlas: {fileID: 11400000, guid: f95e07e3d350bf748b0c42b453a69d2e, type: 2}
+  mSpriteName: Paper Background
+  mFillCenter: 1
 --- !u!114 &11493052
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -515,13 +599,13 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 1
-  mWidth: 657
-  mHeight: 51
+  mWidth: 363
+  mHeight: 46
   mDepth: 0
   autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 12.8823528
+  aspectRatio: 7.89130449
   mType: 1
   mFillDirection: 4
   mFillAmount: 1
@@ -532,7 +616,7 @@ MonoBehaviour:
   rightType: 1
   bottomType: 1
   topType: 1
-  mAtlas: {fileID: 11400000, guid: 62adb30369acbf943a67cee0f69267a3, type: 2}
+  mAtlas: {fileID: 11485656, guid: c70c616e8529fea4595e88ee3c857514, type: 2}
   mSpriteName: Highlight - Shadowed
   mFillCenter: 1
 --- !u!1001 &100100000
