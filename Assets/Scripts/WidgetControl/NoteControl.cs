@@ -60,6 +60,12 @@ public class NoteControl : MonoBehaviour
             checkNavButtons();
         }
     }
+    
+    public void CloseNote()
+    {
+        LevelControl.instance.OnNoteCloseButtonClick(puzzle);
+    }
+
 
     private void checkNavButtons()
     {

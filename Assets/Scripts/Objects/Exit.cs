@@ -7,7 +7,7 @@ public class Exit : MonoBehaviour {
     {
         if (other.tag == "Player")
         {
-            LevelControl.instance.StartQuestion();
+            //LevelControl.instance.StartQuestion();
         }
     }
 

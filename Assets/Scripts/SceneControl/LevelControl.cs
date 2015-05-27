@@ -26,6 +26,9 @@ public class LevelControl : MonoBehaviour
     public GameObject exitPanel;
     public GameObject player;
 
+    private PuzzleObject targetPuzzle;
+    private bool secondTime;
+
     public ExitObject exitObject;
 
     private PuzzleObject[] totalPuzzle;
@@ -53,6 +56,7 @@ public class LevelControl : MonoBehaviour
     public void OnPauseButtonClick()
     {
         Debug.Log("pause game");
+        isGamePaused = !isGamePaused;
     }
 
     public void OnFunctionButtonClick()
@@ -161,7 +165,7 @@ public class LevelControl : MonoBehaviour
             player.SetActive(true);
     }
 
-    public void OnNoteCloseButtonClick()
+    public void OnNoteCloseButtonClick(PuzzleObject obj)
     {
         isGamePaused = false;
         if (noteControl.gameObject.activeSelf)
@@ -169,24 +173,29 @@ public class LevelControl : MonoBehaviour
             noteControl.gameObject.SetActive(false);
         }
 
-        StartQuestion();
+        StartQuestion(obj);
     }
 
-    public void StartQuestion()
+    public void StartQuestion(PuzzleObject obj)
     {
         if (puzzleCleared) return;
 
-        if (totalPuzzle.Length == purplePuzzleList.Count + greenPuzzleList.Count + orangePuzzleList.Count)
+        if ((!secondTime && totalPuzzle.Length == purplePuzzleList.Count + greenPuzzleList.Count + orangePuzzleList.Count) || (secondTime && targetPuzzle != null && targetPuzzle == obj))
         {
+            secondTime = true;
             isGamePaused = true;
             if (!questionControl.gameObject.activeSelf)
                 questionControl.gameObject.SetActive(true);
         }
     }
 
-    public void QuestionStoped()
+    public void QuestionStoped(PuzzleObject obj)
     {
         isGamePaused = false; ;
+        if (secondTime)
+        {
+            targetPuzzle = obj;
+        }
     }
 
     public void QuestionFinished()

@@ -114,7 +114,7 @@ public class QuestionControl : MonoBehaviour
             gameObject.SetActive(false);
         }
 
-        LevelControl.instance.QuestionStoped();
+        LevelControl.instance.QuestionStoped(totalQuiz[quizIndex].PuzzleObject);
     }
 
     public void QuestionCorrect()

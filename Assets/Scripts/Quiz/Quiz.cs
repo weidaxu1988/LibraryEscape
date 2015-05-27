@@ -10,6 +10,13 @@ public class Quiz : MonoBehaviour
     protected QuestionControl questionControl;
 
     protected int finalScore = -1;
+
+    public PuzzleObject puzzleObj;
+
+    public PuzzleObject PuzzleObject
+    {
+        get { return puzzleObj; }
+    }
     public int FinalScore { get { return finalScore; } }
 
     void Awake()

@@ -174,8 +174,8 @@ MonoBehaviour:
   disabledSprite2D: {fileID: 0}
   pixelSnap: 1
   onClick:
-  - mTarget: {fileID: 400690226}
-    mMethodName: OnNoteCloseButtonClick
+  - mTarget: {fileID: 1487917000}
+    mMethodName: CloseNote
     mParameters: []
     oneShot: 0
 --- !u!114 &13467288
@@ -390,6 +390,10 @@ Prefab:
       propertyPath: m_Name
       value: 3_QuizDragDrop
       objectReference: {fileID: 0}
+    - target: {fileID: 11450512, guid: b0f22d3253fcebc49919b3a992c3caae, type: 2}
+      propertyPath: puzzleObj
+      value: 
+      objectReference: {fileID: 1043195819}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b0f22d3253fcebc49919b3a992c3caae, type: 2}
   m_IsPrefabParent: 0
@@ -766,7 +770,6 @@ MonoBehaviour:
   - {fileID: 1619367039}
   - {fileID: 645555683}
   - {fileID: 30636025}
-  - {fileID: 96331356}
   librarian: {fileID: 116789700}
   failedContent: {fileID: 1678736579}
   nextButton: {fileID: 1578820169}
@@ -860,12 +863,12 @@ MonoBehaviour:
 Transform:
   m_PrefabParentObject: {fileID: 402284, guid: a0d8bc1c5e2f09843b1bff8cd2eb07e3, type: 2}
   m_PrefabInternal: {fileID: 1087391228}
---- !u!114 &96331356 stripped
+--- !u!114 &114139050 stripped
 MonoBehaviour:
-  m_PrefabParentObject: {fileID: 11492648, guid: a0d8bc1c5e2f09843b1bff8cd2eb07e3,
+  m_PrefabParentObject: {fileID: 11424852, guid: 4c78c8da3449ba84c972ba463a678b31,
     type: 2}
-  m_PrefabInternal: {fileID: 1087391228}
-  m_Script: {fileID: 11500000, guid: 377205bf3ae88544c90dcecbb5cbfbcd, type: 3}
+  m_PrefabInternal: {fileID: 507516268}
+  m_Script: {fileID: 11500000, guid: 8f5203376113ca3408ab9f34af9c5f20, type: 3}
 --- !u!1 &115838786
 GameObject:
   m_ObjectHideFlags: 0
@@ -1472,6 +1475,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 208054633}
   - 114: {fileID: 208054634}
+  - 114: {fileID: 208054636}
+  - 65: {fileID: 208054635}
   m_Layer: 8
   m_Name: Sprite
   m_TagString: Untagged
@@ -1487,7 +1492,7 @@ Transform:
   m_GameObject: {fileID: 208054632}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 33, y: 3, z: 0}
-  m_LocalScale: {x: .331715763, y: .331715792, z: .829289377}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1750443703}
   m_RootOrder: 0
@@ -1521,13 +1526,13 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
-  mWidth: 1573
+  mWidth: 1795
   mHeight: 980
   mDepth: -3
-  autoResizeBoxCollider: 0
+  autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 1.60510206
+  aspectRatio: 1.83163261
   mType: 1
   mFillDirection: 4
   mFillAmount: 1
@@ -1541,6 +1546,47 @@ MonoBehaviour:
   mAtlas: {fileID: 11485656, guid: c70c616e8529fea4595e88ee3c857514, type: 2}
   mSpriteName: ele_chat_box_black
   mFillCenter: 1
+--- !u!65 &208054635
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 208054632}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1795, y: 980, z: 0}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &208054636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 208054632}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fdca5042b1d12a4890ec1bd4f04290d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tweenTarget: {fileID: 208054632}
+  hover: {r: .882352948, g: .784313738, b: .588235319, a: 1}
+  pressed: {r: .717647076, g: .639215708, b: .482352942, a: 1}
+  disabledColor: {r: .5, g: .5, b: .5, a: 1}
+  duration: .200000003
+  dragHighlight: 0
+  hoverSprite: 
+  pressedSprite: 
+  disabledSprite: 
+  hoverSprite2D: {fileID: 0}
+  pressedSprite2D: {fileID: 0}
+  disabledSprite2D: {fileID: 0}
+  pixelSnap: 0
+  onClick:
+  - mTarget: {fileID: 400690226}
+    mMethodName: LevelComplete
+    mParameters: []
+    oneShot: 0
 --- !u!1 &226787996
 GameObject:
   m_ObjectHideFlags: 0
@@ -2040,6 +2086,12 @@ Transform:
   - {fileID: 1004400462}
   m_Father: {fileID: 741961043}
   m_RootOrder: 0
+--- !u!114 &269764429 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 11458706, guid: 291881e7ed36c4b46935bdb105f3fcf4,
+    type: 2}
+  m_PrefabInternal: {fileID: 1186677154}
+  m_Script: {fileID: 11500000, guid: 8f5203376113ca3408ab9f34af9c5f20, type: 3}
 --- !u!1 &279717768
 GameObject:
   m_ObjectHideFlags: 0
@@ -6817,6 +6869,12 @@ MonoBehaviour:
   mAtlas: {fileID: 11485656, guid: c70c616e8529fea4595e88ee3c857514, type: 2}
   mSpriteName: btn_arrow_right
   mFillCenter: 1
+--- !u!114 &1043195819 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 11420916, guid: 99d7471a808859b4ea81eb2621e48bba,
+    type: 2}
+  m_PrefabInternal: {fileID: 970487759}
+  m_Script: {fileID: 11500000, guid: 8f5203376113ca3408ab9f34af9c5f20, type: 3}
 --- !u!4 &1049687175 stripped
 Transform:
   m_PrefabParentObject: {fileID: 446086, guid: 65abe23b94a57844c81948f178d0dde4, type: 2}
@@ -7050,6 +7108,10 @@ Prefab:
       propertyPath: m_Name
       value: 4_QuizMultiChoice
       objectReference: {fileID: 0}
+    - target: {fileID: 11492648, guid: a0d8bc1c5e2f09843b1bff8cd2eb07e3, type: 2}
+      propertyPath: puzzleObj
+      value: 
+      objectReference: {fileID: 114139050}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a0d8bc1c5e2f09843b1bff8cd2eb07e3, type: 2}
   m_IsPrefabParent: 0
@@ -10791,6 +10853,10 @@ Prefab:
       propertyPath: m_Name
       value: 1_QuizShortText
       objectReference: {fileID: 0}
+    - target: {fileID: 11428604, guid: b9bc12603d28fa04eab513ea4d183e68, type: 2}
+      propertyPath: puzzleObj
+      value: 
+      objectReference: {fileID: 1735658004}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b9bc12603d28fa04eab513ea4d183e68, type: 2}
   m_IsPrefabParent: 0
@@ -11368,6 +11434,12 @@ MonoBehaviour:
   mAtlas: {fileID: 11485656, guid: c70c616e8529fea4595e88ee3c857514, type: 2}
   mSpriteName: btn_arrow_right
   mFillCenter: 1
+--- !u!114 &1735658004 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 11438948, guid: cd71044e9b23118448ebdc3c044e3e5f,
+    type: 2}
+  m_PrefabInternal: {fileID: 1135244895}
+  m_Script: {fileID: 11500000, guid: 8f5203376113ca3408ab9f34af9c5f20, type: 3}
 --- !u!1 &1750443702
 GameObject:
   m_ObjectHideFlags: 0
@@ -12294,6 +12366,10 @@ Prefab:
       propertyPath: m_Name
       value: 2_QuizMultiChoice
       objectReference: {fileID: 0}
+    - target: {fileID: 11492648, guid: a0d8bc1c5e2f09843b1bff8cd2eb07e3, type: 2}
+      propertyPath: puzzleObj
+      value: 
+      objectReference: {fileID: 269764429}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a0d8bc1c5e2f09843b1bff8cd2eb07e3, type: 2}
   m_IsPrefabParent: 0
