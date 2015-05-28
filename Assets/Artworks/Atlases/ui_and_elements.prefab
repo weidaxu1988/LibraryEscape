@@ -55,20 +55,7 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: btn_arrow_left
-    x: 325
-    y: 613
-    width: 158
-    height: 245
-    borderLeft: 0
-    borderRight: 0
-    borderTop: 0
-    borderBottom: 0
-    paddingLeft: 0
-    paddingRight: 0
-    paddingTop: 0
-    paddingBottom: 0
-  - name: btn_arrow_right
-    x: 805
+    x: 859
     y: 971
     width: 158
     height: 245
@@ -80,9 +67,22 @@ MonoBehaviour:
     paddingRight: 0
     paddingTop: 0
     paddingBottom: 0
+  - name: btn_arrow_right
+    x: 859
+    y: 725
+    width: 158
+    height: 245
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
   - name: btn_close
-    x: 805
-    y: 830
+    x: 859
+    y: 584
     width: 140
     height: 140
     borderLeft: 0
@@ -94,8 +94,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: btn_function
-    x: 534
-    y: 18
+    x: 1887
+    y: 1245
     width: 159
     height: 150
     borderLeft: 0
@@ -120,8 +120,8 @@ MonoBehaviour:
     paddingTop: 16
     paddingBottom: 0
   - name: btn_hint
-    x: 1677
-    y: 1245
+    x: 1376
+    y: 1066
     width: 159
     height: 150
     borderLeft: 0
@@ -134,7 +134,7 @@ MonoBehaviour:
     paddingBottom: 3
   - name: btn_info
     x: 0
-    y: 125
+    y: 90
     width: 300
     height: 300
     borderLeft: 0
@@ -160,7 +160,7 @@ MonoBehaviour:
     paddingBottom: 0
   - name: btn_level_1
     x: 534
-    y: 706
+    y: 273
     width: 256
     height: 178
     borderLeft: 0
@@ -173,7 +173,7 @@ MonoBehaviour:
     paddingBottom: 0
   - name: btn_level_2
     x: 534
-    y: 527
+    y: 94
     width: 256
     height: 178
     borderLeft: 0
@@ -185,8 +185,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: btn_level_3
-    x: 534
-    y: 348
+    x: 859
+    y: 1217
     width: 256
     height: 178
     borderLeft: 0
@@ -198,8 +198,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: btn_level_4
-    x: 534
-    y: 169
+    x: 1116
+    y: 1217
     width: 256
     height: 178
     borderLeft: 0
@@ -211,7 +211,7 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: btn_level_5
-    x: 805
+    x: 1373
     y: 1217
     width: 256
     height: 178
@@ -224,7 +224,7 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: btn_level_6
-    x: 1062
+    x: 1630
     y: 1217
     width: 256
     height: 178
@@ -238,7 +238,7 @@ MonoBehaviour:
     paddingBottom: 0
   - name: btn_menu
     x: 0
-    y: 61
+    y: 26
     width: 202
     height: 63
     borderLeft: 0
@@ -250,8 +250,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: btn_pause
-    x: 1837
-    y: 1245
+    x: 1536
+    y: 1066
     width: 159
     height: 150
     borderLeft: 0
@@ -276,8 +276,8 @@ MonoBehaviour:
     paddingTop: 118
     paddingBottom: 146
   - name: btn_replay
-    x: 964
-    y: 1154
+    x: 534
+    y: 31
     width: 202
     height: 62
     borderLeft: 0
@@ -289,7 +289,7 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: btn_sound_on
-    x: 1167
+    x: 1696
     y: 1154
     width: 202
     height: 62
@@ -342,7 +342,7 @@ MonoBehaviour:
     paddingBottom: 0
   - name: ele_chat_box_black
     x: 534
-    y: 885
+    y: 452
     width: 233
     height: 211
     borderLeft: 0
@@ -355,7 +355,7 @@ MonoBehaviour:
     paddingBottom: 0
   - name: ele_extra_btn_background
     x: 301
-    y: 26
+    y: 195
     width: 212
     height: 195
     borderLeft: 0
@@ -367,8 +367,8 @@ MonoBehaviour:
     paddingTop: 2
     paddingBottom: 2
   - name: ele_hint_arrow
-    x: 0
-    y: 426
+    x: 534
+    y: 963
     width: 324
     height: 432
     borderLeft: 0
@@ -380,8 +380,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: ele_start_green
-    x: 325
-    y: 439
+    x: 301
+    y: 21
     width: 180
     height: 173
     borderLeft: 0
@@ -393,8 +393,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: ele_start_orange
-    x: 1319
-    y: 1222
+    x: 1018
+    y: 1043
     width: 180
     height: 173
     borderLeft: 0
@@ -406,8 +406,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: ele_start_purple
-    x: 1500
-    y: 1222
+    x: 1199
+    y: 1043
     width: 176
     height: 173
     borderLeft: 0
@@ -420,7 +420,7 @@ MonoBehaviour:
     paddingBottom: 0
   - name: ele_thought_bubble
     x: 534
-    y: 1097
+    y: 664
     width: 270
     height: 298
     borderLeft: 0
@@ -432,18 +432,18 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: ghost
-    x: 301
-    y: 222
-    width: 217
-    height: 203
+    x: 0
+    y: 391
+    width: 505
+    height: 467
     borderLeft: 0
     borderRight: 0
     borderTop: 0
     borderBottom: 0
-    paddingLeft: 1
-    paddingRight: 5
+    paddingLeft: 0
+    paddingRight: 7
     paddingTop: 0
-    paddingBottom: 4
+    paddingBottom: 6
   - name: player_idle01
     x: 1771
     y: 1659
