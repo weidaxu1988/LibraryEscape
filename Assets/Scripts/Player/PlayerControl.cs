@@ -14,8 +14,8 @@ public class PlayerControl : MonoBehaviour
     public float scaleX = 0.3f;
     public float scaleY = 0.1f;
 
-    public float maxScale = 0.4f;
-    public float maxY = 150;
+    public float[] maxScales;
+    public float[] maxYs;
     public float maxX = 450;
 
     private BoxCollider2D boxCollider;
@@ -111,10 +111,10 @@ public class PlayerControl : MonoBehaviour
         else if (end.x < -maxX)
             end = new Vector3(-maxX, end.y, end.z);
 
-        if (end.y > maxY)
-            end = new Vector3(end.x, maxY, end.z);
-        else if (end.y < -maxY)
-            end = new Vector3(end.x, -maxY, end.z);
+        if (end.y > maxYs[0])
+            end = new Vector3(end.x, maxYs[0], end.z);
+        else if (end.y < maxYs[1])
+            end = new Vector3(end.x, maxYs[1], end.z);
 
         // actual move
         if (start != end)
@@ -133,8 +133,10 @@ public class PlayerControl : MonoBehaviour
                 transform.position = end;
 
                 // check scale
-                float index = (maxScale - 1) / maxY;
-                float actualScale = index * transform.position.y + 1;
+                //float index = (maxScale - 1) / (maxYs[0] - maxYs[1]);
+                //float actualScale = index * transform.position.y + 1;
+                //float actualScale = index * transform.position.y + 1;
+                float actualScale = (maxScales[1] - maxScales[0]) * (transform.position.y - maxYs[1]) / (maxYs[0] - maxYs[1]) + maxScales[0];
 
                 Vector3 curScale = transform.localScale;
                 transform.localScale = new Vector3(curScale.x < 0 ? -actualScale : actualScale, actualScale, 1);

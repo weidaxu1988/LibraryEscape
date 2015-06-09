@@ -1,15 +1,15 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &142176
+--- !u!1 &128738
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 4
   m_Component:
-  - 4: {fileID: 403414}
-  - 212: {fileID: 21273726}
-  - 114: {fileID: 11423028}
+  - 4: {fileID: 483460}
+  - 212: {fileID: 21229114}
+  - 114: {fileID: 11430830}
   m_Layer: 11
   m_Name: Sprite
   m_TagString: Untagged
@@ -17,68 +17,68 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1 &176644
+--- !u!1 &158524
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 4
   m_Component:
-  - 4: {fileID: 411002}
-  - 114: {fileID: 11446552}
-  - 58: {fileID: 5893398}
-  - 82: {fileID: 8237640}
+  - 4: {fileID: 406432}
+  - 114: {fileID: 11446996}
+  - 58: {fileID: 5899606}
+  - 82: {fileID: 8280448}
   m_Layer: 11
-  m_Name: Object-Map
+  m_Name: Object-Stamp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &403414
+--- !u!4 &406432
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 142176}
+  m_GameObject: {fileID: 158524}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -.836000025, y: -.465000004, z: 0}
+  m_LocalScale: {x: .0850000009, y: .0850000009, z: 1}
+  m_Children:
+  - {fileID: 483460}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!4 &483460
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 128738}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 411002}
+  m_Father: {fileID: 406432}
   m_RootOrder: 0
---- !u!4 &411002
-Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 176644}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.36899996, y: -.287, z: 0}
-  m_LocalScale: {x: .0799999982, y: .0799999982, z: 1}
-  m_Children:
-  - {fileID: 403414}
-  m_Father: {fileID: 0}
-  m_RootOrder: 0
---- !u!58 &5893398
+--- !u!58 &5899606
 CircleCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 176644}
+  m_GameObject: {fileID: 158524}
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 1.15999997
---- !u!82 &8237640
+  m_Radius: .5
+--- !u!82 &8280448
 AudioSource:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 176644}
+  m_GameObject: {fileID: 158524}
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
@@ -142,12 +142,12 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
---- !u!114 &11423028
+--- !u!114 &11430830
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 142176}
+  m_GameObject: {fileID: 128738}
   m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 75e7459110b9666449485c40f25362a5, type: 3}
@@ -181,45 +181,35 @@ MonoBehaviour:
   from: {x: 1, y: 1, z: 1}
   to: {x: 1.20000005, y: 1.20000005, z: 1.20000005}
   updateTable: 0
---- !u!114 &11446552
+--- !u!114 &11446996
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 176644}
+  m_GameObject: {fileID: 158524}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8f5203376113ca3408ab9f34af9c5f20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startType: 0
-  noteTitle: Causes of Library Anxiety
+  startType: 2
+  noteTitle: Before Writing Starts
   noteContentArray:
-  - "It arises because of a combination of causes. Some users feel that librarians
-    are unapproachable or \u201Ctoo busy\u201D to help researchers. In a university,
-    there may be power distance at play because the librarians are staff members of
-    the university while the students are not."
-  - Another reason for library anxiety is the fact that many students feel they are
-    alone in having difficulties using the library, and that no one else has similar
-    problems. They are unaware that there are other students facing the same problems.
-  - An unfriendly environment or setting in a library can also make students feel
-    unwelcome in the library, contributing to library anxiety. This is one of the
-    reasons why libraries organize orientation programs, usually at the beginning
-    of the semester.
-  - "The size of some libraries is large, and this makes them intimidating. Student
-    may not know where the different resources are located, and how to access them.
-    They may also be intimidated by the terminology used in the library, e.g., they
-    may not know the meaning of \u201COPAC\u201D or \u201Cclosed stacks\u201D."
-  - "Finally, some students face problems using computers, photocopiers, and other
-    equipment in the library. This is a very real problem in the library of today
-    because of the amount of technology that\u2019s used. Other examples are the projectors
-    at the learning commons, and the video recorders at the presentation rooms."
---- !u!212 &21273726
+  - During writing, there is much uncertainty. For example, the uncertainty of the
+    argument you will ultimately present, the amount of useful information you can
+    find, or whether the materials can be used to support the argument.
+  - If it is to be written by a group, there is the added uncertainty about the level
+    of cooperation, and the reliability and responsibility of each member. All these
+    uncertainties lead to a feeling of discomfort, anxiety, and an apprehension about
+    getting started.
+  - For many students, the anxiety caused by the uncertainties at the start of writing
+    is amplified by a psychological syndrome called library anxiety.
+--- !u!212 &21229114
 SpriteRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 142176}
+  m_GameObject: {fileID: 128738}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -238,7 +228,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1432671119
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 15e36ccec474ed94383f9efebc08aa49, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d86120e4409ec804690fa2e60173c953, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &100100000
 Prefab:
@@ -249,5 +239,5 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 176644}
+  m_RootGameObject: {fileID: 158524}
   m_IsPrefabParent: 1

@@ -34,7 +34,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &199008
 GameObject:
   m_ObjectHideFlags: 0
@@ -59,8 +59,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 166496}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .838, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: .649999976, y: -.414999992, z: 0}
+  m_LocalScale: {x: 1.45267677, y: 1.45267677, z: 1}
   m_Children:
   - {fileID: 453556}
   - {fileID: 480018}
@@ -166,8 +166,12 @@ MonoBehaviour:
   delay: 60
   scaleX: .00999999978
   scaleY: .00499999989
-  maxScale: .400000006
-  maxY: .550000012
+  maxScales:
+  - 1.5
+  - .400000006
+  maxYs:
+  - .550000012
+  - -.550000012
   maxX: 1.60000002
 --- !u!212 &21227042
 SpriteRenderer:

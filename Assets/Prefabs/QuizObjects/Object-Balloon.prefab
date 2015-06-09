@@ -1,15 +1,15 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &142176
+--- !u!1 &129728
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 4
   m_Component:
-  - 4: {fileID: 403414}
-  - 212: {fileID: 21273726}
-  - 114: {fileID: 11423028}
+  - 4: {fileID: 403920}
+  - 212: {fileID: 21289050}
+  - 114: {fileID: 11429880}
   m_Layer: 11
   m_Name: Sprite
   m_TagString: Untagged
@@ -17,68 +17,68 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1 &176644
+--- !u!1 &177164
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 4
   m_Component:
-  - 4: {fileID: 411002}
-  - 114: {fileID: 11446552}
-  - 58: {fileID: 5893398}
-  - 82: {fileID: 8237640}
+  - 4: {fileID: 492376}
+  - 114: {fileID: 11431948}
+  - 61: {fileID: 6113630}
+  - 82: {fileID: 8205428}
   m_Layer: 11
-  m_Name: Object-Map
+  m_Name: Object-Balloon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &403414
+--- !u!4 &403920
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 142176}
+  m_GameObject: {fileID: 129728}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 411002}
+  m_Father: {fileID: 492376}
   m_RootOrder: 0
---- !u!4 &411002
+--- !u!4 &492376
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 176644}
+  m_GameObject: {fileID: 177164}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.36899996, y: -.287, z: 0}
+  m_LocalPosition: {x: -.405999988, y: -.0900000036, z: 0}
   m_LocalScale: {x: .0799999982, y: .0799999982, z: 1}
   m_Children:
-  - {fileID: 403414}
+  - {fileID: 403920}
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!58 &5893398
-CircleCollider2D:
+--- !u!61 &6113630
+BoxCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 176644}
+  m_GameObject: {fileID: 177164}
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 1.15999997
---- !u!82 &8237640
+  m_Size: {x: 1.21000004, y: 4.92999983}
+--- !u!82 &8205428
 AudioSource:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 176644}
+  m_GameObject: {fileID: 177164}
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
@@ -142,12 +142,12 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
---- !u!114 &11423028
+--- !u!114 &11429880
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 142176}
+  m_GameObject: {fileID: 129728}
   m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 75e7459110b9666449485c40f25362a5, type: 3}
@@ -181,45 +181,33 @@ MonoBehaviour:
   from: {x: 1, y: 1, z: 1}
   to: {x: 1.20000005, y: 1.20000005, z: 1.20000005}
   updateTable: 0
---- !u!114 &11446552
+--- !u!114 &11431948
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 176644}
+  m_GameObject: {fileID: 177164}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8f5203376113ca3408ab9f34af9c5f20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startType: 0
-  noteTitle: Causes of Library Anxiety
+  startType: 1
+  noteTitle: Library Anxiety
   noteContentArray:
-  - "It arises because of a combination of causes. Some users feel that librarians
-    are unapproachable or \u201Ctoo busy\u201D to help researchers. In a university,
-    there may be power distance at play because the librarians are staff members of
-    the university while the students are not."
-  - Another reason for library anxiety is the fact that many students feel they are
-    alone in having difficulties using the library, and that no one else has similar
-    problems. They are unaware that there are other students facing the same problems.
-  - An unfriendly environment or setting in a library can also make students feel
-    unwelcome in the library, contributing to library anxiety. This is one of the
-    reasons why libraries organize orientation programs, usually at the beginning
-    of the semester.
-  - "The size of some libraries is large, and this makes them intimidating. Student
-    may not know where the different resources are located, and how to access them.
-    They may also be intimidated by the terminology used in the library, e.g., they
-    may not know the meaning of \u201COPAC\u201D or \u201Cclosed stacks\u201D."
-  - "Finally, some students face problems using computers, photocopiers, and other
-    equipment in the library. This is a very real problem in the library of today
-    because of the amount of technology that\u2019s used. Other examples are the projectors
-    at the learning commons, and the video recorders at the presentation rooms."
---- !u!212 &21273726
+  - It refers to a fear of the library, and the process of finding the information
+    needed. It is characterized by negative emotions including tension, feelings of
+    uncertainty and helplessness, negative self-defeating thoughts, and mental disorganization,
+    all of which impede the development of IL.
+  - The effects of library anxiety can be debilitating. Students can become so anxious
+    about having to gather information from a library for their research papers that
+    they are unable to approach the problem logically or effectively.
+--- !u!212 &21289050
 SpriteRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 142176}
+  m_GameObject: {fileID: 129728}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -238,7 +226,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1432671119
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 15e36ccec474ed94383f9efebc08aa49, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1049d9eb019854e429b9263bd758e281, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &100100000
 Prefab:
@@ -249,5 +237,5 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 176644}
+  m_RootGameObject: {fileID: 177164}
   m_IsPrefabParent: 1

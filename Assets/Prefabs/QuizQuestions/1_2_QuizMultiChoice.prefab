@@ -88,7 +88,7 @@ GameObject:
   - 4: {fileID: 430754}
   - 114: {fileID: 11401458}
   m_Layer: 8
-  m_Name: 2_1_QuizMultiChoice
+  m_Name: 1_2_QuizMultiChoice
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
