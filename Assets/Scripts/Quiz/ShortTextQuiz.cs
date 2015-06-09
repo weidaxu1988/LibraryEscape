@@ -3,11 +3,11 @@ using System.Collections;
 
 public class ShortTextQuiz : Quiz
 {
-    public string keyWord;
+    public string[] keyWords;
     public string correctFeedBack;
     public string[] incorrectFeedBack;
     public UILabel feedbackLabel;
-    public UIInput input;
+    public UIInput[] inputs;
 
 
     public override void InitFeedback()
@@ -18,7 +18,7 @@ public class ShortTextQuiz : Quiz
 
         if (finalScore >= 1)
         {
-            feedbackLabel.text = correctFeedBack;
+            HandleCorrectFeedback();
             if (questionControl != null)
                 questionControl.QuestionCorrect();
         }
@@ -28,22 +28,38 @@ public class ShortTextQuiz : Quiz
         }
     }
 
+    protected override void HandleCorrectFeedback()
+    {
+        feedbackLabel.text = correctFeedBack;
+    }
+
     public override void ClearResult()
     {
-        if (input)
+        foreach (UIInput input in inputs)
+        {
             input.value = "";
+        }
     }
 
     public override int getScore()
     {
         int result = 0;
 
-        string answer = input.value;
-        if (answer != null && answer.Contains(keyWord))
+        for (int i = 0; i < inputs.Length; i++)
         {
-            result = 1;
+            UIInput input = inputs[i];
+            string answer = input.value;
+            string keyWord = keyWords[i];
+            if (answer == null || !answer.Contains(keyWord))
+            {
+                result = 0;
+                break;
+            }
+            else
+            {
+                result = 1;
+            }
         }
-
         return result;
     }
 }

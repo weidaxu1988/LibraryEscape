@@ -22,11 +22,13 @@ public class MultiChoiceQuiz : Quiz
 
         if (finalScore >= 1)
         {
+            HandleCorrectFeedback();
             if (questionControl != null)
                 questionControl.QuestionCorrect();
         }
         else
         {
+            HandleIncorrectFeedback();
             if (questionControl != null)
                 questionControl.QuestionIncorrect();
         }

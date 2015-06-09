@@ -6,7 +6,7 @@ public class ShortAnswerQ1 : ShortTextQuiz
 
     protected override void HandleIncorrectFeedback()
     {
-        string result = input.value;
+        string result = inputs[0].value;
 
         feedbackLabel.text = incorrectFeedBack[1];
         if (!string.IsNullOrEmpty(result))

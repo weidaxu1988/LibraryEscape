@@ -54,4 +54,9 @@ public class Quiz : MonoBehaviour
     {
 
     }
+
+    protected virtual void HandleCorrectFeedback()
+    {
+
+    }
 }
