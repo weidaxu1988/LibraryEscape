@@ -18,6 +18,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/2_LevelScene_4.unity
   - enabled: 1
+    path: Assets/Scenes/2_LevelScene_4-2.unity
+  - enabled: 1
     path: Assets/Scenes/2_LevelScene_5.unity
   - enabled: 1
     path: Assets/Scenes/2_LevelScene_6.unity
