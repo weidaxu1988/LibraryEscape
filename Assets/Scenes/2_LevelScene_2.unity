@@ -4869,6 +4869,12 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 437236, guid: 727c87a9025340c4f8825cd08defa675, type: 2}
   m_PrefabInternal: {fileID: 1071337196}
+--- !u!114 &1071337198 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 11458686, guid: 727c87a9025340c4f8825cd08defa675,
+    type: 2}
+  m_PrefabInternal: {fileID: 1071337196}
+  m_Script: {fileID: 11500000, guid: 8f5203376113ca3408ab9f34af9c5f20, type: 3}
 --- !u!1001 &1087391228
 Prefab:
   m_ObjectHideFlags: 0
@@ -9344,7 +9350,7 @@ Prefab:
     - target: {fileID: 11481950, guid: 731f2a05bad79454ea4e7c6d6bdae77a, type: 2}
       propertyPath: puzzleObj
       value: 
-      objectReference: {fileID: 151405547}
+      objectReference: {fileID: 1071337198}
     - target: {fileID: 11405506, guid: 731f2a05bad79454ea4e7c6d6bdae77a, type: 2}
       propertyPath: aspectRatio
       value: 7.26666689
