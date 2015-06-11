@@ -41,7 +41,7 @@ public class DragDropQuizItem : UIDragDropItem
                 {
                     container.ReleaseItem();
                 }
-                container.SelectedItem = this;
+                container.SetSelectItem(this);
             }
             else
             {

@@ -2,7 +2,8 @@
 using System.Collections;
 using System.Collections.Generic;
 
-public class DragDropQuiz : Quiz {
+public class DragDropQuiz : Quiz
+{
 
     public string correctFeedBack;
     public string incorrectFeedBack;
@@ -21,6 +22,16 @@ public class DragDropQuiz : Quiz {
         foreach (DragDropQuizContainer c in questionList)
         {
             c.ReleaseItem();
+        }
+    }
+
+    public override void SecondReset()
+    {
+        ShowFeedBack(false);
+
+        foreach (DragDropQuizContainer c in questionList)
+        {
+            c.ReleaseFalseItem();
         }
     }
 

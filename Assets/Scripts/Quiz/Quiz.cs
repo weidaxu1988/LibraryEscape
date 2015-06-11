@@ -26,13 +26,18 @@ public class Quiz : MonoBehaviour
 
     void OnEnable()
     {
-        Reset();
+         Reset();
     }
 
     public virtual void Reset()
     {
         ShowFeedBack(false);
         ClearResult();
+    }
+
+    public virtual void SecondReset()
+    {
+        Reset();
     }
 
     public virtual int getScore() { return 0; }

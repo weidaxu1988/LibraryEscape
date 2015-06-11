@@ -174,6 +174,6 @@ public class QuestionControl : MonoBehaviour
     protected void ResetQuiz(int index)
     {
         Quiz quiz = totalQuiz[index];
-        quiz.Reset();
+        quiz.SecondReset();
     }
 }
