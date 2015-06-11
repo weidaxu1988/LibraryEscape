@@ -129,7 +129,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &177788
 GameObject:
   m_ObjectHideFlags: 1
@@ -586,13 +586,12 @@ MonoBehaviour:
   questionContainer: {fileID: 191396}
   feedbackContainer: {fileID: 198170}
   puzzleObj: {fileID: 0}
-  correctFeedBack: Good job! A typical scientific publication cycle starts with patents
-    or lab notes, then conference papers or theses, and then get published in journals
-    and as monographs, and end up in reference works.
-  incorrectFeedBack: "Primary sources are the original works. Secondary sources are
-    works (books, articles, etc.) that interpret, explain, or analyze the \u201Coriginal\u201D
-    document, event, or work. Tertiary sources mainly refer to OPAC and databases.
-    Try again on this one, you can do it."
+  correctFeedBack: Well done! Remember to use the Boolean operators to make your search
+    more effective.
+  incorrectFeedBack: "Requiring both terms to be returned will reduce the search results.
+    Requiring either term to be returned will broaden the search. Using NOT will eliminate
+    some results containing the term from the search results. Try again, recall what
+    you\u2019ve learnt just now."
   feedbackLabel: {fileID: 11439360}
 --- !u!114 &11414796
 MonoBehaviour:

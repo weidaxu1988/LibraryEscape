@@ -99,10 +99,13 @@ public class PlayerControl : MonoBehaviour
 
     void AttemptMove(float xDir, float yDir)
     {
+        float actualScale = (maxScales[1] - maxScales[0]) * (transform.position.y - maxYs[1]) / (maxYs[0] - maxYs[1]) + maxScales[0];
+
         Vector3 start = transform.position;
         Vector3 end = start + new Vector3(xDir * scaleX, yDir * scaleY);
 
-        Vector3 startRay = start + new Vector3(boxCollider.offset.x, boxCollider.offset.y);
+        //Vector3 startRay = start + new Vector3(boxCollider.offset.x, boxCollider.offset.y);
+        Vector3 startRay = start;
         Vector3 endRay = startRay + new Vector3(xDir * scaleX, yDir * scaleY);
 
         // check bound
@@ -124,6 +127,7 @@ public class PlayerControl : MonoBehaviour
             //Cast a line from start point to end point checking collision on blockingLayer.
             RaycastHit2D hit = Physics2D.Linecast(startRay, endRay, blockingLayer);
 
+Debug.DrawLine(startRay, startRay+ new Vector3(xDir, yDir), Color.red);
             //Re-enable boxCollider after linecast
             //boxCollider.enabled = true;
 
@@ -136,7 +140,7 @@ public class PlayerControl : MonoBehaviour
                 //float index = (maxScale - 1) / (maxYs[0] - maxYs[1]);
                 //float actualScale = index * transform.position.y + 1;
                 //float actualScale = index * transform.position.y + 1;
-                float actualScale = (maxScales[1] - maxScales[0]) * (transform.position.y - maxYs[1]) / (maxYs[0] - maxYs[1]) + maxScales[0];
+                actualScale = (maxScales[1] - maxScales[0]) * (transform.position.y - maxYs[1]) / (maxYs[0] - maxYs[1]) + maxScales[0];
 
                 Vector3 curScale = transform.localScale;
                 transform.localScale = new Vector3(curScale.x < 0 ? -actualScale : actualScale, actualScale, 1);

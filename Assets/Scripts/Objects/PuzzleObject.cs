@@ -12,6 +12,8 @@ public class PuzzleObject : MonoBehaviour
 
     public StartType startType;
 
+    public PuzzleObject previousPuzzle;
+
     public string noteTitle;
     public string[] noteContentArray;
 
