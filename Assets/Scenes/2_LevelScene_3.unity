@@ -451,9 +451,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   incorrectCapacity: 2
   totalQuiz:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 354377589}
+  - {fileID: 1378548176}
+  - {fileID: 156232433}
+  - {fileID: 225710144}
+  - {fileID: 830819498}
   librarian: {fileID: 116789700}
   failedContent: {fileID: 1678736579}
   nextButton: {fileID: 1578820169}
@@ -599,35 +601,6 @@ Prefab:
     - target: {fileID: 406432, guid: 2757234f701848c4a8f4ffa99b205fef, type: 2}
       propertyPath: m_RootOrder
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11446996, guid: 2757234f701848c4a8f4ffa99b205fef, type: 2}
-      propertyPath: noteTitle
-      value: Journals
-      objectReference: {fileID: 0}
-    - target: {fileID: 11446996, guid: 2757234f701848c4a8f4ffa99b205fef, type: 2}
-      propertyPath: noteContentArray.Array.data[0]
-      value: "Journals are published periodically and are the main forum by which
-        research is published.\_They contain articles written by and for experts in
-        a field, and are almost always peer-reviewed. Journals are used as a means
-        for scholars and researchers to share their research."
-      objectReference: {fileID: 0}
-    - target: {fileID: 11446996, guid: 2757234f701848c4a8f4ffa99b205fef, type: 2}
-      propertyPath: noteContentArray.Array.data[1]
-      value: "Journals mainly serve four functions: (1) To establish the author\u2019s
-        precedence and ownership of an idea; (2)\_To communicate research findings
-        to the intended audience; (3)\_To ensure quality control through peer review;
-        (4)\_To preserve a fixed version of the paper for future reference."
-      objectReference: {fileID: 0}
-    - target: {fileID: 11446996, guid: 2757234f701848c4a8f4ffa99b205fef, type: 2}
-      propertyPath: noteContentArray.Array.data[2]
-      value: "Peer review, also called refereeing, is a quality control process through
-        which manuscripts submitted to a journal are evaluated and commented upon
-        by independent experts within the same field of research.\_High quality research
-        tends to be published in peer reviewed journals."
-      objectReference: {fileID: 0}
-    - target: {fileID: 11446996, guid: 2757234f701848c4a8f4ffa99b205fef, type: 2}
-      propertyPath: startType
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2757234f701848c4a8f4ffa99b205fef, type: 2}
@@ -816,10 +789,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 11416014, guid: 632314a2345567e43b4343ecc0e250c1, type: 2}
-      propertyPath: startType
-      value: 2
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 632314a2345567e43b4343ecc0e250c1, type: 2}
   m_IsPrefabParent: 0
@@ -885,6 +854,12 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 408548, guid: 8366370ecbc711e4dbe6a410806206fc, type: 2}
   m_PrefabInternal: {fileID: 156232431}
+--- !u!114 &156232433 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 11494024, guid: 8366370ecbc711e4dbe6a410806206fc,
+    type: 2}
+  m_PrefabInternal: {fileID: 156232431}
+  m_Script: {fileID: 11500000, guid: 377205bf3ae88544c90dcecbb5cbfbcd, type: 3}
 --- !u!4 &158187506
 Transform:
   m_ObjectHideFlags: 0
@@ -897,6 +872,55 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1487916997}
   m_RootOrder: 3
+--- !u!1 &173488418
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 173488419}
+  - 68: {fileID: 173488420}
+  m_Layer: 10
+  m_Name: block_6
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &173488419
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 173488418}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.27099991, y: .155000001, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 346575477}
+  m_RootOrder: 5
+--- !u!68 &173488420
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 173488418}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  m_Points:
+  - {x: .410001248, y: 1.21020174}
+  - {x: .399407953, y: 1.08734536}
+  - {x: .272285104, y: .193541855}
+  - {x: .269273162, y: .142742798}
+  - {x: -.565135539, y: -.20193553}
+  - {x: -1.33279693, y: -.0528843477}
+  - {x: -1.289078, y: .314120412}
+  - {x: -1.45071578, y: 1.35726392}
+  - {x: .418983191, y: 1.20386422}
 --- !u!1 &173715279
 GameObject:
   m_ObjectHideFlags: 0
@@ -1429,6 +1453,12 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: df51212fafef2e3468a40b58d171c258, type: 2}
   m_IsPrefabParent: 0
+--- !u!114 &225710144 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 11417682, guid: df51212fafef2e3468a40b58d171c258,
+    type: 2}
+  m_PrefabInternal: {fileID: 225710143}
+  m_Script: {fileID: 11500000, guid: 5ac83bb4df7b75140916cb8fc1ad9c1c, type: 3}
 --- !u!1 &226787996
 GameObject:
   m_ObjectHideFlags: 0
@@ -1854,7 +1884,10 @@ Transform:
   m_Children:
   - {fileID: 2054620652}
   - {fileID: 726036226}
+  - {fileID: 690151991}
   - {fileID: 1933594561}
+  - {fileID: 1960335058}
+  - {fileID: 173488419}
   m_Father: {fileID: 175278712}
   m_RootOrder: 2
 --- !u!1001 &354377587
@@ -1915,6 +1948,12 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 453820, guid: 5d3141c7babe91b498d58d57930f5009, type: 2}
   m_PrefabInternal: {fileID: 354377587}
+--- !u!114 &354377589 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 11475808, guid: 5d3141c7babe91b498d58d57930f5009,
+    type: 2}
+  m_PrefabInternal: {fileID: 354377587}
+  m_Script: {fileID: 11500000, guid: 5ac83bb4df7b75140916cb8fc1ad9c1c, type: 3}
 --- !u!1 &357759648
 GameObject:
   m_ObjectHideFlags: 0
@@ -2743,7 +2782,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11478410, guid: 65abe23b94a57844c81948f178d0dde4, type: 2}
       propertyPath: maxYs.Array.data[0]
-      value: 0
+      value: .219999999
       objectReference: {fileID: 0}
     - target: {fileID: 11478410, guid: 65abe23b94a57844c81948f178d0dde4, type: 2}
       propertyPath: maxScales.Array.data[0]
@@ -2751,7 +2790,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11478410, guid: 65abe23b94a57844c81948f178d0dde4, type: 2}
       propertyPath: maxScales.Array.data[1]
-      value: .5
+      value: .300000012
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 65abe23b94a57844c81948f178d0dde4, type: 2}
@@ -3056,6 +3095,47 @@ MonoBehaviour:
   mMaxLineHeight: 0
   mLineWidth: 0
   mMultiline: 1
+--- !u!1 &690151990
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 690151991}
+  - 61: {fileID: 690151992}
+  m_Layer: 10
+  m_Name: block_4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &690151991
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 690151990}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .115999997, y: .206, z: 0}
+  m_LocalScale: {x: .818390667, y: .388281375, z: 1}
+  m_Children: []
+  m_Father: {fileID: 346575477}
+  m_RootOrder: 2
+--- !u!61 &690151992
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 690151990}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 1.74000001, y: 1.09000003}
 --- !u!1 &700842671
 GameObject:
   m_ObjectHideFlags: 0
@@ -3224,8 +3304,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 726036225}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .107000001, y: .00899999961, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: .107000001, y: -.204999998, z: 0}
+  m_LocalScale: {x: 1, y: .213860095, z: 1}
   m_Children: []
   m_Father: {fileID: 346575477}
   m_RootOrder: 1
@@ -3602,6 +3682,12 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c8bd46ae4aa8f834999d6631bbdfbd01, type: 2}
   m_IsPrefabParent: 0
+--- !u!114 &830819498 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 11464066, guid: c8bd46ae4aa8f834999d6631bbdfbd01,
+    type: 2}
+  m_PrefabInternal: {fileID: 830819497}
+  m_Script: {fileID: 11500000, guid: 377205bf3ae88544c90dcecbb5cbfbcd, type: 3}
 --- !u!1001 &831125930
 Prefab:
   m_ObjectHideFlags: 0
@@ -4215,7 +4301,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &963883464
 Transform:
   m_ObjectHideFlags: 0
@@ -4551,10 +4637,6 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 963883464}
     m_Modifications:
-    - target: {fileID: 11411470, guid: 998b2f1d496bd0a4480bae9c02078cd6, type: 2}
-      propertyPath: noteContentArray.Array.size
-      value: 4
-      objectReference: {fileID: 0}
     - target: {fileID: 404634, guid: 998b2f1d496bd0a4480bae9c02078cd6, type: 2}
       propertyPath: m_LocalPosition.x
       value: -1.01800001
@@ -4586,44 +4668,6 @@ Prefab:
     - target: {fileID: 404634, guid: 998b2f1d496bd0a4480bae9c02078cd6, type: 2}
       propertyPath: m_RootOrder
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6185822, guid: 998b2f1d496bd0a4480bae9c02078cd6, type: 2}
-      propertyPath: m_Offset.x
-      value: -.810000002
-      objectReference: {fileID: 0}
-    - target: {fileID: 6185822, guid: 998b2f1d496bd0a4480bae9c02078cd6, type: 2}
-      propertyPath: m_Size.x
-      value: 1.61000001
-      objectReference: {fileID: 0}
-    - target: {fileID: 6185822, guid: 998b2f1d496bd0a4480bae9c02078cd6, type: 2}
-      propertyPath: m_Size.y
-      value: 5.26999998
-      objectReference: {fileID: 0}
-    - target: {fileID: 11411470, guid: 998b2f1d496bd0a4480bae9c02078cd6, type: 2}
-      propertyPath: noteContentArray.Array.data[0]
-      value: Research results generally flow through a cycle which includes several
-        major publication types. This cycle is known as the scientific publication
-        cycle.
-      objectReference: {fileID: 0}
-    - target: {fileID: 11411470, guid: 998b2f1d496bd0a4480bae9c02078cd6, type: 2}
-      propertyPath: noteTitle
-      value: Scientific Publication Cycle
-      objectReference: {fileID: 0}
-    - target: {fileID: 11411470, guid: 998b2f1d496bd0a4480bae9c02078cd6, type: 2}
-      propertyPath: noteContentArray.Array.data[1]
-      value: "Typically, information starts as a researcher\u2019s lab notes, moves
-        from being communicated informally at conferences to more formal reporting
-        and publication in dissertations, journal articles, and then often becomes
-        popularized in magazines, newspapers, websites, and generalized or formalized
-        in encyclopedias and textbooks."
-      objectReference: {fileID: 0}
-    - target: {fileID: 11411470, guid: 998b2f1d496bd0a4480bae9c02078cd6, type: 2}
-      propertyPath: noteContentArray.Array.data[2]
-      value: "The following diagram\_illustrates the scientific publication cycle.\_The
-        inner ring\_represents the\_approximate\_time span for different types of
-        sources to be available. The middle ring\_explains the purpose and contents
-        of each type of publication.\_The outer ring categorizes the different sources
-        into primary (pink), secondary (yellow), and tertiary (blue)."
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 998b2f1d496bd0a4480bae9c02078cd6, type: 2}
@@ -5265,6 +5309,12 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 425336, guid: fcfbf6ff744d86943bf80e500e87b8cb, type: 2}
   m_PrefabInternal: {fileID: 1378548174}
+--- !u!114 &1378548176 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 11448406, guid: fcfbf6ff744d86943bf80e500e87b8cb,
+    type: 2}
+  m_PrefabInternal: {fileID: 1378548174}
+  m_Script: {fileID: 11500000, guid: 5ac83bb4df7b75140916cb8fc1ad9c1c, type: 3}
 --- !u!1 &1390677491
 GameObject:
   m_ObjectHideFlags: 0
@@ -6831,10 +6881,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 5
       objectReference: {fileID: 0}
-    - target: {fileID: 11461746, guid: 24cd585d938745f48b1cbed7dcd523b0, type: 2}
-      propertyPath: startType
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 24cd585d938745f48b1cbed7dcd523b0, type: 2}
   m_IsPrefabParent: 0
@@ -7429,11 +7475,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1933594560}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.38100004, y: .179000005, z: 0}
+  m_LocalPosition: {x: -1.38100004, y: .416999996, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 346575477}
-  m_RootOrder: 2
+  m_RootOrder: 3
 --- !u!61 &1933594562
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7587,6 +7633,47 @@ MonoBehaviour:
   mAtlas: {fileID: 11485656, guid: c70c616e8529fea4595e88ee3c857514, type: 2}
   mSpriteName: btn_arrow_right
   mFillCenter: 1
+--- !u!1 &1960335057
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1960335058}
+  - 61: {fileID: 1960335059}
+  m_Layer: 10
+  m_Name: block_5
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1960335058
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1960335057}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.05400002, y: .583000004, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 346575477}
+  m_RootOrder: 4
+--- !u!61 &1960335059
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1960335057}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: .379999995, y: 1.09000003}
 --- !u!114 &2051720878 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 11437046, guid: df51212fafef2e3468a40b58d171c258,
@@ -7608,7 +7695,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!68 &2054620650
 EdgeCollider2D:
   m_ObjectHideFlags: 0
@@ -7623,11 +7710,11 @@ EdgeCollider2D:
   m_Points:
   - {x: .410001248, y: 1.21020174}
   - {x: .399407953, y: 1.08734536}
-  - {x: .341104984, y: .408604056}
-  - {x: .444190443, y: -.155476451}
-  - {x: -.373013377, y: -.614854634}
-  - {x: -.894982934, y: -.736312449}
-  - {x: -2.00037861, y: .103278451}
+  - {x: .272285104, y: .193541855}
+  - {x: .415515482, y: -.0608491451}
+  - {x: -.565135539, y: -.20193553}
+  - {x: -1.31937182, y: -.0538488403}
+  - {x: -1.16307044, y: .203640789}
   - {x: -1.45071578, y: 1.35726392}
   - {x: .418983191, y: 1.20386422}
 --- !u!4 &2054620652
@@ -7637,7 +7724,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2054620649}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.74000001, y: -.416999996, z: 0}
+  m_LocalPosition: {x: .555999994, y: -.0359999985, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 346575477}

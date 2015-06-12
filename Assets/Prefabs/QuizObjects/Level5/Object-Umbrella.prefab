@@ -42,7 +42,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 144172}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.0989999995, y: -.363999993, z: 0}
+  m_LocalPosition: {x: -.611000001, y: -.103, z: 0}
   m_LocalScale: {x: .0850000009, y: .0850000009, z: 1}
   m_Children:
   - {fileID: 437382}
@@ -72,7 +72,7 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: .610000014
+  m_Radius: .879999995
 --- !u!82 &8212534
 AudioSource:
   m_ObjectHideFlags: 1

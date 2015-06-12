@@ -192,23 +192,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f5203376113ca3408ab9f34af9c5f20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startType: 0
-  noteTitle: Scientific Publication Cycle
+  startType: 1
+  previousPuzzle: {fileID: 0}
+  noteTitle: Prefocus Exploration
   noteContentArray:
-  - Research results generally flow through a cycle which includes several major publication
-    types. This cycle is known as the scientific publication cycle.
-  - "Typically, information starts as a researcher\u2019s lab notes, moves from being
-    communicated informally at conferences to more formal reporting and publication
-    in dissertations, journal articles, and then often becomes popularized in magazines,
-    newspapers, websites, and generalized or formalized in encyclopedias and textbooks."
-  - "The following diagram\_illustrates the scientific publication cycle.\_The inner
-    ring\_represents the\_approximate\_time span for different types of sources to
-    be available. The middle ring\_explains the purpose and contents of each type
-    of publication.\_The outer ring categorizes the different sources into primary
-    (pink), secondary (yellow), and tertiary (blue)."
-  - Finally is the the amount of time to complete the writing. This is an important
-    criteria for part-time students, or full-time students who have several assignments
-    due. In such situations, be careful about how you manage the time.
+  - 'Stage Three of ISP Model is prefocus exploration. It involves extending your
+    personal knowledge of the topic through initial searching. The questions you may
+    have here are: How do I begin the search process? What should I do first? '
+  - image_sprite_biscuit
 --- !u!212 &21237720
 SpriteRenderer:
   m_ObjectHideFlags: 1

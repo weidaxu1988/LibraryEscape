@@ -42,7 +42,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 158524}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.836000025, y: -.465000004, z: 0}
+  m_LocalPosition: {x: -.180800006, y: .0410000011, z: 0}
   m_LocalScale: {x: .0850000009, y: .0850000009, z: 1}
   m_Children:
   - {fileID: 483460}
@@ -192,18 +192,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f5203376113ca3408ab9f34af9c5f20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startType: 2
-  noteTitle: Before Writing Starts
+  startType: 0
+  previousPuzzle: {fileID: 0}
+  noteTitle: Journals
   noteContentArray:
-  - During writing, there is much uncertainty. For example, the uncertainty of the
-    argument you will ultimately present, the amount of useful information you can
-    find, or whether the materials can be used to support the argument.
-  - If it is to be written by a group, there is the added uncertainty about the level
-    of cooperation, and the reliability and responsibility of each member. All these
-    uncertainties lead to a feeling of discomfort, anxiety, and an apprehension about
-    getting started.
-  - For many students, the anxiety caused by the uncertainties at the start of writing
-    is amplified by a psychological syndrome called library anxiety.
+  - "Journals are published periodically and are the main forum by which research
+    is published.\_They contain articles written by and for experts in a field, and
+    are almost always peer-reviewed. Journals are used as a means for scholars and
+    researchers to share their research."
+  - "Journals mainly serve four functions: (1) To establish the author\u2019s precedence
+    and ownership of an idea; (2)\_To communicate research findings to the intended
+    audience; (3)\_To ensure quality control through peer review; (4)\_To preserve
+    a fixed version of the paper for future reference."
+  - "Peer review, also called refereeing, is a quality control process through which
+    manuscripts submitted to a journal are evaluated and commented upon by independent
+    experts within the same field of research.\_High quality research tends to be
+    published in peer reviewed journals."
 --- !u!212 &21229114
 SpriteRenderer:
   m_ObjectHideFlags: 1

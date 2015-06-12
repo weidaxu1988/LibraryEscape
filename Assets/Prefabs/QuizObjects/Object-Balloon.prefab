@@ -193,15 +193,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startType: 1
-  noteTitle: Library Anxiety
+  previousPuzzle: {fileID: 0}
+  noteTitle: 'Topic Selection '
   noteContentArray:
-  - It refers to a fear of the library, and the process of finding the information
-    needed. It is characterized by negative emotions including tension, feelings of
-    uncertainty and helplessness, negative self-defeating thoughts, and mental disorganization,
-    all of which impede the development of IL.
-  - The effects of library anxiety can be debilitating. Students can become so anxious
-    about having to gather information from a library for their research papers that
-    they are unable to approach the problem logically or effectively.
+  - 'In Stage Two (topic selection) of ISP Model, a decision about the general area
+    needs to be made before writing. In general, start by having a few candidate topics
+    in mind, and then eliminate the topics one-by-one until a final selection is made.  '
+  - image_sprite_balloon
 --- !u!212 &21289050
 SpriteRenderer:
   m_ObjectHideFlags: 1

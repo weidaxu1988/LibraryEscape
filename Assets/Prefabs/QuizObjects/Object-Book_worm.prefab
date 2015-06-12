@@ -153,7 +153,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f5203376113ca3408ab9f34af9c5f20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startType: 0
+  startType: 2
+  previousPuzzle: {fileID: 0}
   noteTitle: Before Writing Starts
   noteContentArray:
   - During writing, there is much uncertainty. For example, the uncertainty of the
