@@ -12,32 +12,32 @@ public class SelectControl : MonoBehaviour
 
     public void OnLevelTwoClick()
     {
-        ShowDialog();
-        //LoadLevel(2);
+        //ShowDialog();
+        LoadLevel(2);
     }
 
     public void OnLevelThreeClick()
     {
-        ShowDialog();
-        //LoadLevel(3);
+        //ShowDialog();
+        LoadLevel(3);
     }
 
     public void OnLevelFourClick()
     {
-        ShowDialog();
-        //LoadLevel(4);
+        //ShowDialog();
+        LoadLevel(4);
     }
 
     public void OnLevelFiveClick()
     {
-        ShowDialog();
-        //LoadLevel(5);
+        //ShowDialog();
+        LoadLevel(5);
     }
 
     public void OnLevelSixClick()
     {
-        ShowDialog();
-        //LoadLevel(6);
+        //ShowDialog();
+        LoadLevel(6);
     }
 
     public void ShowDialog()

@@ -26,7 +26,6 @@ public class HelpNoteControl : MonoBehaviour
     {
         textIndex++;
 
-        Debug.Log("here");
         if (textIndex == breakIndex)
         {
             HideNote();
@@ -35,7 +34,6 @@ public class HelpNoteControl : MonoBehaviour
         {
             if (LevelControl.instance != null)
             {
-                Debug.Log("here");
                 LevelControl.instance.OnHelpFinish();
             }
         }

@@ -2964,6 +2964,7 @@ MonoBehaviour:
   beginObject: {fileID: 226787996}
   noteControl: {fileID: 1487917000}
   helpControl: {fileID: 869759823}
+  completeControl: {fileID: 0}
   questionControl: {fileID: 61702903}
   exitPanel: {fileID: 1750443702}
   player: {fileID: 869619735}
@@ -11364,6 +11365,7 @@ GameObject:
   - 4: {fileID: 1750443703}
   - 114: {fileID: 1750443705}
   - 54: {fileID: 1750443704}
+  - 114: {fileID: 1750443706}
   m_Layer: 8
   m_Name: Panel-Exit
   m_TagString: Untagged
@@ -11446,6 +11448,17 @@ MonoBehaviour:
   mDepth: 3
   mSortingOrder: 0
   mClipOffset: {x: 0, y: 0}
+--- !u!114 &1750443706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1750443702}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f273291999b2c294bb93faeb0fba481b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1797148451
 GameObject:
   m_ObjectHideFlags: 0

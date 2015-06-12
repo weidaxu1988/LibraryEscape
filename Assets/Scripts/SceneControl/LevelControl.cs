@@ -21,9 +21,9 @@ public class LevelControl : MonoBehaviour
     public GameObject beginObject;
     public NoteControl noteControl;
     public HelpNoteControl helpControl;
+    public CompleteNoteControl completeControl;
     public QuestionControl questionControl;
 
-    public GameObject exitPanel;
     public GameObject player;
 
     private PuzzleObject targetPuzzle;
@@ -46,7 +46,7 @@ public class LevelControl : MonoBehaviour
     {
         isGamePaused = true;
         SetupTotalPuzzles();
-        
+
         if (beginObject == null)
         {
             InitHelp();
@@ -55,8 +55,8 @@ public class LevelControl : MonoBehaviour
 
     public void OnPauseButtonClick()
     {
-        Debug.Log("pause game");
-        isGamePaused = !isGamePaused;
+        if (!puzzleCleared)
+            isGamePaused = !isGamePaused;
     }
 
     public void OnFunctionButtonClick()
@@ -160,7 +160,7 @@ public class LevelControl : MonoBehaviour
 
         if (helpControl.gameObject.activeSelf)
             helpControl.gameObject.SetActive(false);
-        
+
         if (!player.activeSelf)
             player.SetActive(true);
     }
@@ -201,7 +201,9 @@ public class LevelControl : MonoBehaviour
     public void QuestionFinished()
     {
         puzzleCleared = true;
-        exitObject.ActivateSelf();
+        //exitObject.ActivateSelf();
+
+        OnExitObjectClick();
 
         if (questionControl.gameObject.activeSelf)
             questionControl.gameObject.SetActive(false);
@@ -209,8 +211,8 @@ public class LevelControl : MonoBehaviour
 
     public void OnExitObjectClick()
     {
-        if (!exitPanel.activeSelf)
-            exitPanel.SetActive(true);
+        if (!completeControl.gameObject.activeSelf)
+            completeControl.gameObject.SetActive(true);
     }
 
     public void LevelComplete()

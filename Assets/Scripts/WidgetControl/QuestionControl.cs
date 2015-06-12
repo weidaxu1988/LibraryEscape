@@ -80,7 +80,7 @@ public class QuestionControl : MonoBehaviour
                 if (quizIndex >= totalQuiz.Length)
                 {
                     LevelControl.instance.QuestionFinished();
-                    OnQuestionFinish();
+                    //OnQuestionFinish();
                 }
                 else
                 {
