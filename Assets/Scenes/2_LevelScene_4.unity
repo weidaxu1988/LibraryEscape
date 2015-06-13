@@ -2136,8 +2136,9 @@ MonoBehaviour:
   beginObject: {fileID: 226787996}
   noteControl: {fileID: 1487917000}
   helpControl: {fileID: 869759823}
+  completeControl: {fileID: 0}
   questionControl: {fileID: 61702903}
-  exitPanel: {fileID: 1750443702}
+  failObject: {fileID: 0}
   player: {fileID: 869619735}
   exitObject: {fileID: 0}
 --- !u!114 &400690227
@@ -4028,6 +4029,7 @@ GameObject:
   - 4: {fileID: 1853168157}
   - 58: {fileID: 980544146}
   - 82: {fileID: 980544145}
+  - 114: {fileID: 980544147}
   m_Layer: 11
   m_Name: Break_glass
   m_TagString: Untagged
@@ -4119,6 +4121,17 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 5.55000019
+--- !u!114 &980544147
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 980544144}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7023439e81bdde64f8743f6fece4be8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1004400461
 GameObject:
   m_ObjectHideFlags: 0
@@ -6594,8 +6607,7 @@ MonoBehaviour:
   mTrueTypeFont: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
   mFont: {fileID: 0}
   mText: "You\u2019ve done well so far.\r\nEnter the digital library from the magical
-    screen later. There is a virus inside. You have to catch it before it does any
-    harm!\r"
+    screen later."
   mFontSize: 24
   mFontStyle: 0
   mAlignment: 1

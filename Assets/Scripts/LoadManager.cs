@@ -42,6 +42,11 @@ public class LoadManager : MonoBehaviour
         //StartCoroutine(LoadScene(GameConfig.NAME_LEVEL_SCENE + level));
     }
 
+    public void LoadPrevioudLevelScene(int level)
+    {
+        StartCoroutine(LoadScene(GameConfig.NAME_LEVEL_SCENE + level + "-2"));
+    }
+
     public void LoadLevelScene()
     {
         if (!string.IsNullOrEmpty(loadingSceneStr))

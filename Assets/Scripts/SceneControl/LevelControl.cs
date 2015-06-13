@@ -23,6 +23,7 @@ public class LevelControl : MonoBehaviour
     public HelpNoteControl helpControl;
     public CompleteNoteControl completeControl;
     public QuestionControl questionControl;
+    public GameObject failObject;
 
     public GameObject player;
 
@@ -213,6 +214,14 @@ public class LevelControl : MonoBehaviour
     {
         if (!completeControl.gameObject.activeSelf)
             completeControl.gameObject.SetActive(true);
+    }
+
+    public void GameFailed()
+    {
+        isGamePaused = true;
+
+        if (failObject != null && !failObject.activeSelf)
+            failObject.SetActive(true);    
     }
 
     public void LevelComplete()

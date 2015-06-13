@@ -18,6 +18,8 @@ public class PlayerControl : MonoBehaviour
     public float[] maxYs;
     public float maxX = 450;
 
+    public Enemy[] timeEnemies;
+
     private BoxCollider2D boxCollider;
     private Animator anim;
 
@@ -99,6 +101,8 @@ public class PlayerControl : MonoBehaviour
 
     void AttemptMove(float xDir, float yDir)
     {
+        CheckTimeSensitiveEnemies();
+
         float actualScale = (maxScales[1] - maxScales[0]) * (transform.position.y - maxYs[1]) / (maxYs[0] - maxYs[1]) + maxScales[0];
 
         Vector3 start = transform.position;
@@ -169,5 +173,16 @@ Debug.DrawLine(startRay, startRay+ new Vector3(xDir, yDir), Color.red);
     void StartWorrit()
     {
         anim.SetBool("Worrit", true);
+    }
+
+    void CheckTimeSensitiveEnemies()
+    {
+        foreach (Enemy e in timeEnemies)
+        {
+            if (e.enemyActive && e.timeSensitive)
+            {
+                LevelControl.instance.GameFailed();
+            }
+        }
     }
 }
