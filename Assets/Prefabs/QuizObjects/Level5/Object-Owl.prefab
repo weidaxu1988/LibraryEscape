@@ -8,7 +8,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 441720}
-  - 114: {fileID: 11407298}
+  - 114: {fileID: 11448118}
   - 58: {fileID: 5856544}
   - 82: {fileID: 8219114}
   m_Layer: 11
@@ -42,7 +42,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 170612}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.0989999995, y: -.363999993, z: 0}
+  m_LocalPosition: {x: .105999999, y: -.119999997, z: 0}
   m_LocalScale: {x: .0850000009, y: .0850000009, z: 1}
   m_Children:
   - {fileID: 497412}
@@ -142,7 +142,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
---- !u!114 &11407298
+--- !u!114 &11448118
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -150,7 +150,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 170612}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f5203376113ca3408ab9f34af9c5f20, type: 3}
+  m_Script: {fileID: 11500000, guid: a979fd6f0a217eb48ba4595fcd5758f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   startType: 0

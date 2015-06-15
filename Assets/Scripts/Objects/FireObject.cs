@@ -4,7 +4,7 @@ using System.Collections;
 public class FireObject : MonoBehaviour
 {
     const float delayTime = 1;
-    const float endDelayTime = 10;
+    const float endDelayTime = 10000;
 
     private TweenScale tweenScale;
     //private CircleCollider2D circleCollider;
@@ -64,7 +64,7 @@ public class FireObject : MonoBehaviour
 
         if (fireActived && other.tag == "Player")
         {
-            Player player = other.GetComponent<Player>();
+            PlayerControl player = other.GetComponent<PlayerControl>();
             
             if (!player.HasFireKiller()) return;
             

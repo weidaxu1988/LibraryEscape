@@ -23,6 +23,8 @@ public class PlayerControl : MonoBehaviour
     private BoxCollider2D boxCollider;
     private Animator anim;
 
+    public bool flashlightActive, pianoActive, fireKillerActive, cheeseActive;
+
     void Awake()
     {
         boxCollider = GetComponent<BoxCollider2D>();
@@ -184,5 +186,45 @@ Debug.DrawLine(startRay, startRay+ new Vector3(xDir, yDir), Color.red);
                 LevelControl.instance.GameFailed();
             }
         }
+    }
+
+    public void SetFireKillerActive(bool active)
+    {
+        fireKillerActive = active;
+    }
+
+    public bool HasFireKiller()
+    {
+        return fireKillerActive;
+    }
+
+    public void SetPianoActive(bool active)
+    {
+        pianoActive = active;
+    }
+
+    public bool HasPiano()
+    {
+        return pianoActive;
+    }
+
+    public void SetCheeseActive(bool active)
+    {
+        cheeseActive = active;
+    }
+
+    public bool HasCheese()
+    {
+        return cheeseActive;
+    }
+
+    public void SetFlashlightActive(bool active)
+    {
+        flashlightActive = active;
+    }
+
+    public bool HasFlashlight()
+    {
+        return flashlightActive;
     }
 }

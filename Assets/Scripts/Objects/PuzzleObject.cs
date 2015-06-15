@@ -19,12 +19,12 @@ public class PuzzleObject : MonoBehaviour
     public string noteTitle;
     public string[] noteContentArray;
 
-    private TweenScale tweenScale;
+    protected TweenScale tweenScale;
     //private CircleCollider2D circleCollider;
 
-    private AudioSource audioSource;
+    protected AudioSource audioSource;
 
-    private bool activited = false;
+    protected bool activited = false;
     private bool showed = false;
     private float timeCount;
 
@@ -51,7 +51,7 @@ public class PuzzleObject : MonoBehaviour
         }
     }
 
-    void OnTriggerEnter2D(Collider2D other)
+    protected virtual void OnTriggerEnter2D(Collider2D other)
     {
         if (other.tag == "Player")
         {

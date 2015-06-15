@@ -8,7 +8,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 442192}
-  - 114: {fileID: 11467372}
+  - 114: {fileID: 11427390}
   - 58: {fileID: 5896340}
   - 82: {fileID: 8283372}
   m_Layer: 11
@@ -54,7 +54,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 164054}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.0989999995, y: -.363999993, z: 0}
+  m_LocalPosition: {x: 1.296, y: -.298999995, z: 0}
   m_LocalScale: {x: .0850000009, y: .0850000009, z: 1}
   m_Children:
   - {fileID: 421650}
@@ -142,6 +142,37 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+--- !u!114 &11427390
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 164054}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0ca57cc5a02f7f49a3212d658a239f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startType: 0
+  previousPuzzle: {fileID: 0}
+  noteTitle: 'Evaluating the Authors '
+  noteContentArray:
+  - 'The main question is whether the author has necessary expertise to produce the
+    information resource. Thus the following should be examined: training, experience,
+    or competence; academic degrees;  credentials;  institutional or association affiliations;
+    and  publications or research history. '
+  - 'Attribution of Source Material Check if references and sources for all the content
+    are listed clearly. Proper attribution is a responsibility of a scholar, and it
+    can (1) help readers identify and relocate the source work; (2) provide evidence
+    that the position is well-researched; and (3) gives credit to the author of an
+    original concept or theory. '
+  - 'Recency Look out for the date the information resources was published or posted.
+    For certain fields, e.g., information technology, the shelf life of information
+    is very short, and you have to be aware of the publishing date of the resource.  '
+  - 'Granularity and Extent The information provided has to be of the right amount
+    to meets your needs. Different types of documents require different amount of
+    information. For example, journal paper, or a research proposal, or a business
+    plan require different amount of information. '
 --- !u!114 &11456698
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -181,37 +212,6 @@ MonoBehaviour:
   from: {x: 1, y: 1, z: 1}
   to: {x: 1.20000005, y: 1.20000005, z: 1.20000005}
   updateTable: 0
---- !u!114 &11467372
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 164054}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f5203376113ca3408ab9f34af9c5f20, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startType: 0
-  previousPuzzle: {fileID: 0}
-  noteTitle: 'Evaluating the Authors '
-  noteContentArray:
-  - 'The main question is whether the author has necessary expertise to produce the
-    information resource. Thus the following should be examined: training, experience,
-    or competence; academic degrees;  credentials;  institutional or association affiliations;
-    and  publications or research history. '
-  - 'Attribution of Source Material Check if references and sources for all the content
-    are listed clearly. Proper attribution is a responsibility of a scholar, and it
-    can (1) help readers identify and relocate the source work; (2) provide evidence
-    that the position is well-researched; and (3) gives credit to the author of an
-    original concept or theory. '
-  - 'Recency Look out for the date the information resources was published or posted.
-    For certain fields, e.g., information technology, the shelf life of information
-    is very short, and you have to be aware of the publishing date of the resource.  '
-  - 'Granularity and Extent The information provided has to be of the right amount
-    to meets your needs. Different types of documents require different amount of
-    information. For example, journal paper, or a research proposal, or a business
-    plan require different amount of information. '
 --- !u!212 &21235310
 SpriteRenderer:
   m_ObjectHideFlags: 1
