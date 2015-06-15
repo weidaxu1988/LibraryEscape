@@ -289,6 +289,19 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: btn_level_3
+    x: 3829
+    y: 1288
+    width: 256
+    height: 178
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: btn_level_4
     x: 3054
     y: 876
     width: 256
@@ -301,7 +314,7 @@ MonoBehaviour:
     paddingRight: 0
     paddingTop: 0
     paddingBottom: 0
-  - name: btn_level_4
+  - name: btn_level_5
     x: 3315
     y: 1288
     width: 256
@@ -314,21 +327,8 @@ MonoBehaviour:
     paddingRight: 0
     paddingTop: 0
     paddingBottom: 0
-  - name: btn_level_5
-    x: 3572
-    y: 1288
-    width: 256
-    height: 178
-    borderLeft: 0
-    borderRight: 0
-    borderTop: 0
-    borderBottom: 0
-    paddingLeft: 0
-    paddingRight: 0
-    paddingTop: 0
-    paddingBottom: 0
   - name: btn_level_6
-    x: 3829
+    x: 3572
     y: 1288
     width: 256
     height: 178

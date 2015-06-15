@@ -7,12 +7,20 @@ public class Enemy : MonoBehaviour
     public int sleepTime;
     public int awakeTime;
 
+    public float speed;
+
+    public bool roundWay;
+
     public Vector3 startPos;
     public Vector3 endPos;
 
+    public Transform[] routerPositions;
+
+    private int currentPosIndex;
+
     public bool enemyActive;
 
-    private float timeCount;
+    private float timeCount, sleepTimeCount;
 
     private Vector3 oriScale;
 
@@ -48,8 +56,8 @@ public class Enemy : MonoBehaviour
 
 
             //tweenScale.PlayForward();
-
-            GhostCaught();
+            if (enemyActive)
+                GhostCaught();
         }
     }
 
@@ -79,7 +87,7 @@ public class Enemy : MonoBehaviour
             {
                 //float speed = 1 / awakeTime / 2;
                 timeCount += Time.deltaTime;
-                
+
                 if (timeCount < awakeTime / 2)
                 {
                     Vector3 scale = oriScale;
@@ -101,30 +109,133 @@ public class Enemy : MonoBehaviour
         }
     }
 
+    //void MoveProcess()
+    //{
+    //    if (timeCount < awakeTime)
+    //    {
+    //        //float speed = 1 / awakeTime / 2;
+    //        timeCount += Time.deltaTime;
+
+    //        if (timeCount < awakeTime / 2)
+    //        {
+    //            Vector3 scale = oriScale;
+    //            scale.x *= -1;
+    //            transform.localScale = scale;
+    //            transform.position = Vector3.Lerp(startPos, endPos, timeCount / (awakeTime / 2));
+    //        }
+    //        else
+    //        {
+    //            transform.localScale = oriScale;
+    //            transform.position = Vector3.Lerp(endPos, startPos, timeCount / (awakeTime / 2) - 1);
+    //        }
+    //    }
+    //    else
+    //    {
+    //        timeCount = 0;
+    //    }
+    //}
+
+    bool isReturning;
     void MoveProcess()
     {
-        if (timeCount < awakeTime)
+        if (roundWay)
         {
-            //float speed = 1 / awakeTime / 2;
-            timeCount += Time.deltaTime;
-
-            if (timeCount < awakeTime / 2)
+            if (sleepTimeCount < sleepTime)
             {
-                Vector3 scale = oriScale;
-                scale.x *= -1;
-                transform.localScale = scale;
-                transform.position = Vector3.Lerp(startPos, endPos, timeCount / (awakeTime / 2));
+                sleepTimeCount += Time.deltaTime;
             }
             else
             {
-                transform.localScale = oriScale;
-                transform.position = Vector3.Lerp(endPos, startPos, timeCount / (awakeTime / 2) - 1);
+                Transform fromPos = routerPositions[0];
+                Transform targetPos = routerPositions[currentPosIndex + 1];
+
+                float disc = Vector3.Distance(fromPos.position, targetPos.position);
+                float corvedred = timeCount * speed;
+
+                if (isReturning)
+                {
+                    if (fromPos.position.x > targetPos.position.x)
+                    {
+                        Vector3 scale = oriScale;
+                        scale.x *= -1;
+                        transform.localScale = scale;
+                    }
+                    else
+                    {
+                        transform.localScale = oriScale;
+                    }
+                    transform.position = Vector3.Lerp(targetPos.position, fromPos.position, corvedred / disc);
+                }
+                else
+                {
+                    if (fromPos.position.x < targetPos.position.x)
+                    {
+                        Vector3 scale = oriScale;
+                        scale.x *= -1;
+                        transform.localScale = scale;
+                    }
+                    else
+                    {
+                        transform.localScale = oriScale;
+                    }
+                    transform.position = Vector3.Lerp(fromPos.position, targetPos.position, corvedred / disc);
+                }
+
+                
+
+                if (!isReturning && transform.position == targetPos.position)
+                {
+                    isReturning = true;
+                    timeCount = 0;
+                }
+                else if (isReturning && transform.position == fromPos.position)
+                {
+                    isReturning = false;
+                    sleepTimeCount = 0;
+                    timeCount = 0;
+                    currentPosIndex = (currentPosIndex + 1) % routerPositions.Length;
+                    if (currentPosIndex == routerPositions.Length - 1)
+                        currentPosIndex = 0;
+                }
+                else
+                {
+                    timeCount += Time.deltaTime;
+                }
             }
         }
         else
         {
-            timeCount = 0;
+            Transform fromPos = routerPositions[currentPosIndex];
+            Transform targetPos = routerPositions[(currentPosIndex + 1) % routerPositions.Length];
+
+            float disc = Vector3.Distance(fromPos.position, targetPos.position);
+            float corvedred = timeCount * speed;
+
+            transform.position = Vector3.Lerp(fromPos.position, targetPos.position, corvedred / disc);
+
+            if (fromPos.position.x < targetPos.position.x)
+            {
+                Vector3 scale = oriScale;
+                scale.x *= -1;
+                transform.localScale = scale;
+            }
+            else
+            {
+                transform.localScale = oriScale;
+            }
+
+            if (transform.position == targetPos.position)
+            {
+                timeCount = 0;
+                currentPosIndex = (currentPosIndex + 1) % routerPositions.Length;
+            }
+            else
+            {
+                timeCount += Time.deltaTime;
+            }
         }
+
+
     }
 
 }

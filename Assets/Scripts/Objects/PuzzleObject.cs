@@ -3,6 +3,8 @@ using System.Collections;
 
 public class PuzzleObject : MonoBehaviour
 {
+    const float delayTime = 1;
+
     public enum StartType
     {
         Purple,
@@ -23,12 +25,30 @@ public class PuzzleObject : MonoBehaviour
     private AudioSource audioSource;
 
     private bool activited = false;
+    private bool showed = false;
+    private float timeCount;
 
     void Awake()
     {
         //circleCollider = GetComponent<CircleCollider2D>();
         tweenScale = GetComponentInChildren<TweenScale>();
         audioSource = GetComponent<AudioSource>();
+    }
+
+    void Update()
+    {
+        if (activited && !showed)
+        {
+            if (timeCount < delayTime)
+            {
+                timeCount += Time.deltaTime;
+            }
+            else
+            {
+                showed = true;
+                LevelControl.instance.OnPuzzleObjectClick(this);
+            }
+        }
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -40,8 +60,8 @@ public class PuzzleObject : MonoBehaviour
             audioSource.Play();
             
 //disable click open automatically
-            //activited = true;
-            LevelControl.instance.OnPuzzleObjectClick(this);
+            activited = true;
+            //LevelControl.instance.OnPuzzleObjectClick(this);
 
 
             tweenScale.PlayForward();
@@ -57,6 +77,8 @@ public class PuzzleObject : MonoBehaviour
             if (!activited) return;
 
             activited = false;
+            showed = false;
+            timeCount = 0;
             tweenScale.PlayReverse();
         }
     }

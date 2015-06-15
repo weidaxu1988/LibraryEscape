@@ -9,6 +9,16 @@ public class GameManager : MonoBehaviour {
 
     public Player player = new Player();
 
+    private int currentLevel = 1;
+
+    public int CurrentLevel
+    {
+        get
+        {
+            return currentLevel;
+        }
+    }
+
     void Awake()
     {
         if (instance == null)
@@ -22,6 +32,19 @@ public class GameManager : MonoBehaviour {
     void OnLevelWasLoaded(int index)
     {
         
+    }
+
+    public bool allowLoad(int level)
+    {
+        if (level == currentLevel)
+            return true;
+        else
+            return false;
+    }
+
+    public void GameClear()
+    {
+        currentLevel++;
     }
 
 }

@@ -24,8 +24,10 @@ public class LevelControl : MonoBehaviour
     public CompleteNoteControl completeControl;
     public QuestionControl questionControl;
     public GameObject failObject;
+    public GameObject timeUpObject;
 
     public GameObject player;
+    public GameObject[] ghosts;
 
     private PuzzleObject targetPuzzle;
     private bool secondTime;
@@ -164,6 +166,12 @@ public class LevelControl : MonoBehaviour
 
         if (!player.activeSelf)
             player.SetActive(true);
+
+        foreach (GameObject obj in ghosts)
+        {
+            if (!obj.activeSelf)
+                obj.SetActive(true);
+        }
     }
 
     public void OnNoteCloseButtonClick(PuzzleObject obj)
@@ -212,6 +220,17 @@ public class LevelControl : MonoBehaviour
 
     public void OnExitObjectClick()
     {
+        if (player != null && player.activeSelf)
+        {
+            player.SetActive(false);
+        }
+
+        foreach (GameObject obj in ghosts)
+        {
+            if (obj.activeSelf)
+                obj.SetActive(false);
+        }
+
         if (!completeControl.gameObject.activeSelf)
             completeControl.gameObject.SetActive(true);
     }
@@ -221,11 +240,12 @@ public class LevelControl : MonoBehaviour
         isGamePaused = true;
 
         if (failObject != null && !failObject.activeSelf)
-            failObject.SetActive(true);    
+            failObject.SetActive(true);
     }
 
     public void LevelComplete()
     {
+        GameManager.instance.GameClear();
         GameManager.instance.loadManager.LoadSelectScene();
     }
 
@@ -262,7 +282,8 @@ public class LevelControl : MonoBehaviour
 
     public void CountDownFinished()
     {
-        Debug.Log("time's up");
+        if (timeUpObject != null && !timeUpObject.activeSelf)
+            timeUpObject.SetActive(true);
     }
 
 }
