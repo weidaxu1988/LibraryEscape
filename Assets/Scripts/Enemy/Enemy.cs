@@ -11,6 +11,8 @@ public class Enemy : MonoBehaviour
 
     public bool roundWay;
 
+    public TweenScale tweenScale;
+
     public Vector3 startPos;
     public Vector3 endPos;
 
@@ -73,10 +75,16 @@ public class Enemy : MonoBehaviour
         {
             if (timeCount < sleepTime)
             {
+                if (sleepTime - timeCount < 2)
+                {
+                    tweenScale.enabled = true;
+                }
+
                 timeCount += Time.deltaTime;
             }
             else
             {
+                tweenScale.enabled = false;
                 enemyActive = true;
                 timeCount = 0;
             }
@@ -85,6 +93,8 @@ public class Enemy : MonoBehaviour
         {
             if (timeCount < awakeTime)
             {
+                
+
                 //float speed = 1 / awakeTime / 2;
                 timeCount += Time.deltaTime;
 

@@ -5862,7 +5862,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11434426, guid: 559f2f9b0fbd79440a51e4a18ff34133, type: 2}
       propertyPath: sleepTime
-      value: 1
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 148256, guid: 559f2f9b0fbd79440a51e4a18ff34133, type: 2}
       propertyPath: m_IsActive
@@ -5880,6 +5880,10 @@ Prefab:
       propertyPath: speed
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 11434426, guid: 559f2f9b0fbd79440a51e4a18ff34133, type: 2}
+      propertyPath: tweenScale
+      value: 
+      objectReference: {fileID: 1028605221}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 559f2f9b0fbd79440a51e4a18ff34133, type: 2}
   m_IsPrefabParent: 0
@@ -5887,6 +5891,49 @@ Prefab:
 GameObject:
   m_PrefabParentObject: {fileID: 148256, guid: 559f2f9b0fbd79440a51e4a18ff34133, type: 2}
   m_PrefabInternal: {fileID: 1028605218}
+--- !u!1 &1028605220 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 139526, guid: 559f2f9b0fbd79440a51e4a18ff34133, type: 2}
+  m_PrefabInternal: {fileID: 1028605218}
+--- !u!114 &1028605221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1028605220}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75e7459110b9666449485c40f25362a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  method: 0
+  style: 2
+  animationCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 1
+      tangentMode: 0
+    - time: 1
+      value: 1
+      inSlope: 1
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  ignoreTimeScale: 1
+  delay: 0
+  duration: .5
+  steeperCurves: 0
+  tweenGroup: 0
+  onFinished: []
+  eventReceiver: {fileID: 0}
+  callWhenFinished: 
+  from: {x: .0434950925, y: .0434950925, z: .0434950925}
+  to: {x: .0599999987, y: .0599999987, z: .0434950925}
+  updateTable: 0
 --- !u!4 &1049687175 stripped
 Transform:
   m_PrefabParentObject: {fileID: 446086, guid: 65abe23b94a57844c81948f178d0dde4, type: 2}

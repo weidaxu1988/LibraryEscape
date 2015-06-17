@@ -43,12 +43,14 @@ public class DragDropQuiz : Quiz
 
         if (finalScore >= 1)
         {
+            GameManager.instance.player.AddTotalScore(failCount);
             feedbackLabel.text = correctFeedBack;
             if (questionControl != null)
                 questionControl.QuestionCorrect();
         }
         else
         {
+            failCount++;
             feedbackLabel.text = incorrectFeedBack;
             if (questionControl != null)
                 questionControl.QuestionIncorrect();

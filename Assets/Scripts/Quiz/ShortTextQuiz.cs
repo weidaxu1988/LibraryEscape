@@ -18,12 +18,16 @@ public class ShortTextQuiz : Quiz
 
         if (finalScore >= 1)
         {
+            GameManager.instance.player.AddTotalScore(failCount);
+
             HandleCorrectFeedback();
             if (questionControl != null)
                 questionControl.QuestionCorrect();
         }
         else
         {
+            failCount++;
+
             HandleIncorrectFeedback();
         }
     }

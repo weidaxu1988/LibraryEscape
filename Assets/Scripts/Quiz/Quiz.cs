@@ -13,6 +13,14 @@ public class Quiz : MonoBehaviour
 
     public PuzzleObject puzzleObj;
 
+    protected int totalScore = 0;
+    protected int failCount = 0;
+
+    public void AddFailCount()
+    {
+        failCount++;
+    }
+
     public PuzzleObject PuzzleObject
     {
         get { return puzzleObj; }

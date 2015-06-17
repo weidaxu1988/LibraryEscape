@@ -62,16 +62,23 @@ public class ShortAnswerMultiKeyWords : ShortTextQuiz {
             {
                 string keyWord = (string)list[j];
 
+                //results[i] = 0;
+
+                //Debug.Log(answer + ",wrong key: " + keyWord);
+
+                //Debug.Log(i + ", wrong result: " + results[i]);
+
                 if (answer != null && answer.Contains(keyWord))
                 {
+
                     results[i] = 1;
-                    list.RemoveAt(i);
-                    i--;
+
+                    list.RemoveAt(j);
                     break;
                 }
                 else
                 {
-                    results[i] = 0;   
+                    results[i] = 0;
                 }
             }
 
@@ -79,6 +86,8 @@ public class ShortAnswerMultiKeyWords : ShortTextQuiz {
         }
 
         foreach (int i in results) {
+            Debug.Log(i + ", result: ");
+
             if (i != 1)
             {
                 return 0;

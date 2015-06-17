@@ -19,11 +19,15 @@ public class OrderQuiz : Quiz
 
         if (finalScore >= 1)
         {
+            GameManager.instance.player.AddTotalScore(failCount);
+
             if (questionControl != null)
                 questionControl.QuestionCorrect();
         }
         else
         {
+            failCount++;
+
             if (questionControl != null)
                 questionControl.QuestionIncorrect();
         }

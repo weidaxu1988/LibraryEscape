@@ -60,13 +60,15 @@ public class QuestionControl : MonoBehaviour
 
     public void NextQuestion()
     {
+        Quiz quiz = totalQuiz[quizIndex];
         if (incorrectQuestionCount >= incorrectCapacity)
         {
+            quiz.AddFailCount();
             OnQuestionFinish();
             return;
         }
 
-        Quiz quiz = totalQuiz[quizIndex];
+        //Quiz quiz = totalQuiz[quizIndex];
 
         ShowNextButton(false);
 
@@ -102,7 +104,7 @@ public class QuestionControl : MonoBehaviour
 
         if (quizIndex > 0)
         {
-            lastQuizIndex = quizIndex - 1;
+            lastQuizIndex = quizIndex;
         }
 
         if (gameObject.activeSelf)

@@ -30,8 +30,8 @@ public class ShortAnswerQ3 : ShortAnswerMultiKeyWords
                 if (answer != null && answer.Contains(keyWord))
                 {
                     results[i] = 1;
-                    list.RemoveAt(i);
-                    i--;
+                    list.RemoveAt(j);
+                    j--;
                     rCount++;
                     break;
                 }

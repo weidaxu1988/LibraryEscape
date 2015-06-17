@@ -28,8 +28,8 @@ public class ShortAnswerQ2 : ShortAnswerMultiKeyWords
                 if (answer != null && answer.Contains(keyWord))
                 {
                     results[i] = 1;
-                    list.RemoveAt(i);
-                    i--;
+                    list.RemoveAt(j);
+                    j--;
                     break;
                 }
                 else
@@ -40,16 +40,18 @@ public class ShortAnswerQ2 : ShortAnswerMultiKeyWords
         }
 
         string rAnswer = null, iAnswer = null;
+        int count = 0;
         foreach (int i in results)
         {
             if (i == 1)
             {
-                rAnswer = inputs[i].value;
+                rAnswer = inputs[count].value;
             }
             else
             {
-                iAnswer = inputs[i].value;
+                iAnswer = inputs[count].value;
             }
+            count++;
         }
 
         if (string.IsNullOrEmpty(rAnswer))

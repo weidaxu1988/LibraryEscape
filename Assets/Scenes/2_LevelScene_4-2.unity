@@ -581,11 +581,11 @@ Prefab:
         type: 3}
     - target: {fileID: 486880, guid: 559f2f9b0fbd79440a51e4a18ff34133, type: 2}
       propertyPath: m_LocalScale.x
-      value: .00648842426
+      value: .00499999989
       objectReference: {fileID: 0}
     - target: {fileID: 486880, guid: 559f2f9b0fbd79440a51e4a18ff34133, type: 2}
       propertyPath: m_LocalScale.y
-      value: .00648842426
+      value: .00499999989
       objectReference: {fileID: 0}
     - target: {fileID: 486880, guid: 559f2f9b0fbd79440a51e4a18ff34133, type: 2}
       propertyPath: m_LocalScale.z
@@ -593,7 +593,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 5864786, guid: 559f2f9b0fbd79440a51e4a18ff34133, type: 2}
       propertyPath: m_Radius
-      value: .0700000003
+      value: .0599999987
       objectReference: {fileID: 0}
     - target: {fileID: 148256, guid: 559f2f9b0fbd79440a51e4a18ff34133, type: 2}
       propertyPath: m_IsActive
@@ -601,7 +601,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11434426, guid: 559f2f9b0fbd79440a51e4a18ff34133, type: 2}
       propertyPath: enemyActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 11434426, guid: 559f2f9b0fbd79440a51e4a18ff34133, type: 2}
       propertyPath: routerPositions.Array.data[0]
@@ -2013,7 +2013,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 346575476}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -.0599999987, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 726036226}
@@ -3388,11 +3388,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11478410, guid: 65abe23b94a57844c81948f178d0dde4, type: 2}
       propertyPath: maxScales.Array.data[0]
-      value: 1.20000005
+      value: .899999976
       objectReference: {fileID: 0}
     - target: {fileID: 11478410, guid: 65abe23b94a57844c81948f178d0dde4, type: 2}
       propertyPath: maxScales.Array.data[1]
-      value: .5
+      value: .300000012
       objectReference: {fileID: 0}
     - target: {fileID: 6175122, guid: 65abe23b94a57844c81948f178d0dde4, type: 2}
       propertyPath: m_Offset.x
@@ -3404,7 +3404,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 6175122, guid: 65abe23b94a57844c81948f178d0dde4, type: 2}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 65abe23b94a57844c81948f178d0dde4, type: 2}
