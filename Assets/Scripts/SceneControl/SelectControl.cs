@@ -58,7 +58,7 @@ public class SelectControl : MonoBehaviour
 
     private void LoadLevel(int level)
     {
-        if (GameManager.instance.CurrentLevel == level)
+        //if (GameManager.instance.CurrentLevel == level)
             GameManager.instance.loadManager.LoadLevelSceneDirectly(level);
     }
 }

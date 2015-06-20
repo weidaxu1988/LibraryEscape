@@ -29,6 +29,12 @@ public class GameManager : MonoBehaviour {
         loadManager = GetComponent<LoadManager>();
     }
 
+    void Update()
+    {
+        if (Input.GetKey(KeyCode.Escape))
+            GameManager.instance.loadManager.LoadSelectScene();
+    }
+
     void OnLevelWasLoaded(int index)
     {
         
