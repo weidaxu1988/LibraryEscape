@@ -12184,53 +12184,17 @@ Prefab:
       propertyPath: m_RootOrder
       value: 6
       objectReference: {fileID: 0}
-    - target: {fileID: 11481950, guid: 731f2a05bad79454ea4e7c6d6bdae77a, type: 2}
-      propertyPath: puzzleObj
-      value: 
-      objectReference: {fileID: 1071337198}
-    - target: {fileID: 11405506, guid: 731f2a05bad79454ea4e7c6d6bdae77a, type: 2}
-      propertyPath: aspectRatio
-      value: 7.26666689
-      objectReference: {fileID: 0}
-    - target: {fileID: 11415832, guid: 731f2a05bad79454ea4e7c6d6bdae77a, type: 2}
-      propertyPath: aspectRatio
-      value: 125
-      objectReference: {fileID: 0}
-    - target: {fileID: 144256, guid: 731f2a05bad79454ea4e7c6d6bdae77a, type: 2}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 144256, guid: 731f2a05bad79454ea4e7c6d6bdae77a, type: 2}
       propertyPath: m_Name
       value: 2_4_QuizShortText
       objectReference: {fileID: 0}
-    - target: {fileID: 11426666, guid: 731f2a05bad79454ea4e7c6d6bdae77a, type: 2}
-      propertyPath: mText
-      value: "What are some common ways to deal with library anxiety?\n\n                          and"
-      objectReference: {fileID: 0}
-    - target: {fileID: 11426666, guid: 731f2a05bad79454ea4e7c6d6bdae77a, type: 2}
-      propertyPath: mHeight
-      value: 144
-      objectReference: {fileID: 0}
-    - target: {fileID: 11426666, guid: 731f2a05bad79454ea4e7c6d6bdae77a, type: 2}
-      propertyPath: aspectRatio
-      value: 5.38888884
-      objectReference: {fileID: 0}
-    - target: {fileID: 454742, guid: 731f2a05bad79454ea4e7c6d6bdae77a, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -53
-      objectReference: {fileID: 0}
-    - target: {fileID: 479920, guid: 731f2a05bad79454ea4e7c6d6bdae77a, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -53
-      objectReference: {fileID: 0}
-    - target: {fileID: 454742, guid: 731f2a05bad79454ea4e7c6d6bdae77a, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 60
-      objectReference: {fileID: 0}
-    - target: {fileID: 479920, guid: 731f2a05bad79454ea4e7c6d6bdae77a, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -294
+    - target: {fileID: 11481950, guid: 731f2a05bad79454ea4e7c6d6bdae77a, type: 2}
+      propertyPath: puzzleObj
+      value: 
+      objectReference: {fileID: 1071337198}
+    - target: {fileID: 144256, guid: 731f2a05bad79454ea4e7c6d6bdae77a, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 731f2a05bad79454ea4e7c6d6bdae77a, type: 2}

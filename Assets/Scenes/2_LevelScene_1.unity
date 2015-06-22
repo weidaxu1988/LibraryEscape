@@ -3827,6 +3827,12 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4c78c8da3449ba84c972ba463a678b31, type: 2}
   m_IsPrefabParent: 0
+--- !u!114 &507516269 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 11424852, guid: 4c78c8da3449ba84c972ba463a678b31,
+    type: 2}
+  m_PrefabInternal: {fileID: 507516268}
+  m_Script: {fileID: 11500000, guid: 8f5203376113ca3408ab9f34af9c5f20, type: 3}
 --- !u!1 &529407260
 GameObject:
   m_ObjectHideFlags: 0
@@ -15041,6 +15047,10 @@ Prefab:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 11409488, guid: 5698b4c713a19e3459f12f5026e2ad62, type: 2}
+      propertyPath: puzzleObj
+      value: 
+      objectReference: {fileID: 507516269}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5698b4c713a19e3459f12f5026e2ad62, type: 2}
   m_IsPrefabParent: 0

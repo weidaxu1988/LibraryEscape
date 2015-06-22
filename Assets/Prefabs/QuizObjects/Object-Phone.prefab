@@ -42,7 +42,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 148686}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.0579999983, y: .0410000011, z: 0}
+  m_LocalPosition: {x: -.0289999992, y: .0410000011, z: 0}
   m_LocalScale: {x: .0850000009, y: .0850000009, z: 1}
   m_Children:
   - {fileID: 471072}
@@ -68,11 +68,11 @@ BoxCollider2D:
   m_GameObject: {fileID: 148686}
   m_Enabled: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1.20000005, y: 1.5}
 --- !u!82 &8228758
 AudioSource:
   m_ObjectHideFlags: 1
@@ -193,6 +193,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startType: 0
+  previousPuzzle: {fileID: 0}
   noteTitle: Secondary Sources
   noteContentArray:
   - "Secondary sources are works (books, articles, etc.) that interpret, explain,

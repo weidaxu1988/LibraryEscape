@@ -329,7 +329,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 158394}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 138, y: 6, z: 0}
+  m_LocalPosition: {x: 60, y: -53, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 485722}
@@ -344,7 +344,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 135426}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -216, y: 6, z: 0}
+  m_LocalPosition: {x: -294, y: -53, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 405712}
@@ -486,7 +486,7 @@ MonoBehaviour:
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 11.0333338
+  aspectRatio: 7.26666689
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
   mFont: {fileID: 0}
@@ -631,7 +631,7 @@ MonoBehaviour:
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 181.5
+  aspectRatio: 125
   mType: 1
   mFillDirection: 4
   mFillAmount: 1
@@ -726,16 +726,16 @@ MonoBehaviour:
   mColor: {r: 0, g: 0, b: 0, a: 1}
   mPivot: 0
   mWidth: 776
-  mHeight: 72
+  mHeight: 144
   mDepth: 0
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 10.7777777
+  aspectRatio: 5.38888884
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
   mFont: {fileID: 0}
-  mText: Library anxiety gives rise to negative emotions like                              and
+  mText: "What are some common ways to deal with library anxiety?\n\n                          and"
   mFontSize: 36
   mFontStyle: 0
   mAlignment: 0
@@ -935,15 +935,12 @@ MonoBehaviour:
   feedbackContainer: {fileID: 170326}
   puzzleObj: {fileID: 0}
   keyWords:
-  - fear
-  - uncertainty
-  - helplessness
-  - selfdoubt
-  - fright
-  - confusion
-  - dread
-  - overwhelmed
-  - anxiousness
+  - tour
+  - instruction
+  - reference
+  - consultation
+  - orientation
+  - workshop
   correctFeedBack: 
   incorrectFeedBack:
   - "Library anxiety can give rise to many negative emotions to the library users.
