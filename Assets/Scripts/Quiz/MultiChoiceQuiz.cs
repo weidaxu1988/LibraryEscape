@@ -25,8 +25,20 @@ public class MultiChoiceQuiz : Quiz
             GameManager.instance.player.AddTotalScore(failCount);
 
             HandleCorrectFeedback();
-            if (questionControl != null)
+
+            Debug.Log("position check");
+
+            if (questionControl == null)
+                questionControl = NGUITools.FindInParents<QuestionControl>(gameObject);
+
+            if (questionControl != null) {
+                Debug.Log("question not null");
                 questionControl.QuestionCorrect();
+            }
+            else
+            {
+                Debug.Log("question null");
+            }
         }
         else
         {
@@ -34,6 +46,9 @@ public class MultiChoiceQuiz : Quiz
             failCount++;
      
             HandleIncorrectFeedback();
+            if (questionControl == null)
+                questionControl = NGUITools.FindInParents<QuestionControl>(gameObject);
+
             if (questionControl != null)
                 questionControl.QuestionIncorrect();
         }

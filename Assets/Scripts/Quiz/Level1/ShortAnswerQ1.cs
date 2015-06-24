@@ -24,7 +24,8 @@ public class ShortAnswerQ1 : ShortTextQuiz
                 
             }   
         }
-
+        if (questionControl == null)
+            questionControl = NGUITools.FindInParents<QuestionControl>(gameObject);
         if (questionControl != null)
             questionControl.QuestionIncorrect();
 

@@ -21,12 +21,18 @@ public class OrderQuiz : Quiz
         {
             GameManager.instance.player.AddTotalScore(failCount);
 
+            if (questionControl == null)
+                questionControl = NGUITools.FindInParents<QuestionControl>(gameObject);
+
             if (questionControl != null)
                 questionControl.QuestionCorrect();
         }
         else
         {
             failCount++;
+
+            if (questionControl == null)
+                questionControl = NGUITools.FindInParents<QuestionControl>(gameObject);
 
             if (questionControl != null)
                 questionControl.QuestionIncorrect();

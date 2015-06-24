@@ -21,14 +21,40 @@ public class ShortTextQuiz : Quiz
             GameManager.instance.player.AddTotalScore(failCount);
 
             HandleCorrectFeedback();
+
+            Debug.Log("text question check");
+
+            if (questionControl == null)
+                questionControl = NGUITools.FindInParents<QuestionControl>(gameObject);
+
             if (questionControl != null)
+            {
+                Debug.Log("question not null");
                 questionControl.QuestionCorrect();
+            }
+            else
+            {
+                Debug.Log("question null");
+            }
         }
         else
         {
             failCount++;
 
             HandleIncorrectFeedback();
+
+            if (questionControl == null)
+                questionControl = NGUITools.FindInParents<QuestionControl>(gameObject);
+
+            if (questionControl != null)
+            {
+                Debug.Log("question not null");
+                questionControl.QuestionIncorrect();
+            }
+            else
+            {
+                Debug.Log("question null");
+            }
         }
     }
 

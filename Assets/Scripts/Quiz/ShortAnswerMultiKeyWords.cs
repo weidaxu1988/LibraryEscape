@@ -41,7 +41,8 @@ public class ShortAnswerMultiKeyWords : ShortTextQuiz {
                 break;
             }
         }
-
+        if (questionControl == null)
+            questionControl = NGUITools.FindInParents<QuestionControl>(gameObject);
         if (questionControl != null)
             questionControl.QuestionIncorrect();
 

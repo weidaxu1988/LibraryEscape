@@ -121,12 +121,34 @@ public class QuestionControl : MonoBehaviour
 
     public void QuestionCorrect()
     {
-        libraianAnimator.SetTrigger("comfort");
+        if (libraianAnimator == null)
+        {
+            Debug.Log("incorrect null");
+            libraianAnimator = librarian.GetComponentInChildren<Animator>();
+        }
+        else
+        {
+            Debug.Log("incorrect not null");
+            libraianAnimator.SetTrigger("comfort");
+        }
+
+        
     }
 
     public void QuestionIncorrect()
     {
-        libraianAnimator.SetTrigger("cheer");
+        if (libraianAnimator == null)
+        {
+            Debug.Log("incorrect null");
+            libraianAnimator = librarian.GetComponentInChildren<Animator>();
+        }
+        else
+        {
+            Debug.Log("incorrect not null");
+            libraianAnimator.SetTrigger("cheer");
+        }
+
+        
     }
 
     protected void ShowFailedContent()

@@ -45,6 +45,9 @@ public class DragDropQuiz : Quiz
         {
             GameManager.instance.player.AddTotalScore(failCount);
             feedbackLabel.text = correctFeedBack;
+            if (questionControl == null)
+             questionControl = NGUITools.FindInParents<QuestionControl>(gameObject);
+    
             if (questionControl != null)
                 questionControl.QuestionCorrect();
         }
@@ -52,6 +55,9 @@ public class DragDropQuiz : Quiz
         {
             failCount++;
             feedbackLabel.text = incorrectFeedBack;
+            if (questionControl == null)
+                questionControl = NGUITools.FindInParents<QuestionControl>(gameObject);
+
             if (questionControl != null)
                 questionControl.QuestionIncorrect();
         }

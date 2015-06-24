@@ -56,7 +56,8 @@ public class ShortAnswerQ2 : ShortAnswerMultiKeyWords
 
         if (string.IsNullOrEmpty(rAnswer))
             feedbackLabel.text = "Library anxiety can give rise to negative feelings such as " + rAnswer + ", you’ve got this correct. Think about it again on " + iAnswer + ".";
-
+        if (questionControl == null)
+            questionControl = NGUITools.FindInParents<QuestionControl>(gameObject);
         if (questionControl != null)
             questionControl.QuestionIncorrect();
     }

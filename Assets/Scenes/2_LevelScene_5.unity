@@ -716,7 +716,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 101088, guid: 7ba8fe3ba6872f949bc0032bbb8f32e8, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 438680, guid: 7ba8fe3ba6872f949bc0032bbb8f32e8, type: 2}
       propertyPath: m_LocalScale.x
@@ -3426,7 +3426,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 458680, guid: 1165a007a0286d44da87dd456dc98c19, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 150866, guid: 1165a007a0286d44da87dd456dc98c19, type: 2}
       propertyPath: m_IsActive
@@ -6086,6 +6086,12 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ac8d8624fc2183f4595f61a775751b3a, type: 2}
   m_IsPrefabParent: 0
+--- !u!114 &913811233 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 11427390, guid: ac8d8624fc2183f4595f61a775751b3a,
+    type: 2}
+  m_PrefabInternal: {fileID: 913811232}
+  m_Script: {fileID: 11500000, guid: a0ca57cc5a02f7f49a3212d658a239f4, type: 3}
 --- !u!1 &931351739
 GameObject:
   m_ObjectHideFlags: 0
@@ -8960,6 +8966,10 @@ Prefab:
       propertyPath: routerPositions.Array.data[5]
       value: 
       objectReference: {fileID: 1645486725}
+    - target: {fileID: 11434426, guid: 559f2f9b0fbd79440a51e4a18ff34133, type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 559f2f9b0fbd79440a51e4a18ff34133, type: 2}
   m_IsPrefabParent: 0
@@ -10796,7 +10806,7 @@ Prefab:
     - target: {fileID: 11461660, guid: f25f20dc8b3f8dd47a9c84f7681f5de3, type: 2}
       propertyPath: puzzleObj
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 913811233}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f25f20dc8b3f8dd47a9c84f7681f5de3, type: 2}
   m_IsPrefabParent: 0
@@ -11320,7 +11330,7 @@ Prefab:
     - target: {fileID: 11423180, guid: 05427ccda92de9e48bbce2fce0a419fa, type: 2}
       propertyPath: puzzleObj
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 913811233}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 05427ccda92de9e48bbce2fce0a419fa, type: 2}
   m_IsPrefabParent: 0
