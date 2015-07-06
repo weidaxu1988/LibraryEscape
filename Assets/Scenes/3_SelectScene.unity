@@ -1110,7 +1110,7 @@ MonoBehaviour:
   pixelSnap: 0
   onClick:
   - mTarget: {fileID: 400690226}
-    mMethodName: OnLevelThreeClick
+    mMethodName: OnLevelTwoClick
     mParameters: []
     oneShot: 0
 --- !u!114 &990412308
@@ -1340,7 +1340,7 @@ MonoBehaviour:
   pixelSnap: 0
   onClick:
   - mTarget: {fileID: 400690226}
-    mMethodName: OnLevelTwoClick
+    mMethodName: OnLevelThreeClick
     mParameters: []
     oneShot: 0
 --- !u!114 &1303011148
@@ -1587,6 +1587,7 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: .0219999999
+  m_StereoMirrorMode: 0
 --- !u!81 &1607933150
 AudioListener:
   m_ObjectHideFlags: 0
@@ -1789,7 +1790,7 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7c3a28b051e872b448d4808cfcf9199c, type: 2}
   m_IsPrefabParent: 0
---- !u!4 &1818668965
+--- !u!4 &1818668965 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400002, guid: 7c3a28b051e872b448d4808cfcf9199c, type: 2}
   m_PrefabInternal: {fileID: 1818668964}

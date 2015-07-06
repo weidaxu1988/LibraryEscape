@@ -8,11 +8,9 @@ public class DragDropQuiz : Quiz
     public string correctFeedBack;
     public string incorrectFeedBack;
 
-    public UILabel feedbackLabel;
-
     List<DragDropQuizContainer> questionList = new List<DragDropQuizContainer>();
 
-    void Awake()
+    void Start()
     {
         questionList.AddRange(GetComponentsInChildren<DragDropQuizContainer>());
     }
@@ -35,33 +33,25 @@ public class DragDropQuiz : Quiz
         }
     }
 
-    public override void InitFeedback()
-    {
-        ShowFeedBack(true);
+    //public override void InitFeedback()
+    //{
+    //    ShowFeedBack(true);
 
-        finalScore = getScore();
+    //    finalScore = getScore();
 
-        if (finalScore >= 1)
-        {
-            GameManager.instance.player.AddTotalScore(failCount);
-            feedbackLabel.text = correctFeedBack;
-            if (questionControl == null)
-             questionControl = NGUITools.FindInParents<QuestionControl>(gameObject);
-    
-            if (questionControl != null)
-                questionControl.QuestionCorrect();
-        }
-        else
-        {
-            failCount++;
-            feedbackLabel.text = incorrectFeedBack;
-            if (questionControl == null)
-                questionControl = NGUITools.FindInParents<QuestionControl>(gameObject);
-
-            if (questionControl != null)
-                questionControl.QuestionIncorrect();
-        }
-    }
+    //    if (finalScore >= 1)
+    //    {
+    //        GameManager.instance.player.AddTotalScore(failCount);
+    //        HandleCorrectFeedback();
+    //        questionControl.QuestionCorrect();
+    //    }
+    //    else
+    //    {
+    //        failCount++;
+    //        HandleIncorrectFeedback();
+    //        questionControl.QuestionIncorrect();
+    //    }
+    //}
 
     public override int getScore()
     {
@@ -73,5 +63,15 @@ public class DragDropQuiz : Quiz
                 score++;
         }
         return score / total;
+    }
+
+    protected override void HandleCorrectFeedback()
+    {
+        feedbackLabel.text = correctFeedBack;
+    }
+
+    protected override void HandleIncorrectFeedback()
+    {
+        feedbackLabel.text = incorrectFeedBack;
     }
 }

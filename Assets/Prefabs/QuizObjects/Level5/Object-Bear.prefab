@@ -42,7 +42,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 122052}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.0989999995, y: -.363999993, z: 0}
+  m_LocalPosition: {x: .611000001, y: -.702000022, z: 0}
   m_LocalScale: {x: .0850000009, y: .0850000009, z: 1}
   m_Children:
   - {fileID: 458420}
@@ -70,9 +70,9 @@ CircleCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_UsedByEffector: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -1.13, y: 0}
   serializedVersion: 2
-  m_Radius: .610000014
+  m_Radius: .99000001
 --- !u!82 &8291520
 AudioSource:
   m_ObjectHideFlags: 1
@@ -153,7 +153,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f5203376113ca3408ab9f34af9c5f20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startType: 0
+  startType: 2
   previousPuzzle: {fileID: 0}
   noteTitle: 'Information Collection '
   noteContentArray:

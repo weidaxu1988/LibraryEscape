@@ -3,6 +3,8 @@ using System.Collections;
 
 public class OptionPiano : MonoBehaviour {
 
+    public GameObject mText;
+
     private TweenScale tweenScale;
     //private CircleCollider2D circleCollider;
 
@@ -22,6 +24,8 @@ public class OptionPiano : MonoBehaviour {
         {
             PlayerControl player = other.GetComponent<PlayerControl>();
             player.SetPianoActive(true);
+
+            mText.SetActive(false);
 
             audioSource.Play();
 

@@ -238,7 +238,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 492004}
-  - 114: {fileID: 11409488}
+  - 114: {fileID: 11401764}
   m_Layer: 8
   m_Name: 1_4_QuizMultiChoice
   m_TagString: Untagged
@@ -925,6 +925,22 @@ MonoBehaviour:
   mAtlas: {fileID: 11400000, guid: 62adb30369acbf943a67cee0f69267a3, type: 2}
   mSpriteName: Highlight - Shadowed
   mFillCenter: 1
+--- !u!114 &11401764
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 164370}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 377205bf3ae88544c90dcecbb5cbfbcd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questionContainer: {fileID: 141916}
+  feedbackContainer: {fileID: 163388}
+  feedbackLabel: {fileID: 11413950}
+  puzzleObj: {fileID: 0}
+  correctOption: {fileID: 11424830}
 --- !u!114 &11403512
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1024,31 +1040,6 @@ MonoBehaviour:
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 14.0740738
---- !u!114 &11409488
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 164370}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5e7fd5ee307d0c04c910a7ce322e558a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  questionContainer: {fileID: 141916}
-  feedbackContainer: {fileID: 163388}
-  puzzleObj: {fileID: 0}
-  feedbackLabel: {fileID: 11413950}
-  correctOption: {fileID: 0}
-  correctFeedback: "You\u2019ve nailed it!\_The ISP Model contributed in understanding
-    affective aspects during information search process and is more applicable to
-    novice researchers."
-  incorrectFeedback: Please try again! Remember that you have to cite sources from
-    which you have obtained ideas. This is the final question, after which you would
-    have completed all six missions! You have to get this right.
-  correctOptions:
-  - {fileID: 11424830}
-  - {fileID: 11450952}
 --- !u!114 &11413950
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1175,9 +1166,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d57df2d6fef60a438796b85622efa39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  feedback: Good IL skills can help you remain relevant and employable when you start
-    working. Please try again! You can do this. Remember that you've been asked to
-    identify the incorrect statement.
+  feedback: "You\u2019ve nailed it!\_The ISP Model contributed in understanding affective
+    aspects during information search process and is more applicable to novice researchers."
 --- !u!114 &11419536
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1296,7 +1286,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d57df2d6fef60a438796b85622efa39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  feedback: the quick accessibility of the sources
+  feedback: The ISP Model was developed by Carol Kuhlthau. Please try again!
 --- !u!114 &11432586
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1548,8 +1538,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d57df2d6fef60a438796b85622efa39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  feedback: You're absolutely right!  IL cannot make you more ethical, that decision
-    lies entirely with you!
+  feedback: The ISP model describes the typical information search process of novice
+    information seekers, rather than experts. Now try this question again.
 --- !u!114 &11450952
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1961,8 +1951,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d57df2d6fef60a438796b85622efa39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  feedback: "Good IL skills can help you be a more informed citizen.\_Please try again!
-    You can do this. Remember that you've been asked to identify the incorrect statement."
+  feedback: Nice try, but negative feelings are more common at the beginning and middle
+    of the search process according to the ISP Model. Try to recall what you have
+    learnt just now, you can do it!
 --- !u!114 &11494302
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -200,8 +200,8 @@ MonoBehaviour:
   - "Not all the words in the title represent concepts that are important. Break down
     the topic\u2019s description into individual concepts, and identify the ones critical
     to the term paper. Most topics have two to four concepts."
-  - "Three concepts can be identified: \t\uF0B7\tdrug abuse \t\uF0B7\tteenagers \t\uF0B7\tlow-income
-    families"
+  - Three concepts can be identified:\n     drug abuse\n     teenagers\n     low-income
+    families
   - image_sprite_zoom_1
   - image_sprite_zoom_2
   - Look through the articles you have retrieved and evaluate if they are useful for

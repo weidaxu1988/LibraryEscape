@@ -129,7 +129,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &177788
 GameObject:
   m_ObjectHideFlags: 1
@@ -585,6 +585,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questionContainer: {fileID: 191396}
   feedbackContainer: {fileID: 198170}
+  feedbackLabel: {fileID: 11439360}
   puzzleObj: {fileID: 0}
   correctFeedBack: Well done! Remember to use the Boolean operators to make your search
     more effective.
@@ -592,7 +593,6 @@ MonoBehaviour:
     Requiring either term to be returned will broaden the search. Using NOT will eliminate
     some results containing the term from the search results. Try again, recall what
     you\u2019ve learnt just now."
-  feedbackLabel: {fileID: 11439360}
 --- !u!114 &11414796
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1036,7 +1036,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e3c955ffdfdf3d47b8408d8207194d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  restriction: 1
+  restriction: 3
   cloneOnDrag: 0
   pressAndHoldDelay: 1
   interactable: 1
@@ -1051,7 +1051,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e3c955ffdfdf3d47b8408d8207194d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  restriction: 1
+  restriction: 3
   cloneOnDrag: 0
   pressAndHoldDelay: 1
   interactable: 1
@@ -1357,7 +1357,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e3c955ffdfdf3d47b8408d8207194d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  restriction: 1
+  restriction: 3
   cloneOnDrag: 0
   pressAndHoldDelay: 1
   interactable: 1

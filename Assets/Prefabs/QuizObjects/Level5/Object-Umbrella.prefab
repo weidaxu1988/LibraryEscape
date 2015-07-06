@@ -201,11 +201,11 @@ MonoBehaviour:
     2.0 has made available a huge quantity of user-generated content, all most of
     which have not undergone peer review or any other form of quality control. This
     is why appraising the quality of this material is ciritcal. '
-  - "The elements used to assess information quality are: accuracy \u2012 the extent
-    to which data are correct, reliable and certified free of error  currency \u2012
+  - "The elements used to assess information quality are:\\naccuracy \u2012 the extent
+    to which data are correct, reliable and certified free of error\\n  currency \u2012
     the extent to which the information is sufficiently up-to-date for the task at
-    hand completeness \u2012 the extent to which information is not missing and is
-    of sufficient breadth and depth for the task at hand "
+    hand\\n completeness \u2012 the extent to which information is not missing and
+    is of sufficient breadth and depth for the task at hand "
   - "conciseness \u2012 the extent to which information is compactly represented without
     being overwhelming  objectivity \u2012 the extent to which information is unbiased,
     unprejudiced and impartial relevance \u2012 the extent to which information is

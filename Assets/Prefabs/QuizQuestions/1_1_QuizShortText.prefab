@@ -111,7 +111,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &170988
 GameObject:
   m_ObjectHideFlags: 0
@@ -349,17 +349,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questionContainer: {fileID: 170988}
   feedbackContainer: {fileID: 111046}
+  feedbackLabel: {fileID: 11485470}
   puzzleObj: {fileID: 0}
   keyWords:
   - 1974
   correctFeedBack: "Yes, Zurkowsky coined the term \u201Cinformation literacy\u201D
     in 1974!  You are on the right track. Let\u2019s go on to the next question."
   incorrectFeedBack:
-  - "Zurkowsky did not coin the term \u201Cinformation literacy\u201D in 1977, but
-    yes in the 1970s.  Please try again."
-  - "Zurkowsky coined the term \u201Cinformation literacy\u201D in the 1970s.  Please
-    try again."
-  feedbackLabel: {fileID: 11485470}
+  - "Yes Zurkowsky coined the term \u201Cinformation literacy\u201D in the 1970s,
+    but not this year. Let\u2019s try again!"
+  - "Some hint, Zurkowsky coined the term \u201Cinformation literacy\u201D in the
+    1970s. So try again."
   inputs:
   - {fileID: 11478074}
 --- !u!114 &11470082

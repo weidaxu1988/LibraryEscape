@@ -25,6 +25,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 486880}
   - 212: {fileID: 21242788}
+  - 114: {fileID: 11463096}
   m_Layer: 0
   m_Name: Sprite-Ghost
   m_TagString: Untagged
@@ -45,7 +46,7 @@ GameObject:
   - 58: {fileID: 5864786}
   m_Layer: 0
   m_Name: Ghost
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -57,7 +58,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 148256}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.35500002, y: -.129999995, z: 0}
+  m_LocalPosition: {x: -.800000012, y: .763999999, z: 0}
   m_LocalScale: {x: -1, y: 1, z: 1}
   m_Children:
   - {fileID: 486880}
@@ -90,6 +91,7 @@ Transform:
   m_RootOrder: 0
 --- !u!50 &5006318
 Rigidbody2D:
+  serializedVersion: 2
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -98,11 +100,11 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: .0500000007
   m_GravityScale: 1
-  m_FixedAngle: 0
   m_IsKinematic: 1
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!58 &5864786
 CircleCollider2D:
   m_ObjectHideFlags: 1
@@ -127,12 +129,57 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a87f2b965b7d9b346918c499f23025fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeSensitive: 0
-  sleepTime: 60
+  timeSensitive: 1
+  sleepTime: 30
   awakeTime: 10
-  startPos: {x: -1.35500002, y: -.129999995, z: 0}
-  endPos: {x: 1.35500002, y: -.129999995, z: 0}
+  speed: 1
+  roundWay: 0
+  tweenScale: {fileID: 11463096}
+  startPos: {x: -.800000012, y: .763999999, z: 0}
+  endPos: {x: .800000012, y: .763999999, z: 0}
+  routerPositions:
+  - {fileID: 0}
+  - {fileID: 0}
   enemyActive: 0
+--- !u!114 &11463096
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 139526}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75e7459110b9666449485c40f25362a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  method: 0
+  style: 2
+  animationCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 1
+      tangentMode: 0
+    - time: 1
+      value: 1
+      inSlope: 1
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  ignoreTimeScale: 1
+  delay: 0
+  duration: .5
+  steeperCurves: 0
+  tweenGroup: 0
+  onFinished: []
+  eventReceiver: {fileID: 0}
+  callWhenFinished: 
+  from: {x: .0434950925, y: .0434950925, z: .0434950925}
+  to: {x: .0599999987, y: .0599999987, z: .0434950925}
+  updateTable: 0
 --- !u!212 &21242788
 SpriteRenderer:
   m_ObjectHideFlags: 1

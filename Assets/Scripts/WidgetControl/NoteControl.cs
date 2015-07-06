@@ -5,6 +5,7 @@ public class NoteControl : MonoBehaviour
 {
     public UILabel noteTtitle;
     public UILabel noteContent;
+    public UISprite noteContentSprite;
     public UILabel notePager;
 
     public GameObject nextButton;
@@ -14,6 +15,7 @@ public class NoteControl : MonoBehaviour
 
     private int textIndex;
     private PuzzleObject puzzle;
+
     public PuzzleObject Puzzle
     {
         set
@@ -60,7 +62,7 @@ public class NoteControl : MonoBehaviour
             checkNavButtons();
         }
     }
-    
+
     public void CloseNote()
     {
         LevelControl.instance.OnNoteCloseButtonClick(puzzle);
@@ -97,8 +99,31 @@ public class NoteControl : MonoBehaviour
         noteTtitle.text = puzzle.noteTitle;
         if (index >= 0 && index < puzzle.noteContentArray.Length)
         {
-            noteContent.text = puzzle.noteContentArray[index];
-            noteContent.ResizeCollider();
+            string content = puzzle.noteContentArray[index];
+
+            if (content.Contains("image_sprite"))
+            {
+                if (noteContent.gameObject.activeSelf)
+                    noteContent.gameObject.SetActive(false);
+                
+                if (!noteContentSprite.gameObject.activeSelf)
+                    noteContentSprite.gameObject.SetActive(true);
+
+                noteContentSprite.spriteName = content;
+                noteContentSprite.MakePixelPerfect();
+                noteContentSprite.ResizeCollider();
+            }
+            else
+            {
+                if (!noteContent.gameObject.activeSelf)
+                    noteContent.gameObject.SetActive(true);
+
+                if (noteContentSprite.gameObject.activeSelf)
+                    noteContentSprite.gameObject.SetActive(false);
+
+                noteContent.text = content;
+                noteContent.ResizeCollider();
+            }
             notePager.text = (index + 1) + "/" + puzzle.noteContentArray.Length;
         }
     }

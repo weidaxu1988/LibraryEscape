@@ -641,7 +641,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 117382}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.05175781e-05, y: -28.0000038, z: 0}
+  m_LocalPosition: {x: 3.05175781e-05, y: -28.0000057, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 472320}
@@ -731,7 +731,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 130826}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.05175781e-05, y: -84, z: 0}
+  m_LocalPosition: {x: 3.05175781e-05, y: -84.0000153, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 470004}
@@ -1900,8 +1900,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d57df2d6fef60a438796b85622efa39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  feedback: "a speecYes. You can look up an encyclopaedia for some quick and general
-    information. Let\u2019s go on to the next question"
+  feedback: "Yes. You can look up an encyclopaedia for some quick and general information.
+    Let\u2019s go on to the next question"
 --- !u!114 &11475152
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2053,8 +2053,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questionContainer: {fileID: 184010}
   feedbackContainer: {fileID: 107350}
-  puzzleObj: {fileID: 0}
   feedbackLabel: {fileID: 11451738}
+  puzzleObj: {fileID: 0}
   correctOption: {fileID: 11424460}
 --- !u!114 &11497894
 MonoBehaviour:

@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System;
 
 public class ShortAnswerQ3 : ShortAnswerMultiKeyWords
 {
@@ -27,7 +28,7 @@ public class ShortAnswerQ3 : ShortAnswerMultiKeyWords
             {
                 string keyWord = (string)list[j];
 
-                if (answer != null && answer.Contains(keyWord))
+                if (answer != null && (answer.IndexOf(keyWord, StringComparison.InvariantCultureIgnoreCase) >= 0))
                 {
                     results[i] = 1;
                     list.RemoveAt(j);
@@ -71,4 +72,5 @@ public class ShortAnswerQ3 : ShortAnswerMultiKeyWords
         if (questionControl != null)
             questionControl.QuestionIncorrect();
     }
+
 }

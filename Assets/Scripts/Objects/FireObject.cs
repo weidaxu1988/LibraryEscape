@@ -4,7 +4,7 @@ using System.Collections;
 public class FireObject : MonoBehaviour
 {
     const float delayTime = 1;
-    const float endDelayTime = 10000;
+    const float endDelayTime = 10;
 
     private TweenScale tweenScale;
     //private CircleCollider2D circleCollider;

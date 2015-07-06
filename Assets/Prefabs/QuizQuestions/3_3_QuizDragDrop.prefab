@@ -930,7 +930,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reparentTarget: {fileID: 0}
-  correctItem: {fileID: 11467088}
+  correctItem: {fileID: 11407614}
 --- !u!114 &11407296
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1571,13 +1571,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questionContainer: {fileID: 138762}
   feedbackContainer: {fileID: 128936}
+  feedbackLabel: {fileID: 11491006}
   puzzleObj: {fileID: 0}
   correctFeedBack: Wonderful, you understand the publication cycle very well now.
     Good job, Tom!
   incorrectFeedBack: Hmm, there are some problems in your sequence. The scientific
     publication cycles goes from primary sources to secondary to tertiary. Try again
     now!
-  feedbackLabel: {fileID: 11491006}
 --- !u!114 &11450650
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1720,7 +1720,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reparentTarget: {fileID: 0}
-  correctItem: {fileID: 11477468}
+  correctItem: {fileID: 11417608}
 --- !u!114 &11467088
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1891,7 +1891,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reparentTarget: {fileID: 0}
-  correctItem: {fileID: 11417608}
+  correctItem: {fileID: 11477468}
 --- !u!114 &11485434
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2184,7 +2184,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reparentTarget: {fileID: 0}
-  correctItem: {fileID: 11407614}
+  correctItem: {fileID: 11467088}
 --- !u!114 &11495764
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -568,7 +568,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 153134}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 130, y: -333.000031, z: 0}
+  m_LocalPosition: {x: 130.000061, y: -333.000061, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 423742}
@@ -584,7 +584,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 118702}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 130, y: -111.000015, z: 0}
+  m_LocalPosition: {x: 130.000061, y: -143, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 453802}
@@ -600,7 +600,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 174128}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 390.999969, y: -333.000031, z: 0}
+  m_LocalPosition: {x: 391.000061, y: -333.000061, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 479318}
@@ -616,7 +616,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 195082}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 390.999969, y: -111.000038, z: 0}
+  m_LocalPosition: {x: 391.000061, y: -143, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 419056}
@@ -773,7 +773,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 200, y: 200, z: 0}
+  m_Size: {x: 200, y: 150, z: 0}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!65 &6533010
 BoxCollider:
@@ -785,7 +785,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 200, y: 200, z: 0}
+  m_Size: {x: 200, y: 150, z: 0}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!65 &6565142
 BoxCollider:
@@ -797,7 +797,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 200, y: 200, z: 0}
+  m_Size: {x: 200, y: 150, z: 0}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!65 &6570184
 BoxCollider:
@@ -809,7 +809,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 200, y: 200, z: 0}
+  m_Size: {x: 200, y: 150, z: 0}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &11404982
 MonoBehaviour:
@@ -842,7 +842,7 @@ MonoBehaviour:
   mColor: {r: 1, g: 0, b: 0, a: 1}
   mPivot: 3
   mWidth: 161
-  mHeight: 202
+  mHeight: 152
   mDepth: 10
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
@@ -932,7 +932,7 @@ MonoBehaviour:
   mColor: {r: .227941155, g: .227941155, b: .227941155, a: 1}
   mPivot: 3
   mWidth: 161
-  mHeight: 202
+  mHeight: 152
   mDepth: 9
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
@@ -997,17 +997,17 @@ MonoBehaviour:
   mColor: {r: 0, g: 0, b: 0, a: 1}
   mPivot: 1
   mWidth: 766
-  mHeight: 72
+  mHeight: 108
   mDepth: 0
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 10.6388893
+  aspectRatio: 5.31944466
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
   mFont: {fileID: 0}
-  mText: In order to become familiar with a subject about which you know very little,
-    first consult
+  mText: "Which type of search is most effective to find ALL the documents about Albert
+    Einstein in the library catalog?\r"
   mFontSize: 36
   mFontStyle: 0
   mAlignment: 1
@@ -1063,7 +1063,7 @@ MonoBehaviour:
   mColor: {r: .227941155, g: .227941155, b: .227941155, a: 1}
   mPivot: 3
   mWidth: 161
-  mHeight: 202
+  mHeight: 152
   mDepth: 9
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
@@ -1141,7 +1141,7 @@ MonoBehaviour:
   mColor: {r: .904411793, g: .904411793, b: .904411793, a: 1}
   mPivot: 4
   mWidth: 200
-  mHeight: 200
+  mHeight: 150
   mDepth: 7
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
@@ -1239,12 +1239,12 @@ MonoBehaviour:
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
   mWidth: 200
-  mHeight: 200
+  mHeight: 150
   mDepth: 6
   autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 1
+  aspectRatio: 1.33333337
 --- !u!114 &11428792
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1289,7 +1289,7 @@ MonoBehaviour:
   mColor: {r: .227941155, g: .227941155, b: .227941155, a: 1}
   mPivot: 3
   mWidth: 161
-  mHeight: 202
+  mHeight: 152
   mDepth: 9
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
@@ -1354,7 +1354,7 @@ MonoBehaviour:
   mColor: {r: .904411793, g: .904411793, b: .904411793, a: 1}
   mPivot: 4
   mWidth: 200
-  mHeight: 200
+  mHeight: 150
   mDepth: 7
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
@@ -1404,12 +1404,12 @@ MonoBehaviour:
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
   mWidth: 200
-  mHeight: 200
+  mHeight: 150
   mDepth: 6
   autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 1
+  aspectRatio: 1.33333337
 --- !u!114 &11458148
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1441,7 +1441,7 @@ MonoBehaviour:
   mColor: {r: 1, g: 0, b: 0, a: 1}
   mPivot: 3
   mWidth: 161
-  mHeight: 202
+  mHeight: 152
   mDepth: 10
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
@@ -1519,12 +1519,12 @@ MonoBehaviour:
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
   mWidth: 200
-  mHeight: 200
+  mHeight: 150
   mDepth: 6
   autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 1
+  aspectRatio: 1.33333337
 --- !u!114 &11461996
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1579,7 +1579,7 @@ MonoBehaviour:
   mColor: {r: .904411793, g: .904411793, b: .904411793, a: 1}
   mPivot: 4
   mWidth: 200
-  mHeight: 200
+  mHeight: 150
   mDepth: 7
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
@@ -1611,8 +1611,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questionContainer: {fileID: 116904}
   feedbackContainer: {fileID: 132974}
-  puzzleObj: {fileID: 0}
   feedbackLabel: {fileID: 11494090}
+  puzzleObj: {fileID: 0}
   correctOption: {fileID: 11476516}
 --- !u!114 &11466312
 MonoBehaviour:
@@ -1716,12 +1716,12 @@ MonoBehaviour:
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
   mWidth: 200
-  mHeight: 200
+  mHeight: 150
   mDepth: 6
   autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 1
+  aspectRatio: 1.33333337
 --- !u!114 &11478742
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1753,7 +1753,7 @@ MonoBehaviour:
   mColor: {r: .904411793, g: .904411793, b: .904411793, a: 1}
   mPivot: 4
   mWidth: 200
-  mHeight: 200
+  mHeight: 150
   mDepth: 7
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
@@ -1803,7 +1803,7 @@ MonoBehaviour:
   mColor: {r: 1, g: 0, b: 0, a: 1}
   mPivot: 3
   mWidth: 161
-  mHeight: 202
+  mHeight: 152
   mDepth: 10
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
@@ -1906,7 +1906,7 @@ MonoBehaviour:
   mColor: {r: 1, g: 0, b: 0, a: 1}
   mPivot: 3
   mWidth: 161
-  mHeight: 202
+  mHeight: 152
   mDepth: 10
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
@@ -1971,7 +1971,7 @@ MonoBehaviour:
   mColor: {r: .227941155, g: .227941155, b: .227941155, a: 1}
   mPivot: 3
   mWidth: 161
-  mHeight: 202
+  mHeight: 152
   mDepth: 9
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0

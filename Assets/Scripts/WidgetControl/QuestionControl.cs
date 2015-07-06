@@ -42,6 +42,9 @@ public class QuestionControl : MonoBehaviour
     {
         Quiz quiz = totalQuiz[quizIndex];
 
+        if (!librarian.activeSelf)
+            librarian.SetActive(true);
+
         if (quiz.getScore() < 1)
         {
             incorrectQuestionCount++;
@@ -53,7 +56,6 @@ public class QuestionControl : MonoBehaviour
                 return;
             }
         }
-
         quiz.InitFeedback();
         ShowNextButton(true);
     }
@@ -180,6 +182,9 @@ public class QuestionControl : MonoBehaviour
 
     protected void ShowQuiz(int index)
     {
+        if (librarian.activeSelf)
+            librarian.SetActive(false);
+
         if (index < totalQuiz.Length)
         {
             Quiz quiz = null;

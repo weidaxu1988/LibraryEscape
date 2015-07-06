@@ -737,7 +737,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 194112}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.05175781e-05, y: -31.0000057, z: 0}
+  m_LocalPosition: {x: 3.05175781e-05, y: -31.0000229, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 498720}
@@ -826,7 +826,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 199186}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.05175781e-05, y: -217, z: 0}
+  m_LocalPosition: {x: 3.05175781e-05, y: -217.000015, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 479842}
@@ -882,7 +882,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 183028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.05175781e-05, y: -155, z: 0}
+  m_LocalPosition: {x: 3.05175781e-05, y: -155.000015, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 476614}
@@ -950,8 +950,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 760, y: 54, z: 0}
-  m_Center: {x: 380, y: 0, z: 0}
+  m_Size: {x: 821, y: 54, z: 0}
+  m_Center: {x: 410.5, y: 0, z: 0}
 --- !u!65 &6591866
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -1331,8 +1331,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questionContainer: {fileID: 104722}
   feedbackContainer: {fileID: 144860}
-  puzzleObj: {fileID: 0}
   feedbackLabel: {fileID: 11489534}
+  puzzleObj: {fileID: 0}
   correctOption: {fileID: 0}
   correctFeedback: "Fantastic! You got all of it! Let\u2019s go on to the next question."
   incorrectFeedback: "You\u2019ve got these correct. There are some more causes of
@@ -1456,7 +1456,7 @@ MonoBehaviour:
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
   mFont: {fileID: 0}
-  mText: "The librarians are unfriendly, they are not likely to help me\r"
+  mText: "The librarians are unfriendly, they are not likely to help me\r."
   mFontSize: 28
   mFontStyle: 0
   mAlignment: 0
@@ -2423,7 +2423,7 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: .227941155, g: .227941155, b: .227941155, a: 1}
   mPivot: 3
-  mWidth: 721
+  mWidth: 782
   mHeight: 56
   mDepth: 9
   autoResizeBoxCollider: 0
@@ -2433,7 +2433,7 @@ MonoBehaviour:
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
   mFont: {fileID: 0}
-  mText: "This library is freezing, and it\u2019s too cold for me to study here"
+  mText: "This library is freezing, and it\u2019s too cold for me to study here."
   mFontSize: 28
   mFontStyle: 0
   mAlignment: 0
@@ -2538,13 +2538,13 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 3
-  mWidth: 760
+  mWidth: 821
   mHeight: 54
   mDepth: 6
   autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 14.0740738
+  aspectRatio: 15.2037039
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

@@ -11,33 +11,33 @@ public class OrderQuiz : Quiz
         questionList.AddRange(GetComponentsInChildren<OrderQuizItem>());
     }
 
-    public override void InitFeedback()
-    {
-        ShowFeedBack(true);
+    //public override void InitFeedback()
+    //{
+    //    ShowFeedBack(true);
 
-        finalScore = getScore();
+    //    finalScore = getScore();
 
-        if (finalScore >= 1)
-        {
-            GameManager.instance.player.AddTotalScore(failCount);
+    //    if (finalScore >= 1)
+    //    {
+    //        GameManager.instance.player.AddTotalScore(failCount);
 
-            if (questionControl == null)
-                questionControl = NGUITools.FindInParents<QuestionControl>(gameObject);
+    //        if (questionControl == null)
+    //            questionControl = NGUITools.FindInParents<QuestionControl>(gameObject);
 
-            if (questionControl != null)
-                questionControl.QuestionCorrect();
-        }
-        else
-        {
-            failCount++;
+    //        if (questionControl != null)
+    //            questionControl.QuestionCorrect();
+    //    }
+    //    else
+    //    {
+    //        failCount++;
 
-            if (questionControl == null)
-                questionControl = NGUITools.FindInParents<QuestionControl>(gameObject);
+    //        if (questionControl == null)
+    //            questionControl = NGUITools.FindInParents<QuestionControl>(gameObject);
 
-            if (questionControl != null)
-                questionControl.QuestionIncorrect();
-        }
-    }
+    //        if (questionControl != null)
+    //            questionControl.QuestionIncorrect();
+    //    }
+    //}
 
     public override void ClearResult()
     {

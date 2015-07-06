@@ -13,6 +13,7 @@ public class LevelControl : MonoBehaviour
     public Timer timer;
 
     public GameObject extraButtons;
+    public GameObject showQuestionButton;
 
     public UILabel purpleLabel;
     public UILabel greenLabel;
@@ -181,8 +182,18 @@ public class LevelControl : MonoBehaviour
         {
             noteControl.gameObject.SetActive(false);
         }
-
         StartQuestion(obj);
+    }
+
+    public void OnShowQuestionButtonClick()
+    {
+        secondTime = true;
+        isGamePaused = true;
+        if (!questionControl.gameObject.activeSelf)
+            questionControl.gameObject.SetActive(true);
+
+        if (noteControl.gameObject.activeSelf)
+            noteControl.gameObject.SetActive(false);
     }
 
     public void StartQuestion(PuzzleObject obj)
@@ -191,10 +202,8 @@ public class LevelControl : MonoBehaviour
 
         if ((!secondTime && totalPuzzle.Length == purplePuzzleList.Count + greenPuzzleList.Count + orangePuzzleList.Count) || (secondTime && targetPuzzle != null && targetPuzzle == obj))
         {
-            secondTime = true;
-            isGamePaused = true;
-            if (!questionControl.gameObject.activeSelf)
-                questionControl.gameObject.SetActive(true);
+            if (!showQuestionButton.activeSelf)
+                showQuestionButton.SetActive(true);
         }
     }
 
@@ -231,6 +240,9 @@ public class LevelControl : MonoBehaviour
                 obj.SetActive(false);
         }
 
+        if (noteControl.gameObject.activeSelf)
+            noteControl.gameObject.SetActive(false);
+
         if (!completeControl.gameObject.activeSelf)
             completeControl.gameObject.SetActive(true);
     }
@@ -238,6 +250,9 @@ public class LevelControl : MonoBehaviour
     public void GameFailed()
     {
         isGamePaused = true;
+
+        if (noteControl.gameObject.activeSelf)
+            noteControl.gameObject.SetActive(false);
 
         if (failObject != null && !failObject.activeSelf)
             failObject.SetActive(true);

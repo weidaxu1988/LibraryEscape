@@ -1,62 +1,34 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System;
 
 public class ShortTextQuiz : Quiz
 {
     public string[] keyWords;
     public string correctFeedBack;
     public string[] incorrectFeedBack;
-    public UILabel feedbackLabel;
     public UIInput[] inputs;
 
 
-    public override void InitFeedback()
-    {
-        ShowFeedBack(true);
+    //public override void InitFeedback()
+    //{
+    //    ShowFeedBack(true);
 
-        finalScore = getScore();
+    //    finalScore = getScore();
 
-        if (finalScore >= 1)
-        {
-            GameManager.instance.player.AddTotalScore(failCount);
-
-            HandleCorrectFeedback();
-
-            Debug.Log("text question check");
-
-            if (questionControl == null)
-                questionControl = NGUITools.FindInParents<QuestionControl>(gameObject);
-
-            if (questionControl != null)
-            {
-                Debug.Log("question not null");
-                questionControl.QuestionCorrect();
-            }
-            else
-            {
-                Debug.Log("question null");
-            }
-        }
-        else
-        {
-            failCount++;
-
-            HandleIncorrectFeedback();
-
-            if (questionControl == null)
-                questionControl = NGUITools.FindInParents<QuestionControl>(gameObject);
-
-            if (questionControl != null)
-            {
-                Debug.Log("question not null");
-                questionControl.QuestionIncorrect();
-            }
-            else
-            {
-                Debug.Log("question null");
-            }
-        }
-    }
+    //    if (finalScore >= 1)
+    //    {
+    //        GameManager.instance.player.AddTotalScore(failCount);
+    //        HandleCorrectFeedback();
+    //        questionControl.QuestionCorrect();
+    //    }
+    //    else
+    //    {
+    //        failCount++;
+    //        HandleIncorrectFeedback();
+    //        questionControl.QuestionIncorrect();
+    //    }
+    //}
 
     protected override void HandleCorrectFeedback()
     {
@@ -80,7 +52,7 @@ public class ShortTextQuiz : Quiz
             UIInput input = inputs[i];
             string answer = input.value;
             string keyWord = keyWords[i];
-            if (answer == null || !answer.Contains(keyWord))
+            if (answer == null || !(answer.IndexOf(keyWord, StringComparison.InvariantCultureIgnoreCase) >= 0))
             {
                 result = 0;
                 break;
@@ -92,4 +64,5 @@ public class ShortTextQuiz : Quiz
         }
         return result;
     }
+
 }

@@ -7,19 +7,15 @@ public class Quiz : MonoBehaviour
     public GameObject questionContainer;
     public GameObject feedbackContainer;
 
-    protected QuestionControl questionControl;
-
-    protected int finalScore = -1;
+    public UILabel feedbackLabel;
 
     public PuzzleObject puzzleObj;
 
+    protected QuestionControl questionControl;
+
+    protected int finalScore = -1;
     protected int totalScore = 0;
     protected int failCount = 0;
-
-    public void AddFailCount()
-    {
-        failCount++;
-    }
 
     public PuzzleObject PuzzleObject
     {
@@ -27,7 +23,7 @@ public class Quiz : MonoBehaviour
     }
     public int FinalScore { get { return finalScore; } }
 
-    void Awake()
+    void Start()
     {
         questionControl = NGUITools.FindInParents<QuestionControl>(gameObject);
     }
@@ -35,6 +31,11 @@ public class Quiz : MonoBehaviour
     void OnEnable()
     {
          Reset();
+    }
+
+    public void AddFailCount()
+    {
+        failCount++;
     }
 
     public virtual void Reset()
@@ -52,7 +53,24 @@ public class Quiz : MonoBehaviour
 
     public virtual void ClearResult() { }
 
-    public virtual void InitFeedback() { }
+    public virtual void InitFeedback() {
+        ShowFeedBack(true);
+
+        finalScore = getScore();
+
+        if (finalScore >= 1)
+        {
+            GameManager.instance.player.AddTotalScore(failCount);
+            HandleCorrectFeedback();
+            questionControl.QuestionCorrect();
+        }
+        else
+        {
+            failCount++;
+            HandleIncorrectFeedback();
+            questionControl.QuestionIncorrect();
+        }
+    }
 
     protected void ShowFeedBack(bool show)
     {

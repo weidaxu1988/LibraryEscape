@@ -1,12 +1,14 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System;
 
 public class ShortAnswerQ2 : ShortAnswerMultiKeyWords
 {
     protected override void HandleCorrectFeedback()
     {
-        string answer = inputs[0].value + " and " + inputs[1].value;
-        feedbackLabel.text = "Good job! Negative emotions such as " + answer + " can be caused by library anxiety.";
+        //string answer = inputs[0].value + " and " + inputs[1].value;
+        //feedbackLabel.text = "Good job! Negative emotions such as " + answer + " can be caused by library anxiety.";
+        feedbackLabel.text = correctFeedBack;
     }
 
     protected override void HandleIncorrectFeedback()
@@ -25,7 +27,7 @@ public class ShortAnswerQ2 : ShortAnswerMultiKeyWords
             {
                 string keyWord = (string)list[j];
 
-                if (answer != null && answer.Contains(keyWord))
+                if (answer != null && (answer.IndexOf(keyWord, StringComparison.InvariantCultureIgnoreCase) >= 0))
                 {
                     results[i] = 1;
                     list.RemoveAt(j);
@@ -55,10 +57,12 @@ public class ShortAnswerQ2 : ShortAnswerMultiKeyWords
         }
 
         if (string.IsNullOrEmpty(rAnswer))
-            feedbackLabel.text = "Library anxiety can give rise to negative feelings such as " + rAnswer + ", you’ve got this correct. Think about it again on " + iAnswer + ".";
+            //feedbackLabel.text = "Library anxiety can give rise to negative feelings such as " + rAnswer + ", you’ve got this correct. Think about it again on " + iAnswer + ".";
+            feedbackLabel.text = incorrectFeedBack[0];
         if (questionControl == null)
             questionControl = NGUITools.FindInParents<QuestionControl>(gameObject);
         if (questionControl != null)
             questionControl.QuestionIncorrect();
     }
+
 }

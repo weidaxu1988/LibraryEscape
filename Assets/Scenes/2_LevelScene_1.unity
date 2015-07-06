@@ -390,6 +390,10 @@ Prefab:
       propertyPath: puzzleObj
       value: 
       objectReference: {fileID: 1043195819}
+    - target: {fileID: 151262, guid: 1a011ad77ab2c6141baf55431be10fc2, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1a011ad77ab2c6141baf55431be10fc2, type: 2}
   m_IsPrefabParent: 0
@@ -868,7 +872,7 @@ MonoBehaviour:
   mClipping: 0
   mClipRange: {x: 0, y: 0, z: 300, w: 200}
   mClipSoftness: {x: 4, y: 4}
-  mDepth: 3
+  mDepth: 5
   mSortingOrder: 0
   mClipOffset: {x: 0, y: 0}
 --- !u!114 &61702903
@@ -887,7 +891,7 @@ MonoBehaviour:
   - {fileID: 1619367039}
   - {fileID: 645555683}
   - {fileID: 30636025}
-  - {fileID: 1958623136}
+  - {fileID: 0}
   librarian: {fileID: 116789700}
   failedContent: {fileID: 1678736579}
   nextButton: {fileID: 1578820169}
@@ -2247,6 +2251,7 @@ Transform:
   m_Children:
   - {fileID: 1114734811}
   - {fileID: 1004400462}
+  - {fileID: 552824429}
   m_Father: {fileID: 741961043}
   m_RootOrder: 0
 --- !u!114 &269764429 stripped
@@ -3149,7 +3154,7 @@ Transform:
   m_GameObject: {fileID: 400690222}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: .00333333341, y: .00333333341, z: .00333333341}
+  m_LocalScale: {x: .00332778692, y: .00332778692, z: .00332778692}
   m_Children:
   - {fileID: 1607933147}
   m_Father: {fileID: 0}
@@ -3204,6 +3209,7 @@ MonoBehaviour:
   puzzleCleared: 0
   timer: {fileID: 871803829}
   extraButtons: {fileID: 115838786}
+  showQuestionButton: {fileID: 0}
   purpleLabel: {fileID: 857941012}
   greenLabel: {fileID: 792056223}
   orangeLabel: {fileID: 2092075902}
@@ -3407,7 +3413,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 150866, guid: 1165a007a0286d44da87dd456dc98c19, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1165a007a0286d44da87dd456dc98c19, type: 2}
@@ -3949,6 +3955,34 @@ MonoBehaviour:
   mMaxLineHeight: 0
   mLineWidth: 0
   mMultiline: 1
+--- !u!1 &552824428
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 552824429}
+  m_Layer: 8
+  m_Name: Sprite
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &552824429
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 552824428}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -106, z: 0}
+  m_LocalScale: {x: .500093162, y: .500093162, z: .500093162}
+  m_Children:
+  - {fileID: 1710995060}
+  m_Father: {fileID: 268127478}
+  m_RootOrder: 2
 --- !u!1001 &559797429
 Prefab:
   m_ObjectHideFlags: 0
@@ -9357,6 +9391,7 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: .0219999999
+  m_StereoMirrorMode: 0
 --- !u!1 &1156329656 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100002, guid: 7c3a28b051e872b448d4808cfcf9199c, type: 2}
@@ -12091,6 +12126,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   noteTtitle: {fileID: 1114734812}
   noteContent: {fileID: 1004400463}
+  noteContentSprite: {fileID: 1710995061}
   notePager: {fileID: 285159916}
   nextButton: {fileID: 204630191}
   previousButton: {fileID: 1409837404}
@@ -13428,6 +13464,7 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: .0219999999
+  m_StereoMirrorMode: 0
 --- !u!1001 &1619367038
 Prefab:
   m_ObjectHideFlags: 0
@@ -13471,6 +13508,22 @@ Prefab:
       propertyPath: puzzleObj
       value: 
       objectReference: {fileID: 1735658004}
+    - target: {fileID: 167718, guid: bee14ff75a00aaa4cae76dc2c9dbd796, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 170988, guid: bee14ff75a00aaa4cae76dc2c9dbd796, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11485470, guid: bee14ff75a00aaa4cae76dc2c9dbd796, type: 2}
+      propertyPath: mWidth
+      value: 720
+      objectReference: {fileID: 0}
+    - target: {fileID: 11485470, guid: bee14ff75a00aaa4cae76dc2c9dbd796, type: 2}
+      propertyPath: aspectRatio
+      value: 3.5999999
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bee14ff75a00aaa4cae76dc2c9dbd796, type: 2}
   m_IsPrefabParent: 0
@@ -14047,6 +14100,84 @@ MonoBehaviour:
   topType: 1
   mAtlas: {fileID: 11485656, guid: c70c616e8529fea4595e88ee3c857514, type: 2}
   mSpriteName: btn_arrow_right
+  mFillCenter: 1
+--- !u!1 &1710995059
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1710995060}
+  - 114: {fileID: 1710995061}
+  m_Layer: 8
+  m_Name: Sprite
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1710995060
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1710995059}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 552824429}
+  m_RootOrder: 0
+--- !u!114 &1710995061
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1710995059}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b3dc54f924693f41b5cbecb267e647a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  leftAnchor:
+    target: {fileID: 0}
+    relative: 0
+    absolute: 0
+  rightAnchor:
+    target: {fileID: 0}
+    relative: 1
+    absolute: 0
+  bottomAnchor:
+    target: {fileID: 0}
+    relative: 0
+    absolute: 0
+  topAnchor:
+    target: {fileID: 0}
+    relative: 1
+    absolute: 0
+  updateAnchors: 1
+  mColor: {r: 1, g: 1, b: 1, a: 1}
+  mPivot: 4
+  mWidth: 978
+  mHeight: 262
+  mDepth: 1
+  autoResizeBoxCollider: 0
+  hideIfOffScreen: 0
+  keepAspectRatio: 0
+  aspectRatio: 3.73282433
+  mType: 0
+  mFillDirection: 4
+  mFillAmount: 1
+  mInvert: 0
+  mFlip: 0
+  centerType: 1
+  leftType: 1
+  rightType: 1
+  bottomType: 1
+  topType: 1
+  mAtlas: {fileID: 11462580, guid: 16a6773ef4e2b734da5dd74d0b4be888, type: 2}
+  mSpriteName: image_sprite_zoom_1
   mFillCenter: 1
 --- !u!114 &1735658004 stripped
 MonoBehaviour:
@@ -14997,6 +15128,10 @@ Prefab:
       propertyPath: m_Name
       value: 1_2_QuizMultiChoice
       objectReference: {fileID: 0}
+    - target: {fileID: 146390, guid: 6880977aef8814f4da99610a694dc958, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6880977aef8814f4da99610a694dc958, type: 2}
   m_IsPrefabParent: 0
@@ -15043,14 +15178,14 @@ Prefab:
       propertyPath: m_RootOrder
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 11401764, guid: 5698b4c713a19e3459f12f5026e2ad62, type: 2}
+      propertyPath: puzzleObj
+      value: 
+      objectReference: {fileID: 507516269}
     - target: {fileID: 164370, guid: 5698b4c713a19e3459f12f5026e2ad62, type: 2}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 11409488, guid: 5698b4c713a19e3459f12f5026e2ad62, type: 2}
-      propertyPath: puzzleObj
-      value: 
-      objectReference: {fileID: 507516269}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5698b4c713a19e3459f12f5026e2ad62, type: 2}
   m_IsPrefabParent: 0
@@ -15058,12 +15193,6 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 492004, guid: 5698b4c713a19e3459f12f5026e2ad62, type: 2}
   m_PrefabInternal: {fileID: 1958623134}
---- !u!114 &1958623136 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 11409488, guid: 5698b4c713a19e3459f12f5026e2ad62,
-    type: 2}
-  m_PrefabInternal: {fileID: 1958623134}
-  m_Script: {fileID: 11500000, guid: 5e7fd5ee307d0c04c910a7ce322e558a, type: 3}
 --- !u!1 &1983801684
 GameObject:
   m_ObjectHideFlags: 0
