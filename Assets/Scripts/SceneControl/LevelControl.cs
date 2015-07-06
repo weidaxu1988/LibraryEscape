@@ -189,6 +189,9 @@ public class LevelControl : MonoBehaviour
     {
         secondTime = true;
         isGamePaused = true;
+        if (showQuestionButton.activeSelf)
+            showQuestionButton.SetActive(false);
+
         if (!questionControl.gameObject.activeSelf)
             questionControl.gameObject.SetActive(true);
 

@@ -25,7 +25,7 @@ public class Quiz : MonoBehaviour
 
     void Start()
     {
-        questionControl = NGUITools.FindInParents<QuestionControl>(gameObject);
+        
     }
 
     void OnEnable()
@@ -62,12 +62,20 @@ public class Quiz : MonoBehaviour
         {
             GameManager.instance.player.AddTotalScore(failCount);
             HandleCorrectFeedback();
+            
+            if (questionControl == null)
+                FindQuestionControl();
+
             questionControl.QuestionCorrect();
         }
         else
         {
             failCount++;
             HandleIncorrectFeedback();
+
+            if (questionControl == null)
+                FindQuestionControl();
+
             questionControl.QuestionIncorrect();
         }
     }
@@ -89,5 +97,10 @@ public class Quiz : MonoBehaviour
     protected virtual void HandleCorrectFeedback()
     {
 
+    }
+
+    public void FindQuestionControl()
+    {
+        questionControl = NGUITools.FindInParents<QuestionControl>(gameObject);
     }
 }

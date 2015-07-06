@@ -1007,7 +1007,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e3c955ffdfdf3d47b8408d8207194d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  restriction: 2
+  restriction: 0
   cloneOnDrag: 0
   pressAndHoldDelay: 1
   interactable: 1
@@ -1189,7 +1189,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e3c955ffdfdf3d47b8408d8207194d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  restriction: 2
+  restriction: 0
   cloneOnDrag: 0
   pressAndHoldDelay: 1
   interactable: 1
@@ -1732,7 +1732,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e3c955ffdfdf3d47b8408d8207194d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  restriction: 2
+  restriction: 0
   cloneOnDrag: 0
   pressAndHoldDelay: 1
   interactable: 1
@@ -1797,7 +1797,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e3c955ffdfdf3d47b8408d8207194d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  restriction: 2
+  restriction: 0
   cloneOnDrag: 0
   pressAndHoldDelay: 1
   interactable: 1
@@ -1903,7 +1903,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e3c955ffdfdf3d47b8408d8207194d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  restriction: 2
+  restriction: 0
   cloneOnDrag: 0
   pressAndHoldDelay: 1
   interactable: 1

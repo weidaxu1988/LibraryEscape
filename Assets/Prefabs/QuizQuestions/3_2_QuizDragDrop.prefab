@@ -1158,7 +1158,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e3c955ffdfdf3d47b8408d8207194d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  restriction: 1
+  restriction: 0
   cloneOnDrag: 0
   pressAndHoldDelay: 1
   interactable: 1
@@ -1401,7 +1401,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e3c955ffdfdf3d47b8408d8207194d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  restriction: 1
+  restriction: 0
   cloneOnDrag: 0
   pressAndHoldDelay: 1
   interactable: 1
@@ -1594,7 +1594,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e3c955ffdfdf3d47b8408d8207194d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  restriction: 1
+  restriction: 0
   cloneOnDrag: 0
   pressAndHoldDelay: 1
   interactable: 1
@@ -1852,7 +1852,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e3c955ffdfdf3d47b8408d8207194d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  restriction: 1
+  restriction: 0
   cloneOnDrag: 0
   pressAndHoldDelay: 1
   interactable: 1
@@ -1955,7 +1955,7 @@ MonoBehaviour:
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 5.31944466
+  aspectRatio: 7.09259272
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
   mFont: {fileID: 0}
@@ -2046,7 +2046,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e3c955ffdfdf3d47b8408d8207194d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  restriction: 1
+  restriction: 0
   cloneOnDrag: 0
   pressAndHoldDelay: 1
   interactable: 1
@@ -2317,6 +2317,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questionContainer: {fileID: 163838}
   feedbackContainer: {fileID: 158078}
+  feedbackLabel: {fileID: 11493730}
   puzzleObj: {fileID: 0}
   correctFeedBack: Good job! A typical scientific publication cycle starts with patents
     or lab notes, then conference papers or theses, and then get published in journals
@@ -2325,7 +2326,6 @@ MonoBehaviour:
     works (books, articles, etc.) that interpret, explain, or analyze the \u201Coriginal\u201D
     document, event, or work. Tertiary sources mainly refer to OPAC and databases.
     Try again on this one, you can do it."
-  feedbackLabel: {fileID: 11493730}
 --- !u!114 &11477842
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2337,7 +2337,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e3c955ffdfdf3d47b8408d8207194d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  restriction: 1
+  restriction: 0
   cloneOnDrag: 0
   pressAndHoldDelay: 1
   interactable: 1
@@ -2402,7 +2402,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e3c955ffdfdf3d47b8408d8207194d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  restriction: 1
+  restriction: 0
   cloneOnDrag: 0
   pressAndHoldDelay: 1
   interactable: 1
