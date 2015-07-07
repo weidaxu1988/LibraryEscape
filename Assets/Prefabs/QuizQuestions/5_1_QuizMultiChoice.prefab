@@ -525,7 +525,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 130566}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 99.0000153, z: 0}
+  m_LocalPosition: {x: 0, y: 73, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 461120}
@@ -970,13 +970,13 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: 0, g: 0, b: 0, a: 1}
   mPivot: 1
-  mWidth: 766
-  mHeight: 108
+  mWidth: 842
+  mHeight: 72
   mDepth: 0
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 7.09259272
+  aspectRatio: 11.6944447
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
   mFont: {fileID: 0}
@@ -1109,8 +1109,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d57df2d6fef60a438796b85622efa39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  feedback: You're absolutely right!  IL cannot make you more ethical, that decision
-    lies entirely with you!
+  feedback: A statement of responsibility is an indication of the seriousness of an
+    organization in standing behind the information it provides on its website. It
+    is definitely a mark of quality! Try to recall what you have just learnt! You
+    can do it!
 --- !u!114 &11458934
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1260,9 +1262,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d57df2d6fef60a438796b85622efa39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  feedback: Good IL skills can help you remain relevant and employable when you start
-    working. Please try again! You can do this. Remember that you've been asked to
-    identify the incorrect statement.
+  feedback: "The authors\u2019 expertise is an important indicator of information
+    quality. You would want to trust information from someone who is unqualified to
+    give that information, would you?"
 --- !u!114 &11466074
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1524,7 +1526,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d57df2d6fef60a438796b85622efa39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  feedback: the quick accessibility of the sources
+  feedback: Good job! Quick access and good design are not criteria for high information
+    quality.
 --- !u!114 &11475564
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1690,9 +1693,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d57df2d6fef60a438796b85622efa39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  feedback: Good IL skills can help you remain relevant and employable when you start
-    working. Please try again! You can do this. Remember that you've been asked to
-    identify the incorrect statement.
+  feedback: "Recency is an important indicator of information quality, especially
+    for fields that move rapidly. You wouldn\u2019t want to use learn how to program
+    a computer language from a textbook that is ten years old. The programming techniques
+    would be woefully outdated!"
 --- !u!114 &11489946
 MonoBehaviour:
   m_ObjectHideFlags: 1

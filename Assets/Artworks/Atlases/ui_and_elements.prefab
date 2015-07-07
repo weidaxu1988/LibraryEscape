@@ -198,7 +198,7 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: btn_function
-    x: 2778
+    x: 2938
     y: 1481
     width: 159
     height: 150
@@ -224,7 +224,7 @@ MonoBehaviour:
     paddingTop: 16
     paddingBottom: 0
   - name: btn_hint
-    x: 2938
+    x: 2778
     y: 1481
     width: 159
     height: 150
@@ -263,45 +263,6 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: btn_level_1
-    x: 3773
-    y: 1109
-    width: 256
-    height: 178
-    borderLeft: 0
-    borderRight: 0
-    borderTop: 0
-    borderBottom: 0
-    paddingLeft: 0
-    paddingRight: 0
-    paddingTop: 0
-    paddingBottom: 0
-  - name: btn_level_2
-    x: 3516
-    y: 1109
-    width: 256
-    height: 178
-    borderLeft: 0
-    borderRight: 0
-    borderTop: 0
-    borderBottom: 0
-    paddingLeft: 0
-    paddingRight: 0
-    paddingTop: 0
-    paddingBottom: 0
-  - name: btn_level_3
-    x: 3829
-    y: 1288
-    width: 256
-    height: 178
-    borderLeft: 0
-    borderRight: 0
-    borderTop: 0
-    borderBottom: 0
-    paddingLeft: 0
-    paddingRight: 0
-    paddingTop: 0
-    paddingBottom: 0
-  - name: btn_level_4
     x: 3054
     y: 876
     width: 256
@@ -314,7 +275,20 @@ MonoBehaviour:
     paddingRight: 0
     paddingTop: 0
     paddingBottom: 0
-  - name: btn_level_5
+  - name: btn_level_2
+    x: 3773
+    y: 1109
+    width: 256
+    height: 178
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: btn_level_3
     x: 3315
     y: 1288
     width: 256
@@ -327,9 +301,35 @@ MonoBehaviour:
     paddingRight: 0
     paddingTop: 0
     paddingBottom: 0
-  - name: btn_level_6
+  - name: btn_level_4
     x: 3572
     y: 1288
+    width: 256
+    height: 178
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: btn_level_5
+    x: 3829
+    y: 1288
+    width: 256
+    height: 178
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: btn_level_6
+    x: 3516
+    y: 1109
     width: 256
     height: 178
     borderLeft: 0
@@ -380,7 +380,7 @@ MonoBehaviour:
     paddingTop: 118
     paddingBottom: 146
   - name: btn_replay
-    x: 203
+    x: 406
     y: 34
     width: 202
     height: 62
@@ -393,7 +393,7 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: btn_sound_on
-    x: 406
+    x: 203
     y: 34
     width: 202
     height: 62

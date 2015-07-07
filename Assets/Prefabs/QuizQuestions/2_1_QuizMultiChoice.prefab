@@ -888,8 +888,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questionContainer: {fileID: 132256}
   feedbackContainer: {fileID: 161802}
-  puzzleObj: {fileID: 0}
   feedbackLabel: {fileID: 11443360}
+  puzzleObj: {fileID: 0}
   correctOption: {fileID: 11475996}
 --- !u!114 &11404314
 MonoBehaviour:
@@ -1203,10 +1203,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d57df2d6fef60a438796b85622efa39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  feedback: "a speech bubble with \u201CHaving enough information sources about a
-    topic will encourage you to work on that topic as you will be able to write more
-    in-depth about it. Reflect on your own experience. Why did you select the topic
-    you last worked on for your assignment?"
+  feedback: Having enough information sources about a topic will encourage you to
+    work on that topic as you will be able to write more in-depth about it. Reflect
+    on your own experience. Why did you select the topic you last worked on for your
+    assignment?
 --- !u!114 &11428004
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1355,8 +1355,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d57df2d6fef60a438796b85622efa39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  feedback: "\u201CYour curiosity and interest in a topic would make you more likely
-    to select a topic as you will naturally invest more time and effort in it, resulting
+  feedback: "Your curiosity and interest in a topic would make you more likely to
+    select a topic as you will naturally invest more time and effort in it, resulting
     in a better grade.\u201D Please try again! Reflect on your own experience. Why
     did you select the topic you last worked on for your assignment?"
 --- !u!114 &11439006

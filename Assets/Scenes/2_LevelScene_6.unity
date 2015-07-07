@@ -546,7 +546,7 @@ MonoBehaviour:
   totalQuiz:
   - {fileID: 1138866668}
   - {fileID: 1047078005}
-  - {fileID: 1343386821}
+  - {fileID: 1775470501}
   - {fileID: 1775470501}
   librarian: {fileID: 116789700}
   failedContent: {fileID: 1678736579}
@@ -4999,7 +4999,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 871803827}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -880, y: 653, z: 0}
+  m_LocalPosition: {x: -915, y: 653, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 16002952}
@@ -6611,7 +6611,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1125174979}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1046, y: 647, z: 0}
+  m_LocalPosition: {x: -1081, y: 647, z: 0}
   m_LocalScale: {x: .600000024, y: .600000024, z: 1}
   m_Children:
   - {fileID: 1530409715}
@@ -6626,7 +6626,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1125174979}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 07c4de3b4b6fe9045b059ee627c100df, type: 3}
   m_Name: 
@@ -6942,7 +6942,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1206830931}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 600, y: -0, z: 0}
+  m_LocalPosition: {x: 0, y: -193, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1125174980}
@@ -7823,12 +7823,6 @@ MonoBehaviour:
 Transform:
   m_PrefabParentObject: {fileID: 403880, guid: fcf865c2dedf50b4193935c3ce0a5708, type: 2}
   m_PrefabInternal: {fileID: 1289579021}
---- !u!114 &1343386821 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 11421226, guid: fcf865c2dedf50b4193935c3ce0a5708,
-    type: 2}
-  m_PrefabInternal: {fileID: 1289579021}
-  m_Script: {fileID: 11500000, guid: 5ac83bb4df7b75140916cb8fc1ad9c1c, type: 3}
 --- !u!1 &1356985359
 GameObject:
   m_ObjectHideFlags: 0
@@ -8779,7 +8773,7 @@ MonoBehaviour:
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
   mFont: {fileID: 0}
-  mText: "Quick! You have XX more minutes to complete this mission! You really have
+  mText: "Quick! You have 10 more minutes to complete this mission! You really have
     to hurry!\r"
   mFontSize: 24
   mFontStyle: 0
@@ -12051,11 +12045,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 401992, guid: a72e58a275cd9e547b03c9b154fd1a84, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -.0989999995
+      value: 1.20000005
       objectReference: {fileID: 0}
     - target: {fileID: 401992, guid: a72e58a275cd9e547b03c9b154fd1a84, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -.363999993
+      value: -.639999986
       objectReference: {fileID: 0}
     - target: {fileID: 401992, guid: a72e58a275cd9e547b03c9b154fd1a84, type: 2}
       propertyPath: m_LocalPosition.z
@@ -12080,6 +12074,10 @@ Prefab:
     - target: {fileID: 401992, guid: a72e58a275cd9e547b03c9b154fd1a84, type: 2}
       propertyPath: m_RootOrder
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 401992, guid: a72e58a275cd9e547b03c9b154fd1a84, type: 2}
+      propertyPath: m_LocalScale.x
+      value: .159999996
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a72e58a275cd9e547b03c9b154fd1a84, type: 2}

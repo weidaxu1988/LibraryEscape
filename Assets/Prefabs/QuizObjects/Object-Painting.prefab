@@ -193,8 +193,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startType: 0
-  noteTitle: Examples of Using OPAC
+  previousPuzzle: {fileID: 0}
+  noteTitle: Tertiary Sources
   noteContentArray:
+  - "Tertiary sources are essentially \u201Cfinding tools\u201D that help you locate
+    primary and secondary sources. There are two tertiary sources: the library catalogs
+    and databases."
+  - "OPAC stands for \u201COnline Public Access Catalog\u201D, and is the library
+    catalog. It is an online database of all of the resources in the library. Some
+    libraries require you to log in before searching the OPAC. You can search OPAC
+    to locate the resources you need. It lists the title and author of the resource,
+    whether they are in the library or out on loan and their call number."
+  - "An OPAC can be searched online. If you don\u2019t have access to the Internet,
+    you can also come to the library to use their computers. There are usually two
+    search modes \u2013 \u201CBasic Search\u201D and \u201CAdvanced Search\u201D.
+    Basic Search allows you to search specific fields, e.g., the author, title, keyword,
+    individually. On the other hand, Advanced Search allows you to combine several
+    attributes."
+  - A library may spread over several locations. In Advanced Search, you can limit
+    the search to the resources in a specific location, e.g., the Business Library.  The
+    Advanced Search option also allows you to limit your search to specific types
+    of resources, e.g., DVDs.
   - "Frequently, you will search using the author\u2019s name. Names are expressed
     differently in different cultures, and it is important to identify the last name,
     or the family name of the author before you search, because it is usually the

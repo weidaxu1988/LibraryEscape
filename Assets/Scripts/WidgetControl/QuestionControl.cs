@@ -202,6 +202,9 @@ public class QuestionControl : MonoBehaviour
 
     protected void ResetQuiz(int index)
     {
+		if (librarian.activeSelf)
+			librarian.SetActive(false);
+
         Quiz quiz = totalQuiz[index];
         quiz.SecondReset();
     }

@@ -155,26 +155,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startType: 2
   previousPuzzle: {fileID: 0}
-  noteTitle: Tertiary Sources
+  noteTitle: Primary Sources
   noteContentArray:
-  - "Tertiary sources are essentially \u201Cfinding tools\u201D that help you locate
-    primary and secondary sources.   There are two tertiary sources: the library catalogs
-    and databases."
-  - "OPAC stands for \u201COnline Public Access Catalog\u201D, and is the library
-    catalog. It is an online database of all of the resources in the library. Some
-    libraries require you to log in before searching the OPAC. You can search OPAC
-    to locate the resources you need. It lists the title and author of the resource,
-    whether they are in the library or out on loan and their call number."
-  - "An OPAC can be searched online. If you don\u2019t have access to the Internet,
-    you can also come to the library to use their computers. There are usually two
-    search modes \u2013 \u201CBasic Search\u201D and \u201CAdvanced Search\u201D.
-    Basic Search allows you to search specific fields, e.g., the author, title, keyword,
-    individually. On the other hand, Advanced Search allows you to combine several
-    attributes."
-  - A library may spread over several locations. In Advanced Search, you can limit
-    the search to the resources in a specific location, e.g., the Business Library.  The
-    Advanced Search option also allows you to limit your search to specific types
-    of resources, e.g., DVDs.
+  - "Primary sources are original works. They can be patents, conference proceedings,
+    theses, journal articles, technical reports, or lab notes.                                                                                                However,
+    it\u2019s worth noting that primary sources can be reliable or unreliable and
+    should be critically evaluated."
+  - "Patents                                                            A patent is
+    a right granted to the owner of an invention that prevents others from making,
+    using, importing or selling the invention without his permission.\_The term of
+    patents is 20 years before they fall into public domain. In Singapore, patents
+    can be searched using the IP2SG patent search engine."
+  - "Lab notebooks                                 Researchers maintain lab notebooks
+    because they are basic to scientific research.\_Keeping careful notes the observations
+    and results from experiments is important because it builds a reservoir of information
+    which may be later used in assignments and papers submitted for publication. Lab
+    notebooks are accessible only from the researchers themselves and not from libraries."
+  - "Conference proceedings                  Researchers present their research and
+    obtain feedback from the audience at conferences, symposia or workshops. The papers
+    presented are usually published in a volume called a conference proceeding.\_Proceedings
+    from reputable conferences can usually be located from a database."
+  - "Theses                                                            A thesis is
+    a piece of original scholarship written at the masters or doctoral level.\_If
+    you are looking for thesis from your home university, you can usually find them
+    in your university\u2019s institutional repository (e.g., DR-NTU).\_If you are
+    looking for theses from other universities, you can search in ProQuest Dissertations
+    & Theses Database."
 --- !u!114 &11456084
 MonoBehaviour:
   m_ObjectHideFlags: 1

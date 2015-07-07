@@ -895,7 +895,7 @@ MonoBehaviour:
   mTrueTypeFont: {fileID: 0}
   mFont: {fileID: 11400000, guid: 29056518aafb01b49a5b08faf8e30cff, type: 2}
   mText: "to specify the type of resources\r"
-  mFontSize: 20
+  mFontSize: 13
   mFontStyle: 0
   mAlignment: 0
   mEncoding: 1
@@ -906,7 +906,7 @@ MonoBehaviour:
   mEffectDistance: {x: 1, y: 1}
   mOverflow: 0
   mMaterial: {fileID: 0}
-  mApplyGradient: 1
+  mApplyGradient: 0
   mGradientTop: {r: 1, g: 1, b: 1, a: 1}
   mGradientBottom: {r: .699999988, g: .699999988, b: .699999988, a: 1}
   mSpacingX: 0
@@ -1010,7 +1010,7 @@ MonoBehaviour:
   mTrueTypeFont: {fileID: 0}
   mFont: {fileID: 11400000, guid: 29056518aafb01b49a5b08faf8e30cff, type: 2}
   mText: "to use multiple concepts to search \r"
-  mFontSize: 20
+  mFontSize: 13
   mFontStyle: 0
   mAlignment: 0
   mEncoding: 1
@@ -1021,7 +1021,7 @@ MonoBehaviour:
   mEffectDistance: {x: 1, y: 1}
   mOverflow: 0
   mMaterial: {fileID: 0}
-  mApplyGradient: 1
+  mApplyGradient: 0
   mGradientTop: {r: 1, g: 1, b: 1, a: 1}
   mGradientBottom: {r: .699999988, g: .699999988, b: .699999988, a: 1}
   mSpacingX: 0
@@ -1129,9 +1129,11 @@ MonoBehaviour:
   feedbackContainer: {fileID: 168798}
   feedbackLabel: {fileID: 11427764}
   puzzleObj: {fileID: 0}
-  correctFeedBack: Wonderful, you understand the publication cycle very well now.
-    Good job, Tom!
-  incorrectFeedBack: Please try again!  You can do this.
+  correctFeedBack: Excellent! Use advanced search to specify the year and types of
+    publication.
+  incorrectFeedBack: "Try to recall what you\u2019ve learnt just now. Knowing how
+    to use advanced search will make your search more efficient. Try again, you can
+    do it."
 --- !u!114 &11420196
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1223,7 +1225,7 @@ MonoBehaviour:
   mTrueTypeFont: {fileID: 0}
   mFont: {fileID: 11400000, guid: 29056518aafb01b49a5b08faf8e30cff, type: 2}
   mText: "to specify the year of publication \r"
-  mFontSize: 20
+  mFontSize: 13
   mFontStyle: 0
   mAlignment: 0
   mEncoding: 1
@@ -1340,20 +1342,20 @@ MonoBehaviour:
     relative: 1
     absolute: -5
   updateAnchors: 0
-  mColor: {r: 1, g: 1, b: 1, a: 1}
+  mColor: {r: 0, g: 0, b: 0, a: 1}
   mPivot: 4
-  mWidth: 140
+  mWidth: 207
   mHeight: 80
   mDepth: 2
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 1.75
+  aspectRatio: 2.5875001
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 0}
   mFont: {fileID: 11400000, guid: 29056518aafb01b49a5b08faf8e30cff, type: 2}
   mText: "Advanced search\r"
-  mFontSize: 20
+  mFontSize: 24
   mFontStyle: 0
   mAlignment: 0
   mEncoding: 1
@@ -1586,7 +1588,7 @@ MonoBehaviour:
     relative: 1
     absolute: -5
   updateAnchors: 0
-  mColor: {r: 1, g: 1, b: 1, a: 1}
+  mColor: {r: 0, g: 0, b: 0, a: 1}
   mPivot: 4
   mWidth: 140
   mHeight: 80
@@ -1599,7 +1601,7 @@ MonoBehaviour:
   mTrueTypeFont: {fileID: 0}
   mFont: {fileID: 11400000, guid: 29056518aafb01b49a5b08faf8e30cff, type: 2}
   mText: "Basic search\r"
-  mFontSize: 20
+  mFontSize: 24
   mFontStyle: 0
   mAlignment: 0
   mEncoding: 1
@@ -1664,7 +1666,7 @@ MonoBehaviour:
   mTrueTypeFont: {fileID: 0}
   mFont: {fileID: 11400000, guid: 29056518aafb01b49a5b08faf8e30cff, type: 2}
   mText: "to specify the last name of the authors \r"
-  mFontSize: 20
+  mFontSize: 13
   mFontStyle: 0
   mAlignment: 0
   mEncoding: 1
@@ -1675,7 +1677,7 @@ MonoBehaviour:
   mEffectDistance: {x: 1, y: 1}
   mOverflow: 0
   mMaterial: {fileID: 0}
-  mApplyGradient: 1
+  mApplyGradient: 0
   mGradientTop: {r: 1, g: 1, b: 1, a: 1}
   mGradientBottom: {r: .699999988, g: .699999988, b: .699999988, a: 1}
   mSpacingX: 0

@@ -42,8 +42,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 148686}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.0289999992, y: .0410000011, z: 0}
-  m_LocalScale: {x: .0850000009, y: .0850000009, z: 1}
+  m_LocalPosition: {x: -.0579999983, y: .0410000011, z: -5.9605e-08}
+  m_LocalScale: {x: .138404146, y: .138404205, z: 1.62828469}
   m_Children:
   - {fileID: 471072}
   m_Father: {fileID: 0}
@@ -197,32 +197,34 @@ MonoBehaviour:
   noteTitle: Secondary Sources
   noteContentArray:
   - "Secondary sources are works (books, articles, etc.) that interpret, explain,
-    or analyze the \u201Coriginal\u201D document, event, or work.   It\u2019s also
-    worth noting that the categorization of primary versus secondary are not absolute."
-  - "Encyclopedias There are two types of encyclopedias \u2013 general encyclopedias
-    and subject encyclopedias.\_General encyclopedias such as Encyclopedia Britannica
-    contain thousands of articles, biographies, videos and images on every conceivable
-    topic.\_Subject encyclopedias devote itself to articles from a specific field
-    of study, such as The Encyclopedia of Accounting Systems."
-  - Reference works Handbooks are books written by experts in a field with the objective
-    of providing the basic facts to field of knowledge. The idea behind handbooks
-    is convenience, and so you can expect to find formulas, equations, tables, charts,
-    symbols, specialized terms, and other commonly used information in a field inside.
-  - "Wikipedia It is a free-access, free-content Internet encyclopedia founded in
-    2001. Today, it has accumulated over 4.8 million articles, a number which increases
-    by 800 each day. As anyone with Internet access can edit the articles, users have
-    to be aware of the possibility of vandalism. Wikipedia is ranked among the top
-    ten most popular websites and constitutes the Internet\u2019s largest and most
-    popular general reference work."
-  - "Manuals They are sometimes called user guides provide instructions on how to
-    do, or use, something.\_The Publication Manual of the American Psychological Association,
-    for example, provides detailed instructions on how to construct references when
-    writing an article."
-  - "Monographs A monograph is a book that presents information and scholarly research
-    on a very specific subject. In a monograph, an author writes about the advances
-    in his field of study, and provides the foundation for future research in that
-    field.\_Monographs can be located using the OPAC or digital libraries of books
-    (e.g., SpringerLink)."
+    or analyze the \u201Coriginal\u201D document, event, or work. It\u2019s also worth
+    noting that the categorization of primary versus secondary are not absolute."
+  - "Encyclopedias                                           There are two types of
+    encyclopedias \u2013 general encyclopedias and subject encyclopedias.\_General
+    encyclopedias such as Encyclopedia Britannica contain thousands of articles, biographies,
+    videos and images on every conceivable topic.\_Subject encyclopedias devote itself
+    to articles from a specific field of study, such as The Encyclopedia of Accounting
+    Systems."
+  - Reference works                               Handbooks are books written by experts
+    in a field with the objective of providing the basic facts to field of knowledge.
+    The idea behind handbooks is convenience, and so you can expect to find formulas,
+    equations, tables, charts, symbols, specialized terms, and other commonly used
+    information in a field inside.
+  - "Wikipedia                                                         It is a free-access,
+    free-content Internet encyclopedia founded in 2001. Today, it has accumulated
+    over 4.8 million articles, a number which increases by 800 each day. As anyone
+    with Internet access can edit the articles, users have to be aware of the possibility
+    of vandalism. Wikipedia is ranked among the top ten most popular websites and
+    constitutes the Internet\u2019s largest and most popular general reference work."
+  - "Manuals                                                     They are sometimes
+    called user guides provide instructions on how to do, or use, something.\_The
+    Publication Manual of the American Psychological Association, for example, provides
+    detailed instructions on how to construct references when writing an article."
+  - "Monographs                                                     A monograph is
+    a book that presents information and scholarly research on a very specific subject.
+    In a monograph, an author writes about the advances in his field of study, and
+    provides the foundation for future research in that field.\_Monographs can be
+    located using the OPAC or digital libraries of books (e.g., SpringerLink)."
 --- !u!212 &21209576
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -107,6 +107,9 @@ public class LevelControl : MonoBehaviour
 
     public void OnPuzzleObjectClick(PuzzleObject obj)
     {
+		if (isGamePaused)
+			return;
+
         isGamePaused = true;
 
         if (player != null)

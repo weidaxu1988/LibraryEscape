@@ -42,8 +42,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 158524}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.197999999, y: .0410000011, z: 0}
-  m_LocalScale: {x: .0850000009, y: .0850000009, z: 1}
+  m_LocalPosition: {x: -.379000008, y: -.0199999996, z: -5.9605e-08}
+  m_LocalScale: {x: .173201755, y: .17320177, z: 2.03766775}
   m_Children:
   - {fileID: 483460}
   m_Father: {fileID: 0}
@@ -72,7 +72,7 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: .899999976
+  m_Radius: .400000006
 --- !u!82 &8280448
 AudioSource:
   m_ObjectHideFlags: 1
@@ -200,10 +200,11 @@ MonoBehaviour:
     is published.\_They contain articles written by and for experts in a field, and
     are almost always peer-reviewed. Journals are used as a means for scholars and
     researchers to share their research."
-  - "Journals mainly serve four functions: (1) To establish the author\u2019s precedence
-    and ownership of an idea; (2)\_To communicate research findings to the intended
-    audience; (3)\_To ensure quality control through peer review; (4)\_To preserve
-    a fixed version of the paper for future reference."
+  - "Journals mainly serve four functions:                (1) To establish the author\u2019s
+    precedence and ownership of an idea;                                      (2)\_To
+    communicate research findings to the intended audience;                                    (3)\_To
+    ensure quality control through peer review;                                                        (4)\_To
+    preserve a fixed version of the paper for future reference."
   - "Peer review, also called refereeing, is a quality control process through which
     manuscripts submitted to a journal are evaluated and commented upon by independent
     experts within the same field of research.\_High quality research tends to be

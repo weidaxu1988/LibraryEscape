@@ -886,7 +886,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 101088, guid: 7ba8fe3ba6872f949bc0032bbb8f32e8, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 438680, guid: 7ba8fe3ba6872f949bc0032bbb8f32e8, type: 2}
       propertyPath: m_LocalScale.x
@@ -2790,7 +2790,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 373181321}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.99975586, y: -1938.33325, z: 0}
+  m_LocalPosition: {x: 13, y: -209, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1125174980}
@@ -3235,7 +3235,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 150866, guid: 1165a007a0286d44da87dd456dc98c19, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1165a007a0286d44da87dd456dc98c19, type: 2}
@@ -5342,7 +5342,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 871803827}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -880, y: 671, z: 0}
+  m_LocalPosition: {x: -943, y: 659.599976, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 16002952}
@@ -6089,6 +6089,22 @@ Prefab:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 419916, guid: 559f2f9b0fbd79440a51e4a18ff34133, type: 2}
+      propertyPath: m_LocalScale.x
+      value: .699999988
+      objectReference: {fileID: 0}
+    - target: {fileID: 11434426, guid: 559f2f9b0fbd79440a51e4a18ff34133, type: 2}
+      propertyPath: startPos.x
+      value: -.800000012
+      objectReference: {fileID: 0}
+    - target: {fileID: 11434426, guid: 559f2f9b0fbd79440a51e4a18ff34133, type: 2}
+      propertyPath: endPos.x
+      value: .800000012
+      objectReference: {fileID: 0}
+    - target: {fileID: 419916, guid: 559f2f9b0fbd79440a51e4a18ff34133, type: 2}
+      propertyPath: m_LocalScale.y
+      value: .699999988
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 559f2f9b0fbd79440a51e4a18ff34133, type: 2}
   m_IsPrefabParent: 0
@@ -6437,19 +6453,122 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 488238, guid: 0469f91f40f7d284397120aa74299446, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -155
+      value: -165.000015
       objectReference: {fileID: 0}
     - target: {fileID: 467250, guid: 0469f91f40f7d284397120aa74299446, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -31.0000057
+      value: -33.0000229
       objectReference: {fileID: 0}
     - target: {fileID: 481098, guid: 0469f91f40f7d284397120aa74299446, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -217
+      value: -231.000015
       objectReference: {fileID: 0}
     - target: {fileID: 124304, guid: 0469f91f40f7d284397120aa74299446, type: 2}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 462144, guid: 0469f91f40f7d284397120aa74299446, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -297
+      objectReference: {fileID: 0}
+    - target: {fileID: 11492278, guid: 0469f91f40f7d284397120aa74299446, type: 2}
+      propertyPath: mHeight
+      value: 36
+      objectReference: {fileID: 0}
+    - target: {fileID: 11492278, guid: 0469f91f40f7d284397120aa74299446, type: 2}
+      propertyPath: mText
+      value: Tick the causes of library anxiety.
+      objectReference: {fileID: 0}
+    - target: {fileID: 11492278, guid: 0469f91f40f7d284397120aa74299446, type: 2}
+      propertyPath: aspectRatio
+      value: 21.2777786
+      objectReference: {fileID: 0}
+    - target: {fileID: 462144, guid: 0469f91f40f7d284397120aa74299446, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 420562, guid: 0469f91f40f7d284397120aa74299446, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 481098, guid: 0469f91f40f7d284397120aa74299446, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 467250, guid: 0469f91f40f7d284397120aa74299446, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 488238, guid: 0469f91f40f7d284397120aa74299446, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6523368, guid: 0469f91f40f7d284397120aa74299446, type: 2}
+      propertyPath: m_Size.x
+      value: 820
+      objectReference: {fileID: 0}
+    - target: {fileID: 6523368, guid: 0469f91f40f7d284397120aa74299446, type: 2}
+      propertyPath: m_Center.x
+      value: 410
+      objectReference: {fileID: 0}
+    - target: {fileID: 11480404, guid: 0469f91f40f7d284397120aa74299446, type: 2}
+      propertyPath: mWidth
+      value: 820
+      objectReference: {fileID: 0}
+    - target: {fileID: 11480404, guid: 0469f91f40f7d284397120aa74299446, type: 2}
+      propertyPath: aspectRatio
+      value: 15.1851854
+      objectReference: {fileID: 0}
+    - target: {fileID: 11401958, guid: 0469f91f40f7d284397120aa74299446, type: 2}
+      propertyPath: mText
+      value: "I\u2019m the only one afraid of the library, other people are going
+        to laugh at me\r."
+      objectReference: {fileID: 0}
+    - target: {fileID: 11450626, guid: 0469f91f40f7d284397120aa74299446, type: 2}
+      propertyPath: mText
+      value: "The self checkout machines are new to me, I don\u2019t know how to operate
+        them."
+      objectReference: {fileID: 0}
+    - target: {fileID: 6591866, guid: 0469f91f40f7d284397120aa74299446, type: 2}
+      propertyPath: m_Size.x
+      value: 850
+      objectReference: {fileID: 0}
+    - target: {fileID: 6591866, guid: 0469f91f40f7d284397120aa74299446, type: 2}
+      propertyPath: m_Center.x
+      value: 425
+      objectReference: {fileID: 0}
+    - target: {fileID: 11423482, guid: 0469f91f40f7d284397120aa74299446, type: 2}
+      propertyPath: mWidth
+      value: 850
+      objectReference: {fileID: 0}
+    - target: {fileID: 11423482, guid: 0469f91f40f7d284397120aa74299446, type: 2}
+      propertyPath: aspectRatio
+      value: 15.7407408
+      objectReference: {fileID: 0}
+    - target: {fileID: 11428420, guid: 0469f91f40f7d284397120aa74299446, type: 2}
+      propertyPath: mWidth
+      value: 811
+      objectReference: {fileID: 0}
+    - target: {fileID: 11428420, guid: 0469f91f40f7d284397120aa74299446, type: 2}
+      propertyPath: aspectRatio
+      value: 14.4821424
+      objectReference: {fileID: 0}
+    - target: {fileID: 11428420, guid: 0469f91f40f7d284397120aa74299446, type: 2}
+      propertyPath: mText
+      value: "The number of books in the library is overwhelming, I don\u2019t know
+        where to start looking for the information."
+      objectReference: {fileID: 0}
+    - target: {fileID: 11455470, guid: 0469f91f40f7d284397120aa74299446, type: 2}
+      propertyPath: padding.y
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 420562, guid: 0469f91f40f7d284397120aa74299446, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -99.0000153
+      objectReference: {fileID: 0}
+    - target: {fileID: 481382, guid: 0469f91f40f7d284397120aa74299446, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -435
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0469f91f40f7d284397120aa74299446, type: 2}
@@ -6777,7 +6896,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1125174979}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1046, y: 656, z: 0}
+  m_LocalPosition: {x: -1109, y: 656, z: 0}
   m_LocalScale: {x: .600000024, y: .600000024, z: 1}
   m_Children:
   - {fileID: 1530409715}
@@ -6792,7 +6911,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1125174979}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 07c4de3b4b6fe9045b059ee627c100df, type: 3}
   m_Name: 
@@ -11621,13 +11740,15 @@ Prefab:
       propertyPath: puzzleObj
       value: 
       objectReference: {fileID: 1853168158}
-    - target: {fileID: 447872, guid: 4f0f3ce2415457c49a72c2afb4ee9b33, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -84
-      objectReference: {fileID: 0}
     - target: {fileID: 169074, guid: 4f0f3ce2415457c49a72c2afb4ee9b33, type: 2}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11439006, guid: 4f0f3ce2415457c49a72c2afb4ee9b33, type: 2}
+      propertyPath: feedback
+      value: The estimated amount of time for the assignment is an important factor
+        especially when you have several assignments due. This will definitely be
+        considered when you are evaluating alternatives.
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4f0f3ce2415457c49a72c2afb4ee9b33, type: 2}

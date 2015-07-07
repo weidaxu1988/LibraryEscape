@@ -3,7 +3,7 @@ using System.Collections;
 
 public class PuzzleObject : MonoBehaviour
 {
-    const float delayTime = 3;
+    const float delayTime = 2;
 
     public enum StartType
     {

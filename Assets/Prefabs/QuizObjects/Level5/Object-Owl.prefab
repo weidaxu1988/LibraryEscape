@@ -155,12 +155,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startType: 1
   previousPuzzle: {fileID: 0}
-  noteTitle: Reflecting on the Information Seeking Process
+  noteTitle: Reflecting on the ISP Model
   noteContentArray:
-  - 'One specific information behaviour is information seeking. Information seeking
+  - One specific information behaviour is information seeking. Information seeking
     is a conscious effort to acquire information in response to a need or gap in your
     knowledge. Simplistically, we seek for information when we need knowledge about
-    something  '
+    something.
   - 'Information seeking involves a series of encounters with information within a
     period of time, rather than a one-off reference encounter. It can also be viewed
     as a process of sensemaking in which a person is forming a personal point of view.  '

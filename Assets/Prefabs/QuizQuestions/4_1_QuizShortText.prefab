@@ -109,7 +109,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &134250
 GameObject:
   m_ObjectHideFlags: 1
@@ -280,7 +280,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 175398}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -78, y: -32, z: 0}
+  m_LocalPosition: {x: -35, y: -67, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 432560}
@@ -304,7 +304,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 143572}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9, y: 37, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 429006}
@@ -329,7 +329,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 168956}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -271, y: -178, z: 0}
+  m_LocalPosition: {x: -30, y: -178, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 473400}
@@ -404,7 +404,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 186144}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -268, y: -57, z: 0}
+  m_LocalPosition: {x: -30, y: -57, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 489590}
@@ -419,7 +419,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 133102}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 65, y: -13, z: 25}
+  m_LocalPosition: {x: 40, y: 103, z: 25}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 488462}
@@ -445,7 +445,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 159776}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -265, y: -116, z: 0}
+  m_LocalPosition: {x: -30, y: -116, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 469972}
@@ -503,7 +503,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 250, y: 46, z: 0}
+  m_Size: {x: 700, y: 46, z: 0}
   m_Center: {x: 0, y: -23, z: 0}
 --- !u!65 &6568460
 BoxCollider:
@@ -515,7 +515,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 250, y: 46, z: 0}
+  m_Size: {x: 700, y: 46, z: 0}
   m_Center: {x: 0, y: -23, z: 0}
 --- !u!65 &6575608
 BoxCollider:
@@ -527,7 +527,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 250, y: 46, z: 0}
+  m_Size: {x: 700, y: 46, z: 0}
   m_Center: {x: 0, y: -23, z: 0}
 --- !u!114 &11407212
 MonoBehaviour:
@@ -559,13 +559,13 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 1
-  mWidth: 250
+  mWidth: 700
   mHeight: 46
   mDepth: 0
   autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 5.43478251
+  aspectRatio: 15.217391
   mType: 1
   mFillDirection: 4
   mFillAmount: 1
@@ -609,13 +609,13 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: .147058845, g: .147058845, b: .147058845, a: .403921574}
   mPivot: 4
-  mWidth: 218
+  mWidth: 668
   mHeight: 30
   mDepth: 1
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 7.26666689
+  aspectRatio: 22.2666664
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
   mFont: {fileID: 0}
@@ -664,7 +664,7 @@ MonoBehaviour:
   characterLimit: 0
   savedAs: 
   selectOnTab: {fileID: 0}
-  activeTextColor: {r: 1, g: 1, b: 1, a: 1}
+  activeTextColor: {r: 0, g: 0, b: 0, a: 1}
   caretColor: {r: 1, g: 1, b: 1, a: .800000012}
   selectionColor: {r: 1, g: .874509811, b: .552941203, a: .5}
   onSubmit:
@@ -704,13 +704,13 @@ MonoBehaviour:
   updateAnchors: 0
   mColor: {r: 0, g: 0, b: 0, a: 1}
   mPivot: 7
-  mWidth: 250
+  mWidth: 700
   mHeight: 2
   mDepth: 2
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 125
+  aspectRatio: 350
   mType: 1
   mFillDirection: 4
   mFillAmount: 1
@@ -754,13 +754,13 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: .147058845, g: .147058845, b: .147058845, a: .403921574}
   mPivot: 4
-  mWidth: 218
+  mWidth: 668
   mHeight: 30
   mDepth: 1
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 7.26666689
+  aspectRatio: 22.2666664
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
   mFont: {fileID: 0}
@@ -819,13 +819,13 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 1
-  mWidth: 250
+  mWidth: 700
   mHeight: 46
   mDepth: 0
   autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 5.43478251
+  aspectRatio: 15.217391
   mType: 1
   mFillDirection: 4
   mFillAmount: 1
@@ -859,7 +859,7 @@ MonoBehaviour:
   characterLimit: 0
   savedAs: 
   selectOnTab: {fileID: 0}
-  activeTextColor: {r: 1, g: 1, b: 1, a: 1}
+  activeTextColor: {r: 0, g: 0, b: 0, a: 1}
   caretColor: {r: 1, g: 1, b: 1, a: .800000012}
   selectionColor: {r: 1, g: .874509811, b: .552941203, a: .5}
   onSubmit:
@@ -1029,13 +1029,13 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: .147058845, g: .147058845, b: .147058845, a: .403921574}
   mPivot: 4
-  mWidth: 218
+  mWidth: 668
   mHeight: 30
   mDepth: 1
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 7.26666689
+  aspectRatio: 22.2666664
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
   mFont: {fileID: 0}
@@ -1094,13 +1094,13 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 1
-  mWidth: 250
+  mWidth: 700
   mHeight: 46
   mDepth: 0
   autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 5.43478251
+  aspectRatio: 15.217391
   mType: 1
   mFillDirection: 4
   mFillAmount: 1
@@ -1134,7 +1134,7 @@ MonoBehaviour:
   characterLimit: 0
   savedAs: 
   selectOnTab: {fileID: 0}
-  activeTextColor: {r: 1, g: 1, b: 1, a: 1}
+  activeTextColor: {r: 0, g: 0, b: 0, a: 1}
   caretColor: {r: 1, g: 1, b: 1, a: .800000012}
   selectionColor: {r: 1, g: .874509811, b: .552941203, a: .5}
   onSubmit:
@@ -1157,6 +1157,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questionContainer: {fileID: 109832}
   feedbackContainer: {fileID: 143572}
+  feedbackLabel: {fileID: 11425760}
   puzzleObj: {fileID: 0}
   keyWords:
   - Building blocks
@@ -1173,7 +1174,6 @@ MonoBehaviour:
   - "Try again! There are three concepts, and you\u2019ve identified two of them correctly.
     Try to recall what you\u2019ve learnt just now. The techniques will help you to
     retrieve the resources you need from your library\u2019s digital collection."
-  feedbackLabel: {fileID: 11425760}
   inputs:
   - {fileID: 11414756}
   - {fileID: 11424232}
@@ -1208,13 +1208,13 @@ MonoBehaviour:
   updateAnchors: 0
   mColor: {r: 0, g: 0, b: 0, a: 1}
   mPivot: 7
-  mWidth: 250
+  mWidth: 700
   mHeight: 2
   mDepth: 2
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 125
+  aspectRatio: 350
   mType: 1
   mFillDirection: 4
   mFillAmount: 1
@@ -1258,13 +1258,13 @@ MonoBehaviour:
   updateAnchors: 0
   mColor: {r: 0, g: 0, b: 0, a: 1}
   mPivot: 7
-  mWidth: 250
+  mWidth: 700
   mHeight: 2
   mDepth: 2
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 125
+  aspectRatio: 350
   mType: 1
   mFillDirection: 4
   mFillAmount: 1

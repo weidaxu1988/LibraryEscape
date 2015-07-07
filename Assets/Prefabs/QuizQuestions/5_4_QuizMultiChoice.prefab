@@ -453,7 +453,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 190820}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.05175781e-05, y: -153, z: 0}
+  m_LocalPosition: {x: 3.05175781e-05, y: -162, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 419996}
@@ -555,7 +555,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 199862}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.05175781e-05, y: -255, z: 0}
+  m_LocalPosition: {x: 3.05175781e-05, y: -270, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 490644}
@@ -582,7 +582,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 187712}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -381, y: 26, z: 0}
+  m_LocalPosition: {x: -446, y: 83, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 496086}
@@ -610,7 +610,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 103648}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.05175781e-05, y: -51.0000076, z: 0}
+  m_LocalPosition: {x: 3.05175781e-05, y: -54.0000114, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 406014}
@@ -628,8 +628,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 760, y: 100, z: 0}
-  m_Center: {x: 380, y: 0, z: 0}
+  m_Size: {x: 875, y: 100, z: 0}
+  m_Center: {x: 437.5, y: 0, z: 0}
 --- !u!65 &6568570
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -640,8 +640,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 760, y: 100, z: 0}
-  m_Center: {x: 380, y: 0, z: 0}
+  m_Size: {x: 875, y: 100, z: 0}
+  m_Center: {x: 437.5, y: 0, z: 0}
 --- !u!65 &6589142
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -652,8 +652,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 760, y: 100, z: 0}
-  m_Center: {x: 380, y: 0, z: 0}
+  m_Size: {x: 875, y: 100, z: 0}
+  m_Center: {x: 437.5, y: 0, z: 0}
 --- !u!111 &11137984
 Animation:
   m_ObjectHideFlags: 1
@@ -760,8 +760,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d57df2d6fef60a438796b85622efa39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  feedback: Well done, Tom. [2] is considered scholar source because its authors are
-    academic researchers
+  feedback: Well done, Tom. This is considered scholar source because its authors
+    are academic researchers.
 --- !u!114 &11407900
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -848,8 +848,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d57df2d6fef60a438796b85622efa39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  feedback: "You\u2019ve almost got it. [3] is attractive, but it is likely to be
-    written from a business, rather than a scholarly perspective as]] they are authored
+  feedback: "You\u2019ve almost got it. This is attractive, but it is likely to be
+    written from a business, rather than a scholarly perspective as they are authored
     by staff members of commercial companies. Try again."
 --- !u!114 &11430384
 MonoBehaviour:
@@ -881,20 +881,20 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: .227941155, g: .227941155, b: .227941155, a: 1}
   mPivot: 3
-  mWidth: 721
+  mWidth: 836
   mHeight: 102
   mDepth: 9
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 7.06862736
+  aspectRatio: 8.1960783
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
   mFont: {fileID: 0}
   mText: "\u201CData scientists don\u2019t\u2019 scale\u201D by Stuart Frankel (CEO
     of Narrative Science, a technology company) , published by Harvard Business Review
     in 2015.\r"
-  mFontSize: 28
+  mFontSize: 24
   mFontStyle: 0
   mAlignment: 0
   mEncoding: 1
@@ -936,7 +936,7 @@ MonoBehaviour:
   cellAlignment: 0
   hideInactive: 1
   keepWithinPanel: 0
-  padding: {x: 0, y: 0}
+  padding: {x: 0, y: 3}
 --- !u!114 &11439674
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1115,19 +1115,19 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: 0, g: 0, b: 0, a: 1}
   mPivot: 1
-  mWidth: 766
-  mHeight: 108
+  mWidth: 852
+  mHeight: 60
   mDepth: 0
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 7.09259272
+  aspectRatio: 14.1999998
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
   mFont: {fileID: 0}
   mText: "Compare the articles below, tick the one that is more suitable to be used
     when writing an academic journal article about big data.\r"
-  mFontSize: 36
+  mFontSize: 30
   mFontStyle: 0
   mAlignment: 1
   mEncoding: 1
@@ -1229,13 +1229,13 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 3
-  mWidth: 760
+  mWidth: 875
   mHeight: 100
   mDepth: 6
   autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 7.5999999
+  aspectRatio: 8.75
 --- !u!114 &11457472
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1254,7 +1254,7 @@ MonoBehaviour:
   rightAnchor:
     target: {fileID: 440178}
     relative: 1
-    absolute: 75
+    absolute: 1
   bottomAnchor:
     target: {fileID: 440178}
     relative: 0
@@ -1266,13 +1266,13 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: .227941155, g: .227941155, b: .227941155, a: 1}
   mPivot: 3
-  mWidth: 795
+  mWidth: 836
   mHeight: 102
   mDepth: 9
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 7.79411745
+  aspectRatio: 8.1960783
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
   mFont: {fileID: 0}
@@ -1280,7 +1280,7 @@ MonoBehaviour:
     Schutt (Senior Vice President of Data Science at News Corp) and Cathy O\u2019Neil
     (Director of the Lede Program at Columbia University), published by O'Reilly Media
     in 2013 ."
-  mFontSize: 28
+  mFontSize: 24
   mFontStyle: 0
   mAlignment: 0
   mEncoding: 1
@@ -1317,8 +1317,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questionContainer: {fileID: 111472}
   feedbackContainer: {fileID: 111420}
-  puzzleObj: {fileID: 0}
   feedbackLabel: {fileID: 11483442}
+  puzzleObj: {fileID: 0}
   correctOption: {fileID: 11440896}
 --- !u!114 &11461934
 MonoBehaviour:
@@ -1350,13 +1350,13 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 3
-  mWidth: 760
+  mWidth: 875
   mHeight: 100
   mDepth: 6
   autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 7.5999999
+  aspectRatio: 8.75
 --- !u!114 &11465072
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1418,8 +1418,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d57df2d6fef60a438796b85622efa39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  feedback: "\u201C[1] is wrong because Harvard Business Review usually provides general
-    and non-technical information, and is written for the businesspeople. Try again."
+  feedback: This is wrong because Harvard Business Review usually provides general
+    and non-technical information, and is written for the businesspeople. Try again.
 --- !u!114 &11475958
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1450,13 +1450,13 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: .227941155, g: .227941155, b: .227941155, a: 1}
   mPivot: 3
-  mWidth: 721
+  mWidth: 836
   mHeight: 102
   mDepth: 9
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 7.06862736
+  aspectRatio: 8.1960783
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
   mFont: {fileID: 0}
@@ -1464,7 +1464,7 @@ MonoBehaviour:
     Stewart (Academic Relations Campus Relationship Manager at Yahoo Labs), and Kristin
     Michele Tolle (Director of\_the Data Science\_Initiative in Microsoft Research
     Outreach), published by Microsoft Research in 2009. \r"
-  mFontSize: 28
+  mFontSize: 24
   mFontStyle: 0
   mAlignment: 0
   mEncoding: 1
@@ -1518,13 +1518,13 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 3
-  mWidth: 760
+  mWidth: 875
   mHeight: 100
   mDepth: 6
   autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 7.5999999
+  aspectRatio: 8.75
 --- !u!114 &11483442
 MonoBehaviour:
   m_ObjectHideFlags: 1

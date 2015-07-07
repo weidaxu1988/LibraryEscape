@@ -456,7 +456,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 137280}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 178, y: -34, z: 0}
+  m_LocalPosition: {x: 207, y: -40, z: 0}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_Children:
   - {fileID: 487944}
@@ -515,7 +515,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 183580}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 198, y: -235, z: 0}
+  m_LocalPosition: {x: 207, y: -213, z: 0}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_Children:
   - {fileID: 462490}
@@ -564,7 +564,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 121954}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 55, y: -132, z: 0}
+  m_LocalPosition: {x: 77, y: -125, z: 0}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_Children:
   - {fileID: 428978}
@@ -601,7 +601,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100548}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 185, y: -123, z: 0}
+  m_LocalPosition: {x: 207, y: -125, z: 0}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_Children:
   - {fileID: 407204}
@@ -694,7 +694,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 168424}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 50, y: -37, z: 0}
+  m_LocalPosition: {x: 77, y: -40, z: 0}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_Children:
   - {fileID: 462576}
@@ -707,7 +707,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 105114}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 65, y: -237, z: 0}
+  m_LocalPosition: {x: 77, y: -213, z: 0}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_Children:
   - {fileID: 447690}
@@ -949,9 +949,8 @@ MonoBehaviour:
   puzzleObj: {fileID: 0}
   correctFeedBack: 'Great, you are right! The ISP model divides a typical information
     search into six different stages: task initiation, topic selection, prefocus exploration,
-    focus formulation, information collection and search closure. But also remember,
-    information search process is iterative and repetitive, so you need to be patient
-    when searching for information.'
+    focus formulation, information collection and search closure. But remember, information
+    search process is iterative and repetitive, so be patient when searching for information.'
   incorrectFeedBack: Try again, I know this question is a bit tough, you can do it.
 --- !u!114 &11404310
 MonoBehaviour:
@@ -1044,7 +1043,7 @@ MonoBehaviour:
   mTrueTypeFont: {fileID: 0}
   mFont: {fileID: 11400000, guid: 29056518aafb01b49a5b08faf8e30cff, type: 2}
   mText: "Task initiation\r"
-  mFontSize: 20
+  mFontSize: 13
   mFontStyle: 0
   mAlignment: 0
   mEncoding: 1
@@ -1109,7 +1108,7 @@ MonoBehaviour:
   mTrueTypeFont: {fileID: 0}
   mFont: {fileID: 11400000, guid: 29056518aafb01b49a5b08faf8e30cff, type: 2}
   mText: "Prefocus exploration\r"
-  mFontSize: 20
+  mFontSize: 13
   mFontStyle: 0
   mAlignment: 0
   mEncoding: 1
@@ -1467,7 +1466,7 @@ MonoBehaviour:
   mTrueTypeFont: {fileID: 0}
   mFont: {fileID: 11400000, guid: 29056518aafb01b49a5b08faf8e30cff, type: 2}
   mText: "Topic selection\r"
-  mFontSize: 20
+  mFontSize: 13
   mFontStyle: 0
   mAlignment: 0
   mEncoding: 1
@@ -1697,7 +1696,7 @@ MonoBehaviour:
   mTrueTypeFont: {fileID: 0}
   mFont: {fileID: 11400000, guid: 29056518aafb01b49a5b08faf8e30cff, type: 2}
   mText: "Information collection\r"
-  mFontSize: 16
+  mFontSize: 13
   mFontStyle: 0
   mAlignment: 0
   mEncoding: 1
@@ -2122,7 +2121,7 @@ MonoBehaviour:
   mTrueTypeFont: {fileID: 0}
   mFont: {fileID: 11400000, guid: 29056518aafb01b49a5b08faf8e30cff, type: 2}
   mText: "Focus formulation\r"
-  mFontSize: 20
+  mFontSize: 13
   mFontStyle: 0
   mAlignment: 0
   mEncoding: 1
@@ -2187,7 +2186,7 @@ MonoBehaviour:
   mTrueTypeFont: {fileID: 0}
   mFont: {fileID: 11400000, guid: 29056518aafb01b49a5b08faf8e30cff, type: 2}
   mText: "Search closure\r"
-  mFontSize: 20
+  mFontSize: 13
   mFontStyle: 0
   mAlignment: 0
   mEncoding: 1

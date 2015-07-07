@@ -355,7 +355,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 122936}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 14, y: -266, z: 0}
+  m_LocalPosition: {x: 400, y: -218, z: 0}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_Children: []
   m_Father: {fileID: 423760}
@@ -445,7 +445,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 193008}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 461, y: 78, z: 0}
+  m_LocalPosition: {x: 400, y: 74, z: 0}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_Children: []
   m_Father: {fileID: 423760}
@@ -482,7 +482,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 158564}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 239, y: -79, z: 0}
+  m_LocalPosition: {x: 400, y: -49, z: 0}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_Children: []
   m_Father: {fileID: 423760}
@@ -684,7 +684,7 @@ MonoBehaviour:
     relative: 1
     absolute: 0
   updateAnchors: 1
-  mColor: {r: 1, g: 1, b: 1, a: 1}
+  mColor: {r: .659277678, g: .985294104, b: .72897774, a: 1}
   mPivot: 4
   mWidth: 80
   mHeight: 40
@@ -703,8 +703,8 @@ MonoBehaviour:
   rightType: 1
   bottomType: 1
   topType: 1
-  mAtlas: {fileID: 11485656, guid: c70c616e8529fea4595e88ee3c857514, type: 2}
-  mSpriteName: ele_extra_btn_background
+  mAtlas: {fileID: 11400000, guid: 62adb30369acbf943a67cee0f69267a3, type: 2}
+  mSpriteName: Flat
   mFillCenter: 1
 --- !u!114 &11439126
 MonoBehaviour:
@@ -747,7 +747,7 @@ MonoBehaviour:
   mTrueTypeFont: {fileID: 0}
   mFont: {fileID: 11400000, guid: 29056518aafb01b49a5b08faf8e30cff, type: 2}
   mText: OR
-  mFontSize: 16
+  mFontSize: 20
   mFontStyle: 0
   mAlignment: 0
   mEncoding: 1
@@ -917,25 +917,23 @@ MonoBehaviour:
   mColor: {r: 0, g: 0, b: 0, a: 1}
   mPivot: 1
   mWidth: 890
-  mHeight: 420
+  mHeight: 364
   mDepth: 2
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 2.11904764
+  aspectRatio: 2.27040815
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
   mFont: {fileID: 0}
   mText: "When searching a database, you retrieved 500 articles, far more than you
-    can read, and far more than you need for your assignment. Which Boolean operator
-    should you use to narrow the search results?\r\n\r\nWhen searching a database,
-    you found only 3 articles. When you reflect on the search terms used, you realize
-    that there are synonyms that you can use to retrieve more articles. Which Boolean
-    operator should you use to broaden the search results?\n\r\nWhen searching for
-    articles on the Java programming language, you notice that the search results
-    contain numerous articles on the geography of the Indonesian island Java, and
-    on the health benefits of coffee. Which Boolean operator should you use to subtract
-    these terms from the search results? \n"
+    need for the assignment. Which Boolean operator to use in this case?\r\n\r\nWhen
+    searching a database, you found only 3 articles. Afterwards you realize that there
+    are synonyms that can be used to retrieve more articles. Which Boolean operator
+    to use in this case?\n\r\nWhen searching for articles on the Java programming
+    language, you notice that the search results contain numerous articles on the
+    Indonesian island Java, and on the health benefits of coffee. Which Boolean operator
+    to use in this case? \n"
   mFontSize: 28
   mFontStyle: 0
   mAlignment: 1
@@ -1083,7 +1081,7 @@ MonoBehaviour:
     relative: 1
     absolute: 0
   updateAnchors: 1
-  mColor: {r: 1, g: 1, b: 1, a: 1}
+  mColor: {r: .659277678, g: .985294104, b: .72897774, a: 1}
   mPivot: 4
   mWidth: 80
   mHeight: 40
@@ -1102,8 +1100,8 @@ MonoBehaviour:
   rightType: 1
   bottomType: 1
   topType: 1
-  mAtlas: {fileID: 11485656, guid: c70c616e8529fea4595e88ee3c857514, type: 2}
-  mSpriteName: ele_extra_btn_background
+  mAtlas: {fileID: 11400000, guid: 62adb30369acbf943a67cee0f69267a3, type: 2}
+  mSpriteName: Flat
   mFillCenter: 1
 --- !u!114 &11457276
 MonoBehaviour:
@@ -1233,7 +1231,7 @@ MonoBehaviour:
     relative: 1
     absolute: 0
   updateAnchors: 1
-  mColor: {r: 1, g: 1, b: 1, a: 1}
+  mColor: {r: .659277678, g: .985294104, b: .72897774, a: 1}
   mPivot: 4
   mWidth: 80
   mHeight: 40
@@ -1252,8 +1250,8 @@ MonoBehaviour:
   rightType: 1
   bottomType: 1
   topType: 1
-  mAtlas: {fileID: 11485656, guid: c70c616e8529fea4595e88ee3c857514, type: 2}
-  mSpriteName: ele_extra_btn_background
+  mAtlas: {fileID: 11400000, guid: 62adb30369acbf943a67cee0f69267a3, type: 2}
+  mSpriteName: Flat
   mFillCenter: 1
 --- !u!114 &11485614
 MonoBehaviour:

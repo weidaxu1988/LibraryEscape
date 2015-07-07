@@ -164,7 +164,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1487916997}
-  m_RootOrder: 5
+  m_RootOrder: 4
 --- !u!114 &13467285
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -321,6 +321,8 @@ Transform:
   - {fileID: 1125174980}
   - {fileID: 115838787}
   - {fileID: 871803828}
+  - {fileID: 2006092993}
+  - {fileID: 983479951}
   m_Father: {fileID: 1607933147}
   m_RootOrder: 0
 --- !u!114 &16002953
@@ -497,11 +499,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   incorrectCapacity: 2
   totalQuiz:
-  - {fileID: 0}
-  - {fileID: 1981583588}
+  - {fileID: 664820264}
+  - {fileID: 664820264}
   - {fileID: 1962594942}
   - {fileID: 1884258084}
-  - {fileID: 482633020}
+  - {fileID: 1884258084}
   librarian: {fileID: 116789700}
   failedContent: {fileID: 1678736579}
   nextButton: {fileID: 1578820169}
@@ -532,7 +534,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 81164306}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 600, y: -0, z: 0}
+  m_LocalPosition: {x: 4, y: -202, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1125174980}
@@ -857,7 +859,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 101088, guid: 7ba8fe3ba6872f949bc0032bbb8f32e8, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 438680, guid: 7ba8fe3ba6872f949bc0032bbb8f32e8, type: 2}
       propertyPath: m_LocalScale.x
@@ -1476,18 +1478,20 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 1
-  mWidth: 635
+  mWidth: 847
   mHeight: 151
   mDepth: 5
   autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 4.20529795
+  aspectRatio: 5.60927153
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
   mFont: {fileID: 0}
-  mText: "Ooh, the ghost spotted you. \r\nStart this mission over now. \r"
-  mFontSize: 44
+  mText: 'Oops, the fire has spread and burnt the place.
+
+    Start this mission over now.'
+  mFontSize: 40
   mFontStyle: 0
   mAlignment: 2
   mEncoding: 1
@@ -2056,7 +2060,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 45edf347f9f51214dbfbab27b16fbf01, type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6500000, guid: 45edf347f9f51214dbfbab27b16fbf01, type: 2}
       propertyPath: m_Size.x
@@ -3628,7 +3632,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 150866, guid: 1165a007a0286d44da87dd456dc98c19, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1165a007a0286d44da87dd456dc98c19, type: 2}
@@ -3793,12 +3797,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 44e7f2d7c4050734d92d126d394a97b0, type: 2}
   m_IsPrefabParent: 0
---- !u!114 &482633020 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 11464378, guid: 44e7f2d7c4050734d92d126d394a97b0,
-    type: 2}
-  m_PrefabInternal: {fileID: 482633019}
-  m_Script: {fileID: 11500000, guid: accdbf939be51df498622d9223e4420c, type: 3}
 --- !u!4 &482633021 stripped
 Transform:
   m_PrefabParentObject: {fileID: 427018, guid: 44e7f2d7c4050734d92d126d394a97b0, type: 2}
@@ -4883,6 +4881,12 @@ SpriteRenderer:
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 55501aa52f4fa6a459b203794b3956f2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!114 &664820264 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 11475564, guid: 761689407fae5784d841599c3a207b2b,
+    type: 2}
+  m_PrefabInternal: {fileID: 1838170132}
+  m_Script: {fileID: 11500000, guid: 377205bf3ae88544c90dcecbb5cbfbcd, type: 3}
 --- !u!1 &700842671
 GameObject:
   m_ObjectHideFlags: 0
@@ -5094,7 +5098,7 @@ Transform:
   m_Children:
   - {fileID: 268127478}
   m_Father: {fileID: 1487916997}
-  m_RootOrder: 2
+  m_RootOrder: 1
 --- !u!114 &741961044
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5131,7 +5135,7 @@ MonoBehaviour:
   anchorOffset: 0
   softBorderPadding: 1
   renderQueue: 0
-  startingRenderQueue: 3005
+  startingRenderQueue: 3006
   mClipTexture: {fileID: 0}
   mAlpha: 1
   mClipping: 3
@@ -5564,7 +5568,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 438680, guid: 7ba8fe3ba6872f949bc0032bbb8f32e8, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 101088, guid: 7ba8fe3ba6872f949bc0032bbb8f32e8, type: 2}
       propertyPath: m_IsActive
@@ -5620,7 +5624,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &846077270
 Transform:
   m_ObjectHideFlags: 0
@@ -5972,7 +5976,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 871803827}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -880, y: 662, z: 0}
+  m_LocalPosition: {x: -925, y: 662, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 16002952}
@@ -6654,6 +6658,84 @@ Transform:
 Transform:
   m_PrefabParentObject: {fileID: 442192, guid: ac8d8624fc2183f4595f61a775751b3a, type: 2}
   m_PrefabInternal: {fileID: 913811232}
+--- !u!1 &983479950
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 983479951}
+  - 114: {fileID: 983479952}
+  m_Layer: 8
+  m_Name: Sprite
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &983479951
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 983479950}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 16002952}
+  m_RootOrder: 5
+--- !u!114 &983479952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 983479950}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b3dc54f924693f41b5cbecb267e647a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  leftAnchor:
+    target: {fileID: 0}
+    relative: 0
+    absolute: 0
+  rightAnchor:
+    target: {fileID: 0}
+    relative: 1
+    absolute: 0
+  bottomAnchor:
+    target: {fileID: 0}
+    relative: 0
+    absolute: 0
+  topAnchor:
+    target: {fileID: 0}
+    relative: 1
+    absolute: 0
+  updateAnchors: 1
+  mColor: {r: 1, g: 1, b: 1, a: 1}
+  mPivot: 4
+  mWidth: 2000
+  mHeight: 1000
+  mDepth: 4
+  autoResizeBoxCollider: 0
+  hideIfOffScreen: 0
+  keepAspectRatio: 0
+  aspectRatio: 2
+  mType: 1
+  mFillDirection: 4
+  mFillAmount: 1
+  mInvert: 0
+  mFlip: 0
+  centerType: 1
+  leftType: 1
+  rightType: 1
+  bottomType: 1
+  topType: 1
+  mAtlas: {fileID: 11400000, guid: 62adb30369acbf943a67cee0f69267a3, type: 2}
+  mSpriteName: Wooden Background
+  mFillCenter: 1
 --- !u!1 &998524297
 GameObject:
   m_ObjectHideFlags: 0
@@ -6798,16 +6880,21 @@ MonoBehaviour:
   mColor: {r: 0, g: 0, b: 0, a: 1}
   mPivot: 1
   mWidth: 520
-  mHeight: 24
+  mHeight: 264
   mDepth: 0
   autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 21.666666
+  aspectRatio: 1.969697
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
   mFont: {fileID: 0}
-  mText: 
+  mText: 'Attribution of Source Material                                                                                             Check
+    if references and sources for all the content are listed clearly. Proper attribution
+    is a responsibility of a scholar, and it can                 (1) help readers
+    identify and relocate the source work;                                                             (2)
+    provide evidence that the position is well-researched; and                                       (3)
+    gives credit to the author of an original concept or theory. '
   mFontSize: 24
   mFontStyle: 0
   mAlignment: 1
@@ -6855,8 +6942,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 520, y: 24, z: 0}
-  m_Center: {x: 0, y: -12, z: 0}
+  m_Size: {x: 520, y: 264, z: 0}
+  m_Center: {x: 0, y: -132, z: 0}
 --- !u!4 &1049687175 stripped
 Transform:
   m_PrefabParentObject: {fileID: 446086, guid: 65abe23b94a57844c81948f178d0dde4, type: 2}
@@ -7196,7 +7283,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1125174979}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1046, y: 656, z: 0}
+  m_LocalPosition: {x: -1091, y: 656, z: 0}
   m_LocalScale: {x: .600000024, y: .600000024, z: 1}
   m_Children:
   - {fileID: 1530409715}
@@ -7211,7 +7298,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1125174979}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 07c4de3b4b6fe9045b059ee627c100df, type: 3}
   m_Name: 
@@ -8623,11 +8710,11 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1909556177}
-  - {fileID: 831125931}
   - {fileID: 741961043}
+  - {fileID: 831125931}
   - {fileID: 158187506}
-  - {fileID: 1313679529}
   - {fileID: 13467284}
+  - {fileID: 1313679529}
   - {fileID: 1409837405}
   m_Father: {fileID: 1607933147}
   m_RootOrder: 1
@@ -8667,7 +8754,7 @@ MonoBehaviour:
   anchorOffset: 0
   softBorderPadding: 1
   renderQueue: 0
-  startingRenderQueue: 3002
+  startingRenderQueue: 3003
   mClipTexture: {fileID: 0}
   mAlpha: 1
   mClipping: 0
@@ -9281,7 +9368,11 @@ Prefab:
       objectReference: {fileID: 1645486725}
     - target: {fileID: 11434426, guid: 559f2f9b0fbd79440a51e4a18ff34133, type: 2}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11434426, guid: 559f2f9b0fbd79440a51e4a18ff34133, type: 2}
+      propertyPath: timeSensitive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 559f2f9b0fbd79440a51e4a18ff34133, type: 2}
@@ -9584,7 +9675,7 @@ MonoBehaviour:
     relative: 1
     absolute: 0
   updateAnchors: 1
-  mColor: {r: 0, g: 0, b: 0, a: 1}
+  mColor: {r: 1, g: 0, b: 0, a: 1}
   mPivot: 4
   mWidth: 1418
   mHeight: 880
@@ -10643,11 +10734,7 @@ Prefab:
       propertyPath: puzzleObj
       value: 
       objectReference: {fileID: 912475053}
-    - target: {fileID: 454556, guid: 761689407fae5784d841599c3a207b2b, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 444492, guid: 761689407fae5784d841599c3a207b2b, type: 2}
+    - target: {fileID: 476330, guid: 761689407fae5784d841599c3a207b2b, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -10655,7 +10742,11 @@ Prefab:
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 476330, guid: 761689407fae5784d841599c3a207b2b, type: 2}
+    - target: {fileID: 444492, guid: 761689407fae5784d841599c3a207b2b, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 454556, guid: 761689407fae5784d841599c3a207b2b, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -11210,26 +11301,14 @@ Prefab:
       propertyPath: m_RootOrder
       value: 6
       objectReference: {fileID: 0}
-    - target: {fileID: 483588, guid: f25f20dc8b3f8dd47a9c84f7681f5de3, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 440178, guid: f25f20dc8b3f8dd47a9c84f7681f5de3, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 496086, guid: f25f20dc8b3f8dd47a9c84f7681f5de3, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 115620, guid: f25f20dc8b3f8dd47a9c84f7681f5de3, type: 2}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 11461660, guid: f25f20dc8b3f8dd47a9c84f7681f5de3, type: 2}
       propertyPath: puzzleObj
       value: 
       objectReference: {fileID: 913811233}
+    - target: {fileID: 115620, guid: f25f20dc8b3f8dd47a9c84f7681f5de3, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f25f20dc8b3f8dd47a9c84f7681f5de3, type: 2}
   m_IsPrefabParent: 0
@@ -11902,12 +11981,6 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 434432, guid: 8e296cbaf369cbc419ec6e915937604c, type: 2}
   m_PrefabInternal: {fileID: 1981583586}
---- !u!114 &1981583588 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 11424748, guid: 8e296cbaf369cbc419ec6e915937604c,
-    type: 2}
-  m_PrefabInternal: {fileID: 1981583586}
-  m_Script: {fileID: 11500000, guid: accdbf939be51df498622d9223e4420c, type: 3}
 --- !u!1 &1986659498
 GameObject:
   m_ObjectHideFlags: 0
@@ -12048,6 +12121,130 @@ MonoBehaviour:
   mAtlas: {fileID: 11485656, guid: c70c616e8529fea4595e88ee3c857514, type: 2}
   mSpriteName: btn_arrow_right
   mFillCenter: 1
+--- !u!1 &2006092992
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 2006092993}
+  - 114: {fileID: 2006092996}
+  - 65: {fileID: 2006092995}
+  - 114: {fileID: 2006092994}
+  m_Layer: 8
+  m_Name: Label-content (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &2006092993
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2006092992}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 373.75, z: 0}
+  m_LocalScale: {x: 2.49999976, y: 2.49999976, z: 1}
+  m_Children: []
+  m_Father: {fileID: 16002952}
+  m_RootOrder: 4
+--- !u!114 &2006092994
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2006092992}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f02842fa4878db54f9587ff4de7d9f2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scrollView: {fileID: 0}
+  draggablePanel: {fileID: 0}
+--- !u!65 &2006092995
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2006092992}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 520, y: 192, z: 0}
+  m_Center: {x: 0, y: -96, z: 0}
+--- !u!114 &2006092996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2006092992}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9d0b5f3bbe925a408bd595c79d0bf63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  leftAnchor:
+    target: {fileID: 0}
+    relative: 0
+    absolute: 0
+  rightAnchor:
+    target: {fileID: 0}
+    relative: 1
+    absolute: 0
+  bottomAnchor:
+    target: {fileID: 0}
+    relative: 0
+    absolute: 0
+  topAnchor:
+    target: {fileID: 0}
+    relative: 1
+    absolute: 0
+  updateAnchors: 1
+  mColor: {r: 0, g: 0, b: 0, a: 1}
+  mPivot: 1
+  mWidth: 520
+  mHeight: 192
+  mDepth: 6
+  autoResizeBoxCollider: 1
+  hideIfOffScreen: 0
+  keepAspectRatio: 0
+  aspectRatio: 2.70833325
+  keepCrispWhenShrunk: 1
+  mTrueTypeFont: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  mFont: {fileID: 0}
+  mText: "(7) Treatment \u2013 is the information presented in such away such that
+    it is suitable for certain audiences, e.g. children?                                 (8)
+    Granularity \u2013 is the information presented at the right level of detail?
+    \                                  (9) Depth \u2013 does the information source
+    provide the information to a depth appropriate to what I have to do?"
+  mFontSize: 24
+  mFontStyle: 0
+  mAlignment: 1
+  mEncoding: 1
+  mMaxLineCount: 0
+  mEffectStyle: 0
+  mEffectColor: {r: 0, g: 0, b: 0, a: 1}
+  mSymbols: 1
+  mEffectDistance: {x: 1, y: 1}
+  mOverflow: 3
+  mMaterial: {fileID: 0}
+  mApplyGradient: 0
+  mGradientTop: {r: 1, g: 1, b: 1, a: 1}
+  mGradientBottom: {r: .699999988, g: .699999988, b: .699999988, a: 1}
+  mSpacingX: 0
+  mSpacingY: 0
+  mUseFloatSpacing: 0
+  mFloatSpacingX: 0
+  mFloatSpacingY: 0
+  mShrinkToFit: 0
+  mMaxLineWidth: 0
+  mMaxLineHeight: 0
+  mLineWidth: 0
+  mMultiline: 1
 --- !u!1 &2054620649
 GameObject:
   m_ObjectHideFlags: 0

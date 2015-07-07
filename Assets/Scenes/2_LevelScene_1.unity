@@ -337,6 +337,107 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!1 &20412358
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 189786, guid: 291881e7ed36c4b46935bdb105f3fcf4, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 2000497225}
+  - 114: {fileID: 269764429}
+  - 61: {fileID: 20412360}
+  - 82: {fileID: 20412359}
+  m_Layer: 11
+  m_Name: Object-Wheel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &20412359
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8209666, guid: 291881e7ed36c4b46935bdb105f3fcf4,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 20412358}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 6146e3a80270f3d488f0c70625797918, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+--- !u!61 &20412360
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 20412358}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: .330000013, y: .540000021}
+  serializedVersion: 2
+  m_Size: {x: 4.28000021, y: 2.02999997}
 --- !u!4 &30636024 stripped
 Transform:
   m_PrefabParentObject: {fileID: 438830, guid: 1a011ad77ab2c6141baf55431be10fc2, type: 2}
@@ -544,11 +645,7 @@ MonoBehaviour:
   pressedSprite2D: {fileID: 0}
   disabledSprite2D: {fileID: 0}
   pixelSnap: 0
-  onClick:
-  - mTarget: {fileID: 0}
-    mMethodName: LevelComplete
-    mParameters: []
-    oneShot: 0
+  onClick: []
 --- !u!114 &55178527
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -667,9 +764,9 @@ MonoBehaviour:
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
   mFont: {fileID: 0}
-  mText: "The evil ghost has turned the library into chaos and scattered IL knowledge
-    in different objects around the library.  Go through each object to learn about
-    IL first before attempting the questions.\r"
+  mText: "The evil ghost has brought chaos to the library and scattered IL knowledge
+    in different objects around the library. Find each object to learn about IL first
+    before attempting the questions.\r"
   mFontSize: 24
   mFontStyle: 0
   mAlignment: 1
@@ -866,7 +963,7 @@ MonoBehaviour:
   anchorOffset: 0
   softBorderPadding: 1
   renderQueue: 0
-  startingRenderQueue: 3002
+  startingRenderQueue: 3003
   mClipTexture: {fileID: 0}
   mAlpha: 1
   mClipping: 0
@@ -889,9 +986,8 @@ MonoBehaviour:
   incorrectCapacity: 2
   totalQuiz:
   - {fileID: 1619367039}
-  - {fileID: 645555683}
   - {fileID: 30636025}
-  - {fileID: 0}
+  - {fileID: 1958623136}
   librarian: {fileID: 116789700}
   failedContent: {fileID: 1678736579}
   nextButton: {fileID: 1578820169}
@@ -2254,12 +2350,126 @@ Transform:
   - {fileID: 552824429}
   m_Father: {fileID: 741961043}
   m_RootOrder: 0
---- !u!114 &269764429 stripped
+--- !u!114 &269764429
 MonoBehaviour:
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 11458706, guid: 291881e7ed36c4b46935bdb105f3fcf4,
     type: 2}
-  m_PrefabInternal: {fileID: 1186677154}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 20412358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8f5203376113ca3408ab9f34af9c5f20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startType: 0
+  previousPuzzle: {fileID: 0}
+  noteTitle: Importance of IL
+  noteContentArray:
+  - IL is important because it allows us to navigate vast amounts of information,
+    to differentiate the important from the unnecessary, to effectively use relevant
+    content, to construct new knowledge and understand new situations.
+  - "Students write term papers, work on assignments, and complete projects. To do
+    these knowledge-intensive tasks, they need to search for detailed, comprehensive
+    information, and synthesize the information from multiple sources. It is this
+    not surprising that students\u2019 with better IL skills tend to do better academically.
+    \ "
+--- !u!1 &278031842
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114676, guid: 291881e7ed36c4b46935bdb105f3fcf4, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 278031843}
+  - 212: {fileID: 278031845}
+  - 114: {fileID: 278031844}
+  m_Layer: 11
+  m_Name: Sprite
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &278031843
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 460584, guid: 291881e7ed36c4b46935bdb105f3fcf4, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 278031842}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2000497225}
+  m_RootOrder: 0
+--- !u!114 &278031844
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11415752, guid: 291881e7ed36c4b46935bdb105f3fcf4,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 278031842}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75e7459110b9666449485c40f25362a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  method: 0
+  style: 0
+  animationCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 1
+      inSlope: 2
+      outSlope: 2
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  ignoreTimeScale: 1
+  delay: 0
+  duration: .5
+  steeperCurves: 0
+  tweenGroup: 0
+  onFinished: []
+  eventReceiver: {fileID: 0}
+  callWhenFinished: 
+  from: {x: 1, y: 1, z: 1}
+  to: {x: 1.20000005, y: 1.20000005, z: 1.20000005}
+  updateTable: 0
+--- !u!212 &278031845
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21270300, guid: 291881e7ed36c4b46935bdb105f3fcf4,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 278031842}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 1
+  m_ReflectionProbeUsage: 1
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_ImportantGI: 0
+  m_AutoUVMaxDistance: .5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 1432671119
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: de665c601fd628a44905b9ad0ca8902f, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &279717768
 GameObject:
   m_ObjectHideFlags: 0
@@ -2329,7 +2539,7 @@ MonoBehaviour:
   mTrueTypeFont: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
   mFont: {fileID: 0}
   mText: "You have one hour. A countdown timer is located on the screen to help you
-    keep track of time.\_\r\nSo hurry up, or we will both be trapped here forever!\r"
+    keep track of time.\n\nSo hurry up, or we will both be trapped here forever!\r"
   mFontSize: 24
   mFontStyle: 0
   mAlignment: 1
@@ -3413,7 +3623,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 150866, guid: 1165a007a0286d44da87dd456dc98c19, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1165a007a0286d44da87dd456dc98c19, type: 2}
@@ -4097,7 +4307,7 @@ MonoBehaviour:
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
   mFont: {fileID: 0}
-  mText: "Wrong answers will delay you, and also reduce your ability to use the wand
+  mText: "Wrong answers will delay you, and also reduce the chance to use the wand
     to release me from this curse.\r"
   mFontSize: 24
   mFontStyle: 0
@@ -4689,12 +4899,6 @@ MonoBehaviour:
 Transform:
   m_PrefabParentObject: {fileID: 474106, guid: cd71044e9b23118448ebdc3c044e3e5f, type: 2}
   m_PrefabInternal: {fileID: 1135244895}
---- !u!114 &645555683 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 11464354, guid: 6880977aef8814f4da99610a694dc958,
-    type: 2}
-  m_PrefabInternal: {fileID: 1942194044}
-  m_Script: {fileID: 11500000, guid: 377205bf3ae88544c90dcecbb5cbfbcd, type: 3}
 --- !u!1 &649750342
 GameObject:
   m_ObjectHideFlags: 0
@@ -4765,7 +4969,7 @@ MonoBehaviour:
   mFont: {fileID: 0}
   mText: "The next place you need to go is an area that houses most of lending collection
     such as monographs and periodicals, and facilities such as self-checkout machines
-    and photocopiers. \r\nSelect this place from the map.\r"
+    and photocopiers.\n\nSelect this place from the map.\r"
   mFontSize: 24
   mFontStyle: 0
   mAlignment: 1
@@ -7765,18 +7969,19 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: 0, g: 0, b: 0, a: 1}
   mPivot: 1
-  mWidth: 399
+  mWidth: 410
   mHeight: 151
   mDepth: 2
   autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 2.64238405
+  aspectRatio: 2.7152319
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
   mFont: {fileID: 0}
-  mText: "Only come back here to this room after finding all the knowledge objects.
-    Good luck!\r"
+  mText: "If you don't have the proper knowledge, the ghost will kill you, so I will
+    make sure you get the knowledge.\n\nOnly come back here to this room after finding
+    all the objects. Good luck!\r"
   mFontSize: 24
   mFontStyle: 0
   mAlignment: 1
@@ -7870,7 +8075,7 @@ MonoBehaviour:
   mTrueTypeFont: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
   mFont: {fileID: 0}
   mText: However, an evil ghost visited the library one day. He cast a curse and turned
-    me into a ghost. I have been imprisoned in this room since then.
+    me into a ghost. I have been imprisoned in this room of the library since then.
   mFontSize: 24
   mFontStyle: 0
   mAlignment: 1
@@ -8083,8 +8288,8 @@ MonoBehaviour:
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
   mFont: {fileID: 0}
-  mText: 'Can you help me find the wand? In return, I will help you escape from this
-    place. '
+  mText: Can you help me find the wand? In return, I will help you escape from this
+    library.
   mFontSize: 24
   mFontStyle: 0
   mAlignment: 1
@@ -8317,8 +8522,8 @@ MonoBehaviour:
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
   mFont: {fileID: 0}
-  mText: "Use the arrows on your keyboard to move around.\r\nThe stars on screen indicate
-    how many objects with IL knowledge that you have located.\r"
+  mText: "Use the arrows on your keyboard to move around.\r\n\nThe stars on the screen
+    indicate how many objects with IL knowledge you have located.\r"
   mFontSize: 24
   mFontStyle: 0
   mAlignment: 1
@@ -9493,48 +9698,6 @@ Transform:
 Transform:
   m_PrefabParentObject: {fileID: 438680, guid: 7ba8fe3ba6872f949bc0032bbb8f32e8, type: 2}
   m_PrefabInternal: {fileID: 116789699}
---- !u!1001 &1186677154
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 963883464}
-    m_Modifications:
-    - target: {fileID: 422278, guid: 291881e7ed36c4b46935bdb105f3fcf4, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -.0810000002
-      objectReference: {fileID: 0}
-    - target: {fileID: 422278, guid: 291881e7ed36c4b46935bdb105f3fcf4, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: .153999999
-      objectReference: {fileID: 0}
-    - target: {fileID: 422278, guid: 291881e7ed36c4b46935bdb105f3fcf4, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 422278, guid: 291881e7ed36c4b46935bdb105f3fcf4, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 422278, guid: 291881e7ed36c4b46935bdb105f3fcf4, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 422278, guid: 291881e7ed36c4b46935bdb105f3fcf4, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 422278, guid: 291881e7ed36c4b46935bdb105f3fcf4, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 422278, guid: 291881e7ed36c4b46935bdb105f3fcf4, type: 2}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 291881e7ed36c4b46935bdb105f3fcf4, type: 2}
-  m_IsPrefabParent: 0
 --- !u!4 &1189521266 stripped
 Transform:
   m_PrefabParentObject: {fileID: 403842, guid: 99d7471a808859b4ea81eb2621e48bba, type: 2}
@@ -10065,8 +10228,8 @@ MonoBehaviour:
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
   mFont: {fileID: 0}
-  mText: "However, there is magic wand that can unlock the curse and free me from
-    this dreadful room.  It is somewhere in this library.\r\n"
+  mText: "However, there is a magic wand that can unlock the curse and free me from
+    this dreadful room. It is somewhere in this library.\r"
   mFontSize: 24
   mFontStyle: 0
   mAlignment: 1
@@ -15193,6 +15356,12 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 492004, guid: 5698b4c713a19e3459f12f5026e2ad62, type: 2}
   m_PrefabInternal: {fileID: 1958623134}
+--- !u!114 &1958623136 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 11401764, guid: 5698b4c713a19e3459f12f5026e2ad62,
+    type: 2}
+  m_PrefabInternal: {fileID: 1958623134}
+  m_Script: {fileID: 11500000, guid: 377205bf3ae88544c90dcecbb5cbfbcd, type: 3}
 --- !u!1 &1983801684
 GameObject:
   m_ObjectHideFlags: 0
@@ -15271,10 +15440,19 @@ MonoBehaviour:
   mAtlas: {fileID: 11485656, guid: c70c616e8529fea4595e88ee3c857514, type: 2}
   mSpriteName: bg_librarian
   mFillCenter: 1
---- !u!4 &2000497225 stripped
+--- !u!4 &2000497225
 Transform:
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 422278, guid: 291881e7ed36c4b46935bdb105f3fcf4, type: 2}
-  m_PrefabInternal: {fileID: 1186677154}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 20412358}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -.0810000002, y: .153999999, z: 0}
+  m_LocalScale: {x: .0850000009, y: .0850000009, z: 1}
+  m_Children:
+  - {fileID: 278031843}
+  m_Father: {fileID: 963883464}
+  m_RootOrder: 0
 --- !u!1 &2054620649
 GameObject:
   m_ObjectHideFlags: 0
