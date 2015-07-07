@@ -47,9 +47,19 @@ public class ShortAnswerQ3 : ShortAnswerMultiKeyWords
         if (rCount == 0)
             feedbackLabel.text = incorrectFeedBack[0];
         else if (rCount == 1)
-            feedbackLabel.text = incorrectFeedBack[1];
+        {
+            if (incorrectFeedBack.Length > 1)
+                feedbackLabel.text = incorrectFeedBack[1];
+            else
+                feedbackLabel.text = incorrectFeedBack[0];
+        }
         else if (rCount == 2)
-            feedbackLabel.text = incorrectFeedBack[2];
+        {
+            if (incorrectFeedBack.Length > 2)
+                feedbackLabel.text = incorrectFeedBack[2];
+            else
+                feedbackLabel.text = incorrectFeedBack[0];
+        }
 
         //string rAnswer = null, iAnswer = null;
         //for (int i = 0; i < results.Length;i++ )

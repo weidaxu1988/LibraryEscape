@@ -45,6 +45,16 @@ public class DragDropQuizMultiContainer : DragDropQuizContainer
     {
         List<DragDropQuizItem> correctList = new List<DragDropQuizItem>(correctItems);
         List<DragDropQuizItem> removeList = new List<DragDropQuizItem>();
+
+        if (selectedItems == null)
+        {
+            Debug.Log("selected items is null");
+            return;
+        }
+        else
+            Debug.Log("selected items's size is: " + selectedItems.Count);
+
+
         foreach (DragDropQuizItem item in selectedItems)
         {
             if (!correctList.Contains(item))

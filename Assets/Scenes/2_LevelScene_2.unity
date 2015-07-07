@@ -6105,6 +6105,10 @@ Prefab:
       propertyPath: m_LocalScale.y
       value: .699999988
       objectReference: {fileID: 0}
+    - target: {fileID: 11434426, guid: 559f2f9b0fbd79440a51e4a18ff34133, type: 2}
+      propertyPath: sleepTime
+      value: 30
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 559f2f9b0fbd79440a51e4a18ff34133, type: 2}
   m_IsPrefabParent: 0

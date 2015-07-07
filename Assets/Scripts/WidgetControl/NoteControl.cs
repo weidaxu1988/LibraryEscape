@@ -103,25 +103,31 @@ public class NoteControl : MonoBehaviour
 
             if (content.Contains("image_sprite"))
             {
-                if (noteContent.gameObject.activeSelf)
-                    noteContent.gameObject.SetActive(false);
-                
                 if (!noteContentSprite.gameObject.activeSelf)
                     noteContentSprite.gameObject.SetActive(true);
 
+                if (noteContent.gameObject.activeSelf)
+                    noteContent.gameObject.SetActive(false);
+
+                if (noteTtitle.gameObject.activeSelf)
+                    noteTtitle.gameObject.SetActive(false);
+                
                 noteContentSprite.spriteName = content;
                 noteContentSprite.MakePixelPerfect();
                 noteContentSprite.ResizeCollider();
             }
             else
             {
+                if (!noteTtitle.gameObject.activeSelf)
+                    noteTtitle.gameObject.SetActive(true);
+
                 if (!noteContent.gameObject.activeSelf)
                     noteContent.gameObject.SetActive(true);
 
                 if (noteContentSprite.gameObject.activeSelf)
                     noteContentSprite.gameObject.SetActive(false);
 
-                noteContent.text = content;
+                noteContent.text = content.Replace("\\n", "\n"); ;
                 noteContent.ResizeCollider();
             }
             notePager.text = (index + 1) + "/" + puzzle.noteContentArray.Length;

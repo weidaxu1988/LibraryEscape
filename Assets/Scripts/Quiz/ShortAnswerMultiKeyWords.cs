@@ -1,7 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System;
 
-public class ShortAnswerMultiKeyWords : ShortTextQuiz {
+public class ShortAnswerMultiKeyWords : ShortTextQuiz
+{
 
     protected override void HandleIncorrectFeedback()
     {
@@ -69,7 +71,7 @@ public class ShortAnswerMultiKeyWords : ShortTextQuiz {
 
                 //Debug.Log(i + ", wrong result: " + results[i]);
 
-                if (answer != null && answer.Contains(keyWord))
+                if (answer != null && (answer.IndexOf(keyWord, StringComparison.InvariantCultureIgnoreCase) >= 0))
                 {
 
                     results[i] = 1;
@@ -83,12 +85,11 @@ public class ShortAnswerMultiKeyWords : ShortTextQuiz {
                 }
             }
 
-                
+
         }
 
-        foreach (int i in results) {
-            Debug.Log(i + ", result: ");
-
+        foreach (int i in results)
+        {
             if (i != 1)
             {
                 return 0;

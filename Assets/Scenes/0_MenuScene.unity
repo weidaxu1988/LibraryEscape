@@ -274,7 +274,7 @@ MonoBehaviour:
   bottomType: 1
   topType: 1
   mAtlas: {fileID: 11485656, guid: c70c616e8529fea4595e88ee3c857514, type: 2}
-  mSpriteName: btn_learn_more
+  mSpriteName: btn_about
   mFillCenter: 1
 --- !u!4 &152644301
 Transform:
@@ -1117,6 +1117,7 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: .0219999999
+  m_StereoMirrorMode: 0
 --- !u!1 &1766343232
 GameObject:
   m_ObjectHideFlags: 0

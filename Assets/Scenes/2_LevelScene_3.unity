@@ -363,7 +363,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 49021585}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 600, y: -0, z: 0}
+  m_LocalPosition: {x: 15, y: -256, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1125174980}
@@ -2998,7 +2998,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1052061811
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 9075677739d0a1b4da89e30279a119a2, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d26b6da01d5a284479b80208473492f8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &388380774
 GameObject:
@@ -4672,7 +4672,7 @@ Transform:
   m_GameObject: {fileID: 726036225}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: .107000001, y: -.204999998, z: 0}
-  m_LocalScale: {x: 1, y: .213860095, z: 1}
+  m_LocalScale: {x: .858437479, y: .213860095, z: 1}
   m_Children: []
   m_Father: {fileID: 346575477}
   m_RootOrder: 1
@@ -5660,7 +5660,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &869759822
 Transform:
   m_ObjectHideFlags: 0
@@ -5817,7 +5817,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 871803827}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -880, y: 662, z: 0}
+  m_LocalPosition: {x: -909, y: 662, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 16002952}
@@ -7063,7 +7063,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1125174979}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1046, y: 656, z: 0}
+  m_LocalPosition: {x: -1075, y: 656, z: 0}
   m_LocalScale: {x: .600000024, y: .600000024, z: 1}
   m_Children:
   - {fileID: 1530409715}
@@ -7078,7 +7078,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1125174979}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 07c4de3b4b6fe9045b059ee627c100df, type: 3}
   m_Name: 
@@ -11593,10 +11593,10 @@ EdgeCollider2D:
   - {x: .410001248, y: 1.21020174}
   - {x: .399407953, y: 1.08734536}
   - {x: .272285104, y: .193541855}
-  - {x: .415515482, y: -.0608491451}
+  - {x: .298537791, y: -.0491513759}
   - {x: -.565135539, y: -.20193553}
-  - {x: -1.31937182, y: -.0538488403}
-  - {x: -1.16307044, y: .203640789}
+  - {x: -1.19654489, y: -.0479999557}
+  - {x: -1.14552379, y: .215338573}
   - {x: -1.45071578, y: 1.35726392}
   - {x: .418983191, y: 1.20386422}
 --- !u!4 &2054620652

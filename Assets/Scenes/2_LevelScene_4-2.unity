@@ -509,9 +509,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   incorrectCapacity: 2
   totalQuiz:
+  - {fileID: 1718695944}
   - {fileID: 2062634808}
-  - {fileID: 2062634808}
-  - {fileID: 1095077345}
+  - {fileID: 1931815303}
   - {fileID: 1095077345}
   librarian: {fileID: 116789700}
   failedContent: {fileID: 1678736579}
@@ -9780,6 +9780,12 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 02f8a81407f96fe4ba9c62b73a9b7f31, type: 2}
   m_IsPrefabParent: 0
+--- !u!114 &1718695944 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 11473026, guid: 02f8a81407f96fe4ba9c62b73a9b7f31,
+    type: 2}
+  m_PrefabInternal: {fileID: 1718695943}
+  m_Script: {fileID: 11500000, guid: accdbf939be51df498622d9223e4420c, type: 3}
 --- !u!1 &1744055513
 GameObject:
   m_ObjectHideFlags: 0
@@ -11028,6 +11034,12 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 417000, guid: f20fc64e2f6f5b740ab4b594010e4473, type: 2}
   m_PrefabInternal: {fileID: 1931815301}
+--- !u!114 &1931815303 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 11466936, guid: f20fc64e2f6f5b740ab4b594010e4473,
+    type: 2}
+  m_PrefabInternal: {fileID: 1931815301}
+  m_Script: {fileID: 11500000, guid: accdbf939be51df498622d9223e4420c, type: 3}
 --- !u!1 &1938370238
 GameObject:
   m_ObjectHideFlags: 0

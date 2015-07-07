@@ -41,19 +41,45 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 2100000, guid: 127584b4a2062b840846bf144801bbae, type: 2}
   mSprites:
-  - name: image_sprite_bear
-    x: 729
-    y: 482
-    width: 1003
-    height: 76
+  - name: image_sprite_balloon
+    x: 365
+    y: 471
+    width: 333
+    height: 510
     borderLeft: 0
     borderRight: 0
     borderTop: 0
     borderBottom: 0
     paddingLeft: 0
     paddingRight: 0
-    paddingTop: 37
-    paddingBottom: 37
+    paddingTop: 0
+    paddingBottom: 0
+  - name: image_sprite_bear
+    x: 729
+    y: 212
+    width: 364
+    height: 510
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: image_sprite_biscuit
+    x: 1094
+    y: 212
+    width: 364
+    height: 510
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
   - name: image_sprite_clock
     x: 0
     y: 982
@@ -94,31 +120,31 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: image_sprite_guitar
-    x: 729
-    y: 640
-    width: 1087
-    height: 82
+    x: 0
+    y: 471
+    width: 364
+    height: 510
     borderLeft: 0
     borderRight: 0
     borderTop: 0
     borderBottom: 0
     paddingLeft: 0
     paddingRight: 0
-    paddingTop: 80
-    paddingBottom: 80
+    paddingTop: 0
+    paddingBottom: 0
   - name: image_sprite_ie
-    x: 729
-    y: 559
-    width: 1057
-    height: 80
+    x: 1459
+    y: 212
+    width: 364
+    height: 510
     borderLeft: 0
     borderRight: 0
     borderTop: 0
     borderBottom: 0
     paddingLeft: 0
     paddingRight: 0
-    paddingTop: 50
-    paddingBottom: 49
+    paddingTop: 0
+    paddingBottom: 0
   - name: image_sprite_skate_board
     x: 0
     y: 1564
