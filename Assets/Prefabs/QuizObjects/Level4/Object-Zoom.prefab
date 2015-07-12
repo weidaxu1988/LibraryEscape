@@ -206,7 +206,7 @@ MonoBehaviour:
   - image_sprite_zoom_2
   - Look through the articles you have retrieved and evaluate if they are useful for
     your term paper. Identify a few articles for the next search technique, pearl
-    growing
+    growing.
 --- !u!212 &21214234
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -342,7 +342,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 183038}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -265, y: -116, z: 0}
+  m_LocalPosition: {x: -66, y: -116, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 432176}
@@ -369,7 +369,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 121166}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -268, y: -57, z: 0}
+  m_LocalPosition: {x: -69, y: -57, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 495522}
@@ -433,7 +433,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 159756}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -271, y: -178, z: 0}
+  m_LocalPosition: {x: -72, y: -178, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 458072}
@@ -503,7 +503,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 250, y: 46, z: 0}
+  m_Size: {x: 550, y: 46, z: 0}
   m_Center: {x: 0, y: -23, z: 0}
 --- !u!65 &6561074
 BoxCollider:
@@ -515,7 +515,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 250, y: 46, z: 0}
+  m_Size: {x: 550, y: 46, z: 0}
   m_Center: {x: 0, y: -23, z: 0}
 --- !u!65 &6565950
 BoxCollider:
@@ -527,7 +527,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 250, y: 46, z: 0}
+  m_Size: {x: 550, y: 46, z: 0}
   m_Center: {x: 0, y: -23, z: 0}
 --- !u!114 &11425734
 MonoBehaviour:
@@ -559,13 +559,13 @@ MonoBehaviour:
   updateAnchors: 0
   mColor: {r: 0, g: 0, b: 0, a: 1}
   mPivot: 7
-  mWidth: 250
+  mWidth: 550
   mHeight: 2
   mDepth: 2
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 125
+  aspectRatio: 275
   mType: 1
   mFillDirection: 4
   mFillAmount: 1
@@ -609,13 +609,13 @@ MonoBehaviour:
   updateAnchors: 0
   mColor: {r: 0, g: 0, b: 0, a: 1}
   mPivot: 7
-  mWidth: 250
+  mWidth: 550
   mHeight: 2
   mDepth: 2
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 125
+  aspectRatio: 275
   mType: 1
   mFillDirection: 4
   mFillAmount: 1
@@ -659,13 +659,13 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: .147058845, g: .147058845, b: .147058845, a: .403921574}
   mPivot: 4
-  mWidth: 218
+  mWidth: 518
   mHeight: 30
   mDepth: 1
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 7.26666689
+  aspectRatio: 17.2666664
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
   mFont: {fileID: 0}
@@ -714,7 +714,7 @@ MonoBehaviour:
   characterLimit: 0
   savedAs: 
   selectOnTab: {fileID: 0}
-  activeTextColor: {r: 1, g: 1, b: 1, a: 1}
+  activeTextColor: {r: 0, g: 0, b: 0, a: 1}
   caretColor: {r: 1, g: 1, b: 1, a: .800000012}
   selectionColor: {r: 1, g: .874509811, b: .552941203, a: .5}
   onSubmit:
@@ -819,13 +819,13 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 1
-  mWidth: 250
+  mWidth: 550
   mHeight: 46
   mDepth: 0
   autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 5.43478251
+  aspectRatio: 11.956522
   mType: 1
   mFillDirection: 4
   mFillAmount: 1
@@ -859,7 +859,7 @@ MonoBehaviour:
   characterLimit: 0
   savedAs: 
   selectOnTab: {fileID: 0}
-  activeTextColor: {r: 1, g: 1, b: 1, a: 1}
+  activeTextColor: {r: 0, g: 0, b: 0, a: 1}
   caretColor: {r: 1, g: 1, b: 1, a: .800000012}
   selectionColor: {r: 1, g: .874509811, b: .552941203, a: .5}
   onSubmit:
@@ -882,6 +882,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questionContainer: {fileID: 144796}
   feedbackContainer: {fileID: 141064}
+  feedbackLabel: {fileID: 11431672}
   puzzleObj: {fileID: 0}
   keyWords:
   - Image
@@ -896,7 +897,6 @@ MonoBehaviour:
     Key in the two other concepts. Read the assignment topic carefully."
   - "Try again! There are three concepts, and you\u2019ve identified two correctly.
     Key in the last concept. Read the assignment topic carefully."
-  feedbackLabel: {fileID: 11431672}
   inputs:
   - {fileID: 11462080}
   - {fileID: 11431276}
@@ -931,13 +931,13 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 1
-  mWidth: 250
+  mWidth: 550
   mHeight: 46
   mDepth: 0
   autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 5.43478251
+  aspectRatio: 11.956522
   mType: 1
   mFillDirection: 4
   mFillAmount: 1
@@ -1048,13 +1048,13 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: .147058845, g: .147058845, b: .147058845, a: .403921574}
   mPivot: 4
-  mWidth: 218
+  mWidth: 518
   mHeight: 30
   mDepth: 1
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 7.26666689
+  aspectRatio: 17.2666664
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
   mFont: {fileID: 0}
@@ -1113,13 +1113,13 @@ MonoBehaviour:
   updateAnchors: 0
   mColor: {r: 0, g: 0, b: 0, a: 1}
   mPivot: 7
-  mWidth: 250
+  mWidth: 550
   mHeight: 2
   mDepth: 2
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 125
+  aspectRatio: 275
   mType: 1
   mFillDirection: 4
   mFillAmount: 1
@@ -1163,13 +1163,13 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 1
-  mWidth: 250
+  mWidth: 550
   mHeight: 46
   mDepth: 0
   autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 5.43478251
+  aspectRatio: 11.956522
   mType: 1
   mFillDirection: 4
   mFillAmount: 1
@@ -1203,7 +1203,7 @@ MonoBehaviour:
   characterLimit: 0
   savedAs: 
   selectOnTab: {fileID: 0}
-  activeTextColor: {r: 1, g: 1, b: 1, a: 1}
+  activeTextColor: {r: 0, g: 0, b: 0, a: 1}
   caretColor: {r: 1, g: 1, b: 1, a: .800000012}
   selectionColor: {r: 1, g: .874509811, b: .552941203, a: .5}
   onSubmit:
@@ -1243,13 +1243,13 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: .147058845, g: .147058845, b: .147058845, a: .403921574}
   mPivot: 4
-  mWidth: 218
+  mWidth: 518
   mHeight: 30
   mDepth: 1
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 7.26666689
+  aspectRatio: 17.2666664
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
   mFont: {fileID: 0}

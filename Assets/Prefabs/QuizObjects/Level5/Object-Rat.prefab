@@ -158,26 +158,22 @@ MonoBehaviour:
   noteTitle: 'Evaluating the Authors '
   noteContentArray:
   - 'The main question is whether the author has necessary expertise to produce the
-    information resource.                                                     Thus
-    the following should be examined:           (1) training, experience, or competence;         (2)
-    academic degrees;                                       (3) credentials;                                               (4)
+    information resource. \nThus the following should be examined: \n(1) training,
+    experience, or competence;         (2) academic degrees; \n(3) credentials; \n(4)
     institutional or association affiliations; and   (5) publications or research
     history.'
-  - 'Attribution of Source Material                                                                                             Check
-    if references and sources for all the content are listed clearly. Proper attribution
-    is a responsibility of a scholar, and it can                 (1) help readers
-    identify and relocate the source work;                                                             (2)
-    provide evidence that the position is well-researched; and                                       (3)
-    gives credit to the author of an original concept or theory. '
-  - Recency                                                                                                                             Look
-    out for the date the information resources was published or posted. For certain
-    fields, e.g., information technology, the shelf life of information is very short,
-    and you have to be aware of the publishing date of the resource.
-  - Granularity and Extent                                                                                                           The
-    information provided has to be of the right amount to meets your needs. Different
-    types of documents require different amount of information. For example, journal
-    paper, or a research proposal, or a business plan require different amount of
-    information.
+  - 'Attribution of Source Material \nCheck if references and sources for all the
+    content are listed clearly. Proper attribution is a responsibility of a scholar,
+    and it can: \n(1) help readers identify and relocate the source work; \n(2) provide
+    evidence that the position is well-researched; and \n(3) gives credit to the author
+    of an original concept or theory.'
+  - 'Recency \nLook out for the date the information resources was published or posted.
+    For certain fields, e.g., information technology, the shelf life of information
+    is very short, and you have to be aware of the publishing date of the resource. '
+  - Granularity and Extent \nThe information provided has to be of the right amount
+    to meets your needs. Different types of documents require different amount of
+    information. For example, journal paper, or a research proposal, or a business
+    plan require different amount of information.
 --- !u!114 &11456698
 MonoBehaviour:
   m_ObjectHideFlags: 1

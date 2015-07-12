@@ -201,22 +201,20 @@ MonoBehaviour:
     2.0 has made available a huge quantity of user-generated content, all most of
     which have not undergone peer review or any other form of quality control. This
     is why appraising the quality of this material is ciritcal. '
-  - "The elements used to assess information quality are:                                                               (1)
-    accuracy \u2012 the extent to which data are correct, reliable and certified free
-    of error;       (2) currency \u2012 the extent to which the information is sufficiently
-    up-to-date for the task at hand;                                                         (3)
-    completeness \u2012 the extent to which information is not missing and is of sufficient
-    breadth and depth for the task at hand;"
+  - "The elements used to assess information quality are: \\n(1) accuracy \u2012 the
+    extent to which data are correct, reliable and certified free of error; \\n(2)
+    currency \u2012 the extent to which the information is sufficiently up-to-date
+    for the task at hand; \\n(3) completeness \u2012 the extent to which information
+    is not missing and is of sufficient breadth and depth for the task at hand;"
   - "(4) conciseness \u2012 the extent to which information is compactly represented
-    without being overwhelming;                                       (5) objectivity
-    \u2012 the extent to which information is unbiased, unprejudiced and impartial;
-    \            (6) relevance \u2012 the extent to which information is applicable
-    and helpful for the task at hand;"
-  - "Treatment \u2013 is the information presented in such away such that it is suitable
-    for certain audiences, e.g. children?                     Granularity \u2013 is
-    the information presented at the right level of detail?                                   Depth
-    \u2013does the information source provide the information to a depth appropriate
-    to what I have to do?"
+    without being overwhelming; \\n(5) objectivity \u2012 the extent to which information
+    is unbiased, unprejudiced and impartial; \\n(6) relevance \u2012 the extent to
+    which information is applicable and helpful for the task at hand;"
+  - "(7) Treatment \u2013 is the information presented in such away such that it is
+    suitable for certain audiences, e.g. children? \\n(8) Granularity \u2013 is the
+    information presented at the right level of detail? \\n(9) Depth \u2013does the
+    information source provide the information to a depth appropriate to what I have
+    to do?"
 --- !u!212 &21244696
 SpriteRenderer:
   m_ObjectHideFlags: 1
