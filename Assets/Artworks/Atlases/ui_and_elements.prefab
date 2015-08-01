@@ -81,8 +81,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: 3-3_3
-    x: 2880
-    y: 768
+    x: 2555
+    y: 146
     width: 213
     height: 294
     borderLeft: 0
@@ -94,10 +94,10 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: 3-3_4
-    x: 2049
-    y: 114
-    width: 317
-    height: 292
+    x: 2880
+    y: 956
+    width: 219
+    height: 285
     borderLeft: 0
     borderRight: 0
     borderTop: 0
@@ -108,7 +108,7 @@ MonoBehaviour:
     paddingBottom: 0
   - name: 3-3_5
     x: 2555
-    y: 439
+    y: 740
     width: 288
     height: 293
     borderLeft: 0
@@ -159,10 +159,10 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: btn_about
-    x: 3281
-    y: 1288
-    width: 458
-    height: 178
+    x: 2778
+    y: 1490
+    width: 346
+    height: 141
     borderLeft: 0
     borderRight: 0
     borderTop: 0
@@ -185,7 +185,7 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: btn_arrow_right
-    x: 2367
+    x: 2350
     y: 161
     width: 158
     height: 245
@@ -198,8 +198,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: btn_close
-    x: 3258
-    y: 1491
+    x: 2555
+    y: 5
     width: 140
     height: 140
     borderLeft: 0
@@ -211,8 +211,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: btn_function
-    x: 2778
-    y: 1481
+    x: 3842
+    y: 1091
     width: 159
     height: 150
     borderLeft: 0
@@ -224,8 +224,8 @@ MonoBehaviour:
     paddingTop: 2
     paddingBottom: 3
   - name: btn_hand_point
-    x: 3094
-    y: 822
+    x: 3100
+    y: 1001
     width: 256
     height: 240
     borderLeft: 0
@@ -237,8 +237,8 @@ MonoBehaviour:
     paddingTop: 16
     paddingBottom: 0
   - name: btn_hint
-    x: 2938
-    y: 1481
+    x: 2880
+    y: 87
     width: 159
     height: 150
     borderLeft: 0
@@ -250,8 +250,8 @@ MonoBehaviour:
     paddingTop: 2
     paddingBottom: 3
   - name: btn_info
-    x: 2555
-    y: 733
+    x: 2049
+    y: 106
     width: 300
     height: 300
     borderLeft: 0
@@ -263,8 +263,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: btn_learn_more
-    x: 2880
-    y: 1063
+    x: 3281
+    y: 1288
     width: 458
     height: 178
     borderLeft: 0
@@ -276,20 +276,7 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: btn_level_1
-    x: 3836
-    y: 884
-    width: 256
-    height: 178
-    borderLeft: 0
-    borderRight: 0
-    borderTop: 0
-    borderBottom: 0
-    paddingLeft: 0
-    paddingRight: 0
-    paddingTop: 0
-    paddingBottom: 0
-  - name: btn_level_2
-    x: 3094
+    x: 3100
     y: 643
     width: 256
     height: 178
@@ -301,9 +288,22 @@ MonoBehaviour:
     paddingRight: 0
     paddingTop: 0
     paddingBottom: 0
+  - name: btn_level_2
+    x: 3614
+    y: 822
+    width: 256
+    height: 178
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
   - name: btn_level_3
-    x: 3579
-    y: 884
+    x: 3357
+    y: 822
     width: 256
     height: 178
     borderLeft: 0
@@ -315,8 +315,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: btn_level_4
-    x: 3596
-    y: 1063
+    x: 3100
+    y: 822
     width: 256
     height: 178
     borderLeft: 0
@@ -328,8 +328,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: btn_level_5
-    x: 3339
-    y: 1063
+    x: 3100
+    y: 464
     width: 256
     height: 178
     borderLeft: 0
@@ -341,8 +341,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: btn_level_6
-    x: 3094
-    y: 464
+    x: 3585
+    y: 1063
     width: 256
     height: 178
     borderLeft: 0
@@ -366,9 +366,35 @@ MonoBehaviour:
     paddingRight: 0
     paddingTop: 0
     paddingBottom: 0
-  - name: btn_pause
-    x: 3098
+  - name: btn_music_off
+    x: 3125
     y: 1481
+    width: 159
+    height: 150
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: btn_music_on
+    x: 3285
+    y: 1481
+    width: 159
+    height: 150
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: btn_pause
+    x: 2350
+    y: 10
     width: 159
     height: 150
     borderLeft: 0
@@ -419,8 +445,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: btn_start
-    x: 3351
-    y: 830
+    x: 3357
+    y: 1009
     width: 227
     height: 232
     borderLeft: 0
@@ -485,7 +511,7 @@ MonoBehaviour:
     paddingBottom: 0
   - name: ele_extra_btn_background
     x: 2880
-    y: 572
+    y: 760
     width: 212
     height: 195
     borderLeft: 0
@@ -523,8 +549,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: ele_start_green
-    x: 3853
-    y: 1068
+    x: 2880
+    y: 412
     width: 180
     height: 173
     borderLeft: 0
@@ -537,7 +563,7 @@ MonoBehaviour:
     paddingBottom: 0
   - name: ele_start_orange
     x: 2880
-    y: 398
+    y: 586
     width: 180
     height: 173
     borderLeft: 0
@@ -550,7 +576,7 @@ MonoBehaviour:
     paddingBottom: 0
   - name: ele_start_purple
     x: 2880
-    y: 224
+    y: 238
     width: 176
     height: 173
     borderLeft: 0
@@ -563,7 +589,7 @@ MonoBehaviour:
     paddingBottom: 0
   - name: ele_thought_bubble
     x: 2555
-    y: 140
+    y: 441
     width: 270
     height: 298
     borderLeft: 0

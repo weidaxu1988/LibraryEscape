@@ -27,7 +27,17 @@ public class OptionPiano : MonoBehaviour {
 
             mText.SetActive(false);
 
-            audioSource.Play();
+            if (GameManager.instance != null)
+            {
+                if (GameManager.instance.allowMusic)
+                {
+                    audioSource.Play();
+                }
+            }
+            else
+            {
+                audioSource.Play();
+            }
 
             tweenScale.PlayForward();
         }

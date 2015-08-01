@@ -13,7 +13,17 @@ public class PuzzleRat : PuzzleObject
 
             if (!player.HasCheese()) return;
 
-            audioSource.Play();
+            if (GameManager.instance != null)
+            {
+                if (GameManager.instance.allowMusic)
+                {
+                    audioSource.Play();
+                }
+            }
+            else
+            {
+                audioSource.Play();
+            }
 
             //disable click open automatically
             activited = true;

@@ -9,6 +9,10 @@ public class GameManager : MonoBehaviour {
 
     public Player player = new Player();
 
+    public float toSecond = 60 * 60;
+
+    public bool allowMusic = true;
+
     private int currentLevel = 1;
 
     public int CurrentLevel

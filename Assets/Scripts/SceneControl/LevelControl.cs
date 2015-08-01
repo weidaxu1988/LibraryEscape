@@ -41,6 +41,9 @@ public class LevelControl : MonoBehaviour
     private List<PuzzleObject> greenPuzzleList = new List<PuzzleObject>();
     private List<PuzzleObject> orangePuzzleList = new List<PuzzleObject>();
 
+    public UIToggle musicToggle;
+    public AudioSource musicSource;
+
     void Awake()
     {
         instance = this;
@@ -54,6 +57,29 @@ public class LevelControl : MonoBehaviour
         if (beginObject == null)
         {
             InitHelp();
+        }
+
+        if (musicToggle != null)
+        {
+            musicToggle.value = !GameManager.instance.allowMusic;
+            OnMute(!GameManager.instance.allowMusic);
+        }
+    }
+
+    public void OnMute(bool value)
+    {
+        Debug.Log("Toggle : " + value);
+        GameManager.instance.allowMusic = !value;
+        if (musicSource != null)
+        {
+            if (value)
+            {
+                musicSource.Stop();
+            }
+            else
+            {
+                musicSource.Play();
+            }
         }
     }
 
@@ -107,8 +133,8 @@ public class LevelControl : MonoBehaviour
 
     public void OnPuzzleObjectClick(PuzzleObject obj)
     {
-		if (isGamePaused)
-			return;
+        if (isGamePaused)
+            return;
 
         isGamePaused = true;
 
@@ -129,6 +155,9 @@ public class LevelControl : MonoBehaviour
 
                 purplePuzzleList.Add(obj);
                 purpleLabel.text = purplePuzzleList.Count + "/" + purplePuzzleList.Capacity;
+
+                // all colors go to green
+                greenLabel.text = (greenPuzzleList.Count + purplePuzzleList.Count + orangePuzzleList.Count) + "/" + (greenPuzzleList.Capacity + purplePuzzleList.Capacity + orangePuzzleList.Capacity);
             }
         }
         else if (obj.startType == PuzzleObject.StartType.Green)
@@ -139,7 +168,9 @@ public class LevelControl : MonoBehaviour
                 if (!anime.isPlaying) anime.Play();
 
                 greenPuzzleList.Add(obj);
-                greenLabel.text = greenPuzzleList.Count + "/" + greenPuzzleList.Capacity;
+                //greenLabel.text = greenPuzzleList.Count + "/" + greenPuzzleList.Capacity;
+
+                greenLabel.text = (greenPuzzleList.Count + purplePuzzleList.Count + orangePuzzleList.Count) + "/" + (greenPuzzleList.Capacity + purplePuzzleList.Capacity + orangePuzzleList.Capacity);
             }
         }
         else if (obj.startType == PuzzleObject.StartType.Orange)
@@ -151,6 +182,9 @@ public class LevelControl : MonoBehaviour
 
                 orangePuzzleList.Add(obj);
                 orangeLabel.text = orangePuzzleList.Count + "/" + orangePuzzleList.Capacity;
+
+                // all colors go to green
+                greenLabel.text = (greenPuzzleList.Count + purplePuzzleList.Count + orangePuzzleList.Count) + "/" + (greenPuzzleList.Capacity + purplePuzzleList.Capacity + orangePuzzleList.Capacity);
             }
         }
 
@@ -297,7 +331,7 @@ public class LevelControl : MonoBehaviour
         orangePuzzleList.Capacity = orange;
 
         purpleLabel.text = purplePuzzleList.Count + "/" + purplePuzzleList.Capacity;
-        greenLabel.text = greenPuzzleList.Count + "/" + greenPuzzleList.Capacity;
+        greenLabel.text = greenPuzzleList.Count + "/" + (greenPuzzleList.Capacity + purplePuzzleList.Capacity + orangePuzzleList.Capacity);
         orangeLabel.text = orangePuzzleList.Count + "/" + orangePuzzleList.Capacity;
     }
 

@@ -178,6 +178,7 @@ MonoBehaviour:
   - 'The active process of building a view of the world is your task in the ISP Model.
     An information search is a process of construction which involves your whole experience,
     feelings as well as thoughts and actions. '
+  boredText: {fileID: 0}
 --- !u!114 &11490540
 MonoBehaviour:
   m_ObjectHideFlags: 1

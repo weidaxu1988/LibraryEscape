@@ -57,7 +57,17 @@ public class PuzzleObject : MonoBehaviour
         {
             if (activited) return;
 
-            audioSource.Play();
+            if (GameManager.instance != null)
+            {
+                if (GameManager.instance.allowMusic)
+                {
+                    audioSource.Play();
+                }
+            }
+            else
+            {
+                audioSource.Play();
+            }
             
 //disable click open automatically
             activited = true;
@@ -70,7 +80,7 @@ public class PuzzleObject : MonoBehaviour
         }
     }
 
-    void OnTriggerExit2D(Collider2D other)
+    protected virtual void OnTriggerExit2D(Collider2D other)
     {
         if (other.tag == "Player")
         {

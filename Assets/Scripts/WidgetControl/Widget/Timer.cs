@@ -19,10 +19,10 @@ public class Timer : MonoBehaviour
     {
         if (!LevelControl.instance.isGamePaused)
         {
-            toSeconds -= Time.deltaTime;
-            if (toSeconds >= 0)
+            GameManager.instance.toSecond -= Time.deltaTime;
+            if (GameManager.instance.toSecond >= 0)
             {
-                label.text = GetTime(toSeconds);
+                label.text = GetTime(GameManager.instance.toSecond);
             }
             else
             {
@@ -35,7 +35,7 @@ public class Timer : MonoBehaviour
     {
         int minutes = (int)(remaining / 60);
         int seconds = (int)(remaining % 60);
-         
+
         return string.Format("{0:D2}:{1:D2}", minutes, seconds);
     }
 }

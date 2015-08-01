@@ -100,14 +100,17 @@ public class Enemy : MonoBehaviour
 
                 if (timeCount < awakeTime / 2)
                 {
-                    Vector3 scale = oriScale;
-                    scale.x *= -1;
-                    transform.localScale = scale;
+                    
+                    
+                    transform.localScale = oriScale;
                     transform.position = Vector3.Lerp(startPos, endPos, timeCount / (awakeTime / 2));
                 }
                 else
                 {
-                    transform.localScale = oriScale;
+                    Vector3 scale = oriScale;
+                    scale.x *= -1;
+                    transform.localScale = scale;
+                    
                     transform.position = Vector3.Lerp(endPos, startPos, timeCount / (awakeTime / 2) - 1);
                 }
             }
@@ -166,13 +169,14 @@ public class Enemy : MonoBehaviour
                 {
                     if (fromPos.position.x > targetPos.position.x)
                     {
-                        Vector3 scale = oriScale;
-                        scale.x *= -1;
-                        transform.localScale = scale;
+                        transform.localScale = oriScale;
                     }
                     else
                     {
-                        transform.localScale = oriScale;
+                        Vector3 scale = oriScale;
+                        scale.x *= -1;
+                        transform.localScale = scale;
+                        
                     }
                     transform.position = Vector3.Lerp(targetPos.position, fromPos.position, corvedred / disc);
                 }
@@ -180,13 +184,14 @@ public class Enemy : MonoBehaviour
                 {
                     if (fromPos.position.x < targetPos.position.x)
                     {
-                        Vector3 scale = oriScale;
-                        scale.x *= -1;
-                        transform.localScale = scale;
+                        transform.localScale = oriScale;
                     }
                     else
                     {
-                        transform.localScale = oriScale;
+                        Vector3 scale = oriScale;
+                        scale.x *= -1;
+                        transform.localScale = scale;
+                        
                     }
                     transform.position = Vector3.Lerp(fromPos.position, targetPos.position, corvedred / disc);
                 }
