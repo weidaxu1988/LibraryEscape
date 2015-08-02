@@ -930,7 +930,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reparentTarget: {fileID: 0}
-  correctItem: {fileID: 11407614}
+  correctItem: {fileID: 11467088}
 --- !u!114 &11407296
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1683,7 +1683,7 @@ MonoBehaviour:
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 0}
   mFont: {fileID: 11400000, guid: 29056518aafb01b49a5b08faf8e30cff, type: 2}
-  mText: "Article Index\r"
+  mText: Technical Report
   mFontSize: 10
   mFontStyle: 0
   mAlignment: 0
@@ -1720,7 +1720,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reparentTarget: {fileID: 0}
-  correctItem: {fileID: 11417608}
+  correctItem: {fileID: 11485434}
 --- !u!114 &11467088
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1878,7 +1878,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reparentTarget: {fileID: 0}
-  correctItem: {fileID: 11485434}
+  correctItem: {fileID: 11407614}
 --- !u!114 &11485306
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1891,7 +1891,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reparentTarget: {fileID: 0}
-  correctItem: {fileID: 11477468}
+  correctItem: {fileID: 11417608}
 --- !u!114 &11485434
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2184,7 +2184,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reparentTarget: {fileID: 0}
-  correctItem: {fileID: 11467088}
+  correctItem: {fileID: 11477468}
 --- !u!114 &11495764
 MonoBehaviour:
   m_ObjectHideFlags: 1

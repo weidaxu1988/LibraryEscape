@@ -13,6 +13,8 @@ public class QuestionControl : MonoBehaviour
     public GameObject nextButton;
     public GameObject submitButton;
 
+	public GameObject bigLibrary;
+
     private Animator libraianAnimator;
 
     private int lastQuizIndex = 0;
@@ -38,7 +40,13 @@ public class QuestionControl : MonoBehaviour
         ShowNextButton(false);
     }
 
-    public void OnQuestionSubmit()
+	public void OnQuestionSubmit() {
+		if (bigLibrary != null) {
+			bigLibrary.SetActive(true);
+		}
+	}
+
+    public void AQuestionSubmit()
     {
         Quiz quiz = totalQuiz[quizIndex];
 

@@ -68,7 +68,6 @@ public class LevelControl : MonoBehaviour
 
     public void OnMute(bool value)
     {
-        Debug.Log("Toggle : " + value);
         GameManager.instance.allowMusic = !value;
         if (musicSource != null)
         {

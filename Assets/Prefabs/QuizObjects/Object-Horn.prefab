@@ -70,7 +70,7 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_UsedByEffector: 0
-  m_Offset: {x: .0299999993, y: .101578407}
+  m_Offset: {x: .0299999993, y: -1.26999998}
   serializedVersion: 2
   m_Size: {x: 1.63999999, y: 1.52999997}
 --- !u!82 &8236414

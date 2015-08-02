@@ -38,6 +38,8 @@ public class PlayerControl : MonoBehaviour
 
     void Update()
     {
+
+
         if (LevelControl.instance != null && LevelControl.instance.isGamePaused)
         {
             anim.SetFloat("Speed", 0);
@@ -52,6 +54,7 @@ public class PlayerControl : MonoBehaviour
 
         horizontal = Input.GetAxis("Horizontal");
         vertical = Input.GetAxis("Vertical");
+
 
 #elif UNITY_IOS || UNITY_ANDROID || UNITY_WP8 || UNITY_IPHONE
         
@@ -103,6 +106,8 @@ public class PlayerControl : MonoBehaviour
 
     void AttemptMove(float xDir, float yDir)
     {
+
+
         CheckTimeSensitiveEnemies();
 
         float actualScale = (maxScales[1] - maxScales[0]) * (transform.position.y - maxYs[1]) / (maxYs[0] - maxYs[1]) + maxScales[0];
