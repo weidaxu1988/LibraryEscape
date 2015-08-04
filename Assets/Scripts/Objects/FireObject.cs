@@ -11,6 +11,8 @@ public class FireObject : MonoBehaviour
 
     private AudioSource audioSource;
 
+    public GameObject fileKiller;
+
     private bool activited = false;
     private bool fireActived = false;
 
@@ -69,7 +71,9 @@ public class FireObject : MonoBehaviour
             if (!player.HasFireKiller()) return;
             
             if (activited) return;
-     
+
+            fileKiller.SetActive(true);
+
             audioSource.Play();
             
 //disable click open automatically
@@ -83,6 +87,8 @@ public class FireObject : MonoBehaviour
         if (fireActived && other.tag == "Player")
         {
             if (!activited) return;
+
+            fileKiller.SetActive(false);
 
             activited = false;
             
@@ -99,6 +105,8 @@ public class FireObject : MonoBehaviour
          
     void FireEnd()
     {
+        fileKiller.SetActive(false);
+
         fireActived = false;
         activited = false;
         timeCount = 0;

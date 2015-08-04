@@ -437,7 +437,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 121730}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.05175781e-05, y: -93.0000076, z: 0}
+  m_LocalPosition: {x: 3.05175781e-05, y: -93.0000153, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 404092}
@@ -513,7 +513,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 187220}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.05175781e-05, y: -155, z: 0}
+  m_LocalPosition: {x: 3.05175781e-05, y: -155.000015, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 499296}
@@ -553,7 +553,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 121806}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.05175781e-05, y: -217, z: 0}
+  m_LocalPosition: {x: 3.05175781e-05, y: -217.000015, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 495874}
@@ -607,7 +607,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 138894}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.05175781e-05, y: -31.0000057, z: 0}
+  m_LocalPosition: {x: 3.05175781e-05, y: -31.0000076, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 425094}
@@ -813,8 +813,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 760, y: 54, z: 0}
-  m_Center: {x: 380, y: 0, z: 0}
+  m_Size: {x: 744, y: 54, z: 0}
+  m_Center: {x: 372, y: 0, z: 0}
 --- !u!111 &11122642
 Animation:
   m_ObjectHideFlags: 1
@@ -930,13 +930,13 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 3
-  mWidth: 760
+  mWidth: 744
   mHeight: 54
   mDepth: 6
   autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 14.0740738
+  aspectRatio: 13.7777777
 --- !u!114 &11410242
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1017,17 +1017,17 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: .227941155, g: .227941155, b: .227941155, a: 1}
   mPivot: 3
-  mWidth: 795
+  mWidth: 779
   mHeight: 56
   mDepth: 9
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 14.1964283
+  aspectRatio: 13.9107141
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
   mFont: {fileID: 0}
-  mText: Commenting
+  mText: "Develop new arguments on others\u2019 ideas without\r acknowledging it"
   mFontSize: 28
   mFontStyle: 0
   mAlignment: 0
@@ -1142,7 +1142,7 @@ MonoBehaviour:
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
   mFont: {fileID: 0}
-  mText: Summarizing
+  mText: Use expired patents without acknowledging it
   mFontSize: 28
   mFontStyle: 0
   mAlignment: 0
@@ -1554,7 +1554,7 @@ MonoBehaviour:
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
   mFont: {fileID: 0}
-  mText: Quoting
+  mText: Use sources from social media without acknowledging it
   mFontSize: 28
   mFontStyle: 0
   mAlignment: 0
@@ -1819,17 +1819,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questionContainer: {fileID: 198384}
   feedbackContainer: {fileID: 191906}
-  puzzleObj: {fileID: 0}
   feedbackLabel: {fileID: 11465064}
+  puzzleObj: {fileID: 0}
   correctOption: {fileID: 0}
   correctFeedback: You are absolutely right! All of these requires citation.
   incorrectFeedback: Yes you are very close, but how about the other options? Do they
     also require citation?
   correctOptions:
   - {fileID: 11450824}
-  - {fileID: 11451498}
-  - {fileID: 11443780}
-  - {fileID: 11424420}
 --- !u!114 &11475634
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1861,16 +1858,16 @@ MonoBehaviour:
   mColor: {r: 0, g: 0, b: 0, a: 1}
   mPivot: 1
   mWidth: 766
-  mHeight: 72
+  mHeight: 36
   mDepth: 0
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 10.6388893
+  aspectRatio: 21.2777786
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
   mFont: {fileID: 0}
-  mText: "Which of the following use of information requires citation?\r"
+  mText: Which of the following acts is NOT plagiarism?
   mFontSize: 36
   mFontStyle: 0
   mAlignment: 1
@@ -1935,7 +1932,8 @@ MonoBehaviour:
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
   mFont: {fileID: 0}
-  mText: Paraphrasing
+  mText: "Discover new relationships from others\u2019 dataset without\r\n\racknowledging
+    it"
   mFontSize: 28
   mFontStyle: 0
   mAlignment: 0

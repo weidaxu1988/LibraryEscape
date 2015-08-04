@@ -2523,7 +2523,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 452918, guid: 79f60bbf6bddae44bbea764d428bfceb, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -1.29700005
+      value: -1.08299994
       objectReference: {fileID: 0}
     - target: {fileID: 452918, guid: 79f60bbf6bddae44bbea764d428bfceb, type: 2}
       propertyPath: m_LocalPosition.y
@@ -2552,42 +2552,6 @@ Prefab:
     - target: {fileID: 452918, guid: 79f60bbf6bddae44bbea764d428bfceb, type: 2}
       propertyPath: m_RootOrder
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11451018, guid: 79f60bbf6bddae44bbea764d428bfceb, type: 2}
-      propertyPath: animationCurve.m_Curve.Array.data[0].inSlope
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 11451018, guid: 79f60bbf6bddae44bbea764d428bfceb, type: 2}
-      propertyPath: animationCurve.m_Curve.Array.data[0].outSlope
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 11451018, guid: 79f60bbf6bddae44bbea764d428bfceb, type: 2}
-      propertyPath: animationCurve.m_Curve.Array.data[1].inSlope
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 11451018, guid: 79f60bbf6bddae44bbea764d428bfceb, type: 2}
-      propertyPath: animationCurve.m_Curve.Array.data[1].outSlope
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 11451018, guid: 79f60bbf6bddae44bbea764d428bfceb, type: 2}
-      propertyPath: duration
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 445450, guid: 79f60bbf6bddae44bbea764d428bfceb, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 445450, guid: 79f60bbf6bddae44bbea764d428bfceb, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 445450, guid: 79f60bbf6bddae44bbea764d428bfceb, type: 2}
-      propertyPath: m_LocalScale.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5857454, guid: 79f60bbf6bddae44bbea764d428bfceb, type: 2}
-      propertyPath: m_Radius
-      value: 2.17000008
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79f60bbf6bddae44bbea764d428bfceb, type: 2}
@@ -3811,6 +3775,7 @@ MonoBehaviour:
   player: {fileID: 869619735}
   ghosts:
   - {fileID: 1118851899}
+  allowAnswerQuestion: 1
   exitObject: {fileID: 0}
   musicToggle: {fileID: 324209309}
   musicSource: {fileID: 175278713}
@@ -5009,8 +4974,8 @@ Transform:
   - {fileID: 433938507}
   - {fileID: 1595950187}
   - {fileID: 306162300}
-  - {fileID: 2074496094}
   - {fileID: 1645486725}
+  - {fileID: 2074496094}
   m_Father: {fileID: 175278712}
   m_RootOrder: 7
 --- !u!1 &626153977
@@ -6284,7 +6249,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &869759822
 Transform:
   m_ObjectHideFlags: 0
@@ -10498,7 +10463,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 452918, guid: 79f60bbf6bddae44bbea764d428bfceb, type: 2}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 11451018, guid: 79f60bbf6bddae44bbea764d428bfceb, type: 2}
       propertyPath: animationCurve.m_Curve.Array.data[0].inSlope
@@ -12994,7 +12959,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 452918, guid: 79f60bbf6bddae44bbea764d428bfceb, type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 11451018, guid: 79f60bbf6bddae44bbea764d428bfceb, type: 2}
       propertyPath: animationCurve.m_Curve.Array.data[0].inSlope

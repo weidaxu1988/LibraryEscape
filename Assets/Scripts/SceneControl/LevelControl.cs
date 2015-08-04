@@ -30,6 +30,8 @@ public class LevelControl : MonoBehaviour
     public GameObject player;
     public GameObject[] ghosts;
 
+    public bool allowAnswerQuestion = true;
+
     private PuzzleObject targetPuzzle;
     private bool secondTime;
 
@@ -235,9 +237,17 @@ public class LevelControl : MonoBehaviour
             noteControl.gameObject.SetActive(false);
     }
 
+    public void AllowAnswerQuestion()
+    {
+        allowAnswerQuestion = true;
+
+        StartQuestion(null);
+    }
+
     public void StartQuestion(PuzzleObject obj)
     {
         if (puzzleCleared) return;
+        if (!allowAnswerQuestion) return;
 
         if ((!secondTime && totalPuzzle.Length == purplePuzzleList.Count + greenPuzzleList.Count + orangePuzzleList.Count) || (secondTime && targetPuzzle != null && targetPuzzle == obj))
         {
@@ -339,5 +349,4 @@ public class LevelControl : MonoBehaviour
         if (timeUpObject != null && !timeUpObject.activeSelf)
             timeUpObject.SetActive(true);
     }
-
 }

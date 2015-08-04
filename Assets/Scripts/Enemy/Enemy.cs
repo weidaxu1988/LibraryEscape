@@ -21,6 +21,7 @@ public class Enemy : MonoBehaviour
     private int currentPosIndex;
 
     public bool enemyActive;
+    public bool catchable;
 
     private float timeCount, sleepTimeCount;
 
@@ -58,9 +59,22 @@ public class Enemy : MonoBehaviour
 
 
             //tweenScale.PlayForward();
-            if (enemyActive)
-                GhostCaught();
+            if (catchable)
+            {
+                GhostGetCaught();
+            }
+            else
+            {
+                if (enemyActive)
+                    GhostCaught();
+            }
         }
+    }
+
+    void GhostGetCaught()
+    {
+        LevelControl.instance.AllowAnswerQuestion();
+        gameObject.SetActive(false);
     }
 
     void GhostCaught()
@@ -93,15 +107,15 @@ public class Enemy : MonoBehaviour
         {
             if (timeCount < awakeTime)
             {
-                
+
 
                 //float speed = 1 / awakeTime / 2;
                 timeCount += Time.deltaTime;
 
                 if (timeCount < awakeTime / 2)
                 {
-                    
-                    
+
+
                     transform.localScale = oriScale;
                     transform.position = Vector3.Lerp(startPos, endPos, timeCount / (awakeTime / 2));
                 }
@@ -110,7 +124,7 @@ public class Enemy : MonoBehaviour
                     Vector3 scale = oriScale;
                     scale.x *= -1;
                     transform.localScale = scale;
-                    
+
                     transform.position = Vector3.Lerp(endPos, startPos, timeCount / (awakeTime / 2) - 1);
                 }
             }
@@ -176,7 +190,7 @@ public class Enemy : MonoBehaviour
                         Vector3 scale = oriScale;
                         scale.x *= -1;
                         transform.localScale = scale;
-                        
+
                     }
                     transform.position = Vector3.Lerp(targetPos.position, fromPos.position, corvedred / disc);
                 }
@@ -191,12 +205,12 @@ public class Enemy : MonoBehaviour
                         Vector3 scale = oriScale;
                         scale.x *= -1;
                         transform.localScale = scale;
-                        
+
                     }
                     transform.position = Vector3.Lerp(fromPos.position, targetPos.position, corvedred / disc);
                 }
 
-                
+
 
                 if (!isReturning && transform.position == targetPos.position)
                 {
@@ -230,13 +244,13 @@ public class Enemy : MonoBehaviour
 
             if (fromPos.position.x < targetPos.position.x)
             {
-                Vector3 scale = oriScale;
-                scale.x *= -1;
-                transform.localScale = scale;
+                transform.localScale = oriScale;
             }
             else
             {
-                transform.localScale = oriScale;
+                Vector3 scale = oriScale;
+                scale.x *= -1;
+                transform.localScale = scale;
             }
 
             if (transform.position == targetPos.position)

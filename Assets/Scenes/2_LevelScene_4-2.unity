@@ -691,6 +691,10 @@ Prefab:
       propertyPath: routerPositions.Array.data[7]
       value: 
       objectReference: {fileID: 1384237287}
+    - target: {fileID: 11434426, guid: 559f2f9b0fbd79440a51e4a18ff34133, type: 2}
+      propertyPath: catchable
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 559f2f9b0fbd79440a51e4a18ff34133, type: 2}
   m_IsPrefabParent: 0
@@ -3124,6 +3128,7 @@ MonoBehaviour:
   player: {fileID: 869619735}
   ghosts:
   - {fileID: 87785831}
+  allowAnswerQuestion: 0
   exitObject: {fileID: 0}
   musicToggle: {fileID: 208443579}
   musicSource: {fileID: 175278713}
