@@ -198,8 +198,7 @@ MonoBehaviour:
   noteContentArray:
   - 'Stage Three of ISP Model is prefocus exploration. It involves extending your
     personal knowledge of the topic through initial searching. The questions you may
-    have here are: How do I begin the search process? What should I do first? '
-  - image_sprite_biscuit
+    have here are:\n(1) How do I begin the search process?\n(2) What should I do first? '
 --- !u!212 &21237720
 SpriteRenderer:
   m_ObjectHideFlags: 1

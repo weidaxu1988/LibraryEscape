@@ -197,8 +197,8 @@ MonoBehaviour:
   noteTitle: Tertiary Sources
   noteContentArray:
   - "Tertiary sources are essentially \u201Cfinding tools\u201D that help you locate
-    primary and secondary sources. There are two tertiary sources: the library catalogs
-    and databases."
+    primary and secondary sources.\\n\\nThere are two main tertiary sources: the library
+    catalogs and databases."
   - "OPAC stands for \u201COnline Public Access Catalog\u201D, and is the library
     catalog. It is an online database of all of the resources in the library. Some
     libraries require you to log in before searching the OPAC. You can search OPAC
@@ -211,7 +211,7 @@ MonoBehaviour:
     individually. On the other hand, Advanced Search allows you to combine several
     attributes."
   - A library may spread over several locations. In Advanced Search, you can limit
-    the search to the resources in a specific location, e.g., the Business Library.  The
+    the search to the resources in a specific location, e.g., the Business Library.  \n\nThe
     Advanced Search option also allows you to limit your search to specific types
     of resources, e.g., DVDs.
   - "Frequently, you will search using the author\u2019s name. Names are expressed

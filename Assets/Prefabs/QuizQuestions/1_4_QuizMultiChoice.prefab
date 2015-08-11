@@ -565,7 +565,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 174384}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.05175781e-05, y: -31.0000114, z: 0}
+  m_LocalPosition: {x: 0, y: -31.0000076, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 474868}
@@ -593,7 +593,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 166994}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 99.0000153, z: 0}
+  m_LocalPosition: {x: 100, y: 99.0000153, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400408}
@@ -617,7 +617,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 111514}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.05175781e-05, y: -93.0000076, z: 0}
+  m_LocalPosition: {x: 0, y: -93.0000076, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 448344}
@@ -718,7 +718,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 161406}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.05175781e-05, y: -155, z: 0}
+  m_LocalPosition: {x: 0, y: -155, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 441004}
@@ -733,7 +733,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 164370}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 25, y: 34.0000153, z: 25}
+  m_LocalPosition: {x: -20, y: 34.0000153, z: 25}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 400408}
@@ -759,7 +759,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 185076}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.05175781e-05, y: -217, z: 0}
+  m_LocalPosition: {x: 0, y: -217, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 488594}
@@ -777,8 +777,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 760, y: 54, z: 0}
-  m_Center: {x: 380, y: 0, z: 0}
+  m_Size: {x: 1000, y: 54, z: 0}
+  m_Center: {x: 500, y: 0, z: 0}
 --- !u!65 &6522788
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -789,8 +789,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 760, y: 54, z: 0}
-  m_Center: {x: 380, y: 0, z: 0}
+  m_Size: {x: 1000, y: 54, z: 0}
+  m_Center: {x: 500, y: 0, z: 0}
 --- !u!65 &6543276
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -801,8 +801,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 760, y: 54, z: 0}
-  m_Center: {x: 380, y: 0, z: 0}
+  m_Size: {x: 1000, y: 54, z: 0}
+  m_Center: {x: 500, y: 0, z: 0}
 --- !u!65 &6544710
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -813,8 +813,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 760, y: 54, z: 0}
-  m_Center: {x: 380, y: 0, z: 0}
+  m_Size: {x: 1000, y: 54, z: 0}
+  m_Center: {x: 500, y: 0, z: 0}
 --- !u!111 &11158070
 Animation:
   m_ObjectHideFlags: 1
@@ -996,13 +996,13 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 3
-  mWidth: 760
+  mWidth: 1000
   mHeight: 54
   mDepth: 6
   autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 14.0740738
+  aspectRatio: 18.5185184
 --- !u!114 &11408314
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1033,13 +1033,13 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 3
-  mWidth: 760
+  mWidth: 1000
   mHeight: 54
   mDepth: 6
   autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 14.0740738
+  aspectRatio: 18.5185184
 --- !u!114 &11413950
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1198,18 +1198,18 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: .227941155, g: .227941155, b: .227941155, a: 1}
   mPivot: 3
-  mWidth: 795
+  mWidth: 1035
   mHeight: 56
   mDepth: 9
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 14.1964283
+  aspectRatio: 18.4821434
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
   mFont: {fileID: 0}
   mText: "It focuses on the affective states of information seekers.\r"
-  mFontSize: 28
+  mFontSize: 24
   mFontStyle: 0
   mAlignment: 0
   mEncoding: 1
@@ -1467,18 +1467,18 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: .227941155, g: .227941155, b: .227941155, a: 1}
   mPivot: 3
-  mWidth: 721
+  mWidth: 961
   mHeight: 56
   mDepth: 9
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 12.875
+  aspectRatio: 17.1607151
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
   mFont: {fileID: 0}
   mText: "Negative feelings are common at the end of an information search process.\r"
-  mFontSize: 28
+  mFontSize: 24
   mFontStyle: 0
   mAlignment: 0
   mEncoding: 1
@@ -1616,18 +1616,18 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: .227941155, g: .227941155, b: .227941155, a: 1}
   mPivot: 3
-  mWidth: 721
+  mWidth: 961
   mHeight: 56
   mDepth: 9
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 12.875
+  aspectRatio: 17.1607151
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
   mFont: {fileID: 0}
   mText: "It is more applicable to novice information seekers than to experts.\r"
-  mFontSize: 28
+  mFontSize: 24
   mFontStyle: 0
   mAlignment: 0
   mEncoding: 1
@@ -1681,13 +1681,13 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: 0, g: 0, b: 0, a: 1}
   mPivot: 1
-  mWidth: 766
-  mHeight: 72
+  mWidth: 1000
+  mHeight: 36
   mDepth: 0
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 10.6388893
+  aspectRatio: 2.52525258
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
   mFont: {fileID: 0}
@@ -1746,13 +1746,13 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 3
-  mWidth: 760
+  mWidth: 1000
   mHeight: 54
   mDepth: 6
   autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 14.0740738
+  aspectRatio: 18.5185184
 --- !u!114 &11479288
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1833,13 +1833,13 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 3
-  mWidth: 760
+  mWidth: 1000
   mHeight: 54
   mDepth: 6
   autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 14.0740738
+  aspectRatio: 18.5185184
 --- !u!114 &11487426
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1984,18 +1984,18 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: .227941155, g: .227941155, b: .227941155, a: 1}
   mPivot: 3
-  mWidth: 721
+  mWidth: 961
   mHeight: 56
   mDepth: 9
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 12.875
+  aspectRatio: 17.1607151
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
   mFont: {fileID: 0}
   mText: "It was developed by Donald Owen Case.\r"
-  mFontSize: 28
+  mFontSize: 24
   mFontStyle: 0
   mAlignment: 0
   mEncoding: 1

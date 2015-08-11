@@ -978,7 +978,7 @@ MonoBehaviour:
     relative: 1
     absolute: 0
   updateAnchors: 1
-  mColor: {r: 1, g: 0, b: 0, a: 1}
+  mColor: {r: .772058845, g: .488213688, b: .488213688, a: 1}
   mPivot: 4
   mWidth: 90
   mHeight: 110
@@ -1349,7 +1349,7 @@ MonoBehaviour:
     relative: 1
     absolute: 0
   updateAnchors: 1
-  mColor: {r: .882352948, g: .684763134, b: .434688568, a: 1}
+  mColor: {r: .75, g: .57961458, b: .363970578, a: 1}
   mPivot: 4
   mWidth: 90
   mHeight: 110
@@ -1449,7 +1449,7 @@ MonoBehaviour:
     relative: 1
     absolute: 0
   updateAnchors: 1
-  mColor: {r: 0, g: .462069035, b: 1, a: 1}
+  mColor: {r: .33866784, g: .477768183, b: .639705896, a: 1}
   mPivot: 4
   mWidth: 90
   mHeight: 110
@@ -1577,7 +1577,7 @@ MonoBehaviour:
     relative: 1
     absolute: 0
   updateAnchors: 1
-  mColor: {r: .360294104, g: .875, b: .427738398, a: 1}
+  mColor: {r: .414413959, g: .536764741, b: .430446148, a: 1}
   mPivot: 4
   mWidth: 90
   mHeight: 110
@@ -1833,7 +1833,7 @@ MonoBehaviour:
     relative: 1
     absolute: 0
   updateAnchors: 1
-  mColor: {r: .146301895, g: .485294104, b: .204748839, a: 1}
+  mColor: {r: .377466857, g: .45588237, b: .100562274, a: 1}
   mPivot: 4
   mWidth: 90
   mHeight: 110

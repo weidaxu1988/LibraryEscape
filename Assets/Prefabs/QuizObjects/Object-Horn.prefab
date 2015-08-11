@@ -158,29 +158,27 @@ MonoBehaviour:
   noteTitle: Primary Sources
   noteContentArray:
   - "Primary sources are original works. They can be patents, conference proceedings,
-    theses, journal articles, technical reports, or lab notes.                                                                                                However,
-    it\u2019s worth noting that primary sources can be reliable or unreliable and
-    should be critically evaluated."
-  - "Patents                                                            A patent is
-    a right granted to the owner of an invention that prevents others from making,
-    using, importing or selling the invention without his permission.\_The term of
-    patents is 20 years before they fall into public domain. In Singapore, patents
-    can be searched using the IP2SG patent search engine."
-  - "Lab notebooks                                 Researchers maintain lab notebooks
-    because they are basic to scientific research.\_Keeping careful notes the observations
-    and results from experiments is important because it builds a reservoir of information
-    which may be later used in assignments and papers submitted for publication. Lab
-    notebooks are accessible only from the researchers themselves and not from libraries."
-  - "Conference proceedings                  Researchers present their research and
-    obtain feedback from the audience at conferences, symposia or workshops. The papers
-    presented are usually published in a volume called a conference proceeding.\_Proceedings
+    theses, journal articles, technical reports, or lab notes.\\n\\nHowever, it\u2019s
+    worth noting that primary sources can be reliable or unreliable and should be
+    critically evaluated."
+  - "Patents\\nA patent is a right granted to the owner of an invention that prevents
+    others from making, using, importing or selling the invention without his permission.\_The
+    term of patents is 20 years before they fall into public domain. In Singapore,
+    patents can be searched using the IP2SG patent search engine."
+  - "Lab notebooks\\nResearchers maintain lab notebooks because they are basic to
+    scientific research.\_Keeping careful notes the observations and results from
+    experiments is important because it builds a reservoir of information which may
+    be later used in assignments and publications. Lab notebooks are accessible only
+    from the researchers themselves and not from libraries."
+  - "Conference proceedings\\nResearchers present their research and obtain feedback
+    from the audience at conferences, symposia or workshops. The papers presented
+    are usually published in a volume called a conference proceeding.\_Proceedings
     from reputable conferences can usually be located from a database."
-  - "Theses                                                            A thesis is
-    a piece of original scholarship written at the masters or doctoral level.\_If
-    you are looking for thesis from your home university, you can usually find them
-    in your university\u2019s institutional repository (e.g., DR-NTU).\_If you are
-    looking for theses from other universities, you can search in ProQuest Dissertations
-    & Theses Database."
+  - "Theses\\nA thesis is a piece of original scholarship written at the masters or
+    doctoral level.\_If you are looking for thesis from your home university, you
+    can usually find them in your university\u2019s institutional repository (e.g.,
+    DR-NTU).\_If you are looking for theses from other universities, you can search
+    in ProQuest Dissertations & Theses Database."
 --- !u!114 &11456084
 MonoBehaviour:
   m_ObjectHideFlags: 1
