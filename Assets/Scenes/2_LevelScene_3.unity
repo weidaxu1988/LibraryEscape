@@ -3406,6 +3406,7 @@ MonoBehaviour:
   player: {fileID: 869619735}
   ghosts:
   - {fileID: 1133966744}
+  allowAnswerQuestion: 1
   exitObject: {fileID: 0}
   musicToggle: {fileID: 1107585225}
   musicSource: {fileID: 175278713}
@@ -8338,6 +8339,10 @@ Prefab:
       propertyPath: puzzleObj
       value: 
       objectReference: {fileID: 1057865226}
+    - target: {fileID: 103138, guid: fcfbf6ff744d86943bf80e500e87b8cb, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fcfbf6ff744d86943bf80e500e87b8cb, type: 2}
   m_IsPrefabParent: 0
