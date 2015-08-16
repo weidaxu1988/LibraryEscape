@@ -11,6 +11,7 @@ public class FireObject : MonoBehaviour
 
     private AudioSource audioSource;
 
+	public GameObject block;
     public GameObject fileKiller;
 
     private bool activited = false;
@@ -101,6 +102,7 @@ public class FireObject : MonoBehaviour
         fireActived = true;
         tweenScale.PlayForward();
         audioSource.Play();
+		block.SetActive (true);
     }
          
     void FireEnd()
@@ -112,6 +114,7 @@ public class FireObject : MonoBehaviour
         timeCount = 0;
         endCount = 0;
         tweenScale.PlayReverse();
+		block.SetActive (false);
     }
 
 }

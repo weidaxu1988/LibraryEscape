@@ -41,17 +41,33 @@ public class QuestionControl : MonoBehaviour
     }
 
 	public void OnQuestionSubmit() {
-		if (bigLibrary != null) {
-			bigLibrary.SetActive(true);
+//		if (bigLibrary != null) {
+//			bigLibrary.SetActive (true);
+//		} else {
+//			AQuestionSubmit();
+//		}
+
+		if (!librarian.activeSelf) {
+			librarian.SetActive (true);
 		}
+
+		if (submitButton.activeSelf)
+			submitButton.SetActive(false);
+
+		Quiz quiz = totalQuiz[quizIndex];
+		quiz.HideQuestionContent ();
+
+		StartCoroutine (AQuestionSubmit());
 	}
 
-    public void AQuestionSubmit()
+    public IEnumerator AQuestionSubmit()
     {
+		yield return new WaitForSeconds(2f);
+
         Quiz quiz = totalQuiz[quizIndex];
 
-        if (!librarian.activeSelf)
-            librarian.SetActive(true);
+//        if (!librarian.activeSelf)
+//            librarian.SetActive(true);
 
         if (quiz.getScore() < 1)
         {
@@ -61,7 +77,7 @@ public class QuestionControl : MonoBehaviour
             {
                 ShowFailedContent();
                 ShowNextButton(true);
-                return;
+                yield break;
             }
         }
         quiz.InitFeedback();

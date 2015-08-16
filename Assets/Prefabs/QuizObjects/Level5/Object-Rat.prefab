@@ -157,11 +157,10 @@ MonoBehaviour:
   previousPuzzle: {fileID: 0}
   noteTitle: 'Evaluating the Authors '
   noteContentArray:
-  - 'The main question is whether the author has necessary expertise to produce the
-    information resource. \nThus the following should be examined: \n(1) training,
-    experience, or competence;         (2) academic degrees; \n(3) credentials; \n(4)
-    institutional or association affiliations; and   (5) publications or research
-    history.'
+  - The main question is whether the author has necessary expertise to produce the
+    information resource.\nThus the following should be examined:\n(1) training, experience,
+    or competence;\n(2) academic degrees;\n(3) credentials;\n(4) institutional or
+    association affiliations;\n(5) publications or research history.
   - 'Attribution of Source Material \nCheck if references and sources for all the
     content are listed clearly. Proper attribution is a responsibility of a scholar,
     and it can: \n(1) help readers identify and relocate the source work; \n(2) provide

@@ -491,7 +491,7 @@ MonoBehaviour:
   anchorOffset: 0
   softBorderPadding: 1
   renderQueue: 0
-  startingRenderQueue: 3002
+  startingRenderQueue: 3004
   mClipTexture: {fileID: 0}
   mAlpha: 1
   mClipping: 0
@@ -522,7 +522,7 @@ MonoBehaviour:
   failedContent: {fileID: 1678736579}
   nextButton: {fileID: 1578820169}
   submitButton: {fileID: 1156329656}
-  bigLibrary: {fileID: 61702899}
+  bigLibrary: {fileID: 794393346}
 --- !u!1 &81164306
 GameObject:
   m_ObjectHideFlags: 0
@@ -842,11 +842,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 438680, guid: 7ba8fe3ba6872f949bc0032bbb8f32e8, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 351
+      value: -284
       objectReference: {fileID: 0}
     - target: {fileID: 438680, guid: 7ba8fe3ba6872f949bc0032bbb8f32e8, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -233
+      value: -51
       objectReference: {fileID: 0}
     - target: {fileID: 438680, guid: 7ba8fe3ba6872f949bc0032bbb8f32e8, type: 2}
       propertyPath: m_LocalPosition.z
@@ -878,11 +878,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 438680, guid: 7ba8fe3ba6872f949bc0032bbb8f32e8, type: 2}
       propertyPath: m_LocalScale.x
-      value: 300
+      value: 530
       objectReference: {fileID: 0}
     - target: {fileID: 438680, guid: 7ba8fe3ba6872f949bc0032bbb8f32e8, type: 2}
       propertyPath: m_LocalScale.y
-      value: 300
+      value: 530
       objectReference: {fileID: 0}
     - target: {fileID: 438680, guid: 7ba8fe3ba6872f949bc0032bbb8f32e8, type: 2}
       propertyPath: m_LocalScale.z
@@ -1241,7 +1241,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 8243904, guid: 70dbf323a898bd14e90e0d424b8857cb, type: 2}
       propertyPath: Loop
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5834004, guid: 70dbf323a898bd14e90e0d424b8857cb, type: 2}
       propertyPath: m_Offset.x
@@ -2659,11 +2659,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 452918, guid: 79f60bbf6bddae44bbea764d428bfceb, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -1.08299994
+      value: -.690999985
       objectReference: {fileID: 0}
     - target: {fileID: 452918, guid: 79f60bbf6bddae44bbea764d428bfceb, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -.75
+      value: -.200000003
       objectReference: {fileID: 0}
     - target: {fileID: 452918, guid: 79f60bbf6bddae44bbea764d428bfceb, type: 2}
       propertyPath: m_LocalPosition.z
@@ -4186,6 +4186,10 @@ Prefab:
       propertyPath: mText
       value: 
       objectReference: {fileID: 1404921900}
+    - target: {fileID: 11454572, guid: dd3f2dad3393f1e49bb1a6f7c0af6aa6, type: 2}
+      propertyPath: levelControl
+      value: 
+      objectReference: {fileID: 400690226}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: dd3f2dad3393f1e49bb1a6f7c0af6aa6, type: 2}
   m_IsPrefabParent: 0
@@ -6171,6 +6175,10 @@ Prefab:
 --- !u!4 &794393345 stripped
 Transform:
   m_PrefabParentObject: {fileID: 442050, guid: bf06d92f0cc8b46178e6dab001ec0851, type: 2}
+  m_PrefabInternal: {fileID: 794393344}
+--- !u!1 &794393346 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 103194, guid: bf06d92f0cc8b46178e6dab001ec0851, type: 2}
   m_PrefabInternal: {fileID: 794393344}
 --- !u!1 &797004882
 GameObject:
@@ -10352,8 +10360,8 @@ MonoBehaviour:
   onFinished: []
   eventReceiver: {fileID: 0}
   callWhenFinished: 
-  from: {x: 0, y: -123, z: 0}
-  to: {x: 10, y: -123, z: 0}
+  from: {x: 400, y: -301, z: 0}
+  to: {x: 410, y: -301, z: 0}
   worldSpace: 0
 --- !u!114 &1578820172
 MonoBehaviour:
@@ -12294,9 +12302,13 @@ Prefab:
       propertyPath: puzzleObj
       value: 
       objectReference: {fileID: 913811233}
-    - target: {fileID: 115620, guid: f25f20dc8b3f8dd47a9c84f7681f5de3, type: 2}
-      propertyPath: m_IsActive
-      value: 0
+    - target: {fileID: 440178, guid: f25f20dc8b3f8dd47a9c84f7681f5de3, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -162.000015
+      objectReference: {fileID: 0}
+    - target: {fileID: 496086, guid: f25f20dc8b3f8dd47a9c84f7681f5de3, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -54.0000153
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f25f20dc8b3f8dd47a9c84f7681f5de3, type: 2}

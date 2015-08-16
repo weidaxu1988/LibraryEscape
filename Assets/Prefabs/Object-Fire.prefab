@@ -52,6 +52,34 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &189290
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 405158}
+  - 61: {fileID: 6151340}
+  m_Layer: 10
+  m_Name: block_2 (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &405158
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 189290}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 452918}
+  m_RootOrder: 2
 --- !u!4 &445450
 Transform:
   m_ObjectHideFlags: 1
@@ -71,11 +99,12 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 136982}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.29700005, y: -.75, z: 0}
+  m_LocalPosition: {x: -1.08299994, y: -.75, z: 0}
   m_LocalScale: {x: .0614135265, y: .0614135452, z: .0614135452}
   m_Children:
   - {fileID: 477344}
   - {fileID: 445450}
+  - {fileID: 405158}
   m_Father: {fileID: 0}
   m_RootOrder: 0
 --- !u!4 &477344
@@ -103,6 +132,19 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 2.17000008
+--- !u!61 &6151340
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 189290}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 4, y: 5}
 --- !u!82 &8281038
 AudioSource:
   m_ObjectHideFlags: 1
@@ -261,6 +303,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e4a6a00140eae044b94009320a5f032, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  block: {fileID: 189290}
   fileKiller: {fileID: 133670}
 --- !u!212 &21274352
 SpriteRenderer:

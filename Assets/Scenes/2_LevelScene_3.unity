@@ -972,11 +972,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 438680, guid: 7ba8fe3ba6872f949bc0032bbb8f32e8, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 351
+      value: -284
       objectReference: {fileID: 0}
     - target: {fileID: 438680, guid: 7ba8fe3ba6872f949bc0032bbb8f32e8, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -233
+      value: -51
       objectReference: {fileID: 0}
     - target: {fileID: 438680, guid: 7ba8fe3ba6872f949bc0032bbb8f32e8, type: 2}
       propertyPath: m_LocalPosition.z
@@ -1008,11 +1008,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 438680, guid: 7ba8fe3ba6872f949bc0032bbb8f32e8, type: 2}
       propertyPath: m_LocalScale.x
-      value: 300
+      value: 530
       objectReference: {fileID: 0}
     - target: {fileID: 438680, guid: 7ba8fe3ba6872f949bc0032bbb8f32e8, type: 2}
       propertyPath: m_LocalScale.y
-      value: 300
+      value: 530
       objectReference: {fileID: 0}
     - target: {fileID: 438680, guid: 7ba8fe3ba6872f949bc0032bbb8f32e8, type: 2}
       propertyPath: m_LocalScale.z
@@ -1461,14 +1461,6 @@ Prefab:
       propertyPath: puzzleObj
       value: 
       objectReference: {fileID: 1375218009}
-    - target: {fileID: 472390, guid: 8366370ecbc711e4dbe6a410806206fc, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -84
-      objectReference: {fileID: 0}
-    - target: {fileID: 120124, guid: 8366370ecbc711e4dbe6a410806206fc, type: 2}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8366370ecbc711e4dbe6a410806206fc, type: 2}
   m_IsPrefabParent: 0
@@ -10649,7 +10641,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1578820169}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 304, y: -310, z: 0}
+  m_LocalPosition: {x: 0, y: -310, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 61702900}
@@ -10690,8 +10682,8 @@ MonoBehaviour:
   onFinished: []
   eventReceiver: {fileID: 0}
   callWhenFinished: 
-  from: {x: 0, y: -123, z: 0}
-  to: {x: 10, y: -123, z: 0}
+  from: {x: 400, y: -301, z: 0}
+  to: {x: 410, y: -301, z: 0}
   worldSpace: 0
 --- !u!114 &1578820172
 MonoBehaviour:

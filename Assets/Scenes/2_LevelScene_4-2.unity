@@ -744,11 +744,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 438680, guid: 7ba8fe3ba6872f949bc0032bbb8f32e8, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 351
+      value: -284
       objectReference: {fileID: 0}
     - target: {fileID: 438680, guid: 7ba8fe3ba6872f949bc0032bbb8f32e8, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -233
+      value: -51
       objectReference: {fileID: 0}
     - target: {fileID: 438680, guid: 7ba8fe3ba6872f949bc0032bbb8f32e8, type: 2}
       propertyPath: m_LocalPosition.z
@@ -780,11 +780,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 438680, guid: 7ba8fe3ba6872f949bc0032bbb8f32e8, type: 2}
       propertyPath: m_LocalScale.x
-      value: 300
+      value: 530
       objectReference: {fileID: 0}
     - target: {fileID: 438680, guid: 7ba8fe3ba6872f949bc0032bbb8f32e8, type: 2}
       propertyPath: m_LocalScale.y
-      value: 300
+      value: 530
       objectReference: {fileID: 0}
     - target: {fileID: 438680, guid: 7ba8fe3ba6872f949bc0032bbb8f32e8, type: 2}
       propertyPath: m_LocalScale.z
@@ -4612,6 +4612,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 11453224, guid: abc647f8fd7b2164d95214492443a3c5, type: 2}
+      propertyPath: noteTitle
+      value: Example of Building Blocks
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: abc647f8fd7b2164d95214492443a3c5, type: 2}
   m_IsPrefabParent: 0
@@ -8065,6 +8069,20 @@ Prefab:
       propertyPath: m_Offset.y
       value: -1.69000006
       objectReference: {fileID: 0}
+    - target: {fileID: 11428138, guid: 5bede92a966ea0b41a8539e81a9a24e8, type: 2}
+      propertyPath: noteContentArray.Array.data[3]
+      value: Some databases allow you to restrict the results to only articles that
+        have been published in peer reviewed journals. All good journals are peer
+        reviewed, and if you still have too many articles, you may wish to restrict
+        your search to just these journals.
+      objectReference: {fileID: 0}
+    - target: {fileID: 11428138, guid: 5bede92a966ea0b41a8539e81a9a24e8, type: 2}
+      propertyPath: noteContentArray.Array.data[4]
+      value: Although this technique can be applied in any database, remember that
+        you will have to consult the manual for the database for the exact syntax
+        to use. Boolean operators, for example, can be used in all databases, but
+        the exact syntax varies with each database.
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5bede92a966ea0b41a8539e81a9a24e8, type: 2}
   m_IsPrefabParent: 0
@@ -10338,8 +10356,8 @@ MonoBehaviour:
   onFinished: []
   eventReceiver: {fileID: 0}
   callWhenFinished: 
-  from: {x: 0, y: -123, z: 0}
-  to: {x: 10, y: -123, z: 0}
+  from: {x: 400, y: -301, z: 0}
+  to: {x: 410, y: -301, z: 0}
   worldSpace: 0
 --- !u!114 &1578820172
 MonoBehaviour:
@@ -10989,7 +11007,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11429548, guid: 1dff2827ec96237459efb6f9218ee04b, type: 2}
       propertyPath: noteTitle
-      value: Focus Formulation
+      value: Selecting a Focus
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1dff2827ec96237459efb6f9218ee04b, type: 2}
@@ -12322,10 +12340,6 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 963883464}
     m_Modifications:
-    - target: {fileID: 11418980, guid: c4bb5090cbb02934686784074566bd53, type: 2}
-      propertyPath: noteContentArray.Array.size
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 430348, guid: c4bb5090cbb02934686784074566bd53, type: 2}
       propertyPath: m_LocalPosition.x
       value: .848999977
@@ -12357,10 +12371,6 @@ Prefab:
     - target: {fileID: 430348, guid: c4bb5090cbb02934686784074566bd53, type: 2}
       propertyPath: m_RootOrder
       value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 11418980, guid: c4bb5090cbb02934686784074566bd53, type: 2}
-      propertyPath: noteContentArray.Array.data[1]
-      value: image_sprite_ie
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c4bb5090cbb02934686784074566bd53, type: 2}

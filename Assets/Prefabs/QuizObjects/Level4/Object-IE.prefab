@@ -157,11 +157,11 @@ MonoBehaviour:
   previousPuzzle: {fileID: 0}
   noteTitle: Focus Formulation
   noteContentArray:
-  - This stage results in the development of a focus or personal perspective and is
-    a pivotal point in the ISP Model. It marks the turning point of the search because
-    this is the stage where uncertainty diminishes and confidence in your ability
-    to locate relevant material and clarity in the information resources increases.
-  - image_sprite_ie
+  - This stage requires you to formulate a focus from the information encountered.
+    You need to predict the outcomes of possible foci using criteria of personal interest,
+    requirements of assignment, availability of materials and time allotted, identifying
+    ideas in information from which to formulate focus, sometimes characterized by
+    a sudden moment of insight.
 --- !u!114 &11478880
 MonoBehaviour:
   m_ObjectHideFlags: 1

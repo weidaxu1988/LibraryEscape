@@ -886,11 +886,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 438680, guid: 7ba8fe3ba6872f949bc0032bbb8f32e8, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 351
+      value: -284
       objectReference: {fileID: 0}
     - target: {fileID: 438680, guid: 7ba8fe3ba6872f949bc0032bbb8f32e8, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -233
+      value: -51
       objectReference: {fileID: 0}
     - target: {fileID: 438680, guid: 7ba8fe3ba6872f949bc0032bbb8f32e8, type: 2}
       propertyPath: m_LocalPosition.z
@@ -922,11 +922,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 438680, guid: 7ba8fe3ba6872f949bc0032bbb8f32e8, type: 2}
       propertyPath: m_LocalScale.x
-      value: 300
+      value: 530
       objectReference: {fileID: 0}
     - target: {fileID: 438680, guid: 7ba8fe3ba6872f949bc0032bbb8f32e8, type: 2}
       propertyPath: m_LocalScale.y
-      value: 300
+      value: 530
       objectReference: {fileID: 0}
     - target: {fileID: 438680, guid: 7ba8fe3ba6872f949bc0032bbb8f32e8, type: 2}
       propertyPath: m_LocalScale.z
@@ -1353,7 +1353,7 @@ MonoBehaviour:
   mColor: {r: .188094705, g: .303290129, b: .360294104, a: 1}
   mPivot: 4
   mWidth: 421
-  mHeight: 252
+  mHeight: 228
   mDepth: -1
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
@@ -2910,6 +2910,7 @@ Transform:
   - {fileID: 726036226}
   - {fileID: 2044466199}
   - {fileID: 1062528417}
+  - {fileID: 1116028904}
   m_Father: {fileID: 175278712}
   m_RootOrder: 2
 --- !u!1 &357759648
@@ -6775,18 +6776,18 @@ MonoBehaviour:
   mColor: {r: 0, g: 0, b: 0, a: 1}
   mPivot: 4
   mWidth: 361
-  mHeight: 192
+  mHeight: 168
   mDepth: 2
   autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 3.00833344
+  aspectRatio: 2.14880943
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
   mFont: {fileID: 0}
   mText: "The next place to go is where librarians can provide users with direction
     to library collections, advice on library services, and guidance on information
-    sources and databases.\r\nSelect the reference section from the map below.\r"
+    sources and databases.\r Select it from the pictures.\r"
   mFontSize: 24
   mFontStyle: 0
   mAlignment: 1
@@ -7630,6 +7631,47 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 520, y: 45, z: 0}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &1116028903
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1116028904}
+  - 61: {fileID: 1116028905}
+  m_Layer: 10
+  m_Name: block_5 (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1116028904
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1116028903}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.13699996, y: -.700999975, z: 0}
+  m_LocalScale: {x: 1.42326891, y: 3.13119245, z: 1.42326927}
+  m_Children: []
+  m_Father: {fileID: 346575477}
+  m_RootOrder: 5
+--- !u!61 &1116028905
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1116028903}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: .109999999, y: .100000001}
 --- !u!1 &1125174979
 GameObject:
   m_ObjectHideFlags: 0
@@ -9900,7 +9942,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1578820169}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1, y: -236, z: 0}
+  m_LocalPosition: {x: 1, y: -301, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 61702900}
@@ -9941,8 +9983,8 @@ MonoBehaviour:
   onFinished: []
   eventReceiver: {fileID: 0}
   callWhenFinished: 
-  from: {x: 0, y: -123, z: 0}
-  to: {x: 10, y: -123, z: 0}
+  from: {x: 400, y: -301, z: 0}
+  to: {x: 410, y: -301, z: 0}
   worldSpace: 0
 --- !u!114 &1578820172
 MonoBehaviour:
@@ -11867,11 +11909,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 437956, guid: 71b9cb222c0f05e439bceac7883a14b9, type: 2}
       propertyPath: m_LocalScale.x
-      value: .200000003
+      value: .150000006
       objectReference: {fileID: 0}
     - target: {fileID: 437956, guid: 71b9cb222c0f05e439bceac7883a14b9, type: 2}
       propertyPath: m_LocalScale.y
-      value: .200000003
+      value: .150000006
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 71b9cb222c0f05e439bceac7883a14b9, type: 2}
