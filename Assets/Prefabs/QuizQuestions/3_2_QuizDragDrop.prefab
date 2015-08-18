@@ -623,7 +623,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 158078}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.52587891e-05, z: 0}
+  m_LocalPosition: {x: -127, y: -91, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 495286}
@@ -1060,7 +1060,7 @@ MonoBehaviour:
     relative: 1
     absolute: 0
   updateAnchors: 1
-  mColor: {r: .602941155, g: 1, b: .704259574, a: 1}
+  mColor: {r: .659277678, g: .958313406, b: .985294104, a: 1}
   mPivot: 4
   mWidth: 80
   mHeight: 50
@@ -1190,7 +1190,7 @@ MonoBehaviour:
     relative: 1
     absolute: 0
   updateAnchors: 1
-  mColor: {r: 0, g: .462069035, b: 1, a: 1}
+  mColor: {r: .33866784, g: .477768183, b: .639705896, a: 1}
   mPivot: 4
   mWidth: 75
   mHeight: 45
@@ -1240,7 +1240,7 @@ MonoBehaviour:
     relative: 1
     absolute: 0
   updateAnchors: 1
-  mColor: {r: .602941155, g: 1, b: .704259574, a: 1}
+  mColor: {r: .659277678, g: .958313406, b: .985294104, a: 1}
   mPivot: 4
   mWidth: 80
   mHeight: 50
@@ -1290,7 +1290,7 @@ MonoBehaviour:
     relative: 1
     absolute: 0
   updateAnchors: 1
-  mColor: {r: .602941155, g: 1, b: .704259574, a: 1}
+  mColor: {r: .659277678, g: .958313406, b: .985294104, a: 1}
   mPivot: 4
   mWidth: 80
   mHeight: 50
@@ -1433,7 +1433,7 @@ MonoBehaviour:
     relative: 1
     absolute: 0
   updateAnchors: 1
-  mColor: {r: .602941155, g: 1, b: .704259574, a: 1}
+  mColor: {r: .659277678, g: .958313406, b: .985294104, a: 1}
   mPivot: 4
   mWidth: 80
   mHeight: 50
@@ -1483,7 +1483,7 @@ MonoBehaviour:
     relative: 1
     absolute: 0
   updateAnchors: 1
-  mColor: {r: 0, g: .462069035, b: 1, a: 1}
+  mColor: {r: .33866784, g: .477768183, b: .639705896, a: 1}
   mPivot: 4
   mWidth: 75
   mHeight: 45
@@ -1691,7 +1691,7 @@ MonoBehaviour:
     relative: 1
     absolute: 0
   updateAnchors: 1
-  mColor: {r: .602941155, g: 1, b: .704259574, a: 1}
+  mColor: {r: .659277678, g: .958313406, b: .985294104, a: 1}
   mPivot: 4
   mWidth: 80
   mHeight: 50
@@ -1819,7 +1819,7 @@ MonoBehaviour:
     relative: 1
     absolute: 0
   updateAnchors: 1
-  mColor: {r: 0, g: .462069035, b: 1, a: 1}
+  mColor: {r: .33866784, g: .477768183, b: .639705896, a: 1}
   mPivot: 4
   mWidth: 75
   mHeight: 45
@@ -1897,7 +1897,7 @@ MonoBehaviour:
     relative: 1
     absolute: 0
   updateAnchors: 1
-  mColor: {r: 0, g: .462069035, b: 1, a: 1}
+  mColor: {r: .33866784, g: .477768183, b: .639705896, a: 1}
   mPivot: 4
   mWidth: 75
   mHeight: 45
@@ -2013,7 +2013,7 @@ MonoBehaviour:
     relative: 1
     absolute: 0
   updateAnchors: 1
-  mColor: {r: 0, g: .462069035, b: 1, a: 1}
+  mColor: {r: .33866784, g: .477768183, b: .639705896, a: 1}
   mPivot: 4
   mWidth: 75
   mHeight: 45
@@ -2232,7 +2232,7 @@ MonoBehaviour:
     relative: 1
     absolute: 0
   updateAnchors: 1
-  mColor: {r: .602941155, g: 1, b: .704259574, a: 1}
+  mColor: {r: .659277678, g: .958313406, b: .985294104, a: 1}
   mPivot: 4
   mWidth: 80
   mHeight: 50
@@ -2282,7 +2282,7 @@ MonoBehaviour:
     relative: 1
     absolute: 0
   updateAnchors: 1
-  mColor: {r: 0, g: .462069035, b: 1, a: 1}
+  mColor: {r: .33866784, g: .477768183, b: .639705896, a: 1}
   mPivot: 4
   mWidth: 75
   mHeight: 45
@@ -2369,7 +2369,7 @@ MonoBehaviour:
     relative: 1
     absolute: 0
   updateAnchors: 1
-  mColor: {r: 0, g: .462069035, b: 1, a: 1}
+  mColor: {r: .33866784, g: .477768183, b: .639705896, a: 1}
   mPivot: 4
   mWidth: 75
   mHeight: 45
@@ -2435,18 +2435,18 @@ MonoBehaviour:
     absolute: 0
   updateAnchors: 1
   mColor: {r: 0, g: 0, b: 0, a: 1}
-  mPivot: 4
-  mWidth: 700
-  mHeight: 200
+  mPivot: 3
+  mWidth: 524
+  mHeight: 52
   mDepth: 2
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 3.5
+  aspectRatio: 10.0769234
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
   mFont: {fileID: 0}
-  mText: New Label
+  mText: testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttestte
   mFontSize: 26
   mFontStyle: 0
   mAlignment: 0
@@ -2456,7 +2456,7 @@ MonoBehaviour:
   mEffectColor: {r: 0, g: 0, b: 0, a: 1}
   mSymbols: 1
   mEffectDistance: {x: 1, y: 1}
-  mOverflow: 0
+  mOverflow: 3
   mMaterial: {fileID: 0}
   mApplyGradient: 0
   mGradientTop: {r: 1, g: 1, b: 1, a: 1}
@@ -2499,7 +2499,7 @@ MonoBehaviour:
     relative: 1
     absolute: 0
   updateAnchors: 1
-  mColor: {r: .602941155, g: 1, b: .704259574, a: 1}
+  mColor: {r: .659277678, g: .958313406, b: .985294104, a: 1}
   mPivot: 4
   mWidth: 80
   mHeight: 50

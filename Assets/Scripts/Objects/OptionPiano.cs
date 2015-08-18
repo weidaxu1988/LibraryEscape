@@ -3,6 +3,8 @@ using System.Collections;
 
 public class OptionPiano : MonoBehaviour {
 
+	public LevelControl levelControl;
+
     public GameObject mText;
 
     private TweenScale tweenScale;
@@ -32,6 +34,12 @@ public class OptionPiano : MonoBehaviour {
                 if (GameManager.instance.allowMusic)
                 {
                     audioSource.Play();
+					if (levelControl != null) {
+						levelControl.muteBackgroundMusic(true);
+					}
+
+					StartCoroutine(stopMusic());
+
                 }
             }
             else
@@ -50,4 +58,16 @@ public class OptionPiano : MonoBehaviour {
             tweenScale.PlayReverse();
         }
     }
+
+	IEnumerator stopMusic() {
+		yield return new WaitForSeconds(48f);
+		audioSource.Stop ();
+
+		if (GameManager.instance.allowMusic)
+		{
+			if (levelControl != null) {
+				levelControl.muteBackgroundMusic(false);
+			}
+		}
+	}
 }

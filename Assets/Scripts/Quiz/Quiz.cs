@@ -53,6 +53,11 @@ public class Quiz : MonoBehaviour
 
     public virtual void ClearResult() { }
 
+	public void HideQuestionContent() {
+		if (questionContainer != null && questionContainer.activeSelf)
+			questionContainer.SetActive(false);
+	}
+
     public virtual void InitFeedback() {
         ShowFeedBack(true);
 

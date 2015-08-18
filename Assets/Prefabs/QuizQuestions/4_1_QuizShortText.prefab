@@ -139,7 +139,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &144550
 GameObject:
   m_ObjectHideFlags: 1
@@ -304,7 +304,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 143572}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -133, y: -88, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 429006}
@@ -665,7 +665,7 @@ MonoBehaviour:
   savedAs: 
   selectOnTab: {fileID: 0}
   activeTextColor: {r: 0, g: 0, b: 0, a: 1}
-  caretColor: {r: 1, g: 1, b: 1, a: .800000012}
+  caretColor: {r: 0, g: 0, b: 0, a: .800000012}
   selectionColor: {r: 1, g: .874509811, b: .552941203, a: .5}
   onSubmit:
   - mTarget: {fileID: 11414756}
@@ -860,7 +860,7 @@ MonoBehaviour:
   savedAs: 
   selectOnTab: {fileID: 0}
   activeTextColor: {r: 0, g: 0, b: 0, a: 1}
-  caretColor: {r: 1, g: 1, b: 1, a: .800000012}
+  caretColor: {r: 0, g: 0, b: 0, a: .800000012}
   selectionColor: {r: 1, g: .874509811, b: .552941203, a: .5}
   onSubmit:
   - mTarget: {fileID: 11424232}
@@ -898,18 +898,18 @@ MonoBehaviour:
     absolute: 0
   updateAnchors: 1
   mColor: {r: 0, g: 0, b: 0, a: 1}
-  mPivot: 4
-  mWidth: 700
-  mHeight: 200
+  mPivot: 3
+  mWidth: 524
+  mHeight: 52
   mDepth: 2
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 3.5
+  aspectRatio: 10.0769234
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
   mFont: {fileID: 0}
-  mText: New Label
+  mText: testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttestte
   mFontSize: 26
   mFontStyle: 0
   mAlignment: 0
@@ -919,7 +919,7 @@ MonoBehaviour:
   mEffectColor: {r: 0, g: 0, b: 0, a: 1}
   mSymbols: 1
   mEffectDistance: {x: 1, y: 1}
-  mOverflow: 0
+  mOverflow: 3
   mMaterial: {fileID: 0}
   mApplyGradient: 0
   mGradientTop: {r: 1, g: 1, b: 1, a: 1}
@@ -1135,7 +1135,7 @@ MonoBehaviour:
   savedAs: 
   selectOnTab: {fileID: 0}
   activeTextColor: {r: 0, g: 0, b: 0, a: 1}
-  caretColor: {r: 1, g: 1, b: 1, a: .800000012}
+  caretColor: {r: 0, g: 0, b: 0, a: .800000012}
   selectionColor: {r: 1, g: .874509811, b: .552941203, a: .5}
   onSubmit:
   - mTarget: {fileID: 11447112}
@@ -1160,9 +1160,9 @@ MonoBehaviour:
   feedbackLabel: {fileID: 11425760}
   puzzleObj: {fileID: 0}
   keyWords:
-  - Building blocks
+  - Building block
   - pearl growing
-  - successive fractions
+  - successive fraction
   correctFeedBack: "Wonderful! You\u2019ve remembered them all! Let\u2019s go on to
     the next question."
   incorrectFeedBack:

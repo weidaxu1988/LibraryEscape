@@ -257,8 +257,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 404010}
   - 114: {fileID: 11448108}
-  - 65: {fileID: 6557392}
-  - 114: {fileID: 11430252}
   m_Layer: 8
   m_Name: Question1
   m_TagString: Untagged
@@ -388,8 +386,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 410928}
   - 114: {fileID: 11413868}
-  - 65: {fileID: 6561644}
-  - 114: {fileID: 11461898}
   m_Layer: 8
   m_Name: Question2
   m_TagString: Untagged
@@ -688,7 +684,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 194590}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.52587891e-05, z: 0}
+  m_LocalPosition: {x: -118, y: -23, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 487586}
@@ -772,30 +768,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 120, y: 80, z: 0}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!65 &6557392
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 157214}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 158, y: 188, z: 0}
-  m_Center: {x: 0, y: -94, z: 0}
---- !u!65 &6561644
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 194408}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 158, y: 188, z: 0}
-  m_Center: {x: 0, y: -94, z: 0}
 --- !u!65 &6569044
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -1043,18 +1015,18 @@ MonoBehaviour:
     absolute: 0
   updateAnchors: 1
   mColor: {r: 0, g: 0, b: 0, a: 1}
-  mPivot: 4
-  mWidth: 700
-  mHeight: 200
+  mPivot: 3
+  mWidth: 524
+  mHeight: 52
   mDepth: 2
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 3.5
+  aspectRatio: 10.0769234
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
   mFont: {fileID: 0}
-  mText: New Label
+  mText: testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttestte
   mFontSize: 26
   mFontStyle: 0
   mAlignment: 0
@@ -1064,7 +1036,7 @@ MonoBehaviour:
   mEffectColor: {r: 0, g: 0, b: 0, a: 1}
   mSymbols: 1
   mEffectDistance: {x: 1, y: 1}
-  mOverflow: 0
+  mOverflow: 3
   mMaterial: {fileID: 0}
   mApplyGradient: 0
   mGradientTop: {r: 1, g: 1, b: 1, a: 1}
@@ -1242,7 +1214,7 @@ MonoBehaviour:
     relative: 1
     absolute: 0
   updateAnchors: 1
-  mColor: {r: .882352948, g: .684763134, b: .434688568, a: 1}
+  mColor: {r: .75, g: .57961458, b: .363970578, a: 1}
   mPivot: 4
   mWidth: 120
   mHeight: 80
@@ -1264,21 +1236,6 @@ MonoBehaviour:
   mAtlas: {fileID: 11400000, guid: 62adb30369acbf943a67cee0f69267a3, type: 2}
   mSpriteName: Flat
   mFillCenter: 1
---- !u!114 &11430252
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 157214}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0db8b5b7030f6844a904defd6397b541, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  reparentTarget: {fileID: 0}
-  correctItem: {fileID: 0}
-  correctItems:
-  - {fileID: 11447180}
 --- !u!114 &11431172
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1474,7 +1431,7 @@ MonoBehaviour:
     relative: 1
     absolute: 0
   updateAnchors: 1
-  mColor: {r: 0, g: .462069035, b: 1, a: 1}
+  mColor: {r: .083044976, g: .49970156, b: .705882311, a: 1}
   mPivot: 4
   mWidth: 120
   mHeight: 80
@@ -1589,7 +1546,7 @@ MonoBehaviour:
     relative: 1
     absolute: 0
   updateAnchors: 1
-  mColor: {r: .146301895, g: .485294104, b: .204748839, a: 1}
+  mColor: {r: .414413959, g: .536764741, b: .430446148, a: 1}
   mPivot: 4
   mWidth: 120
   mHeight: 80
@@ -1741,23 +1698,6 @@ MonoBehaviour:
   mMaxLineHeight: 0
   mLineWidth: 0
   mMultiline: 1
---- !u!114 &11461898
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 194408}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0db8b5b7030f6844a904defd6397b541, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  reparentTarget: {fileID: 0}
-  correctItem: {fileID: 0}
-  correctItems:
-  - {fileID: 11424634}
-  - {fileID: 11416506}
-  - {fileID: 11417098}
 --- !u!114 &11469436
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1851,7 +1791,7 @@ MonoBehaviour:
     relative: 1
     absolute: 0
   updateAnchors: 1
-  mColor: {r: .360294104, g: .875, b: .427738398, a: 1}
+  mColor: {r: .377466857, g: .45588237, b: .100562274, a: 1}
   mPivot: 4
   mWidth: 120
   mHeight: 80

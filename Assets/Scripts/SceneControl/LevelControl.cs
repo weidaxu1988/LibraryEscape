@@ -68,6 +68,14 @@ public class LevelControl : MonoBehaviour
         }
     }
 
+	public void muteBackgroundMusic(bool mute) {
+		if (mute) {
+			musicSource.Stop ();
+		} else {
+			musicSource.Play();
+		}
+	}
+
     public void OnMute(bool value)
     {
         GameManager.instance.allowMusic = !value;
