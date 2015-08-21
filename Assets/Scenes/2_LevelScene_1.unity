@@ -10870,6 +10870,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1289491256}
   - 114: {fileID: 1289491260}
+  - 114: {fileID: 1289491261}
   - 114: {fileID: 1289491259}
   - 65: {fileID: 1289491258}
   - 114: {fileID: 1289491257}
@@ -10934,8 +10935,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tweenTarget: {fileID: 1289491255}
-  hover: {r: .882352948, g: .784313738, b: .588235319, a: 1}
-  pressed: {r: .717647076, g: .639215708, b: .482352942, a: 1}
+  hover: {r: 1, g: 1, b: 1, a: 1}
+  pressed: {r: 1, g: 1, b: 1, a: 1}
   disabledColor: {r: .5, g: .5, b: .5, a: 1}
   duration: .200000003
   dragHighlight: 0
@@ -10999,9 +11000,24 @@ MonoBehaviour:
   rightType: 1
   bottomType: 1
   topType: 1
-  mAtlas: {fileID: 11485656, guid: c70c616e8529fea4595e88ee3c857514, type: 2}
-  mSpriteName: btn_info
+  mAtlas: {fileID: 11433638, guid: 46dcfb84394ddbb48b0323c79ca8934a, type: 2}
+  mSpriteName: 880002
   mFillCenter: 1
+--- !u!114 &1289491261
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1289491255}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df9bfb5c080dac24cbbc6c9f595ed413, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mFPS: 30
+  mPrefix: 8800
+  mLoop: 1
+  mSnap: 1
 --- !u!1 &1295439158
 GameObject:
   m_ObjectHideFlags: 0

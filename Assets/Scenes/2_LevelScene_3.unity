@@ -337,147 +337,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!1 &49021585
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 100002, guid: fee46b827274e694aa251e2d36700135, type: 2}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 49021586}
-  - 114: {fileID: 49021590}
-  - 114: {fileID: 49021589}
-  - 65: {fileID: 49021588}
-  - 114: {fileID: 49021587}
-  m_Layer: 8
-  m_Name: Button-Quiz
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &49021586
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 400002, guid: fee46b827274e694aa251e2d36700135, type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 49021585}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 15, y: -256, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1125174980}
-  m_RootOrder: 3
---- !u!114 &49021587
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400006, guid: fee46b827274e694aa251e2d36700135,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 49021585}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d44bc69c2ca5f943b845318866dc1bd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  audioClip: {fileID: 8300000, guid: b5083cfe83bb875479bd797c61594131, type: 3}
-  trigger: 0
-  volume: 1
-  pitch: 1
---- !u!65 &49021588
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 6500000, guid: fee46b827274e694aa251e2d36700135,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 49021585}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 180, y: 180, z: 0}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &49021589
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: fee46b827274e694aa251e2d36700135,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 49021585}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1fdca5042b1d12a4890ec1bd4f04290d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tweenTarget: {fileID: 49021585}
-  hover: {r: .882352948, g: .784313738, b: .588235319, a: 1}
-  pressed: {r: .717647076, g: .639215708, b: .482352942, a: 1}
-  disabledColor: {r: .5, g: .5, b: .5, a: 1}
-  duration: .200000003
-  dragHighlight: 0
-  hoverSprite: 
-  pressedSprite: 
-  disabledSprite: 
-  hoverSprite2D: {fileID: 0}
-  pressedSprite2D: {fileID: 0}
-  disabledSprite2D: {fileID: 0}
-  pixelSnap: 1
-  onClick:
-  - mTarget: {fileID: 400690226}
-    mMethodName: OnShowQuestionButtonClick
-    mParameters: []
-    oneShot: 0
---- !u!114 &49021590
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400004, guid: fee46b827274e694aa251e2d36700135,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 49021585}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b3dc54f924693f41b5cbecb267e647a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  leftAnchor:
-    target: {fileID: 0}
-    relative: 0
-    absolute: 0
-  rightAnchor:
-    target: {fileID: 0}
-    relative: 1
-    absolute: 0
-  bottomAnchor:
-    target: {fileID: 0}
-    relative: 0
-    absolute: 0
-  topAnchor:
-    target: {fileID: 0}
-    relative: 1
-    absolute: 0
-  updateAnchors: 1
-  mColor: {r: 1, g: 1, b: 1, a: 1}
-  mPivot: 4
-  mWidth: 180
-  mHeight: 180
-  mDepth: 0
-  autoResizeBoxCollider: 1
-  hideIfOffScreen: 0
-  keepAspectRatio: 1
-  aspectRatio: 1
-  mType: 0
-  mFillDirection: 4
-  mFillAmount: 1
-  mInvert: 0
-  mFlip: 0
-  centerType: 1
-  leftType: 1
-  rightType: 1
-  bottomType: 1
-  topType: 1
-  mAtlas: {fileID: 11485656, guid: c70c616e8529fea4595e88ee3c857514, type: 2}
-  mSpriteName: btn_info
-  mFillCenter: 1
 --- !u!1 &61702899
 GameObject:
   m_ObjectHideFlags: 0
@@ -3414,7 +3273,7 @@ MonoBehaviour:
   puzzleCleared: 0
   timer: {fileID: 871803829}
   extraButtons: {fileID: 115838786}
-  showQuestionButton: {fileID: 49021585}
+  showQuestionButton: {fileID: 1680876462}
   purpleLabel: {fileID: 857941012}
   greenLabel: {fileID: 792056223}
   orangeLabel: {fileID: 2092075902}
@@ -7553,7 +7412,7 @@ Transform:
   - {fileID: 122841893}
   - {fileID: 741688876}
   m_Father: {fileID: 1125174980}
-  m_RootOrder: 4
+  m_RootOrder: 3
 --- !u!114 &1107585225
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7826,8 +7685,8 @@ Transform:
   - {fileID: 1530409715}
   - {fileID: 505121153}
   - {fileID: 1289491256}
-  - {fileID: 49021586}
   - {fileID: 1107585224}
+  - {fileID: 1680876461}
   m_Father: {fileID: 16002952}
   m_RootOrder: 1
 --- !u!114 &1125174981
@@ -11257,6 +11116,84 @@ MonoBehaviour:
   mMaxLineHeight: 0
   mLineWidth: 0
   mMultiline: 1
+--- !u!1001 &1680876460
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1125174980}
+    m_Modifications:
+    - target: {fileID: 11460996, guid: 7b8dd863cc6a71745811e4afc4b57e10, type: 2}
+      propertyPath: onClick.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 463870, guid: 7b8dd863cc6a71745811e4afc4b57e10, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 463870, guid: 7b8dd863cc6a71745811e4afc4b57e10, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -256
+      objectReference: {fileID: 0}
+    - target: {fileID: 463870, guid: 7b8dd863cc6a71745811e4afc4b57e10, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 463870, guid: 7b8dd863cc6a71745811e4afc4b57e10, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 463870, guid: 7b8dd863cc6a71745811e4afc4b57e10, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 463870, guid: 7b8dd863cc6a71745811e4afc4b57e10, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 463870, guid: 7b8dd863cc6a71745811e4afc4b57e10, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 463870, guid: 7b8dd863cc6a71745811e4afc4b57e10, type: 2}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 463870, guid: 7b8dd863cc6a71745811e4afc4b57e10, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 463870, guid: 7b8dd863cc6a71745811e4afc4b57e10, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11460996, guid: 7b8dd863cc6a71745811e4afc4b57e10, type: 2}
+      propertyPath: onClick.Array.data[0].mTarget
+      value: 
+      objectReference: {fileID: 400690226}
+    - target: {fileID: 11460996, guid: 7b8dd863cc6a71745811e4afc4b57e10, type: 2}
+      propertyPath: onClick.Array.data[0].mMethodName
+      value: OnShowQuestionButtonClick
+      objectReference: {fileID: 0}
+    - target: {fileID: 463870, guid: 7b8dd863cc6a71745811e4afc4b57e10, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 105466, guid: 7b8dd863cc6a71745811e4afc4b57e10, type: 2}
+      propertyPath: m_Name
+      value: Button-Quiz (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 7b8dd863cc6a71745811e4afc4b57e10, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &1680876461 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 463870, guid: 7b8dd863cc6a71745811e4afc4b57e10, type: 2}
+  m_PrefabInternal: {fileID: 1680876460}
+--- !u!1 &1680876462 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 105466, guid: 7b8dd863cc6a71745811e4afc4b57e10, type: 2}
+  m_PrefabInternal: {fileID: 1680876460}
 --- !u!4 &1687075997 stripped
 Transform:
   m_PrefabParentObject: {fileID: 474434, guid: 632314a2345567e43b4343ecc0e250c1, type: 2}
