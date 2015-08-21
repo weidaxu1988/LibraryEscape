@@ -941,6 +941,15 @@ MonoBehaviour:
   - useful
   - usable
   - valid
+  - Conciseness
+  - currency
+  - accuracy
+  - treatment
+  - relevance
+  - completeness
+  - objectivity
+  - granularity
+  - depth
   correctFeedBack: Fantastic, you are right! Remember to use these criteria when evaluating
     information. You will complete the second last mission soon. One more to go, and
     we will be freed from this haunted library!

@@ -30,13 +30,13 @@ public class Player
         }
         else if (failCount == 1)
         {
-            Debug.Log("+++++++++++++++7, total: " + finalScore);
-            finalScore += 7;
+            Debug.Log("+++++++++++++++5, total: " + finalScore);
+            finalScore += 5;
         }
         else
         {
-            Debug.Log("+++++++++++++++5, total: " + finalScore);
-            finalScore += 5;
+            Debug.Log("+++++++++++++++3, total: " + finalScore);
+            finalScore += 3;
         }
     }
 }
