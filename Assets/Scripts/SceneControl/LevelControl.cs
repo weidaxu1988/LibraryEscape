@@ -56,10 +56,11 @@ public class LevelControl : MonoBehaviour
         isGamePaused = true;
         SetupTotalPuzzles();
 
-        if (beginObject == null)
-        {
-            InitHelp();
-        }
+        //if (beginObject == null)
+        //{
+
+        //}
+        InitHelp();
 
         if (musicToggle != null)
         {
@@ -68,13 +69,17 @@ public class LevelControl : MonoBehaviour
         }
     }
 
-	public void muteBackgroundMusic(bool mute) {
-		if (mute) {
-			musicSource.Stop ();
-		} else {
-			musicSource.Play();
-		}
-	}
+    public void muteBackgroundMusic(bool mute)
+    {
+        if (mute)
+        {
+            musicSource.Stop();
+        }
+        else
+        {
+            musicSource.Play();
+        }
+    }
 
     public void OnMute(bool value)
     {
@@ -327,7 +332,34 @@ public class LevelControl : MonoBehaviour
             player.SetActive(false);
 
         if (!helpControl.gameObject.activeSelf)
+        {
             helpControl.gameObject.SetActive(true);
+        }
+
+        if (noteControl.gameObject.activeSelf)
+        {
+            noteControl.gameObject.SetActive(false);
+        }
+
+        if (completeControl.gameObject.activeSelf)
+        {
+            completeControl.gameObject.SetActive(false);
+        }
+
+        if (questionControl.gameObject.activeSelf)
+        {
+            questionControl.gameObject.SetActive(false);
+        }
+
+        if (failObject.activeSelf)
+        {
+            failObject.SetActive(false);
+        }
+
+        if (timeUpObject.activeSelf)
+        {
+            timeUpObject.SetActive(false);
+        }
     }
 
     protected void SetupTotalPuzzles()

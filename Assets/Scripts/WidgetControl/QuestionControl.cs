@@ -57,7 +57,21 @@ public class QuestionControl : MonoBehaviour
 		Quiz quiz = totalQuiz[quizIndex];
 		quiz.HideQuestionContent ();
 
-		StartCoroutine (AQuestionSubmit());
+        //        if (!librarian.activeSelf)
+        //            librarian.SetActive(true);
+
+        if (quiz.getScore() < 1)
+        {
+            incorrectQuestionCount++;
+
+            if (incorrectQuestionCount >= incorrectCapacity)
+            {
+                ShowFailedContent();
+                ShowNextButton(true);
+            }
+        }
+        quiz.InitFeedback();
+        ShowNextButton(true);
 	}
 
     public IEnumerator AQuestionSubmit()
@@ -227,6 +241,11 @@ public class QuestionControl : MonoBehaviour
     {
         if (librarian.activeSelf)
             librarian.SetActive(false);
+
+        if (failedContent.activeSelf)
+        {
+            failedContent.SetActive(false);
+        }
 
         if (index < totalQuiz.Length)
         {
