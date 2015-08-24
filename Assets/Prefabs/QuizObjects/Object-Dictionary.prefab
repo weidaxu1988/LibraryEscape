@@ -154,6 +154,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startType: 0
+  previousPuzzle: {fileID: 0}
   noteTitle: The Birth of Information Literacy
   noteContentArray:
   - "In 1974, Paul Zurkowski coined the term \u201Cinformation literacy\u201D(IL).
@@ -161,9 +162,9 @@ MonoBehaviour:
     sources and formats. To be \u201Cinformation literate\u201D you need to know why,
     when, and how to use all of these tools and think critically about the information
     they provide."
-  - "Information literate people tend to be: \uF0B7\tavid readers \uF0B7\tcritical
-    and creative thinkers \uF0B7\tinterested learners \uF0B7\tskillful users of technology
-    \uF0B7\tresponsible users of information"
+  - Information literate people tend to be:\navid readers;\ncritical and creative
+    thinkers;\ninterested learners;\nskillful users of technology;\nresponsible users
+    of information.
 --- !u!114 &11497368
 MonoBehaviour:
   m_ObjectHideFlags: 1

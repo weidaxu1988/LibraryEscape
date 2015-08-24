@@ -437,7 +437,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 121730}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -93.0000076, z: 0}
+  m_LocalPosition: {x: 3.05175781e-05, y: -93.0000229, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 404092}
@@ -513,7 +513,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 187220}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -155, z: 0}
+  m_LocalPosition: {x: 3.05175781e-05, y: -155.000015, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 499296}
@@ -553,7 +553,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 121806}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -217, z: 0}
+  m_LocalPosition: {x: 3.05175781e-05, y: -217.000015, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 495874}
@@ -607,7 +607,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 138894}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -31.0000076, z: 0}
+  m_LocalPosition: {x: 3.05175781e-05, y: -31.0000229, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 425094}
@@ -1822,7 +1822,7 @@ MonoBehaviour:
   feedbackLabel: {fileID: 11465064}
   puzzleObj: {fileID: 0}
   correctOption: {fileID: 0}
-  correctFeedback: You are absolutely right! All of these requires citation.
+  correctFeedback: You are absolutely right! All of the others require  citation.
   incorrectFeedback: You are very close, but you need to make citations for this option.
     Try it again. I am sure you will get it correct.
   correctOptions:

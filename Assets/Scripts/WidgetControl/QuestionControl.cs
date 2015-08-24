@@ -152,10 +152,27 @@ public class QuestionControl : MonoBehaviour
             Debug.Log("incorrect null");
             libraianAnimator = librarian.GetComponentInChildren<Animator>();
         }
-        else
+
+
+        if(libraianAnimator != null)
         {
-            Debug.Log("incorrect not null");
-            libraianAnimator.SetTrigger("comfort");
+            
+
+            float random = Random.value;
+
+            Debug.Log("random value: " + random);
+            if (random > 0.66f)
+            {
+                libraianAnimator.SetTrigger("yes");
+            }
+            else if (random > 0.33f)
+            {
+                libraianAnimator.SetTrigger("rite");
+            }
+            else { 
+            
+            libraianAnimator.SetTrigger("clapping");
+            }
         }
 
         
@@ -168,10 +185,12 @@ public class QuestionControl : MonoBehaviour
             Debug.Log("incorrect null");
             libraianAnimator = librarian.GetComponentInChildren<Animator>();
         }
-        else
+        
+
+        if (libraianAnimator != null)
         {
             Debug.Log("incorrect not null");
-            libraianAnimator.SetTrigger("cheer");
+            libraianAnimator.SetTrigger("look");
         }
 
         
@@ -193,7 +212,7 @@ public class QuestionControl : MonoBehaviour
                 quiz.gameObject.SetActive(false);
         }
 
-        libraianAnimator.SetTrigger("console");
+        libraianAnimator.SetTrigger("concerned");
     }
 
     protected void ShowNextButton(bool show)

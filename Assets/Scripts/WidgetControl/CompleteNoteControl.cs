@@ -69,6 +69,12 @@ public class CompleteNoteControl : MonoBehaviour
             stage = stages[index];
             if (!stage.activeSelf)
                 stage.SetActive(true);
+
+            if (stage != null)
+            {
+                Animator libraianAnimator = GetComponentInChildren<Animator>();
+                libraianAnimator.SetTrigger("ok");
+            }
         }
     }
 
