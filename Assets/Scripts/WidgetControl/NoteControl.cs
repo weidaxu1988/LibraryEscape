@@ -65,6 +65,7 @@ public class NoteControl : MonoBehaviour
 
     public void CloseNote()
     {
+        GameManager.instance.SendEmail("type: note, " + puzzle.noteTitle + ", close");
         LevelControl.instance.OnNoteCloseButtonClick(puzzle);
     }
 
@@ -131,6 +132,10 @@ public class NoteControl : MonoBehaviour
                 noteContent.ResizeCollider();
             }
             notePager.text = (index + 1) + "/" + puzzle.noteContentArray.Length;
+
+            GameManager.instance.SendEmail("type: note, " + puzzle.noteTitle + ", page: " + index);
         }
+
+        
     }
 }

@@ -3276,7 +3276,7 @@ MonoBehaviour:
   helpControl: {fileID: 869759823}
   completeControl: {fileID: 752108900}
   questionControl: {fileID: 61702903}
-  failObject: {fileID: 0}
+  failObject: {fileID: 1362370320}
   timeUpObject: {fileID: 405798066}
   player: {fileID: 869619735}
   ghosts: []

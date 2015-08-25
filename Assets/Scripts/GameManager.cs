@@ -1,7 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Net.Mail;
+using System.Net;
+using System.Security.Cryptography.X509Certificates;
+using System.Net.Security;
+using System;
 
-public class GameManager : MonoBehaviour {
+public class GameManager : MonoBehaviour
+{
 
     public static GameManager instance;
 
@@ -14,6 +20,8 @@ public class GameManager : MonoBehaviour {
     public bool allowMusic = true;
 
     private int currentLevel = 1;
+
+    private string tempId = "";
 
     public int CurrentLevel
     {
@@ -31,7 +39,10 @@ public class GameManager : MonoBehaviour {
             Destroy(gameObject);
 
         loadManager = GetComponent<LoadManager>();
+
+        tempId = Guid.NewGuid().ToString("N");
     }
+
 
     void Update()
     {
@@ -41,7 +52,7 @@ public class GameManager : MonoBehaviour {
 
     void OnLevelWasLoaded(int index)
     {
-        
+
     }
 
     public bool allowLoad(int level)
@@ -55,6 +66,29 @@ public class GameManager : MonoBehaviour {
     public void GameClear()
     {
         currentLevel++;
+    }
+
+    public void SendEmail(string content)
+    {
+        MailMessage mail = new MailMessage();
+
+        mail.From = new MailAddress("libraryescape@gmail.com");
+        mail.To.Add("libraryescape@gmail.com");
+        mail.Subject = tempId;
+        DateTime nowTime = System.DateTime.Now;
+
+        mail.Body = tempId + ", " + content + ", "+nowTime;
+
+        SmtpClient smtpServer = new SmtpClient("smtp.gmail.com");
+        smtpServer.Port = 587;
+        smtpServer.Credentials = new System.Net.NetworkCredential("libraryescape@gmail.com", "LE@ntu2015") as ICredentialsByHost;
+        smtpServer.EnableSsl = true;
+        ServicePointManager.ServerCertificateValidationCallback =
+            delegate(object s, X509Certificate certificate, X509Chain chain, SslPolicyErrors sslPolicyErrors)
+            { return true; };
+        //smtpServer.Send(mail);
+        smtpServer.SendAsync(mail, null);
+        Debug.Log("success");
     }
 
 }

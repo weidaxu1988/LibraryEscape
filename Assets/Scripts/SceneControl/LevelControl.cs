@@ -10,6 +10,8 @@ public class LevelControl : MonoBehaviour
 
     public bool puzzleCleared = false;
 
+    public int levelIndex;
+
     public Timer timer;
 
     public GameObject extraButtons;
@@ -207,6 +209,8 @@ public class LevelControl : MonoBehaviour
             noteControl.Puzzle = obj;
             noteControl.gameObject.SetActive(true);
         }
+
+        GameManager.instance.SendEmail("type: puzzle, found puzzle, title: " + obj.noteTitle);
     }
 
     public void OnHelpFinish()
@@ -224,6 +228,8 @@ public class LevelControl : MonoBehaviour
             if (!obj.activeSelf)
                 obj.SetActive(true);
         }
+
+        GameManager.instance.SendEmail("type: level, start lebel, index: " + levelIndex);
     }
 
     public void OnNoteCloseButtonClick(PuzzleObject obj)
@@ -322,6 +328,7 @@ public class LevelControl : MonoBehaviour
 
     public void LevelComplete()
     {
+        GameManager.instance.SendEmail("type: level, complete level, index: " + levelIndex);
         GameManager.instance.GameClear();
         GameManager.instance.loadManager.LoadSelectScene();
     }

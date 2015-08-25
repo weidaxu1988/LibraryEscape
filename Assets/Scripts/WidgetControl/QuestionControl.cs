@@ -13,7 +13,7 @@ public class QuestionControl : MonoBehaviour
     public GameObject nextButton;
     public GameObject submitButton;
 
-	public GameObject bigLibrary;
+    public GameObject bigLibrary;
 
     private Animator libraianAnimator;
 
@@ -40,22 +40,24 @@ public class QuestionControl : MonoBehaviour
         ShowNextButton(false);
     }
 
-	public void OnQuestionSubmit() {
-//		if (bigLibrary != null) {
-//			bigLibrary.SetActive (true);
-//		} else {
-//			AQuestionSubmit();
-//		}
+    public void OnQuestionSubmit()
+    {
+        //		if (bigLibrary != null) {
+        //			bigLibrary.SetActive (true);
+        //		} else {
+        //			AQuestionSubmit();
+        //		}
 
-		if (!librarian.activeSelf) {
-			librarian.SetActive (true);
-		}
+        if (!librarian.activeSelf)
+        {
+            librarian.SetActive(true);
+        }
 
-		if (submitButton.activeSelf)
-			submitButton.SetActive(false);
+        if (submitButton.activeSelf)
+            submitButton.SetActive(false);
 
-		Quiz quiz = totalQuiz[quizIndex];
-		quiz.HideQuestionContent ();
+        Quiz quiz = totalQuiz[quizIndex];
+        quiz.HideQuestionContent();
 
         //        if (!librarian.activeSelf)
         //            librarian.SetActive(true);
@@ -69,19 +71,22 @@ public class QuestionControl : MonoBehaviour
                 ShowFailedContent();
                 ShowNextButton(true);
             }
+            GameManager.instance.SendEmail("type: question, submit question: incorrect, index: " + LevelControl.instance.levelIndex + " - " + quizIndex);
         }
         quiz.InitFeedback();
         ShowNextButton(true);
-	}
+
+        GameManager.instance.SendEmail("type: question, submit question: correct, index: " + LevelControl.instance.levelIndex + " - " + quizIndex);
+    }
 
     public IEnumerator AQuestionSubmit()
     {
-		yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(2f);
 
         Quiz quiz = totalQuiz[quizIndex];
 
-//        if (!librarian.activeSelf)
-//            librarian.SetActive(true);
+        //        if (!librarian.activeSelf)
+        //            librarian.SetActive(true);
 
         if (quiz.getScore() < 1)
         {
@@ -168,9 +173,9 @@ public class QuestionControl : MonoBehaviour
         }
 
 
-        if(libraianAnimator != null)
+        if (libraianAnimator != null)
         {
-            
+
 
             float random = Random.value;
 
@@ -183,13 +188,14 @@ public class QuestionControl : MonoBehaviour
             {
                 libraianAnimator.SetTrigger("rite");
             }
-            else { 
-            
-            libraianAnimator.SetTrigger("clapping");
+            else
+            {
+
+                libraianAnimator.SetTrigger("clapping");
             }
         }
 
-        
+
     }
 
     public void QuestionIncorrect()
@@ -199,7 +205,7 @@ public class QuestionControl : MonoBehaviour
             Debug.Log("incorrect null");
             libraianAnimator = librarian.GetComponentInChildren<Animator>();
         }
-        
+
 
         if (libraianAnimator != null)
         {
@@ -207,7 +213,7 @@ public class QuestionControl : MonoBehaviour
             libraianAnimator.SetTrigger("look");
         }
 
-        
+
     }
 
     protected void ShowFailedContent()
@@ -259,13 +265,15 @@ public class QuestionControl : MonoBehaviour
             quiz = totalQuiz[index];
             if (!quiz.gameObject.activeSelf)
                 quiz.gameObject.SetActive(true);
+
+            GameManager.instance.SendEmail("type: question, start question, index: " + LevelControl.instance.levelIndex + " - " + index);
         }
     }
 
     protected void ResetQuiz(int index)
     {
-		if (librarian.activeSelf)
-			librarian.SetActive(false);
+        if (librarian.activeSelf)
+            librarian.SetActive(false);
 
         Quiz quiz = totalQuiz[index];
         quiz.SecondReset();
