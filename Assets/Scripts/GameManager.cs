@@ -89,6 +89,7 @@ public class GameManager : MonoBehaviour
         //smtpServer.Send(mail);
         smtpServer.SendAsync(mail, null);
         Debug.Log("success");
+        //NGUIDebug.Log("success");
     }
 
 }

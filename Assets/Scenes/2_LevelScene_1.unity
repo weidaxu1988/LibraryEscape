@@ -3265,6 +3265,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isGamePaused: 0
   puzzleCleared: 0
+  levelIndex: 1
   timer: {fileID: 871803829}
   extraButtons: {fileID: 115838786}
   showQuestionButton: {fileID: 1289491255}
@@ -3516,11 +3517,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400952, guid: 29ec8840290eb14498458fd3e5bf9ee9, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 1.53400004
+      value: 1.29799998
       objectReference: {fileID: 0}
     - target: {fileID: 400952, guid: 29ec8840290eb14498458fd3e5bf9ee9, type: 2}
       propertyPath: m_LocalPosition.y
-      value: .0780000016
+      value: .519999981
       objectReference: {fileID: 0}
     - target: {fileID: 400952, guid: 29ec8840290eb14498458fd3e5bf9ee9, type: 2}
       propertyPath: m_LocalPosition.z

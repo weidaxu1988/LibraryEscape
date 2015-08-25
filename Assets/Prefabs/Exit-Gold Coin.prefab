@@ -9,7 +9,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 422150}
   - 212: {fileID: 21202318}
-  - 114: {fileID: 11458700}
+  - 95: {fileID: 9557362}
   m_Layer: 11
   m_Name: Sprite
   m_TagString: Untagged
@@ -42,7 +42,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 167584}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.53400004, y: .0780000016, z: 0}
+  m_LocalPosition: {x: .400000006, y: -.101999998, z: 0}
   m_LocalScale: {x: .150000006, y: .150000006, z: 1}
   m_Children:
   - {fileID: 422150}
@@ -142,45 +142,23 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
---- !u!114 &11458700
-MonoBehaviour:
+--- !u!95 &9557362
+Animator:
+  serializedVersion: 3
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 151956}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 75e7459110b9666449485c40f25362a5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  method: 0
-  style: 0
-  animationCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    - time: 1
-      value: 1
-      inSlope: 2
-      outSlope: 2
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-  ignoreTimeScale: 1
-  delay: 0
-  duration: .5
-  steeperCurves: 0
-  tweenGroup: 0
-  onFinished: []
-  eventReceiver: {fileID: 0}
-  callWhenFinished: 
-  from: {x: 1, y: 1, z: 1}
-  to: {x: 3, y: 3, z: 3}
-  updateTable: 0
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f9f25eb73bb498f4c872f6edd52309ce, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &11478942
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -215,8 +193,8 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1432671119
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: edd2da206e0dd3b4ca338736fa7b7838, type: 3}
+  m_SortingOrder: 1
+  m_Sprite: {fileID: 21300000, guid: a5624a95935d8d14d972d8112adee031, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &100100000
 Prefab:

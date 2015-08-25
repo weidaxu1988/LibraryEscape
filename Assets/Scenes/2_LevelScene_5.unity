@@ -3754,6 +3754,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isGamePaused: 0
   puzzleCleared: 0
+  levelIndex: 5
   timer: {fileID: 871803829}
   extraButtons: {fileID: 115838786}
   showQuestionButton: {fileID: 1434031463}
@@ -3771,7 +3772,7 @@ MonoBehaviour:
   ghosts:
   - {fileID: 1118851899}
   allowAnswerQuestion: 1
-  exitObject: {fileID: 0}
+  exitObject: {fileID: 1886311321}
   musicToggle: {fileID: 324209309}
   musicSource: {fileID: 175278713}
 --- !u!114 &400690227
@@ -7262,6 +7263,7 @@ Transform:
   - {fileID: 981956337}
   - {fileID: 1065970407}
   - {fileID: 1404921901}
+  - {fileID: 1886311320}
   m_Father: {fileID: 175278712}
   m_RootOrder: 4
 --- !u!4 &981956337 stripped
@@ -11004,12 +11006,12 @@ MonoBehaviour:
   mColor: {r: 0, g: 0, b: 0, a: 1}
   mPivot: 3
   mWidth: 510
-  mHeight: 180
+  mHeight: 216
   mDepth: 6
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: .244252875
+  aspectRatio: 2.36111116
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
   mFont: {fileID: 0}
@@ -12276,6 +12278,70 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1884258082}
   m_Script: {fileID: 11500000, guid: 377205bf3ae88544c90dcecbb5cbfbcd, type: 3}
+--- !u!1001 &1886311319
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 963883464}
+    m_Modifications:
+    - target: {fileID: 400952, guid: 29ec8840290eb14498458fd3e5bf9ee9, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 1.49000001
+      objectReference: {fileID: 0}
+    - target: {fileID: 400952, guid: 29ec8840290eb14498458fd3e5bf9ee9, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -.52700001
+      objectReference: {fileID: 0}
+    - target: {fileID: 400952, guid: 29ec8840290eb14498458fd3e5bf9ee9, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400952, guid: 29ec8840290eb14498458fd3e5bf9ee9, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400952, guid: 29ec8840290eb14498458fd3e5bf9ee9, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400952, guid: 29ec8840290eb14498458fd3e5bf9ee9, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400952, guid: 29ec8840290eb14498458fd3e5bf9ee9, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400952, guid: 29ec8840290eb14498458fd3e5bf9ee9, type: 2}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 11458700, guid: 29ec8840290eb14498458fd3e5bf9ee9, type: 2}
+      propertyPath: to.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11458700, guid: 29ec8840290eb14498458fd3e5bf9ee9, type: 2}
+      propertyPath: to.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11458700, guid: 29ec8840290eb14498458fd3e5bf9ee9, type: 2}
+      propertyPath: to.z
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 29ec8840290eb14498458fd3e5bf9ee9, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &1886311320 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 400952, guid: 29ec8840290eb14498458fd3e5bf9ee9, type: 2}
+  m_PrefabInternal: {fileID: 1886311319}
+--- !u!114 &1886311321 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 11478942, guid: 29ec8840290eb14498458fd3e5bf9ee9,
+    type: 2}
+  m_PrefabInternal: {fileID: 1886311319}
+  m_Script: {fileID: 11500000, guid: c2d69cd98bf10ab4698e4868924a4433, type: 3}
 --- !u!1 &1909556176
 GameObject:
   m_ObjectHideFlags: 0

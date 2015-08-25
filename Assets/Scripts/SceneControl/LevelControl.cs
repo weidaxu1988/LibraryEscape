@@ -246,8 +246,11 @@ public class LevelControl : MonoBehaviour
     {
         secondTime = true;
         isGamePaused = true;
-        if (showQuestionButton.activeSelf)
-            showQuestionButton.SetActive(false);
+        //if (showQuestionButton.activeSelf)
+        //    showQuestionButton.SetActive(false);
+
+        if (exitObject.gameObject.activeSelf)
+            exitObject.gameObject.SetActive(false);
 
         if (!questionControl.gameObject.activeSelf)
             questionControl.gameObject.SetActive(true);
@@ -270,8 +273,12 @@ public class LevelControl : MonoBehaviour
 
         if ((!secondTime && totalPuzzle.Length == purplePuzzleList.Count + greenPuzzleList.Count + orangePuzzleList.Count) || (secondTime && targetPuzzle != null && targetPuzzle == obj))
         {
-            if (!showQuestionButton.activeSelf)
-                showQuestionButton.SetActive(true);
+            //if (!showQuestionButton.activeSelf)
+            //    showQuestionButton.SetActive(true);
+
+
+            if (!exitObject.gameObject.activeSelf)
+                exitObject.gameObject.SetActive(true);
         }
     }
 
@@ -366,6 +373,11 @@ public class LevelControl : MonoBehaviour
         if (timeUpObject.activeSelf)
         {
             timeUpObject.SetActive(false);
+        }
+
+        if (exitObject.gameObject.activeSelf)
+        {
+            exitObject.gameObject.SetActive(false);
         }
     }
 
