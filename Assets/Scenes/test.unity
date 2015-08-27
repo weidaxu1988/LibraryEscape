@@ -3174,6 +3174,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isGamePaused: 0
   puzzleCleared: 0
+  levelIndex: 0
   timer: {fileID: 871803829}
   extraButtons: {fileID: 115838786}
   showQuestionButton: {fileID: 0}
@@ -3182,7 +3183,7 @@ MonoBehaviour:
   orangeLabel: {fileID: 2092075902}
   beginObject: {fileID: 226787996}
   noteControl: {fileID: 1487917000}
-  helpControl: {fileID: 869759823}
+  helpControl: {fileID: 0}
   completeControl: {fileID: 1750443706}
   questionControl: {fileID: 61702903}
   failObject: {fileID: 650987339}
