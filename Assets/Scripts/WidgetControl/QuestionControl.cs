@@ -59,29 +59,31 @@ public class QuestionControl : MonoBehaviour
         Quiz quiz = totalQuiz[quizIndex];
         quiz.HideQuestionContent();
 
+        StartCoroutine("AQuestionSubmit");
+
         //        if (!librarian.activeSelf)
         //            librarian.SetActive(true);
 
-        if (quiz.getScore() < 1)
-        {
-            incorrectQuestionCount++;
+        //if (quiz.getScore() < 1)
+        //{
+        //    incorrectQuestionCount++;
 
-            if (incorrectQuestionCount >= incorrectCapacity)
-            {
-                ShowFailedContent();
-                ShowNextButton(true);
-            }
-            GameManager.instance.SendEmail("type: question, submit question: incorrect, index: " + LevelControl.instance.levelIndex + " - " + quizIndex);
-        }
-        quiz.InitFeedback();
-        ShowNextButton(true);
+        //    if (incorrectQuestionCount >= incorrectCapacity)
+        //    {
+        //        ShowFailedContent();
+        //        ShowNextButton(true);
+        //    }
+        //    GameManager.instance.SendEmail("type: question, submit question: incorrect, index: " + LevelControl.instance.levelIndex + " - " + quizIndex);
+        //}
+        //quiz.InitFeedback();
+        //ShowNextButton(true);
 
-        GameManager.instance.SendEmail("type: question, submit question: correct, index: " + LevelControl.instance.levelIndex + " - " + quizIndex);
+        //GameManager.instance.SendEmail("type: question, submit question: correct, index: " + LevelControl.instance.levelIndex + " - " + quizIndex);
     }
 
     public IEnumerator AQuestionSubmit()
     {
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(1f);
 
         Quiz quiz = totalQuiz[quizIndex];
 
@@ -92,15 +94,19 @@ public class QuestionControl : MonoBehaviour
         {
             incorrectQuestionCount++;
 
+            GameManager.instance.SendEmail("type: question, submit question: incorrect, index: " + LevelControl.instance.levelIndex + " - " + quizIndex);
             if (incorrectQuestionCount >= incorrectCapacity)
             {
                 ShowFailedContent();
                 ShowNextButton(true);
                 yield break;
             }
+            
         }
         quiz.InitFeedback();
         ShowNextButton(true);
+
+        GameManager.instance.SendEmail("type: question, submit question: correct, index: " + LevelControl.instance.levelIndex + " - " + quizIndex);
     }
 
     public void NextQuestion()
