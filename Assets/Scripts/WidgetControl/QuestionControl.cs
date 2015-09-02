@@ -196,7 +196,6 @@ public class QuestionControl : MonoBehaviour
             }
             else
             {
-
                 libraianAnimator.SetTrigger("clapping");
             }
         }

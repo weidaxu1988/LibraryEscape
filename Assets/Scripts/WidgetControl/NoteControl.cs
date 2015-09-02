@@ -11,10 +11,15 @@ public class NoteControl : MonoBehaviour
     public GameObject nextButton;
     public GameObject previousButton;
 
+    public GameObject libraian;
+    public GameObject contentContainer;
+
     private UIInput input;
 
     private int textIndex;
     private PuzzleObject puzzle;
+
+    private Animator libraianAnimator;
 
     public PuzzleObject Puzzle
     {
@@ -30,7 +35,32 @@ public class NoteControl : MonoBehaviour
     void Start()
     {
         input = GetComponentInChildren<UIInput>();
+        libraianAnimator = libraian.GetComponentInChildren<Animator>();
     }
+
+    void OnEnable()
+    {
+        Debug.Log("pos check");
+
+        if (libraianAnimator == null)
+        {
+            libraianAnimator = libraian.GetComponentInChildren<Animator>();
+        }
+        libraianAnimator.SetTrigger("clapping");
+
+        contentContainer.SetActive(false);
+
+        // delay show content
+        StartCoroutine("ShowContent");
+    }
+
+    public IEnumerator ShowContent()
+    {
+        yield return new WaitForSeconds(1f);
+
+        contentContainer.SetActive(true);
+    }
+
 
     void OnDisable()
     {

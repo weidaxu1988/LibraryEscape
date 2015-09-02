@@ -111,7 +111,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &170988
 GameObject:
   m_ObjectHideFlags: 0
@@ -358,8 +358,8 @@ MonoBehaviour:
   incorrectFeedBack:
   - "Yes Zurkowsky coined the term \u201Cinformation literacy\u201D in the 1970s,
     but not this year. Let\u2019s try again!"
-  - "Some hint, Zurkowsky coined the term \u201Cinformation literacy\u201D in the
-    1970s. So try again."
+  - "Here is a hint, Zurkowsky coined the term \u201Cinformation literacy\u201D in
+    the 1970s. Why not try again?"
   inputs:
   - {fileID: 11478074}
 --- !u!114 &11470082
