@@ -356,34 +356,42 @@ public class LevelControl : MonoBehaviour
             helpControl.gameObject.SetActive(true);
         }
 
-        if (noteControl && noteControl.gameObject.activeSelf)
+        if (noteControl)
         {
+            if (noteControl.gameObject.activeSelf)
             noteControl.gameObject.SetActive(false);
         }
 
-        if (completeControl && completeControl.gameObject.activeSelf)
+        if (completeControl != null)
         {
-            completeControl.gameObject.SetActive(false);
+            if (completeControl.gameObject.activeSelf)
+            {
+                completeControl.gameObject.SetActive(false);
+            }
         }
 
-        if (questionControl && questionControl.gameObject.activeSelf)
+        if (questionControl != null)
         {
-            questionControl.gameObject.SetActive(false);
+            if (questionControl.gameObject.activeSelf)
+                questionControl.gameObject.SetActive(false);
         }
 
-        if (failObject && failObject.activeSelf)
+        if (failObject)
         {
-            failObject.SetActive(false);
+            if (failObject.activeSelf)
+                failObject.SetActive(false);
         }
 
-        if (timeUpObject && timeUpObject.activeSelf)
+        if (timeUpObject)
         {
-            timeUpObject.SetActive(false);
+            if (timeUpObject.activeSelf)
+                timeUpObject.SetActive(false);
         }
 
-        if (exitObject && exitObject.gameObject.activeSelf)
+        if (exitObject)
         {
-            exitObject.gameObject.SetActive(false);
+            if (exitObject.gameObject.activeSelf)
+                exitObject.gameObject.SetActive(false);
         }
     }
 
