@@ -5,6 +5,8 @@ public class SelectControl : MonoBehaviour
 {
     public GameObject dialog;
 
+    private bool isLoading = false;
+
     public void OnLevelOneClick()
     {
         LoadLevel(1);
@@ -58,7 +60,14 @@ public class SelectControl : MonoBehaviour
 
     private void LoadLevel(int level)
     {
-        //if (GameManager.instance.CurrentLevel == level)
+        if (GameManager.instance.CurrentLevel == level)
+        {
+            if (isLoading)
+            {
+                return;
+            }
+            isLoading = true;
             GameManager.instance.loadManager.LoadLevelSceneDirectly(level);
+        }
     }
 }

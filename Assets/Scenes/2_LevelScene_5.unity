@@ -11050,7 +11050,7 @@ MonoBehaviour:
   mTrueTypeFont: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
   mFont: {fileID: 0}
   mText: Shall we go back to the library to learn this again? Come back after finding
-    the exact object with the knowledge.  Calm down, you can make it right next time.
+    the exact object with the knowledge. Calm down, you can make it right next time.
   mFontSize: 36
   mFontStyle: 0
   mAlignment: 0
