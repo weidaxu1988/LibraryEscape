@@ -83,7 +83,7 @@ public class QuestionControl : MonoBehaviour
 
     public IEnumerator AQuestionSubmit()
     {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(2f);
 
         Quiz quiz = totalQuiz[quizIndex];
 

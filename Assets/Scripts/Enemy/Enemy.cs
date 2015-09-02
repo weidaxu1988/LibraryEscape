@@ -3,6 +3,8 @@ using System.Collections;
 
 public class Enemy : MonoBehaviour
 {
+    public bool scaleDown = false;
+
     public bool timeSensitive;
     public int sleepTime;
     public int awakeTime;
@@ -26,10 +28,12 @@ public class Enemy : MonoBehaviour
     private float timeCount, sleepTimeCount;
 
     private Vector3 oriScale;
+    private Vector3 deltaScale;
 
     void Start()
     {
         oriScale = transform.localScale;
+        deltaScale = oriScale / 6;
     }
 
     void Update()
@@ -44,6 +48,23 @@ public class Enemy : MonoBehaviour
             {
                 MoveProcess();
             }
+        }
+    }
+
+    public void ScaleDown()
+    {
+        if (scaleDown)
+        {
+            Vector3 scale = transform.localScale;
+
+            int curSign = scale.x > 0 ? 1 : -1;
+            scale = new Vector3((Mathf.Abs(scale.x) - Mathf.Abs(deltaScale.x)) * curSign, scale.y - deltaScale.y, scale.z - deltaScale.z);
+
+            transform.localScale = scale;
+
+            int oriSign = oriScale.x > 0 ? 1 : -1;
+            oriScale = new Vector3(Mathf.Abs(scale.x) * oriSign, scale.y, scale.z);
+
         }
     }
 
