@@ -175,7 +175,10 @@ public class LevelControl : MonoBehaviour
                 // all colors go to green
                 greenLabel.text = (greenPuzzleList.Count + purplePuzzleList.Count + orangePuzzleList.Count) + "/" + (greenPuzzleList.Capacity + purplePuzzleList.Capacity + orangePuzzleList.Capacity);
 
-                ghosts[0].GetComponent<Enemy>().ScaleDown();
+                if (ghosts != null && ghosts.Length > 0)
+                {
+                    ghosts[0].GetComponent<Enemy>().ScaleDown();
+                }
             }
         }
         else if (obj.startType == PuzzleObject.StartType.Green)
@@ -190,7 +193,10 @@ public class LevelControl : MonoBehaviour
 
                 greenLabel.text = (greenPuzzleList.Count + purplePuzzleList.Count + orangePuzzleList.Count) + "/" + (greenPuzzleList.Capacity + purplePuzzleList.Capacity + orangePuzzleList.Capacity);
 
-                ghosts[0].GetComponent<Enemy>().ScaleDown();
+                if (ghosts != null && ghosts.Length > 0)
+                {
+                    ghosts[0].GetComponent<Enemy>().ScaleDown();
+                }
             }
         }
         else if (obj.startType == PuzzleObject.StartType.Orange)
@@ -206,7 +212,10 @@ public class LevelControl : MonoBehaviour
                 // all colors go to green
                 greenLabel.text = (greenPuzzleList.Count + purplePuzzleList.Count + orangePuzzleList.Count) + "/" + (greenPuzzleList.Capacity + purplePuzzleList.Capacity + orangePuzzleList.Capacity);
 
-                ghosts[0].GetComponent<Enemy>().ScaleDown();
+                if (ghosts != null && ghosts.Length > 0)
+                {
+                    ghosts[0].GetComponent<Enemy>().ScaleDown();
+                }
             }
         }
 
@@ -359,7 +368,7 @@ public class LevelControl : MonoBehaviour
         if (noteControl)
         {
             if (noteControl.gameObject.activeSelf)
-            noteControl.gameObject.SetActive(false);
+                noteControl.gameObject.SetActive(false);
         }
 
         if (completeControl != null)
