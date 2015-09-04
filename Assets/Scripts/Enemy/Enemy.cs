@@ -80,15 +80,15 @@ public class Enemy : MonoBehaviour
 
 
             //tweenScale.PlayForward();
-            if (catchable)
-            {
-                GhostGetCaught();
-            }
-            else
-            {
+            //if (catchable)
+            //{
+            //    GhostGetCaught();
+            //}
+            //else
+            //{
                 if (enemyActive)
                     GhostCaught();
-            }
+            //}
         }
     }
 
