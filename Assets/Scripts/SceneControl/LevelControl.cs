@@ -284,13 +284,17 @@ public class LevelControl : MonoBehaviour
     public void StartQuestion(PuzzleObject obj)
     {
         if (puzzleCleared) return;
+
+        //Debug.Log("not cleared!");
         if (!allowAnswerQuestion) return;
+        
+        //Debug.Log("allow answer question!");
 
         if ((!secondTime && totalPuzzle.Length == purplePuzzleList.Count + greenPuzzleList.Count + orangePuzzleList.Count) || (secondTime && targetPuzzle != null && targetPuzzle == obj))
         {
             //if (!showQuestionButton.activeSelf)
             //    showQuestionButton.SetActive(true);
-
+            //Debug.Log("try show exit object!");
 
             if (!exitObject.gameObject.activeSelf)
                 exitObject.gameObject.SetActive(true);

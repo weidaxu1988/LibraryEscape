@@ -61,15 +61,19 @@ public class QuestionControl : MonoBehaviour
 
         if (quiz.getScore() < 1)
         {
-            if (libraianAnimator == null)
+            if (incorrectQuestionCount >= incorrectCapacity)
             {
-                Debug.Log("incorrect null");
-                libraianAnimator = librarian.GetComponentInChildren<Animator>();
+                if (libraianAnimator == null)
+                {
+                    Debug.Log("incorrect null");
+                    libraianAnimator = librarian.GetComponentInChildren<Animator>();
+                }
+                if (libraianAnimator != null)
+                {
+                    libraianAnimator.SetTrigger("concerned");
+                }
             }
-            if (libraianAnimator != null)
-            {
-                libraianAnimator.SetTrigger("concerned");
-            }
+            
         }
         quiz.InitFeedback();
         quiz.HideFeedBack();

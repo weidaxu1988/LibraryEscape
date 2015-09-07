@@ -3163,7 +3163,7 @@ MonoBehaviour:
   player: {fileID: 869619735}
   ghosts:
   - {fileID: 87785831}
-  allowAnswerQuestion: 0
+  allowAnswerQuestion: 1
   exitObject: {fileID: 815612700}
   musicToggle: {fileID: 208443579}
   musicSource: {fileID: 175278713}
@@ -11526,7 +11526,8 @@ MonoBehaviour:
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
   mFont: {fileID: 0}
-  mText: "There is a virus inside. You have to catch it before it does any harm!\r"
+  mText: "There is a virus inside. You cannot catch the virus, but finding the objects
+    will weaken him!\r"
   mFontSize: 24
   mFontStyle: 0
   mAlignment: 1
