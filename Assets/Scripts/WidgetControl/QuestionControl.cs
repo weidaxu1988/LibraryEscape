@@ -59,6 +59,21 @@ public class QuestionControl : MonoBehaviour
         Quiz quiz = totalQuiz[quizIndex];
         quiz.HideQuestionContent();
 
+        if (quiz.getScore() < 1)
+        {
+            if (libraianAnimator == null)
+            {
+                Debug.Log("incorrect null");
+                libraianAnimator = librarian.GetComponentInChildren<Animator>();
+            }
+            if (libraianAnimator != null)
+            {
+                libraianAnimator.SetTrigger("concerned");
+            }
+        }
+        quiz.InitFeedback();
+        quiz.HideFeedBack();
+
         StartCoroutine("AQuestionSubmit");
 
         //        if (!librarian.activeSelf)
@@ -101,7 +116,7 @@ public class QuestionControl : MonoBehaviour
                 ShowNextButton(true);
                 yield break;
             }
-            
+
         }
         quiz.InitFeedback();
         ShowNextButton(true);
@@ -181,8 +196,6 @@ public class QuestionControl : MonoBehaviour
 
         if (libraianAnimator != null)
         {
-
-
             float random = Random.value;
 
             Debug.Log("random value: " + random);
@@ -237,7 +250,7 @@ public class QuestionControl : MonoBehaviour
                 quiz.gameObject.SetActive(false);
         }
 
-        libraianAnimator.SetTrigger("concerned");
+        //libraianAnimator.SetTrigger("concerned");
     }
 
     protected void ShowNextButton(bool show)
@@ -271,7 +284,10 @@ public class QuestionControl : MonoBehaviour
             if (!quiz.gameObject.activeSelf)
                 quiz.gameObject.SetActive(true);
 
-            GameManager.instance.SendEmail("type: question, start question, index: " + LevelControl.instance.levelIndex + " - " + index);
+            if (GameManager.instance != null && LevelControl.instance != null)
+            {
+                GameManager.instance.SendEmail("type: question, start question, index: " + LevelControl.instance.levelIndex + " - " + index);
+            }
         }
     }
 

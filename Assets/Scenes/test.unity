@@ -3170,7 +3170,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isGamePaused: 0
   puzzleCleared: 0
-  levelIndex: 0
+  levelIndex: 9
   timer: {fileID: 871803829}
   extraButtons: {fileID: 115838786}
   showQuestionButton: {fileID: 0}
@@ -9479,6 +9479,8 @@ MonoBehaviour:
   notePager: {fileID: 285159916}
   nextButton: {fileID: 204630191}
   previousButton: {fileID: 1409837404}
+  libraian: {fileID: 0}
+  contentContainer: {fileID: 0}
 --- !u!1 &1491256195
 GameObject:
   m_ObjectHideFlags: 0

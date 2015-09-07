@@ -85,6 +85,12 @@ public class Quiz : MonoBehaviour
         }
     }
 
+    public void HideFeedBack()
+    {
+        if (feedbackContainer != null && feedbackContainer.activeSelf == true)
+            feedbackContainer.SetActive(false);
+    }
+
     protected void ShowFeedBack(bool show)
     {
         if (questionContainer != null && questionContainer.activeSelf == show)

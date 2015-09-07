@@ -360,15 +360,21 @@ public class LevelControl : MonoBehaviour
         if (player.activeSelf)
             player.SetActive(false);
 
-        if (!helpControl.gameObject.activeSelf)
+        if (helpControl != null)
         {
-            helpControl.gameObject.SetActive(true);
+            if (!helpControl.gameObject.activeSelf)
+            {
+                helpControl.gameObject.SetActive(true);
+            }
         }
 
-        if (noteControl)
+        if (noteControl != null)
         {
-            if (noteControl.gameObject.activeSelf)
-                noteControl.gameObject.SetActive(false);
+            if (noteControl)
+            {
+                if (noteControl.gameObject.activeSelf)
+                    noteControl.gameObject.SetActive(false);
+            }
         }
 
         if (completeControl != null)
