@@ -101,7 +101,7 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: .610000014
+  m_Radius: 1
 --- !u!82 &8220478
 AudioSource:
   m_ObjectHideFlags: 1

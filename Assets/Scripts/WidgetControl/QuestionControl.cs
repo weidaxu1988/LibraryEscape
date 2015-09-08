@@ -61,6 +61,8 @@ public class QuestionControl : MonoBehaviour
 
         if (quiz.getScore() < 1)
         {
+            incorrectQuestionCount++;
+
             if (incorrectQuestionCount >= incorrectCapacity)
             {
                 if (libraianAnimator == null)
@@ -111,7 +113,7 @@ public class QuestionControl : MonoBehaviour
 
         if (quiz.getScore() < 1)
         {
-            incorrectQuestionCount++;
+            //incorrectQuestionCount++;
 
             GameManager.instance.SendEmail("type: question, submit question: incorrect, index: " + LevelControl.instance.levelIndex + " - " + quizIndex);
             if (incorrectQuestionCount >= incorrectCapacity)

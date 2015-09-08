@@ -73,7 +73,10 @@ public class CompleteNoteControl : MonoBehaviour
             if (stage != null)
             {
                 Animator libraianAnimator = GetComponentInChildren<Animator>();
-                libraianAnimator.SetTrigger("clapping");
+                if (libraianAnimator != null)
+                {
+                    libraianAnimator.SetTrigger("clapping");
+                }
             }
         }
     }
