@@ -3,11 +3,22 @@ using System.Collections;
 
 public class NoteControl : MonoBehaviour
 {
+    static string[] sNoCapStrings = {
+                                        "Great, you have found the object!",
+                                        "Well done, acquire the content!",
+                                        "Awesome, one object found, and we are closer!",
+                                        "Good job, this one is difficult to find!",
+                                        "Hey, I was really impressed!",
+                                        "Excellent! Read the content carefully.",
+                                    };
+
     public UILabel noteTtitle;
     public UILabel noteContent;
     public UISprite noteContentSprite;
     public UILabel notePager;
 
+    public UILabel noCapLabel;
+    
     public GameObject nextButton;
     public GameObject previousButton;
 
@@ -40,8 +51,6 @@ public class NoteControl : MonoBehaviour
 
     void OnEnable()
     {
-        Debug.Log("pos check");
-
         if (libraianAnimator == null)
         {
             libraianAnimator = libraian.GetComponentInChildren<Animator>();
@@ -50,15 +59,36 @@ public class NoteControl : MonoBehaviour
 
         contentContainer.SetActive(false);
 
+        if (noCapLabel.gameObject.activeSelf)
+        {
+            noCapLabel.gameObject.SetActive(false);
+        }
+
+        StartCoroutine("ShowNoCapLabel");
+
         // delay show content
         StartCoroutine("ShowContent");
     }
 
     public IEnumerator ShowContent()
     {
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(3f);
+
+        if (noCapLabel.gameObject.activeSelf)
+        {
+            noCapLabel.gameObject.SetActive(false);
+        }
 
         contentContainer.SetActive(true);
+    }
+
+    public IEnumerator ShowNoCapLabel()
+    {
+        yield return new WaitForSeconds(2f);
+
+        noCapLabel.gameObject.SetActive(true);
+
+        noCapLabel.text = sNoCapStrings[Random.Range(0, sNoCapStrings.Length)];
     }
 
 

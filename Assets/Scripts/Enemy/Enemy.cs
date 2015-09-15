@@ -55,16 +55,17 @@ public class Enemy : MonoBehaviour
     {
         if (scaleDown)
         {
-            Vector3 scale = transform.localScale;
+            //Vector3 scale = transform.localScale;
 
-            int curSign = scale.x > 0 ? 1 : -1;
-            scale = new Vector3((Mathf.Abs(scale.x) - Mathf.Abs(deltaScale.x)) * curSign, scale.y - deltaScale.y, scale.z - deltaScale.z);
+            //int curSign = scale.x > 0 ? 1 : -1;
+            //scale = new Vector3((Mathf.Abs(scale.x) - Mathf.Abs(deltaScale.x)) * curSign, scale.y - deltaScale.y, scale.z - deltaScale.z);
 
-            transform.localScale = scale;
+            //transform.localScale = scale;
 
-            int oriSign = oriScale.x > 0 ? 1 : -1;
-            oriScale = new Vector3(Mathf.Abs(scale.x) * oriSign, scale.y, scale.z);
+            //int oriSign = oriScale.x > 0 ? 1 : -1;
+            //oriScale = new Vector3(Mathf.Abs(scale.x) * oriSign, scale.y, scale.z);
 
+            speed *= 1.2f;
         }
     }
 
