@@ -621,11 +621,11 @@ Prefab:
         type: 3}
     - target: {fileID: 486880, guid: 559f2f9b0fbd79440a51e4a18ff34133, type: 2}
       propertyPath: m_LocalScale.x
-      value: .00999999978
+      value: .00700000022
       objectReference: {fileID: 0}
     - target: {fileID: 486880, guid: 559f2f9b0fbd79440a51e4a18ff34133, type: 2}
       propertyPath: m_LocalScale.y
-      value: .00999999978
+      value: .00700000022
       objectReference: {fileID: 0}
     - target: {fileID: 486880, guid: 559f2f9b0fbd79440a51e4a18ff34133, type: 2}
       propertyPath: m_LocalScale.z

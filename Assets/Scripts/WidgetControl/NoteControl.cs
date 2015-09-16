@@ -84,7 +84,7 @@ public class NoteControl : MonoBehaviour
 
     public IEnumerator ShowNoCapLabel()
     {
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(1f);
 
         noCapLabel.gameObject.SetActive(true);
 
